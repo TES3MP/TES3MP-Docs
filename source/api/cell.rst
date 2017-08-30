@@ -13,13 +13,15 @@ getExterior()
 -------------
 
 **Result**:
-    | **string**.
+    | **number** x.
+    | **number** y.
 
-setExterior()
+setExterior(x, y)
 -------------
 
 **Parameters**:
-    | **string**.
+    | **number** x.
+    | **number** y.
 
 getRegion()
 -----------
