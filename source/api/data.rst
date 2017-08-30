@@ -12,6 +12,12 @@ loadedMods
 
 **Property**:
     | **table**. Array with names of mods.
+    
+NEXT_VERSION
+^^^^^^^
+
+**Property**:
+    | **string**. NEXT VERSION release date (always returns ``Soon™``).
 
 VERSION
 ^^^^^^^
