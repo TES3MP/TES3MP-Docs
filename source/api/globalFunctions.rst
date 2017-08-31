@@ -101,7 +101,13 @@ Sets ``day`` for each player.
 **Parameters:**
     | **number** day.
 
---------------------------------------
+getDataFolder()
+---------------
+
+**Return:**
+    | **string** data folder for current mod.
+
+-------------------------------------------------
 
 Utils
 =====
