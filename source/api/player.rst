@@ -59,7 +59,7 @@ setMagicka(base, current)
     | **number** base.
     | **number** current.
 
-getFatigue(base, current)
+getFatigue()
 -------------------------
 
 **Return:**
