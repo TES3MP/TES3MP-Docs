@@ -57,8 +57,9 @@ getMinorSkills()
     | **number** second.
     | **number** third.
     | **number** fourth.
+    | **number** fifth.
 
-setMinorSkills(fisrt, second, third, fourth)
+setMinorSkills(fisrt, second, third, fourth, fifth)
 --------------------------------------------
 
 **Parameters:**
@@ -66,6 +67,7 @@ setMinorSkills(fisrt, second, third, fourth)
     | **number** second.
     | **number** third.
     | **number** fourth.
+    | **number** fifth.
 
 getMajorSkills()
 ----------------
@@ -75,8 +77,9 @@ getMajorSkills()
     | **number** second.
     | **number** third.
     | **number** fourth.
+    | **number** fifth.
 
-setMajorSkills(fisrt, second, third, fourth)
+setMajorSkills(fisrt, second, third, fourth, fifth)
 --------------------------------------------
 
 **Parameters:**
@@ -84,3 +87,4 @@ setMajorSkills(fisrt, second, third, fourth)
     | **number** second.
     | **number** third.
     | **number** fourth.
+    | **number** fifth.
