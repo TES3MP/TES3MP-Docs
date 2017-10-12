@@ -16,7 +16,7 @@ customMessageBox(id, label, buttons)
 **Parameters:**
     | **number** id.
     | **string** label.
-    | **string** buttons. Split buttons by "|"
+    | **string** buttons. Split buttons by ";"
 
 inputDialog(id, label)
 ----------------------
