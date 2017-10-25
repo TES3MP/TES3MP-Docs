@@ -14,14 +14,14 @@ setCurrentMpNum(mpNum)
 
 **Parameters:**
     | **number** mpNum. override mpNum on the serever.
-
+    
 logMessage(level, message)
 --------------------------
 
 Write a log message ``with`` its own timestamp.
 
 **Parameters:**
-    | **number** level.  The logging level used (0 for VERBOSE, 1 for INFO, 2 for WARN, 3 for ERROR, 4 for FATAL).
+    | **number** level.  The logging level used. See :ref:`Log constants < LogLevelConstants-anchor>`
     | **string** message.
 
 
@@ -30,7 +30,7 @@ logAppend(level, message)
 Write a log message ``without`` its own timestamp.
 
 **Parameters:**
-    | **number** level.  The logging level used (0 for VERBOSE, 1 for INFO, 2 for WARN, 3 for ERROR, 4 for FATAL).
+    | **number** level.  The logging level used.
     | **string** message.
 
 stopServer(code)
@@ -121,3 +121,27 @@ Splitting string by separators.
     | **string** or **nil** sep. if ``sep`` is **nil** then ":" delimiter is used by default
 **Return**
     | **table** array of **string**\`s.
+    
+.. _LogLevelConstants-anchor:
+Log
+===
+Log level constants
+
+LOG_FATAL
+---------
+
+LOG_ERROR
+---------
+
+LOG_WARN
+--------
+
+LOG_INFO
+--------
+
+LOG_VERBOSE
+-----------
+
+LOG_TRACE
+---------
+
