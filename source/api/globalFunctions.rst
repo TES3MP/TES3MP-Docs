@@ -21,7 +21,7 @@ logMessage(level, message)
 Write a log message ``with`` its own timestamp.
 
 **Parameters:**
-    | **number** level.  The logging level used. See :ref:`Log constants < LogLevelConstants-anchor>`
+    | **number** level.  The logging level used. See :ref:`Log constants <LogLevelConstants-anchor>`
     | **string** message.
 
 
