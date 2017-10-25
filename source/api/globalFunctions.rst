@@ -122,6 +122,9 @@ Splitting string by separators.
 **Return**
     | **table** array of **string**\`s.
     
+    
+-------------------------------------------------
+
 .. _LogLevelConstants-anchor:
 Log
 ===
