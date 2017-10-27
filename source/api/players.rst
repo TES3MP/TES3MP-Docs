@@ -33,3 +33,9 @@ Calls ``function(player)`` for all players.
     Players.for_each(function(player)
         player:message("Hello\n")
     end)
+    
+size()
+------
+
+**Return:**
+    | **number** online players.
