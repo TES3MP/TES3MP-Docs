@@ -133,7 +133,8 @@ ON_PLAYER_CONNECT
 .. code-block:: lua
 
     Event.register(Events.ON_PLAYER_CONNECT, function(player)
-        io.write(("Disconnected player %s\n"):format(player.name))
+        io.write(("Connected player %s\n"):format(player.name))
+        return true
     end)
 
 ON_PLAYER_DISCONNECT
@@ -145,8 +146,7 @@ ON_PLAYER_DISCONNECT
 .. code-block:: lua
 
     Event.register(Events.ON_PLAYER_DISCONNECT, function(player)
-        io.write(("Connected player %s\n"):format(player.name))
-        return true
+        io.write(("Disconnected player %s\n"):format(player.name))
     end)
 
 
