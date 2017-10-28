@@ -315,9 +315,9 @@ ON_GUI_ACTION
     
     Event.register(Events.ON_GUI_ACTION, function(player, id, data)
         if id == myMsgBoxId then
-            if tonumber(data) == 0 -- first "Yep" button
+            if tonumber(data) == 0 then -- first "Yep" button
                 player:message("Welcome!\n", false)
-            else if tonumber(data) == 1 -- "Nope" button
+            elseif tonumber(data) == 1 then -- "Nope" button
                 player:kick()
             end
         end
