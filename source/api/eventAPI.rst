@@ -310,14 +310,14 @@ ON_GUI_ACTION
 
     myMsgBoxId = 123
     Event.register(Events.ON_PLAYER_CONNECT, function(player)
-        player:getGUI():customMessageBox(myMsgBoxId, "Wanna play on my cool server?", "Yep|Nope")
+        player:getGUI():customMessageBox(myMsgBoxId, "Wanna play on my cool server?", "Yep;Nope")
     end)
     
     Event.register(Events.ON_GUI_ACTION, function(player, id, data)
         if id == myMsgBoxId then
-            if tonumber(data) == 0 -- first "Yep" button
+            if tonumber(data) == 0 then -- first "Yep" button
                 player:message("Welcome!\n", false)
-            else if tonumber(data) == 1 -- "Nope" button
+            elseif tonumber(data) == 1 then -- "Nope" button
                 player:kick()
             end
         end
