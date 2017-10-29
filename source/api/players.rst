@@ -1,7 +1,7 @@
 Players
 =======
 
-``Players`` is global spaced table.
+``Players`` is a global scope table.
 
 
 getByPID(pid)
@@ -38,4 +38,4 @@ size()
 ------
 
 **Return:**
-    | **number** online players.
+    | **number** The number of online players.

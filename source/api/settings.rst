@@ -4,7 +4,7 @@ Settings
 setConsoleAllow(state)
 ----------------------
 
-Switches console for player.
+Enables or disables the console for a player.
 
 **Parameters:**
     | **boolean** state.
@@ -12,7 +12,7 @@ Switches console for player.
 setDifficulty(difficulty)
 -------------------------
 
-Changes difficulty for player.
+Changes the difficulty for a player.
 
 **Parameters:**
     | **number** difficulty. Default values from -100 to 100.

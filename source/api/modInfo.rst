@@ -1,7 +1,7 @@
 ModInfo
 =======
 
-ModInfo table should contain basic info about mod:
+ModInfo table should contain basic info about a script addon:
 
 .. code-block:: lua
 
@@ -19,7 +19,7 @@ ModInfo should be placed at the top of ``main.lua``.
 name
 ----
 
-Name of mod without spaces.
+The name of the script addon without spaces.
 
 author
 ------
@@ -27,9 +27,9 @@ author
 version
 -------
 
-version used in dependency checker
+The version used in the dependency checker.
 
 dependencies
 ------------
 
-Table with dependencies
+The table of dependencies.

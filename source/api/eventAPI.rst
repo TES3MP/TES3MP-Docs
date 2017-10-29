@@ -5,13 +5,13 @@ Event API
 Event
 =====
 
-``Event`` is global spaced table.
+``Event`` is a global scope table.
 
 register(eventId, callback)
 ---------------------------
 
 **Parameters:**
-    | **number** eventId. Can be :ref:`created <EventCreate-anchor>` or used :ref:`core event <CoreEvents-anchor>`
+    | **number** eventId. Can be a brand new :ref:`created <EventCreate-anchor>` Id or use the Id of an existing :ref:`core event <CoreEvents-anchor>`
     | **function** callback.
 
 Places a new event at the end of the list of events.
@@ -25,7 +25,7 @@ Places a new event at the end of the list of events.
 stop(eventId)
 -------------
 
-Stops iterating specified event in other callbacks
+Stops iteration through specified event in other callbacks.
 
 **Parameters:**
     | **number** eventId.
@@ -93,7 +93,7 @@ Raises **all** registered events with `eventId` in the **specified** mod.
 Core events
 ===========
 
-All core (provided by C++) events registered in "Events" table.
+These are all the core events (provided via C++ code) registered in the "Events" table.
 
 ON_POST_INIT
 ------------
@@ -111,7 +111,7 @@ ON_EXIT
 -------
 
 **Contains:**
-    | ``boolean`` exit status. If ``status`` is ``true`` this means that the server closes with an error.
+    | ``boolean`` exit status. If ``status`` is ``true``, the server closes with an error.
 .. code-block:: lua
 
     Event.register(Events.ON_POST_INIT, function(status)
@@ -386,7 +386,7 @@ ON_CELL_DELETION
 **Contains:**
     | **string** description
 
-Called when ``cell`` removed from CellController
+Called when a ``cell`` is removed from the CellController.
 
 ON_CONTAINER
 ------------

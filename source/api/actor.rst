@@ -86,7 +86,7 @@ getInventory()
 
 .. warning::
 
-    ``addItem``, ``removeItem``, ``getInventoryItem`` not used by :ref:`Actor<Actor-anchor>`
+    ``addItem``, ``removeItem``, ``getInventoryItem`` are not used by :ref:`Actor<Actor-anchor>`
 
 **Return:**
     | :doc:`Inventory <./inventory>` inventory.
@@ -112,7 +112,7 @@ mpNum
 Actors
 ======
 
-``Actors`` is global spaced table.
+``Actors`` is a global scope table.
 
 createActor()
 -------------

@@ -4,7 +4,7 @@ Timer API
 TimerCtrl
 ---------
 
-``TimerCtrl`` is global spaced table.
+``TimerCtrl`` is a global scope table.
 
 create(callback, msec, args)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -12,7 +12,7 @@ create(callback, msec, args)
 Creates timer but not starts it.
 
 **Parameters:**
-    | **function** callback. Will be called when timer expires
+    | **function** callback. Will be called when the timer expires
     | **number** msec.
     | **table** args. Array of arguments
 **Return:**
@@ -21,10 +21,10 @@ Creates timer but not starts it.
 kill(timer)
 ^^^^^^^^^^^
 
-Stops the timer and marks for delete
+Stops the timer and marks it for deletion.
 
 .. important::
-    This function only hints timer for deleteing. You still should set all references to ``timer`` to ``nil`` or other type and wait for Lua\'s GC.
+    This function only hints that the timer should be deleted. You should nonetheless set all references to a ``timer`` to ``nil`` or another type and wait for Lua\'s GC.
 
 **Parameters:**
     | **Timer** timer.
@@ -36,7 +36,7 @@ Stops the timer and marks for delete
 Timer
 -----
 
-Can be created by "TimerCtrl.create".
+Can be created via "TimerCtrl.create".
 
 .. code-block:: lua
 
@@ -45,7 +45,7 @@ Can be created by "TimerCtrl.create".
         print(data[1] .. " from timer")
         TimerCtrl.kill(timer)
         timer = nil -- mark timer for GC
-        collectgarbage("collect") -- forced collect of the released resources (just for test)
+        collectgarbage("collect") -- forced collection of the released resources (just for testing)
     end
 
     timer = TimerCtrl.create(timerCallback, 2000, {"Hello", 100500})
@@ -58,12 +58,12 @@ start()
 stop()
 ^^^^^^
 
-Marks timer as stopped, but not deleted.
+Marks a timer as stopped, but not deleted.
 
 restart(msec)
 ^^^^^^^^^^^^^
 
-Restarts timer with new target time.
+Restarts a timer with a new target time.
 
 **Parameters:**
     | **number** msec.
@@ -72,5 +72,5 @@ isElapsed()
 ^^^^^^^^^^^
 
 **Return:**
-    | **bollean** ``true`` if timer is stopped.
+    | **boolean** ``true`` if timer is stopped.
 

@@ -1,29 +1,29 @@
 Constants
 =========
 
-Constants is collection (namespace) of static functions.
+Constants is a collection (namespace) of static functions.
 
 getAttributeCount()
 -------------------
 
 **Return:**
-    | **number** last id of atttributes.
+    | **number** the number of valid atttributes.
 
 
 getSkillCount()
 ---------------
 
 **Return:**
-    | **number** last id of skills.
+    | **number** the number of valid skills.
 
 
 getAttributeId(name)
 --------------------
 
 **Parameters:**
-    | **string** name. Name of attribute (case insensetive).
+    | **string** name. Name of attribute (case insensitive).
 **Return:**
-    | **number** attribute id or -1 if attribute not found.
+    | **number** attribute id or -1 if the attribute is not found.
 
 .. code-block:: lua
 
@@ -33,9 +33,9 @@ getSkillId(name)
 ----------------
 
 **Parameters:**
-    | **string** name. Name of skill (case insensetive).
+    | **string** name. Name of skill (case insensitive).
 **Return:**
-    | **number** skill id or -1 if skill not found.
+    | **number** skill id or -1 if the skill is not found.
 
 getAttributeName(attributeId)
 -----------------------------
@@ -43,7 +43,7 @@ getAttributeName(attributeId)
 **Parameters:**
     | **number** attributeId. 
 **Return:**
-    | **string** attribute name or ``"invalid"`` if attributeId not found.
+    | **string** attribute name or ``"invalid"`` if the attributeId is not found.
 
 getSkillName(skillId)
 ---------------------
@@ -51,12 +51,12 @@ getSkillName(skillId)
 **Parameters:**
     | **number** skillId. 
 **Return:**
-    | **string** skill name or ``"invalid"`` if skillId not found.
+    | **string** skill name or ``"invalid"`` if the skillId is not found.
 
 getEquipmentSize()
 ------------------
 
 **Return:**
-    | **number** last slot of equipment.
+    | **number** the number of slots in equipment.
 
 

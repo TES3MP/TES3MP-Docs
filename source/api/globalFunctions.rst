@@ -1,7 +1,7 @@
 Global Functions
 ================
 
-Global functions registered in root (_G) lua namespace.
+Global functions registered in the root (_G) Lua namespace.
 
 getCurrentMpNum()
 -----------------
@@ -13,7 +13,7 @@ setCurrentMpNum(mpNum)
 --------------------
 
 **Parameters:**
-    | **number** mpNum. override mpNum on the serever.
+    | **number** mpNum. Overrides the mpNum on the serever.
     
 logMessage(level, message)
 --------------------------
@@ -74,21 +74,21 @@ setServerPassword(passw)
 ------------------------
 
 **Parameters:**
-    | **string** passw. if **nil**, password will be removed.
+    | **string** passw. if **nil**, the password will be removed.
 
 
 setHour(hour)
 -------------
 
-Sets ``hour`` for each player.
+Sets the ingame ``hour`` for each player.
 
 **Parameters:**
-    | **number** hour. In float format.
+    | **number** hour as a float.
 
 setMonth(month)
 ---------------
 
-Sets ``month`` for each player.
+Sets the ingame ``month`` for each player.
 
 **Parameters:**
     | **number** month.
@@ -96,7 +96,7 @@ Sets ``month`` for each player.
 setDay(day)
 -----------
 
-Sets ``day`` for each player.
+Sets the ingame ``day`` of the month for each player.
 
 **Parameters:**
     | **number** day.
@@ -105,7 +105,7 @@ getDataFolder()
 ---------------
 
 **Return:**
-    | **string** data folder for current mod.
+    | **string** The data folder for current script addon.
 
 -------------------------------------------------
 
@@ -115,7 +115,7 @@ Utils
 string:split(sep)
 -----------------
 
-Splitting string by separators.
+Splits a string via a separator.
 
 **Parameters:**
     | **string** or **nil** sep. if ``sep`` is **nil** then ":" delimiter is used by default

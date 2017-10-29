@@ -172,7 +172,7 @@ setMasterState(state)
 ObjectCtrl
 ----------
 
-``ObjectCtrl`` is global spaced table.
+``ObjectCtrl`` is a global scope table.
 
 sendObjects(player, objects, cellDescription)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -110,7 +110,7 @@ getAvgPing()
 message(message, toAll)
 -----------------------
 
-Sends message to player or to all players.
+Sends message to a certain player or to all players.
 
 **Parameters:**
     | **string** message.

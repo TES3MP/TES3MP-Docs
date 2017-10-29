@@ -1,26 +1,26 @@
 Data global table
 =================
 
-Data table can be used for communicating between mods.
+The data table can be used for communicating global values between mods.
 
 Core table
 ----------
-Core table contains info about current version, protocol and loaded mods.
+The Core table contains information about the current version, protocol and loaded mods.
 
 loadedMods
 ^^^^^^^^^^
 
 **Property**:
-    | **table**. Array with names of mods.
+    | **table**. An array with the names of all loaded clientside data files.
 
 VERSION
 ^^^^^^^
 
 **Property**:
-    | **string**. Current TES3MP version.
+    | **string**. The current TES3MP version.
 
 PROTOCOL
 ^^^^^^^^
 **Property**:
-    | **string**. Current TES3MP networking protocol.
+    | **string**. The current TES3MP networking protocol.
 
