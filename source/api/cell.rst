@@ -3,11 +3,11 @@
 Cell
 ====
 
-cell
-----
+description
+-----------
 
 **Property**:
-    | **string** cellDescription.
+    | **string** The string describing the cell, i.e. the cell's name if it's an interior or the cell's exterior coordinates divided by a comma (as in "0, -7").
 
 getExterior()
 -------------
