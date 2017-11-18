@@ -259,23 +259,44 @@ getSkill(id)
 ------------
 
 **Parameters:**
-    | **number** id.
+    | **number** The numerical ID of the skill.
 **Return:**
-    | **number** base.
-    | **number** current.
-    | **number** progress. floating point number
-    | **number** increase.
+    | **number** The base value of the skill.
+    | **number** The current value of the skill.
+    | **number (float)** Progress towards the next point in the skill.
 
 
-setSkill(id,  base, current, progress, increase)
+setSkill(id, base, current, progress)
 ------------------------------------------------
 
 **Parameters:**
-    | **number** id.
-    | **number** base.
-    | **number** current.
-    | **number** progress. floating point number
-    | **number** increase.
+    | **number** The numerical ID of the skill.
+    | **number** The base value of the skill.
+    | **number** The current value of the skill.
+    | **number (float)** Progress towards the next point in the skill.
+
+
+getSkillIncrease(attributeId)
+------------
+Get the bonus available for a certain attribute at the next level-up as a result of increasing skills governed by that attribute.
+
+This function is named thus for consistency with the array from OpenMW that it uses (mSkillIncrease).
+
+**Parameters:**
+    | **number** The numerical ID of the attribute.
+**Return:**
+    | **number** The attribute bonus received at the next level-up.
+
+
+setSkillIncrease(attributeId, increase)
+------------------------------------------------
+Set the bonus available for a certain attribute at the next level-up as a result of increasing skills governed by that attribute.
+
+This function is named thus for consistency with the array from OpenMW that it uses (mSkillIncrease).
+
+**Parameters:**
+    | **number** The numerical ID of the attribute.
+    | **number** The attribute bonus received at the next level-up.
 
 
 getClass()
