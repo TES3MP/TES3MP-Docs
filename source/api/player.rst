@@ -146,23 +146,17 @@ setCharGenStage(start, end)
     | **number** start.
     | **number** end.
 
-isMale()
---------
-
-**Return:**
-    | **boolean**.
-
-setIsMale(state)
------------
-
-**Parameters:**
-    | **boolean** state.
-
 level
 -----
 
 **Property:**
     | **number**.
+
+gender
+------
+
+**Property:**
+    | **number**. 0 for female, 1 for male.
 
 race
 ----
