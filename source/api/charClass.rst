@@ -29,11 +29,11 @@ specialization
 **Property**:
     | **number**.
 
-isDefault()
+isCustom()
 -----------
 
 **Return**:
-    | **boolean** ``true`` if class is default.
+    | **boolean** ``true`` if class is custom.
 
 getMajorAttributes()
 --------------------
