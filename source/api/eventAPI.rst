@@ -182,6 +182,12 @@ ON_PLAYER_CELLCHANGE
 **Contains:**
     | :doc:`player<./player>` player
 
+.. code-block:: lua
+
+    Event.register(Events.ON_PLAYER_CELLCHANGE, function(player)
+        io.write((New cell of player %s: %s.\n"):format(player.name, player:getCell().description))
+    end)
+
 ON_PLAYER_KILLCOUNT
 ------------------------
 
@@ -205,6 +211,12 @@ ON_PLAYER_LEVEL
 
 **Contains:**
     | :doc:`player<./player>` player
+
+.. code-block:: lua
+
+    Event.register(Events.ON_PLAYER_LEVEL, function(player)
+        io.write((%s reached level %u.\n"):format(player.name, player.level))
+    end)
 
 ON_PLAYER_BOUNTY
 ----------------
@@ -296,6 +308,13 @@ ON_PLAYER_ENDCHARGEN
     | :doc:`player<./player>` player
 
 Called when player finishes the character generation sequence
+
+.. code-block:: lua
+
+    Event.register(Events.ON_PLAYER_ENDCHARGEN, function(player)
+        if player.race == "wood elf" then player.bounty = 5000 end
+        player:message(0, "Good luck.\n", false)
+    end)
 
 .. _OnGUIAction-anchor:
 
