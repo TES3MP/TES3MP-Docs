@@ -10,7 +10,7 @@ getCurrentMpNum()
     | **number** current mpNum.
 
 setCurrentMpNum(mpNum)
---------------------
+----------------------
 
 **Parameters:**
     | **number** mpNum. Overrides the mpNum on the serever.
@@ -126,6 +126,7 @@ Splits a string via a separator.
 -------------------------------------------------
 
 .. _LogLevelConstants-anchor:
+
 Log
 ===
 Log level constants

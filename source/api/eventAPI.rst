@@ -112,6 +112,7 @@ ON_EXIT
 
 **Contains:**
     | ``boolean`` exit status. If ``status`` is ``true``, the server closes with an error.
+
 .. code-block:: lua
 
     Event.register(Events.ON_POST_INIT, function(status)
@@ -282,7 +283,7 @@ ON_PLAYER_SENDMESSAGE
 .. tip::
 
    This event is not recommended for parsing commands.
-   Use :doc:`CommandController<./commandCotroller>` instead.
+   Use :doc:`CommandController<./commandController>` instead.
 
 **Contains:**
     | :doc:`player<./player>` player
@@ -316,7 +317,7 @@ ON_GUI_ACTION
     Event.register(Events.ON_GUI_ACTION, function(player, id, data)
         if id == myMsgBoxId then
             if tonumber(data) == 0 then -- first "Yep" button
-                player:message("Welcome!\n", false)
+                player:message(0, "Welcome!\n", false)
             elseif tonumber(data) == 1 then -- "Nope" button
                 player:kick()
             end

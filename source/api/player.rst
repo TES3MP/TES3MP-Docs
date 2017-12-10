@@ -60,7 +60,7 @@ setMagicka(base, current)
     | **number** current.
 
 getFatigue()
--------------------------
+------------
 
 **Return:**
     | **number** base.
@@ -107,12 +107,13 @@ getAvgPing()
 **Return:**
     **number** average ping.
 
-message(message, toAll)
------------------------
+message(channelId, message, toAll)
+----------------------------------
 
 Sends message to a certain player or to all players.
 
 **Parameters:**
+    | **number** channelId
     | **string** message.
     | **boolean** toAll.
 
@@ -271,7 +272,7 @@ setSkill(id, base, current, progress)
 
 
 getSkillIncrease(attributeId)
-------------
+-----------------------------
 Get the bonus available for a certain attribute at the next level-up as a result of increasing skills governed by that attribute.
 
 This function is named thus for consistency with the array from OpenMW that it uses (mSkillIncrease).

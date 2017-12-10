@@ -30,7 +30,7 @@ specialization
     | **number**.
 
 isCustom()
------------
+----------
 
 **Return**:
     | **boolean** ``true`` if class is custom.
@@ -60,7 +60,7 @@ getMinorSkills()
     | **number** fifth.
 
 setMinorSkills(fisrt, second, third, fourth, fifth)
---------------------------------------------
+---------------------------------------------------
 
 **Parameters:**
     | **number** first.
@@ -80,7 +80,7 @@ getMajorSkills()
     | **number** fifth.
 
 setMajorSkills(fisrt, second, third, fourth, fifth)
---------------------------------------------
+---------------------------------------------------
 
 **Parameters:**
     | **number** first.
