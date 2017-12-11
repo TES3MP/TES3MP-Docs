@@ -17,7 +17,7 @@ getExterior()
     | **number** y.
 
 setExterior(x, y)
--------------
+-----------------
 
 **Parameters**:
     | **number** x.

@@ -112,6 +112,7 @@ ON_EXIT
 
 **Contains:**
     | ``boolean`` exit status. If ``status`` is ``true``, the server closes with an error.
+
 .. code-block:: lua
 
     Event.register(Events.ON_POST_INIT, function(status)
@@ -181,6 +182,12 @@ ON_PLAYER_CELLCHANGE
 **Contains:**
     | :doc:`player<./player>` player
 
+.. code-block:: lua
+
+    Event.register(Events.ON_PLAYER_CELLCHANGE, function(player)
+        io.write((New cell of player %s: %s.\n"):format(player.name, player:getCell().description))
+    end)
+
 ON_PLAYER_KILLCOUNT
 ------------------------
 
@@ -204,6 +211,12 @@ ON_PLAYER_LEVEL
 
 **Contains:**
     | :doc:`player<./player>` player
+
+.. code-block:: lua
+
+    Event.register(Events.ON_PLAYER_LEVEL, function(player)
+        io.write((%s reached level %u.\n"):format(player.name, player.level))
+    end)
 
 ON_PLAYER_BOUNTY
 ----------------
@@ -282,7 +295,7 @@ ON_PLAYER_SENDMESSAGE
 .. tip::
 
    This event is not recommended for parsing commands.
-   Use :doc:`CommandController<./commandCotroller>` instead.
+   Use :doc:`CommandController<./commandController>` instead.
 
 **Contains:**
     | :doc:`player<./player>` player
@@ -295,6 +308,13 @@ ON_PLAYER_ENDCHARGEN
     | :doc:`player<./player>` player
 
 Called when player finishes the character generation sequence
+
+.. code-block:: lua
+
+    Event.register(Events.ON_PLAYER_ENDCHARGEN, function(player)
+        if player.race == "wood elf" then player.bounty = 5000 end
+        player:message(0, "Good luck.\n", false)
+    end)
 
 .. _OnGUIAction-anchor:
 
@@ -316,7 +336,7 @@ ON_GUI_ACTION
     Event.register(Events.ON_GUI_ACTION, function(player, id, data)
         if id == myMsgBoxId then
             if tonumber(data) == 0 then -- first "Yep" button
-                player:message("Welcome!\n", false)
+                player:message(0, "Welcome!\n", false)
             elseif tonumber(data) == 1 then -- "Nope" button
                 player:kick()
             end

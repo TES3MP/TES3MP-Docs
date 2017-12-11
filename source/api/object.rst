@@ -1,5 +1,5 @@
 Object API
-======
+==========
 
 .. _Container-anchor:
 
@@ -191,7 +191,7 @@ sendContainers(player, containers, cellDescription)
     | **string** cellDescription
 
 requestContainers(player)
--------------------
+-------------------------
 
 **Parameters:**
     | :doc:`Player <./player>` player.

@@ -12,7 +12,7 @@ addBook(bookId)
     | **string** bookId.
 
 getBookId(idx)
------------
+--------------
 
 **Parameters:**
     | **number** idx.
