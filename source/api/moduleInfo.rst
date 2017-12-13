@@ -6,10 +6,10 @@ moduleInfo.json should contain basic info about a script addon:
 .. code-block:: json
 
     {
-        name: "MyFirstMod",
-        author: "Me",
-        version: "0.0.1",
-        dependencies: {
+        "name": "MyFirstMod",
+        "author": "Me",
+        "version": "0.0.1",
+        "dependencies": {
             "Core": ">=0.0.1",
             "MyAnotherMod": ">=0.0.1"
         }
