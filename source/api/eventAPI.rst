@@ -185,7 +185,7 @@ ON_PLAYER_CELLCHANGE
 .. code-block:: lua
 
     Event.register(Events.ON_PLAYER_CELLCHANGE, function(player)
-        io.write((New cell of player %s: %s.\n"):format(player.name, player:getCell().description))
+        io.write(("New cell of player %s: %s.\n"):format(player.name, player:getCell().description))
     end)
 
 ON_PLAYER_KILLCOUNT
@@ -215,7 +215,7 @@ ON_PLAYER_LEVEL
 .. code-block:: lua
 
     Event.register(Events.ON_PLAYER_LEVEL, function(player)
-        io.write((%s reached level %u.\n"):format(player.name, player.level))
+        io.write(("%s reached level %u.\n"):format(player.name, player.level))
     end)
 
 ON_PLAYER_BOUNTY
