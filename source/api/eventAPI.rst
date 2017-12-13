@@ -224,6 +224,15 @@ ON_PLAYER_BOUNTY
 **Contains:**
     | :doc:`player<./player>` player
 
+.. code-block:: lua
+
+    Event.register(Events.ON_PLAYER_BOUNTY, function(player)
+        if player.bounty >= 5000 then
+            io.write(("%s: death warrant was revoked.\n"):format(player.name))
+            player.bounty = 4999
+        end
+    end)
+
 ON_PLAYER_EQUIPMENT
 -------------------
 
@@ -300,6 +309,14 @@ ON_PLAYER_SENDMESSAGE
 **Contains:**
     | :doc:`player<./player>` player
     | **string** message.
+    | **number** channel.
+
+.. code-block:: lua
+
+    Data.overrideChat = true
+    Event.register(Events.ON_PLAYER_SENDMESSAGE, function(player, message, channel)
+        player:message(channel, ("%s (%d): %s\n"):format(player.name, player.pid, string.reverse(message)), true)
+    end)
 
 ON_PLAYER_ENDCHARGEN
 --------------------
@@ -314,6 +331,20 @@ Called when player finishes the character generation sequence
     Event.register(Events.ON_PLAYER_ENDCHARGEN, function(player)
         if player.race == "wood elf" then player.bounty = 5000 end
         player:message(0, "Good luck.\n", false)
+    end)
+
+ON_PLAYER_WEATHER
+-----------------
+
+**Contains:**
+    | :doc:`player<./player>` player
+
+.. code-block:: lua
+
+    Event.register(Events.ON_PLAYER_WEATHER, function(player)
+        if os.date("%m.%d") == "12.24" then
+            player:getWeatherMgr():setWeather(8)
+        end
     end)
 
 .. _OnGUIAction-anchor:
