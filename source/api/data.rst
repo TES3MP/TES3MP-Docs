@@ -7,8 +7,8 @@ Core table
 ----------
 The Core table contains information about the current version, protocol and loaded mods.
 
-loadedMods
-^^^^^^^^^^
+loadedModules
+^^^^^^^^^^^^^
 
 **Property**:
     | **table**. An array with the names of all loaded clientside data files.
