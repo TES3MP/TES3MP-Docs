@@ -13,7 +13,7 @@ setCurrentMpNum(mpNum)
 ----------------------
 
 **Parameters:**
-    | **number** mpNum. Overrides the mpNum on the serever.
+    | **number** mpNum. Overrides the mpNum on the server.
     
 logMessage(level, message)
 --------------------------
