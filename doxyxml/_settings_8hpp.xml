@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_settings_8hpp" kind="file" language="C++">
+    <compoundname>Settings.hpp</compoundname>
+    <includes local="yes">../Types.hpp</includes>
+    <includedby refid="_settings_8cpp" local="yes">Settings.cpp</includedby>
+    <incdepgraph>
+      <node id="188">
+        <label>../Types.hpp</label>
+      </node>
+      <node id="187">
+        <label>Settings.hpp</label>
+        <link refid="_settings_8hpp"/>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_setting_functions" prot="public">SettingFunctions</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_settings_8hpp_1a08a804c976ea7e1838f5a031cad89792" prot="public" static="no">
+        <name>SETTINGSAPI</name>
+        <initializer>{&quot;SetDifficulty&quot;,               SettingFunctions::SetDifficulty},\
+    {&quot;SetEnforcedLogLevel&quot;,         SettingFunctions::SetEnforcedLogLevel},\
+    {&quot;SetPhysicsFramerate&quot;,         SettingFunctions::SetPhysicsFramerate},\
+    \
+    {&quot;SetConsoleAllowed&quot;,           SettingFunctions::SetConsoleAllowed},\
+    {&quot;SetBedRestAllowed&quot;,           SettingFunctions::SetBedRestAllowed},\
+    {&quot;SetWildernessRestAllowed&quot;,    SettingFunctions::SetWildernessRestAllowed},\
+    {&quot;SetWaitAllowed&quot;,              SettingFunctions::SetWaitAllowed},\
+    \
+    {&quot;SendSettings&quot;,                SettingFunctions::SendSettings}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.hpp" line="6" column="9" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.hpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>OPENMW_SETTINGSAPI_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPENMW_SETTINGSAPI_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SETTINGSAPI<sp/>\</highlight></codeline>
+<codeline lineno="7"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SetDifficulty&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SettingFunctions::SetDifficulty},\</highlight></codeline>
+<codeline lineno="8"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SetEnforcedLogLevel&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SettingFunctions::SetEnforcedLogLevel},\</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SetPhysicsFramerate&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SettingFunctions::SetPhysicsFramerate},\</highlight></codeline>
+<codeline lineno="10"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SetConsoleAllowed&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SettingFunctions::SetConsoleAllowed},\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SetBedRestAllowed&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SettingFunctions::SetBedRestAllowed},\</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SetWildernessRestAllowed&quot;,<sp/><sp/><sp/><sp/>SettingFunctions::SetWildernessRestAllowed},\</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SetWaitAllowed&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SettingFunctions::SetWaitAllowed},\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SendSettings&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SettingFunctions::SendSettings}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="class_setting_functions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_setting_functions" kindref="compound">SettingFunctions</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_setting_functions_1a9c0c7df58b9025366929ba2abb35fa8b" kindref="member">SetDifficulty</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>difficulty);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_setting_functions_1ae5179269ca17e52fa0ad06a35e9c802a" kindref="member">SetEnforcedLogLevel</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>enforcedLogLevel);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_setting_functions_1a30e26f77647526fd127fa0c66a9c1e10" kindref="member">SetPhysicsFramerate</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>physicsFramerate);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_setting_functions_1ae8a34b765c308eb086b427748b4b2ecc" kindref="member">SetConsoleAllowed</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>state);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_setting_functions_1ac35d01dc98a2b2834989f115704b5fb2" kindref="member">SetBedRestAllowed</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>state);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_setting_functions_1acfde0cce5e4d22baa3470c92a89b17f9" kindref="member">SetWildernessRestAllowed</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>state);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_setting_functions_1a483f90b1751b2493d1f87e26c22772c7" kindref="member">SetWaitAllowed</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>state);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_setting_functions_1a848ac620d2a24eede194391978bac032" kindref="member">SendSettings</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//OPENMW_SETTINGSAPI_HPP</highlight></codeline>
+    </programlisting>
+    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.hpp"/>
+  </compounddef>
+</doxygen>

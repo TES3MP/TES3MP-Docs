@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_char_class_8hpp" kind="file" language="C++">
+    <compoundname>CharClass.hpp</compoundname>
+    <includes local="yes">../Types.hpp</includes>
+    <includedby refid="_char_class_8cpp" local="yes">CharClass.cpp</includedby>
+    <incdepgraph>
+      <node id="46">
+        <label>../Types.hpp</label>
+      </node>
+      <node id="45">
+        <label>CharClass.hpp</label>
+        <link refid="_char_class_8hpp"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_char_class_functions" prot="public">CharClassFunctions</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_char_class_8hpp_1a5f129ca926180e4dc80d3b0bd38fcc39" prot="public" static="no">
+        <name>CHARCLASSAPI</name>
+        <initializer>{&quot;GetDefaultClass&quot;,        CharClassFunctions::GetDefaultClass},\
+    {&quot;GetClassName&quot;,           CharClassFunctions::GetClassName},\
+    {&quot;GetClassDesc&quot;,           CharClassFunctions::GetClassDesc},\
+    {&quot;GetClassMajorAttribute&quot;, CharClassFunctions::GetClassMajorAttribute},\
+    {&quot;GetClassSpecialization&quot;, CharClassFunctions::GetClassSpecialization},\
+    {&quot;GetClassMajorSkill&quot;,     CharClassFunctions::GetClassMajorSkill},\
+    {&quot;GetClassMinorSkill&quot;,     CharClassFunctions::GetClassMinorSkill},\
+    {&quot;IsClassDefault&quot;,         CharClassFunctions::IsClassDefault},\
+    \
+    {&quot;SetDefaultClass&quot;,        CharClassFunctions::SetDefaultClass},\
+    {&quot;SetClassName&quot;,           CharClassFunctions::SetClassName},\
+    {&quot;SetClassDesc&quot;,           CharClassFunctions::SetClassDesc},\
+    {&quot;SetClassMajorAttribute&quot;, CharClassFunctions::SetClassMajorAttribute},\
+    {&quot;SetClassSpecialization&quot;, CharClassFunctions::SetClassSpecialization},\
+    {&quot;SetClassMajorSkill&quot;,     CharClassFunctions::SetClassMajorSkill},\
+    {&quot;SetClassMinorSkill&quot;,     CharClassFunctions::SetClassMinorSkill},\
+    \
+    {&quot;SendClass&quot;,              CharClassFunctions::SendClass}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="10" column="9" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Created<sp/>by<sp/>koncord<sp/>on<sp/>29.08.16.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>OPENMW_CHARCLASSAPI_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OPENMW_CHARCLASSAPI_HPP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../Types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CHARCLASSAPI<sp/>\</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;GetDefaultClass&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CharClassFunctions::GetDefaultClass},\</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;GetClassName&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CharClassFunctions::GetClassName},\</highlight></codeline>
+<codeline lineno="13"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;GetClassDesc&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CharClassFunctions::GetClassDesc},\</highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;GetClassMajorAttribute&quot;,<sp/>CharClassFunctions::GetClassMajorAttribute},\</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;GetClassSpecialization&quot;,<sp/>CharClassFunctions::GetClassSpecialization},\</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;GetClassMajorSkill&quot;,<sp/><sp/><sp/><sp/><sp/>CharClassFunctions::GetClassMajorSkill},\</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;GetClassMinorSkill&quot;,<sp/><sp/><sp/><sp/><sp/>CharClassFunctions::GetClassMinorSkill},\</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;IsClassDefault&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CharClassFunctions::IsClassDefault},\</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="20"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SetDefaultClass&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CharClassFunctions::SetDefaultClass},\</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SetClassName&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CharClassFunctions::SetClassName},\</highlight></codeline>
+<codeline lineno="22"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SetClassDesc&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CharClassFunctions::SetClassDesc},\</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SetClassMajorAttribute&quot;,<sp/>CharClassFunctions::SetClassMajorAttribute},\</highlight></codeline>
+<codeline lineno="24"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SetClassSpecialization&quot;,<sp/>CharClassFunctions::SetClassSpecialization},\</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SetClassMajorSkill&quot;,<sp/><sp/><sp/><sp/><sp/>CharClassFunctions::SetClassMajorSkill},\</highlight></codeline>
+<codeline lineno="26"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SetClassMinorSkill&quot;,<sp/><sp/><sp/><sp/><sp/>CharClassFunctions::SetClassMinorSkill},\</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{&quot;SendClass&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>CharClassFunctions::SendClass}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="class_char_class_functions" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_char_class_functions" kindref="compound">CharClassFunctions</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="class_char_class_functions_1a1cf671b36adfc32b46fa95ae91bae605" kindref="member">GetDefaultClass</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="class_char_class_functions_1a53372a1c5c4e0f76e6f759b5fecfe2b8" kindref="member">GetClassName</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="class_char_class_functions_1a49cf0daac01e1651f7d2c2bcf15be659" kindref="member">GetClassDesc</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_char_class_functions_1aca58fdbd3cea4f7642321c137888a312" kindref="member">GetClassMajorAttribute</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>slot)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_char_class_functions_1a8003941595faafd0eda7e547a1a30f72" kindref="member">GetClassSpecialization</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_char_class_functions_1a97a793c21f2a7cc0c974ae36e0f1ff99" kindref="member">GetClassMajorSkill</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>slot)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_char_class_functions_1acf5ebc8330aa384ae7494356954e3af1" kindref="member">GetClassMinorSkill</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>slot)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_char_class_functions_1a90b3a403624d3b76a67bee769d2f5e25" kindref="member">IsClassDefault</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_char_class_functions_1ac71519137822443be4614908eba475bb" kindref="member">SetDefaultClass</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_char_class_functions_1a2cfb76164741a6a89dced5ed9c1f3a03" kindref="member">SetClassName</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_char_class_functions_1a88c6e5fd9f8fb3b9694076ef518e2b30" kindref="member">SetClassDesc</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*desc)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_char_class_functions_1a848b711bb626d432dfba1f2eb61908b8" kindref="member">SetClassMajorAttribute</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>slot,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>attrId)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_char_class_functions_1a41e3a961e8794f62db3aeb0afffc302c" kindref="member">SetClassSpecialization</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>spec)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_char_class_functions_1a0834bb7f0cfd5a02d684fe6bad5a4ffc" kindref="member">SetClassMajorSkill</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>slot,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>skillId)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_char_class_functions_1a01450fb7da1aef0e8527d5175ffeac83" kindref="member">SetClassMinorSkill</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>slot,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>skillId)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_char_class_functions_1afa46d3ec1aed38a6bc9c12d164301be1" kindref="member">SendClass</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid)<sp/>noexcept;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//OPENMW_CHARCLASSAPI_HPP</highlight></codeline>
+    </programlisting>
+    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp"/>
+  </compounddef>
+</doxygen>

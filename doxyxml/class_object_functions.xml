@@ -1,0 +1,3061 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_object_functions" kind="class" language="C++" prot="public">
+    <compoundname>ObjectFunctions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_object_functions_1a3a6ddad0f9f7ad6ebf3037aff6989881" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::ReadReceivedObjectList</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ReadReceivedObjectList</name>
+        <briefdescription>
+<para>Use the last object list received by the server as the one being read. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="148" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="22" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1aa07bb1cdd9c91cbc542dfe6de88ad8a0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::ClearObjectList</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ClearObjectList</name>
+        <briefdescription>
+<para>Clear the data from the object list stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="155" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="27" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a6a204aa6e240f9c22502f1fb00dc19cc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectListPid</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>SetObjectListPid</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Set the pid attached to the ObjectList. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID to whom the object list should be attached. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="163" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="34" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a09a980571d9a4c4e2319a8f0899a2b4e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::CopyReceivedObjectListToStore</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>CopyReceivedObjectListToStore</name>
+        <briefdescription>
+<para>Take the contents of the read-only object list last received by the server from a player and move its contents to the stored object list that can be sent by the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="172" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a3485fe72f82d90973559e7645e4fe4a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ObjectFunctions::GetObjectListSize</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetObjectListSize</name>
+        <briefdescription>
+<para>Get the number of indexes in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of indexes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="179" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="47" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a0fc78b5a8452e215c24ca30659dbc3fe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char ObjectFunctions::GetObjectListOrigin</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetObjectListOrigin</name>
+        <briefdescription>
+<para>Get the origin of the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The origin (0 for CLIENT_GAMEPLAY, 1 for CLIENT_CONSOLE, 2 for CLIENT_DIALOGUE, 3 for CLIENT_SCRIPT_LOCAL, 4 for CLIENT_SCRIPT_GLOBAL, 5 for SERVER_SCRIPT). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="188" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="52" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a67361f3b2105ff603c95f7a5884e26df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ObjectFunctions::GetObjectListClientScript</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetObjectListClientScript</name>
+        <briefdescription>
+<para>Get the client script that the read object list originated from. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: This is not yet implemented.</para><para><simplesect kind="return"><para>The ID of the client script. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="197" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="57" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a99e07cf08cd6a99bc8df6cfb819d4c14" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char ObjectFunctions::GetObjectListAction</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetObjectListAction</name>
+        <briefdescription>
+<para>Get the action type used in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The action type (0 for SET, 1 for ADD, 2 for REMOVE, 3 for REQUEST). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="204" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a77384995512e571178672ed5f5222842" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char ObjectFunctions::GetObjectListContainerSubAction</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetObjectListContainerSubAction</name>
+        <briefdescription>
+<para>Get the container subaction type used in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The action type (0 for NONE, 1 for DRAG, 2 for DROP, 3 for TAKE_ALL). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="211" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a7c8de5347550477a489845a0131c0b9e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ObjectFunctions::IsObjectPlayer</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>IsObjectPlayer</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the object at a certain index in the read object list is a player. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: Although most player data and events are dealt with in Player packets, object activation is general enough for players themselves to be included as objects in ObjectActivate packets.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the object is a player. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="224" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1aa82659728e01d804062fcec4d2cfd60e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ObjectFunctions::GetObjectPid</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectPid</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the player ID of the object at a certain index in the read object list, only valid if the object is a player. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: Currently, players can only be objects in ObjectActivate and ConsoleCommand packets.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The player ID of the object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="236" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="77" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1af67f2784e436617bfab0b08577d46eab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ObjectFunctions::GetObjectRefId</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectRefId</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the refId of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The refId. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="244" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a69d74664eca3a0c15b6aad3614f0b009" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ObjectFunctions::GetObjectRefNum</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectRefNum</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the refNum of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The refNum. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="252" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="92" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1afcf5fc7299ec09c829c1c38f845a9e88" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ObjectFunctions::GetObjectMpNum</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectMpNum</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the mpNum of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The mpNum. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="260" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1aade52f480375655e1536e0cd92a2ed89" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ObjectFunctions::GetObjectCount</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectCount</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the count of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The object count. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="268" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="102" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a93b1af3357977d4ee8b4d85c7690d13e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ObjectFunctions::GetObjectCharge</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectCharge</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the charge of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The charge. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="276" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ad0b8732fdcf723bb937301412d7dfd28" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ObjectFunctions::GetObjectEnchantmentCharge</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectEnchantmentCharge</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the enchantment charge of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The enchantment charge. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="284" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="112" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1afb083b3f9ce060f33c84ff341853f5b3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ObjectFunctions::GetObjectSoul</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectSoul</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the soul of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The soul. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="292" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a332e7c95901b5f3a5c7c5187edbe2b73" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ObjectFunctions::GetObjectGoldValue</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectGoldValue</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the gold value of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used solely to get the gold value of gold. It is not used for other objects.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The gold value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="302" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a9c2ba4e9645928778500f7cf94d8ab2a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ObjectFunctions::GetObjectScale</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectScale</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the object scale of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The object scale. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="310" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="127" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a8a6fc5297d819a54adf78b867562cf08" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ObjectFunctions::GetObjectState</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectState</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the object state of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The object state. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="318" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1af7493713ab625b30f61ceeff6365dbd3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ObjectFunctions::GetObjectDoorState</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectDoorState</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the door state of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The door state. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="326" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="137" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a0a455c22095a7ebef443c5afac32fd5e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ObjectFunctions::GetObjectLockLevel</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectLockLevel</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the lock level of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The lock level. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="334" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a981e72b6686ae1879a0a14eccada8246" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ObjectFunctions::DoesObjectHavePlayerActivating</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>DoesObjectHavePlayerActivating</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the object at a certain index in the read object list has been activated by a player. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the object has been activated by a player. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="343" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="147" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1acf849e910cd79189406b3ec646d531ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ObjectFunctions::GetObjectActivatingPid</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectActivatingPid</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the player ID of the player activating the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The player ID of the activating player. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="352" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="152" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a3c47a625602d48e7623ff4bb93486c5e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ObjectFunctions::GetObjectActivatingRefId</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectActivatingRefId</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the refId of the actor activating the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The refId of the activating actor. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="361" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="162" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a5015f20433768135f479e7f253453c1d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ObjectFunctions::GetObjectActivatingRefNum</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectActivatingRefNum</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the refNum of the actor activating the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The refNum of the activating actor. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="370" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a15cd2343880a2f2903535cc7c1342ea7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ObjectFunctions::GetObjectActivatingMpNum</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectActivatingMpNum</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the mpNum of the actor activating the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The mpNum of the activating actor. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="379" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ab08d8fd204925ddc5a01c91fca3c57d6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ObjectFunctions::GetObjectActivatingName</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectActivatingName</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the name of the actor activating the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The name of the activating actor. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="388" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="177" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ad084c42796631433750b19ce560ab2d2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ObjectFunctions::GetObjectSummonState</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectSummonState</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the object at a certain index in the read object list is a summon. </para>        </briefdescription>
+        <detaileddescription>
+<para>Only living actors can be summoned.</para><para><simplesect kind="return"><para>The summon state. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="398" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a926216027a98c911c07789779a5774dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ObjectFunctions::GetObjectSummonDuration</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectSummonDuration</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the summon duration of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: Returns -1 if indefinite.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The summon duration. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="408" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1afe693425e215c73139de70d3534b0cd9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ObjectFunctions::DoesObjectHavePlayerSummoner</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>DoesObjectHavePlayerSummoner</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the object at a certain index in the read object list has a player as its summoner. </para>        </briefdescription>
+        <detaileddescription>
+<para>Only living actors can be summoned.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether a player is the summoner of the object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="419" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a268d72bcda392fddf20031418dd58abe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ObjectFunctions::GetObjectSummonerPid</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectSummonerPid</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the player ID of the summoner of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The player ID of the summoner. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="428" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="197" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ae018d27e2c06b2c85750728dac69de21" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ObjectFunctions::GetObjectSummonerRefId</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectSummonerRefId</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the refId of the actor summoner of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The refId of the summoner. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="437" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ad3b3790b7dc513530c7512b9b924c363" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ObjectFunctions::GetObjectSummonerRefNum</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectSummonerRefNum</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the refNum of the actor summoner of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The refNum of the summoner. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="446" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="212" bodyend="215"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a570a62dffce18b652978a227513352cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ObjectFunctions::GetObjectSummonerMpNum</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectSummonerMpNum</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the mpNum of the actor summoner of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The mpNum of the summoner. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="454" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="217" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a77cdfa98191b938507c8ff8123ca66ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ObjectFunctions::GetObjectPosX</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectPosX</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the X position of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The X position. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="462" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="222" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ab0128b271ac630da5002e4e7f56918c7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ObjectFunctions::GetObjectPosY</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectPosY</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the Y position of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Y position. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="470" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="227" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a48d030c298668cf5a0d056dc223008df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ObjectFunctions::GetObjectPosZ</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectPosZ</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the Z position at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Z position. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="478" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="232" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a29002d2f36aef5be73cc622038305317" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ObjectFunctions::GetObjectRotX</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectRotX</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the X rotation of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The X rotation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="486" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="237" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a4c87ba08afbf843549f8804b2931fa5d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ObjectFunctions::GetObjectRotY</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectRotY</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the Y rotation of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Y rotation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="494" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="242" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1aca8fa0f7e840cfd73b3daba8186fb3d9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ObjectFunctions::GetObjectRotZ</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectRotZ</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the Z rotation of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Z rotation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="502" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="247" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a2c9701297790c7f0695735cbd12c46e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ObjectFunctions::GetVideoFilename</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetVideoFilename</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the videoFilename of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The videoFilename. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="509" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="252" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ae0ac2e18f25475c8e8daca916fbe67e1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ObjectFunctions::GetContainerChangesSize</definition>
+        <argsstring>(unsigned int objectIndex) noexcept</argsstring>
+        <name>GetContainerChangesSize</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>objectIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of container item indexes of the object at a certain index in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of container item indexes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="518" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="257" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ad1f1a78bd7135e2d2a46ecb208c8e889" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ObjectFunctions::GetContainerItemRefId</definition>
+        <argsstring>(unsigned int objectIndex, unsigned int itemIndex) noexcept</argsstring>
+        <name>GetContainerItemRefId</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>objectIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>itemIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the refId of the container item at a certain itemIndex in the container changes of the object at a certain objectIndex in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>itemIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the container item. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The refId. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="528" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="262" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1aeaad782e3311bc5fa03bd4510c199a05" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ObjectFunctions::GetContainerItemCount</definition>
+        <argsstring>(unsigned int objectIndex, unsigned int itemIndex) noexcept</argsstring>
+        <name>GetContainerItemCount</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>objectIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>itemIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the item count of the container item at a certain itemIndex in the container changes of the object at a certain objectIndex in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>itemIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the container item. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The item count. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="538" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="268" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a93425fd3d6c05989471c552093533c07" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ObjectFunctions::GetContainerItemCharge</definition>
+        <argsstring>(unsigned int objectIndex, unsigned int itemIndex) noexcept</argsstring>
+        <name>GetContainerItemCharge</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>objectIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>itemIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the charge of the container item at a certain itemIndex in the container changes of the object at a certain objectIndex in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>itemIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the container item. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The charge. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="548" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="274" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a69dbe6e96053c646a62804820267bac6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ObjectFunctions::GetContainerItemEnchantmentCharge</definition>
+        <argsstring>(unsigned int objectIndex, unsigned int itemIndex) noexcept</argsstring>
+        <name>GetContainerItemEnchantmentCharge</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>objectIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>itemIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the enchantment charge of the container item at a certain itemIndex in the container changes of the object at a certain objectIndex in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>itemIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the container item. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The enchantment charge. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="558" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="280" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1af084735c2570c4d0658d37866f01f685" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ObjectFunctions::GetContainerItemSoul</definition>
+        <argsstring>(unsigned int objectIndex, unsigned int itemIndex) noexcept</argsstring>
+        <name>GetContainerItemSoul</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>objectIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>itemIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the soul of the container item at a certain itemIndex in the container changes of the object at a certain objectIndex in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>itemIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the container item. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The soul. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="568" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="286" bodyend="290"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a0d40bfca1ae8fad04b130fed2675719e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ObjectFunctions::GetContainerItemActionCount</definition>
+        <argsstring>(unsigned int objectIndex, unsigned int itemIndex) noexcept</argsstring>
+        <name>GetContainerItemActionCount</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>objectIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>itemIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the action count of the container item at a certain itemIndex in the container changes of the object at a certain objectIndex in the read object list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>itemIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the container item. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The action count. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="578" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="292" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a18995e4c6c36d110a238dd1e52b2d88d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ObjectFunctions::DoesObjectHaveContainer</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>DoesObjectHaveContainer</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the object at a certain index in the read object list has a container. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: Only ObjectLists from ObjectPlace packets contain this information. Objects from received ObjectSpawn packets can always be assumed to have a container.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the object has a container. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="589" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="298" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a72736dcd907997fb473307cb860fef56" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectListCell</definition>
+        <argsstring>(const char *cellDescription) noexcept</argsstring>
+        <name>SetObjectListCell</name>
+        <param>
+          <type>const char *</type>
+          <declname>cellDescription</declname>
+        </param>
+        <briefdescription>
+<para>Set the cell of the temporary object list stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>The cell is determined to be an exterior cell if it fits the pattern of a number followed by a comma followed by another number.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cellDescription</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The description of the cell. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="600" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="303" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a0b68c078525f6192c6880756cc84431f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectListAction</definition>
+        <argsstring>(unsigned char action) noexcept</argsstring>
+        <name>SetObjectListAction</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Set the action type of the temporary object list stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action type (0 for SET, 1 for ADD, 2 for REMOVE, 3 for REQUEST). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="608" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="308" bodyend="311"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a3a4d8cc5ff4d819f3fdbd881f67547e4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectListConsoleCommand</definition>
+        <argsstring>(const char *consoleCommand) noexcept</argsstring>
+        <name>SetObjectListConsoleCommand</name>
+        <param>
+          <type>const char *</type>
+          <declname>consoleCommand</declname>
+        </param>
+        <briefdescription>
+<para>Set the console command of the temporary object list stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>When sent, the command will run once on every object added to the object list. If no objects have been added, it will run once without any object reference.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>consoleCommand</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The console command. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="619" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="313" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a59da770e6431904dd25e3c7c8454ad0a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectRefId</definition>
+        <argsstring>(const char *refId) noexcept</argsstring>
+        <name>SetObjectRefId</name>
+        <param>
+          <type>const char *</type>
+          <declname>refId</declname>
+        </param>
+        <briefdescription>
+<para>Set the refId of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The refId. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="627" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="318" bodyend="321"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a01caf6dd535093f3306aa926217e6f71" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectRefNum</definition>
+        <argsstring>(int refNum) noexcept</argsstring>
+        <name>SetObjectRefNum</name>
+        <param>
+          <type>int</type>
+          <declname>refNum</declname>
+        </param>
+        <briefdescription>
+<para>Set the refNum of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>Every object loaded from .ESM and .ESP data files has a unique refNum which needs to be retained to refer to it in packets.</para><para>On the other hand, objects placed or spawned via the server should always have a refNum of 0.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The refNum. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="641" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="323" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a6aaea146f177cc53b4078200b6d6ee85" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectMpNum</definition>
+        <argsstring>(int mpNum) noexcept</argsstring>
+        <name>SetObjectMpNum</name>
+        <param>
+          <type>int</type>
+          <declname>mpNum</declname>
+        </param>
+        <briefdescription>
+<para>Set the mpNum of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>Every object placed or spawned via the server is assigned an mpNum by incrementing the last mpNum stored on the server. Scripts should take care to ensure that mpNums are kept unique for these objects.</para><para>Objects loaded from .ESM and .ESP data files should always have an mpNum of 0, because they have unique refNumes instead.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mpNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mpNum. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="656" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="328" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ad42b73cd7a5c7f03faf815e13a69de46" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectCount</definition>
+        <argsstring>(int count) noexcept</argsstring>
+        <name>SetObjectCount</name>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Set the object count of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>This determines the quantity of an object, with the exception of gold.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object count. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="666" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="333" bodyend="336"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1aeb699057fdfcf19c66ede8e0beb0d561" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectCharge</definition>
+        <argsstring>(int charge) noexcept</argsstring>
+        <name>SetObjectCharge</name>
+        <param>
+          <type>int</type>
+          <declname>charge</declname>
+        </param>
+        <briefdescription>
+<para>Set the charge of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>Object durabilities are set through this value.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>charge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The charge. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="676" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="338" bodyend="341"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ae20d30b5c7e0e2eb361aba585eb0831a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectEnchantmentCharge</definition>
+        <argsstring>(double enchantmentCharge) noexcept</argsstring>
+        <name>SetObjectEnchantmentCharge</name>
+        <param>
+          <type>double</type>
+          <declname>enchantmentCharge</declname>
+        </param>
+        <briefdescription>
+<para>Set the enchantment charge of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>Object durabilities are set through this value.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>charge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The enchantment charge. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="686" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="343" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a3c97f90a3f05fbba16e2817979992b39" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectSoul</definition>
+        <argsstring>(const char *soul) noexcept</argsstring>
+        <name>SetObjectSoul</name>
+        <param>
+          <type>const char *</type>
+          <declname>soul</declname>
+        </param>
+        <briefdescription>
+<para>Set the soul of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The soul. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="694" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="348" bodyend="351"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ae0695849127de83d3488b484a1eaf3cc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectGoldValue</definition>
+        <argsstring>(int goldValue) noexcept</argsstring>
+        <name>SetObjectGoldValue</name>
+        <param>
+          <type>int</type>
+          <declname>goldValue</declname>
+        </param>
+        <briefdescription>
+<para>Set the gold value of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used solely to set the gold value for gold. It has no effect on other objects.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>goldValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The gold value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="704" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="353" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ad8a7af1620dcac682072618ded89aaa6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectScale</definition>
+        <argsstring>(double scale) noexcept</argsstring>
+        <name>SetObjectScale</name>
+        <param>
+          <type>double</type>
+          <declname>scale</declname>
+        </param>
+        <briefdescription>
+<para>Set the scale of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>Objects are smaller or larger than their default size based on their scale.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scale. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="714" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="358" bodyend="361"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1aa15b237dd0e15ad5aef498b59cadac69" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectState</definition>
+        <argsstring>(bool objectState) noexcept</argsstring>
+        <name>SetObjectState</name>
+        <param>
+          <type>bool</type>
+          <declname>objectState</declname>
+        </param>
+        <briefdescription>
+<para>Set the object state of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>Objects are enabled or disabled based on their object state.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objectState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="724" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="363" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ae622590b30d564ba99bbb495584a9c97" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectLockLevel</definition>
+        <argsstring>(int lockLevel) noexcept</argsstring>
+        <name>SetObjectLockLevel</name>
+        <param>
+          <type>int</type>
+          <declname>lockLevel</declname>
+        </param>
+        <briefdescription>
+<para>Set the lock level of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>lockLevel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The lock level. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="732" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="368" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a569925495ec51ebe3788b05f38492a74" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectSummonDuration</definition>
+        <argsstring>(float summonDuration) noexcept</argsstring>
+        <name>SetObjectSummonDuration</name>
+        <param>
+          <type>float</type>
+          <declname>summonDuration</declname>
+        </param>
+        <briefdescription>
+<para>Set the summon duration of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>summonDuration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The summon duration. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="740" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="373" bodyend="376"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a83e077dc90ab2d06c2dc5fb8851d028d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectDisarmState</definition>
+        <argsstring>(bool disarmState) noexcept</argsstring>
+        <name>SetObjectDisarmState</name>
+        <param>
+          <type>bool</type>
+          <declname>disarmState</declname>
+        </param>
+        <briefdescription>
+<para>Set the disarm state of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disarmState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The disarmState. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="748" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="378" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ad16ff680b811fab3654f8dad75d35594" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectSummonState</definition>
+        <argsstring>(bool summonState) noexcept</argsstring>
+        <name>SetObjectSummonState</name>
+        <param>
+          <type>bool</type>
+          <declname>summonState</declname>
+        </param>
+        <briefdescription>
+<para>Set the summon state of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>This only affects living actors and determines whether they are summons of another living actor.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>summonState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The summon state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="759" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="383" bodyend="386"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a6e3fce935d29d920e4514b538d1d5404" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectPosition</definition>
+        <argsstring>(double x, double y, double z) noexcept</argsstring>
+        <name>SetObjectPosition</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Set the position of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The X position. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Y position. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Z position. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="769" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="388" bodyend="393"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ac9e64434efb1053c9178cc5065415eea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectRotation</definition>
+        <argsstring>(double x, double y, double z) noexcept</argsstring>
+        <name>SetObjectRotation</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Set the rotation of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The X rotation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Y rotation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Z rotation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="779" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="395" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a7439da050ffd9ffae5e7f8c44d704d6c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectActivatingPid</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>SetObjectActivatingPid</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Set the player ID of the player activating the temporary object stored on the server. Currently only used for ObjectActivate packets. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pid of the player. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="788" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="402" bodyend="409"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a4bc2a842d508b8b34ed86aecbb30ad2b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectDoorState</definition>
+        <argsstring>(int doorState) noexcept</argsstring>
+        <name>SetObjectDoorState</name>
+        <param>
+          <type>int</type>
+          <declname>doorState</declname>
+        </param>
+        <briefdescription>
+<para>Set the door state of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>Doors are open or closed based on their door state.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>doorState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The door state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="798" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="411" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a2c6b83aa6f3ccc3e0cd137691cde0f7c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectDoorTeleportState</definition>
+        <argsstring>(bool teleportState) noexcept</argsstring>
+        <name>SetObjectDoorTeleportState</name>
+        <param>
+          <type>bool</type>
+          <declname>teleportState</declname>
+        </param>
+        <briefdescription>
+<para>Set the teleport state of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>If a door&apos;s teleport state is true, interacting with the door teleports a player to its destination. If it&apos;s false, it opens and closes like a regular door.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>teleportState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The teleport state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="809" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="416" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1aab8eab650ca2f18fc329b82c04e8f867" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectDoorDestinationCell</definition>
+        <argsstring>(const char *cellDescription) noexcept</argsstring>
+        <name>SetObjectDoorDestinationCell</name>
+        <param>
+          <type>const char *</type>
+          <declname>cellDescription</declname>
+        </param>
+        <briefdescription>
+<para>Set the door destination cell of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>The cell is determined to be an exterior cell if it fits the pattern of a number followed by a comma followed by another number.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cellDescription</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The description of the cell. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="820" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="421" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a414e7d9c9a295cbaeddb4ce46eeb3680" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectDoorDestinationPosition</definition>
+        <argsstring>(double x, double y, double z) noexcept</argsstring>
+        <name>SetObjectDoorDestinationPosition</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Set the door destination position of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The X position. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Y position. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Z position. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="830" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="426" bodyend="431"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a418847fa9faa4723736056a657ae5f8e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectDoorDestinationRotation</definition>
+        <argsstring>(double x, double z) noexcept</argsstring>
+        <name>SetObjectDoorDestinationRotation</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Set the door destination rotation of the temporary object stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: Because this sets the rotation a player will have upon using the door, and rotation on the Y axis has no effect on players, the Y value has been omitted as an argument.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The X rotation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Z rotation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="842" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="433" bodyend="437"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a20ceb1051228e77873e2f0d18d6a8859" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetPlayerAsObject</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>SetPlayerAsObject</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Set a player as the object in the temporary object stored on the server. Currently only used for ConsoleCommand packets. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pid of the player. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="851" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="439" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ad2e3fcd2fa738ba6e982cb6ef03c7969" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetContainerItemRefId</definition>
+        <argsstring>(const char *refId) noexcept</argsstring>
+        <name>SetContainerItemRefId</name>
+        <param>
+          <type>const char *</type>
+          <declname>refId</declname>
+        </param>
+        <briefdescription>
+<para>Set the refId of the temporary container item stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The refId. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="859" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="448" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a478f32e69a8f9d7d318a2185f5360394" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetContainerItemCount</definition>
+        <argsstring>(int count) noexcept</argsstring>
+        <name>SetContainerItemCount</name>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Set the item count of the temporary container item stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The item count. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="867" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="453" bodyend="456"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a7c81382bf647080e50e7554246ea643b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetContainerItemCharge</definition>
+        <argsstring>(int charge) noexcept</argsstring>
+        <name>SetContainerItemCharge</name>
+        <param>
+          <type>int</type>
+          <declname>charge</declname>
+        </param>
+        <briefdescription>
+<para>Set the charge of the temporary container item stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>charge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The charge. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="875" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="458" bodyend="461"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1afffbecc61b750ac068425dfef97f2afa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetContainerItemEnchantmentCharge</definition>
+        <argsstring>(double enchantmentCharge) noexcept</argsstring>
+        <name>SetContainerItemEnchantmentCharge</name>
+        <param>
+          <type>double</type>
+          <declname>enchantmentCharge</declname>
+        </param>
+        <briefdescription>
+<para>Set the enchantment charge of the temporary container item stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>charge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The enchantment charge. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="883" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="463" bodyend="466"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1adf59702edbd855f33e4fff4df9abdd34" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetContainerItemSoul</definition>
+        <argsstring>(const char *soul) noexcept</argsstring>
+        <name>SetContainerItemSoul</name>
+        <param>
+          <type>const char *</type>
+          <declname>soul</declname>
+        </param>
+        <briefdescription>
+<para>Set the soul of the temporary container item stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The soul. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="891" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="468" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a1db66993cd05fae6c799c08c53e4b1d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetContainerItemActionCountByIndex</definition>
+        <argsstring>(unsigned int objectIndex, unsigned int itemIndex, int actionCount) noexcept</argsstring>
+        <name>SetContainerItemActionCountByIndex</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>objectIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>itemIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>actionCount</declname>
+        </param>
+        <briefdescription>
+<para>Set the action count of the container item at a certain itemIndex in the container changes of the object at a certain objectIndex in the object list stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>When resending a received Container packet, this allows you to correct the amount of items removed from a container by a player when it conflicts with what other players have already taken.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>objectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>itemIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the container item. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>actionCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action count. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="906" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="473" bodyend="476"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a4f915e5868bad6cd011dc062c2e11c70" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::AddObject</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>AddObject</name>
+        <briefdescription>
+<para>Add a copy of the server&apos;s temporary object to the server&apos;s currently stored object list. </para>        </briefdescription>
+        <detaileddescription>
+<para>In the process, the server&apos;s temporary object will automatically be cleared so a new one can be set up.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="917" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="478" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a159ea325e188a3744fbd10e9db2f9f3a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::AddContainerItem</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>AddContainerItem</name>
+        <briefdescription>
+<para>Add a copy of the server&apos;s temporary container item to the container changes of the server&apos;s temporary object. </para>        </briefdescription>
+        <detaileddescription>
+<para>In the process, the server&apos;s temporary container item will automatically be cleared so a new one can be set up.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="928" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="486" bodyend="491"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a8b3bfb9ffa6fc356d607b3789eff6505" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SendObjectActivate</definition>
+        <argsstring>(bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendObjectActivate</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send an ObjectActivate packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="939" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="493" bodyend="502"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a71130795b5c456afe24972fdb5ba32cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SendObjectPlace</definition>
+        <argsstring>(bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendObjectPlace</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send an ObjectPlace packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="950" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="504" bodyend="513"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a78ff7f1b963d0641f664b8f067df0f18" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SendObjectSpawn</definition>
+        <argsstring>(bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendObjectSpawn</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send an ObjectSpawn packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="961" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="515" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1acd7eb00174d5f88c6e3e5e0f9d15f6df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SendObjectDelete</definition>
+        <argsstring>(bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendObjectDelete</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send an ObjectDelete packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>broadcast</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent only to the player for whom the current object list was initialized or to everyone on the server.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="971" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="526" bodyend="535"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ac477067f1348010db9162d28644279f5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SendObjectLock</definition>
+        <argsstring>(bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendObjectLock</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send an ObjectLock packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="982" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="537" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a4950ba85004405399c8477263d0eb160" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SendObjectTrap</definition>
+        <argsstring>(bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendObjectTrap</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send an ObjectTrap packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>broadcast</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent only to the player for whom the current object list was initialized or to everyone on the server.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="992" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="548" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a43874349ee6828a46cb38140d16cd883" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SendObjectScale</definition>
+        <argsstring>(bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendObjectScale</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send an ObjectScale packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1003" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="559" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a9664585a8951032ecdfeeb5ec4466ccf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SendObjectState</definition>
+        <argsstring>(bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendObjectState</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send an ObjectState packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1014" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="570" bodyend="579"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a779e0270b463ef74efbdd3fd4452b230" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SendDoorState</definition>
+        <argsstring>(bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendDoorState</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send a DoorState packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1025" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="581" bodyend="590"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1abefe33221e000aca48ca2cc52421fe59" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SendDoorDestination</definition>
+        <argsstring>(bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendDoorDestination</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send a DoorDestination packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1036" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="592" bodyend="601"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a9d68aab89cc80fbdfda481130cdf64a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SendContainer</definition>
+        <argsstring>(bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendContainer</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send a Container packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1047" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="603" bodyend="612"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a2ccd06368b8d9a9f8efdf06c1b4ef48b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SendVideoPlay</definition>
+        <argsstring>(bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendVideoPlay</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send a VideoPlay packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1058" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="614" bodyend="623"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1af79a4228a4e1f12cc62619191833536a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SendConsoleCommand</definition>
+        <argsstring>(bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendConsoleCommand</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send a ConsoleCommand packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1069" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="625" bodyend="634"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ad3f8b42ecbd59ea9ef97170a773e1541" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::ReadLastObjectList</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ReadLastObjectList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1074" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="639" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ae637c11bf9fff80805fe872d595b9ac2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::ReadLastEvent</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ReadLastEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1075" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="644" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ad6c24f5a88cc241c360c9578dcae14b0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::InitializeObjectList</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>InitializeObjectList</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1076" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="649" bodyend="653"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a3c749674ac09488d1ce63d0fb96637a9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::InitializeEvent</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>InitializeEvent</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1077" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="655" bodyend="658"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a81e080359b16bad2238b2997f5ad8fe9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::CopyLastObjectListToStore</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>CopyLastObjectListToStore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1078" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="660" bodyend="663"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a5b6f88f874502a4687b284e797e81dad" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ObjectFunctions::GetObjectChangesSize</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetObjectChangesSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1079" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="665" bodyend="668"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a18ac900b31ef2f2ee27655f9c6f9748a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char ObjectFunctions::GetEventAction</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetEventAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1080" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="670" bodyend="673"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ac925c89a3d55fd1e5bffb5ee155cc24e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char ObjectFunctions::GetEventContainerSubAction</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetEventContainerSubAction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1081" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="675" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a495ffe8d90d9dd741646eb6e7d66c214" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ObjectFunctions::GetObjectRefNumIndex</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectRefNumIndex</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1082" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="680" bodyend="683"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ad8fb68d0767323067dd85029a310b09e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ObjectFunctions::GetObjectSummonerRefNumIndex</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetObjectSummonerRefNumIndex</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1083" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="685" bodyend="688"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a94c3c4ff1909028fd626b53155e81134" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetEventCell</definition>
+        <argsstring>(const char *cellDescription) noexcept</argsstring>
+        <name>SetEventCell</name>
+        <param>
+          <type>const char *</type>
+          <declname>cellDescription</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1084" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="690" bodyend="693"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a3a1900c9843c7fabb7b94d97ba6d6604" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetEventAction</definition>
+        <argsstring>(unsigned char action) noexcept</argsstring>
+        <name>SetEventAction</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1085" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="695" bodyend="698"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a998974b3849ff7fc8c655356d7d26ad9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetEventConsoleCommand</definition>
+        <argsstring>(const char *consoleCommand) noexcept</argsstring>
+        <name>SetEventConsoleCommand</name>
+        <param>
+          <type>const char *</type>
+          <declname>consoleCommand</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1086" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="700" bodyend="703"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1ac0761820a20226a697120c21751d503f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::SetObjectRefNumIndex</definition>
+        <argsstring>(int refNum) noexcept</argsstring>
+        <name>SetObjectRefNumIndex</name>
+        <param>
+          <type>int</type>
+          <declname>refNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1087" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="705" bodyend="708"/>
+      </memberdef>
+      <memberdef kind="function" id="class_object_functions_1a0a32ff11279db3214f644e3100d08034" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ObjectFunctions::AddWorldObject</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>AddWorldObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="1088" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.cpp" bodystart="710" bodyend="713"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" line="140" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Objects.hpp" bodystart="139" bodyend="1090"/>
+    <listofallmembers>
+      <member refid="class_object_functions_1a159ea325e188a3744fbd10e9db2f9f3a" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>AddContainerItem</name></member>
+      <member refid="class_object_functions_1a4f915e5868bad6cd011dc062c2e11c70" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>AddObject</name></member>
+      <member refid="class_object_functions_1a0a32ff11279db3214f644e3100d08034" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>AddWorldObject</name></member>
+      <member refid="class_object_functions_1aa07bb1cdd9c91cbc542dfe6de88ad8a0" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>ClearObjectList</name></member>
+      <member refid="class_object_functions_1a81e080359b16bad2238b2997f5ad8fe9" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>CopyLastObjectListToStore</name></member>
+      <member refid="class_object_functions_1a09a980571d9a4c4e2319a8f0899a2b4e" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>CopyReceivedObjectListToStore</name></member>
+      <member refid="class_object_functions_1a18995e4c6c36d110a238dd1e52b2d88d" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>DoesObjectHaveContainer</name></member>
+      <member refid="class_object_functions_1a981e72b6686ae1879a0a14eccada8246" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>DoesObjectHavePlayerActivating</name></member>
+      <member refid="class_object_functions_1afe693425e215c73139de70d3534b0cd9" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>DoesObjectHavePlayerSummoner</name></member>
+      <member refid="class_object_functions_1ae0ac2e18f25475c8e8daca916fbe67e1" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetContainerChangesSize</name></member>
+      <member refid="class_object_functions_1a0d40bfca1ae8fad04b130fed2675719e" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetContainerItemActionCount</name></member>
+      <member refid="class_object_functions_1a93425fd3d6c05989471c552093533c07" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetContainerItemCharge</name></member>
+      <member refid="class_object_functions_1aeaad782e3311bc5fa03bd4510c199a05" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetContainerItemCount</name></member>
+      <member refid="class_object_functions_1a69dbe6e96053c646a62804820267bac6" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetContainerItemEnchantmentCharge</name></member>
+      <member refid="class_object_functions_1ad1f1a78bd7135e2d2a46ecb208c8e889" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetContainerItemRefId</name></member>
+      <member refid="class_object_functions_1af084735c2570c4d0658d37866f01f685" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetContainerItemSoul</name></member>
+      <member refid="class_object_functions_1a18ac900b31ef2f2ee27655f9c6f9748a" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetEventAction</name></member>
+      <member refid="class_object_functions_1ac925c89a3d55fd1e5bffb5ee155cc24e" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetEventContainerSubAction</name></member>
+      <member refid="class_object_functions_1a15cd2343880a2f2903535cc7c1342ea7" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectActivatingMpNum</name></member>
+      <member refid="class_object_functions_1ab08d8fd204925ddc5a01c91fca3c57d6" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectActivatingName</name></member>
+      <member refid="class_object_functions_1acf849e910cd79189406b3ec646d531ed" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectActivatingPid</name></member>
+      <member refid="class_object_functions_1a3c47a625602d48e7623ff4bb93486c5e" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectActivatingRefId</name></member>
+      <member refid="class_object_functions_1a5015f20433768135f479e7f253453c1d" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectActivatingRefNum</name></member>
+      <member refid="class_object_functions_1a5b6f88f874502a4687b284e797e81dad" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectChangesSize</name></member>
+      <member refid="class_object_functions_1a93b1af3357977d4ee8b4d85c7690d13e" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectCharge</name></member>
+      <member refid="class_object_functions_1aade52f480375655e1536e0cd92a2ed89" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectCount</name></member>
+      <member refid="class_object_functions_1af7493713ab625b30f61ceeff6365dbd3" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectDoorState</name></member>
+      <member refid="class_object_functions_1ad0b8732fdcf723bb937301412d7dfd28" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectEnchantmentCharge</name></member>
+      <member refid="class_object_functions_1a332e7c95901b5f3a5c7c5187edbe2b73" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectGoldValue</name></member>
+      <member refid="class_object_functions_1a99e07cf08cd6a99bc8df6cfb819d4c14" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectListAction</name></member>
+      <member refid="class_object_functions_1a67361f3b2105ff603c95f7a5884e26df" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectListClientScript</name></member>
+      <member refid="class_object_functions_1a77384995512e571178672ed5f5222842" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectListContainerSubAction</name></member>
+      <member refid="class_object_functions_1a0fc78b5a8452e215c24ca30659dbc3fe" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectListOrigin</name></member>
+      <member refid="class_object_functions_1a3485fe72f82d90973559e7645e4fe4a1" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectListSize</name></member>
+      <member refid="class_object_functions_1a0a455c22095a7ebef443c5afac32fd5e" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectLockLevel</name></member>
+      <member refid="class_object_functions_1afcf5fc7299ec09c829c1c38f845a9e88" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectMpNum</name></member>
+      <member refid="class_object_functions_1aa82659728e01d804062fcec4d2cfd60e" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectPid</name></member>
+      <member refid="class_object_functions_1a77cdfa98191b938507c8ff8123ca66ab" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectPosX</name></member>
+      <member refid="class_object_functions_1ab0128b271ac630da5002e4e7f56918c7" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectPosY</name></member>
+      <member refid="class_object_functions_1a48d030c298668cf5a0d056dc223008df" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectPosZ</name></member>
+      <member refid="class_object_functions_1af67f2784e436617bfab0b08577d46eab" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectRefId</name></member>
+      <member refid="class_object_functions_1a69d74664eca3a0c15b6aad3614f0b009" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectRefNum</name></member>
+      <member refid="class_object_functions_1a495ffe8d90d9dd741646eb6e7d66c214" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectRefNumIndex</name></member>
+      <member refid="class_object_functions_1a29002d2f36aef5be73cc622038305317" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectRotX</name></member>
+      <member refid="class_object_functions_1a4c87ba08afbf843549f8804b2931fa5d" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectRotY</name></member>
+      <member refid="class_object_functions_1aca8fa0f7e840cfd73b3daba8186fb3d9" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectRotZ</name></member>
+      <member refid="class_object_functions_1a9c2ba4e9645928778500f7cf94d8ab2a" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectScale</name></member>
+      <member refid="class_object_functions_1afb083b3f9ce060f33c84ff341853f5b3" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectSoul</name></member>
+      <member refid="class_object_functions_1a8a6fc5297d819a54adf78b867562cf08" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectState</name></member>
+      <member refid="class_object_functions_1a926216027a98c911c07789779a5774dd" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectSummonDuration</name></member>
+      <member refid="class_object_functions_1a570a62dffce18b652978a227513352cb" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectSummonerMpNum</name></member>
+      <member refid="class_object_functions_1a268d72bcda392fddf20031418dd58abe" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectSummonerPid</name></member>
+      <member refid="class_object_functions_1ae018d27e2c06b2c85750728dac69de21" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectSummonerRefId</name></member>
+      <member refid="class_object_functions_1ad3b3790b7dc513530c7512b9b924c363" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectSummonerRefNum</name></member>
+      <member refid="class_object_functions_1ad8fb68d0767323067dd85029a310b09e" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectSummonerRefNumIndex</name></member>
+      <member refid="class_object_functions_1ad084c42796631433750b19ce560ab2d2" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetObjectSummonState</name></member>
+      <member refid="class_object_functions_1a2c9701297790c7f0695735cbd12c46e6" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>GetVideoFilename</name></member>
+      <member refid="class_object_functions_1a3c749674ac09488d1ce63d0fb96637a9" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>InitializeEvent</name></member>
+      <member refid="class_object_functions_1ad6c24f5a88cc241c360c9578dcae14b0" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>InitializeObjectList</name></member>
+      <member refid="class_object_functions_1a7c8de5347550477a489845a0131c0b9e" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>IsObjectPlayer</name></member>
+      <member refid="class_object_functions_1ae637c11bf9fff80805fe872d595b9ac2" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>ReadLastEvent</name></member>
+      <member refid="class_object_functions_1ad3f8b42ecbd59ea9ef97170a773e1541" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>ReadLastObjectList</name></member>
+      <member refid="class_object_functions_1a3a6ddad0f9f7ad6ebf3037aff6989881" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>ReadReceivedObjectList</name></member>
+      <member refid="class_object_functions_1af79a4228a4e1f12cc62619191833536a" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SendConsoleCommand</name></member>
+      <member refid="class_object_functions_1a9d68aab89cc80fbdfda481130cdf64a1" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SendContainer</name></member>
+      <member refid="class_object_functions_1abefe33221e000aca48ca2cc52421fe59" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SendDoorDestination</name></member>
+      <member refid="class_object_functions_1a779e0270b463ef74efbdd3fd4452b230" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SendDoorState</name></member>
+      <member refid="class_object_functions_1a8b3bfb9ffa6fc356d607b3789eff6505" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SendObjectActivate</name></member>
+      <member refid="class_object_functions_1acd7eb00174d5f88c6e3e5e0f9d15f6df" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SendObjectDelete</name></member>
+      <member refid="class_object_functions_1ac477067f1348010db9162d28644279f5" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SendObjectLock</name></member>
+      <member refid="class_object_functions_1a71130795b5c456afe24972fdb5ba32cb" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SendObjectPlace</name></member>
+      <member refid="class_object_functions_1a43874349ee6828a46cb38140d16cd883" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SendObjectScale</name></member>
+      <member refid="class_object_functions_1a78ff7f1b963d0641f664b8f067df0f18" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SendObjectSpawn</name></member>
+      <member refid="class_object_functions_1a9664585a8951032ecdfeeb5ec4466ccf" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SendObjectState</name></member>
+      <member refid="class_object_functions_1a4950ba85004405399c8477263d0eb160" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SendObjectTrap</name></member>
+      <member refid="class_object_functions_1a2ccd06368b8d9a9f8efdf06c1b4ef48b" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SendVideoPlay</name></member>
+      <member refid="class_object_functions_1a1db66993cd05fae6c799c08c53e4b1d4" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetContainerItemActionCountByIndex</name></member>
+      <member refid="class_object_functions_1a7c81382bf647080e50e7554246ea643b" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetContainerItemCharge</name></member>
+      <member refid="class_object_functions_1a478f32e69a8f9d7d318a2185f5360394" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetContainerItemCount</name></member>
+      <member refid="class_object_functions_1afffbecc61b750ac068425dfef97f2afa" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetContainerItemEnchantmentCharge</name></member>
+      <member refid="class_object_functions_1ad2e3fcd2fa738ba6e982cb6ef03c7969" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetContainerItemRefId</name></member>
+      <member refid="class_object_functions_1adf59702edbd855f33e4fff4df9abdd34" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetContainerItemSoul</name></member>
+      <member refid="class_object_functions_1a3a1900c9843c7fabb7b94d97ba6d6604" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetEventAction</name></member>
+      <member refid="class_object_functions_1a94c3c4ff1909028fd626b53155e81134" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetEventCell</name></member>
+      <member refid="class_object_functions_1a998974b3849ff7fc8c655356d7d26ad9" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetEventConsoleCommand</name></member>
+      <member refid="class_object_functions_1a7439da050ffd9ffae5e7f8c44d704d6c" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectActivatingPid</name></member>
+      <member refid="class_object_functions_1aeb699057fdfcf19c66ede8e0beb0d561" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectCharge</name></member>
+      <member refid="class_object_functions_1ad42b73cd7a5c7f03faf815e13a69de46" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectCount</name></member>
+      <member refid="class_object_functions_1a83e077dc90ab2d06c2dc5fb8851d028d" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectDisarmState</name></member>
+      <member refid="class_object_functions_1aab8eab650ca2f18fc329b82c04e8f867" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectDoorDestinationCell</name></member>
+      <member refid="class_object_functions_1a414e7d9c9a295cbaeddb4ce46eeb3680" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectDoorDestinationPosition</name></member>
+      <member refid="class_object_functions_1a418847fa9faa4723736056a657ae5f8e" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectDoorDestinationRotation</name></member>
+      <member refid="class_object_functions_1a4bc2a842d508b8b34ed86aecbb30ad2b" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectDoorState</name></member>
+      <member refid="class_object_functions_1a2c6b83aa6f3ccc3e0cd137691cde0f7c" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectDoorTeleportState</name></member>
+      <member refid="class_object_functions_1ae20d30b5c7e0e2eb361aba585eb0831a" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectEnchantmentCharge</name></member>
+      <member refid="class_object_functions_1ae0695849127de83d3488b484a1eaf3cc" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectGoldValue</name></member>
+      <member refid="class_object_functions_1a0b68c078525f6192c6880756cc84431f" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectListAction</name></member>
+      <member refid="class_object_functions_1a72736dcd907997fb473307cb860fef56" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectListCell</name></member>
+      <member refid="class_object_functions_1a3a4d8cc5ff4d819f3fdbd881f67547e4" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectListConsoleCommand</name></member>
+      <member refid="class_object_functions_1a6a204aa6e240f9c22502f1fb00dc19cc" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectListPid</name></member>
+      <member refid="class_object_functions_1ae622590b30d564ba99bbb495584a9c97" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectLockLevel</name></member>
+      <member refid="class_object_functions_1a6aaea146f177cc53b4078200b6d6ee85" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectMpNum</name></member>
+      <member refid="class_object_functions_1a6e3fce935d29d920e4514b538d1d5404" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectPosition</name></member>
+      <member refid="class_object_functions_1a59da770e6431904dd25e3c7c8454ad0a" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectRefId</name></member>
+      <member refid="class_object_functions_1a01caf6dd535093f3306aa926217e6f71" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectRefNum</name></member>
+      <member refid="class_object_functions_1ac0761820a20226a697120c21751d503f" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectRefNumIndex</name></member>
+      <member refid="class_object_functions_1ac9e64434efb1053c9178cc5065415eea" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectRotation</name></member>
+      <member refid="class_object_functions_1ad8a7af1620dcac682072618ded89aaa6" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectScale</name></member>
+      <member refid="class_object_functions_1a3c97f90a3f05fbba16e2817979992b39" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectSoul</name></member>
+      <member refid="class_object_functions_1aa15b237dd0e15ad5aef498b59cadac69" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectState</name></member>
+      <member refid="class_object_functions_1a569925495ec51ebe3788b05f38492a74" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectSummonDuration</name></member>
+      <member refid="class_object_functions_1ad16ff680b811fab3654f8dad75d35594" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetObjectSummonState</name></member>
+      <member refid="class_object_functions_1a20ceb1051228e77873e2f0d18d6a8859" prot="public" virt="non-virtual"><scope>ObjectFunctions</scope><name>SetPlayerAsObject</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

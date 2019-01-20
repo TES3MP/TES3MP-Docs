@@ -1,0 +1,277 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_spell_functions" kind="class" language="C++" prot="public">
+    <compoundname>SpellFunctions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_spell_functions_1aeaff6cc07274642cd13bcd3e784412d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpellFunctions::ClearSpellbookChanges</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>ClearSpellbookChanges</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Clear the last recorded spellbook changes for a player. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used to initialize the sending of new PlayerSpellbook packets.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spellbook changes should be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="31" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="11" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a21ce13e01e0b2345e5f4fe5b6cf62bff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int SpellFunctions::GetSpellbookChangesSize</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>GetSpellbookChangesSize</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of indexes in a player&apos;s latest spellbook changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spellbook changes should be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of indexes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="39" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="19" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1aea5b60118621ce30b232dae9b50ef41b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int SpellFunctions::GetSpellbookChangesAction</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>GetSpellbookChangesAction</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Get the action type used in a player&apos;s latest spellbook changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spellbook changes should be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The action type (0 for SET, 1 for ADD, 2 for REMOVE). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="47" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="27" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a19d6f5d6b424ba72e2c299293043fcbd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpellFunctions::SetSpellbookChangesAction</definition>
+        <argsstring>(unsigned short pid, unsigned char action) noexcept</argsstring>
+        <name>SetSpellbookChangesAction</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Set the action type in a player&apos;s spellbook changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spellbook changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action (0 for SET, 1 for ADD, 2 for REMOVE). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="56" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="35" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a8cc797e293c6add4de26215c9d0dca75" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpellFunctions::AddSpell</definition>
+        <argsstring>(unsigned short pid, const char *spellId) noexcept</argsstring>
+        <name>AddSpell</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>spellId</declname>
+        </param>
+        <briefdescription>
+<para>Add a new spell to the spellbook changes for a player. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spellbook changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spellId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spellId of the spell. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="65" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="43" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a006d4f2a3bfa2a92bbc76e5a397b9805" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * SpellFunctions::GetSpellId</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetSpellId</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the spellId at a certain index in a player&apos;s latest spellbook changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spellbook changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the spell. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The spellId. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="74" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="54" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1ac8e9610afb5f4002bc71f66ada7321b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpellFunctions::SendSpellbookChanges</definition>
+        <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendSpellbookChanges</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send a PlayerSpellbook packet with a player&apos;s recorded spellbook changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spellbook changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="86" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="65" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a93cfe2e01c15c7eb961afe3d46756b52" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpellFunctions::InitializeSpellbookChanges</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>InitializeSpellbookChanges</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="90" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="20" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" bodystart="19" bodyend="94"/>
+    <listofallmembers>
+      <member refid="class_spell_functions_1a8cc797e293c6add4de26215c9d0dca75" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>AddSpell</name></member>
+      <member refid="class_spell_functions_1aeaff6cc07274642cd13bcd3e784412d4" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>ClearSpellbookChanges</name></member>
+      <member refid="class_spell_functions_1aea5b60118621ce30b232dae9b50ef41b" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellbookChangesAction</name></member>
+      <member refid="class_spell_functions_1a21ce13e01e0b2345e5f4fe5b6cf62bff" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellbookChangesSize</name></member>
+      <member refid="class_spell_functions_1a006d4f2a3bfa2a92bbc76e5a397b9805" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellId</name></member>
+      <member refid="class_spell_functions_1a93cfe2e01c15c7eb961afe3d46756b52" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>InitializeSpellbookChanges</name></member>
+      <member refid="class_spell_functions_1ac8e9610afb5f4002bc71f66ada7321b5" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>SendSpellbookChanges</name></member>
+      <member refid="class_spell_functions_1a19d6f5d6b424ba72e2c299293043fcbd" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>SetSpellbookChangesAction</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

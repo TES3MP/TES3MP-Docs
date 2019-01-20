@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="_worldstate_8cpp" kind="file" language="C++">
+    <compoundname>Worldstate.cpp</compoundname>
+    <includes local="no">components/openmw-mp/NetworkMessages.hpp</includes>
+    <includes local="no">apps/openmw-mp/Networking.hpp</includes>
+    <includes local="no">apps/openmw-mp/Player.hpp</includes>
+    <includes local="no">apps/openmw-mp/Script/ScriptFunctions.hpp</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="_worldstate_8hpp" local="yes">Worldstate.hpp</includes>
+    <incdepgraph>
+      <node id="231">
+        <label>Worldstate.cpp</label>
+        <link refid="_worldstate_8cpp"/>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>apps/openmw-mp/Player.hpp</label>
+      </node>
+      <node id="235">
+        <label>apps/openmw-mp/Script/ScriptFunctions.hpp</label>
+      </node>
+      <node id="239">
+        <label>../Types.hpp</label>
+      </node>
+      <node id="236">
+        <label>fstream</label>
+      </node>
+      <node id="233">
+        <label>apps/openmw-mp/Networking.hpp</label>
+      </node>
+      <node id="232">
+        <label>components/openmw-mp/NetworkMessages.hpp</label>
+      </node>
+      <node id="238">
+        <label>components/openmw-mp/Base/BaseWorldstate.hpp</label>
+      </node>
+      <node id="237">
+        <label>Worldstate.hpp</label>
+        <link refid="_worldstate_8hpp_source"/>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;components/openmw-mp/NetworkMessages.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;apps/openmw-mp/Networking.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;apps/openmw-mp/Player.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;apps/openmw-mp/Script/ScriptFunctions.hpp&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Worldstate.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacemwmp" kindref="compound">mwmp</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">BaseWorldstate<sp/>*WorldstateFunctions::readWorldstate;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">BaseWorldstate<sp/>WorldstateFunctions::writeWorldstate;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a7e5a0df3612c661885e94eed683660dc" kindref="member">WorldstateFunctions::ReadReceivedWorldstate</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>readWorldstate<sp/>=<sp/>mwmp::Networking::getPtr()-&gt;getReceivedWorldstate();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a2d5ad8c53d0a49510e997489d0660e08" kindref="member">WorldstateFunctions::CopyReceivedWorldstateToStore</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate<sp/>=<sp/>*readWorldstate;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1ac919fb4136dcb4d10eb1cfe205947e5b" kindref="member">WorldstateFunctions::ClearMapChanges</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.mapTiles.clear();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a57a7e8faec98d1e7b1f21c54b80fac2a" kindref="member">WorldstateFunctions::GetMapChangesSize</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>readWorldstate-&gt;mapTiles.size();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="class_worldstate_functions_1a56441d7c4e46c66a6f2dc89f4f00c9de" kindref="member">WorldstateFunctions::GetWeatherRegion</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>readWorldstate-&gt;weather.region.c_str();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a34430b8fe7eae5ab1903b8b6e127793e" kindref="member">WorldstateFunctions::GetWeatherCurrent</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>readWorldstate-&gt;weather.currentWeather;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1ad0bbe55028226884ea9ad5dc0cb2846e" kindref="member">WorldstateFunctions::GetWeatherNext</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>readWorldstate-&gt;weather.nextWeather;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1aad9294eb314c43bbd0c34d79a941cda2" kindref="member">WorldstateFunctions::GetWeatherQueued</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>readWorldstate-&gt;weather.queuedWeather;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a162fe6bec3e16e0629f211cc3443202b" kindref="member">WorldstateFunctions::GetWeatherTransitionFactor</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>readWorldstate-&gt;weather.transitionFactor;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a3e6e962533cc721e12b46acc2083b70d" kindref="member">WorldstateFunctions::GetMapTileCellX</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/>noexcept</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>readWorldstate-&gt;mapTiles.at(index).x;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a998b096d78f82e8ee7425b1f0cb31961" kindref="member">WorldstateFunctions::GetMapTileCellY</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index)<sp/>noexcept</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>readWorldstate-&gt;mapTiles.at(index).y;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1ae489186dbc6036b0da9e53a12be178d4" kindref="member">WorldstateFunctions::SetAuthorityRegion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>authorityRegion)<sp/>noexcept</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.authorityRegion<sp/>=<sp/>authorityRegion;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a956384ebdb8d76b7cd8f94c50a4a5366" kindref="member">WorldstateFunctions::SetWeatherRegion</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>region)<sp/>noexcept</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.weather.region<sp/>=<sp/>region;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a8ff1be1afe4d9e05f5435d733f01e041" kindref="member">WorldstateFunctions::SetWeatherForceState</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>forceState)<sp/>noexcept</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.forceWeather<sp/>=<sp/>forceState;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1af4c2c3460ac0585925f943dae1e688f1" kindref="member">WorldstateFunctions::SetWeatherCurrent</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>currentWeather)<sp/>noexcept</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.weather.currentWeather<sp/>=<sp/>currentWeather;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a4fa7518e8e8fc5c4cbf10b780b89d392" kindref="member">WorldstateFunctions::SetWeatherNext</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nextWeather)<sp/>noexcept</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.weather.nextWeather<sp/>=<sp/>nextWeather;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1abb2f1a0b78622ad555347d716d4cd856" kindref="member">WorldstateFunctions::SetWeatherQueued</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>queuedWeather)<sp/>noexcept</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.weather.queuedWeather<sp/>=<sp/>queuedWeather;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1aad5cdc35940eca4afba9349b965958fd" kindref="member">WorldstateFunctions::SetWeatherTransitionFactor</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>transitionFactor)<sp/>noexcept</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.weather.transitionFactor<sp/>=<sp/>transitionFactor;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1af5ed1a814aada4e610fad4bc2ac44fd5" kindref="member">WorldstateFunctions::SetHour</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hour)<sp/>noexcept</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.time.hour<sp/>=<sp/>hour;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a3d0868e17a5f6c84d00d6bee2437c7af" kindref="member">WorldstateFunctions::SetDay</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>day)<sp/>noexcept</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.time.day<sp/>=<sp/>day;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a4cf9900a2eafa51a853b1bebafadfcc3" kindref="member">WorldstateFunctions::SetMonth</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>month)<sp/>noexcept</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.time.month<sp/>=<sp/>month;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1ae2484134b7f9294a482353c939237bf1" kindref="member">WorldstateFunctions::SetYear</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>year)<sp/>noexcept</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.time.year<sp/>=<sp/>year;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a2ae699c08aa67710ddb9f18b7f4e0a9c" kindref="member">WorldstateFunctions::SetDaysPassed</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daysPassed)<sp/>noexcept</highlight></codeline>
+<codeline lineno="127"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.time.daysPassed<sp/>=<sp/>daysPassed;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a3ef5a926db7004e95645cdb3169ac46b" kindref="member">WorldstateFunctions::SetTimeScale</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>timeScale)<sp/>noexcept</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.time.timeScale<sp/>=<sp/>timeScale;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a301027a755587408da3c6db427ae99cf" kindref="member">WorldstateFunctions::SetPlayerCollisionState</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>state)<sp/>noexcept</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.hasPlayerCollision<sp/>=<sp/>state;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a662e411bb519d790b5ca96e4f1d6eebc" kindref="member">WorldstateFunctions::SetActorCollisionState</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>state)<sp/>noexcept</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.hasActorCollision<sp/>=<sp/>state;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1ae57bba26811f8eb41bead31fdabca1ca" kindref="member">WorldstateFunctions::SetPlacedObjectCollisionState</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>state)<sp/>noexcept</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.hasPlacedObjectCollision<sp/>=<sp/>state;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a4d8dcbbfd67079a5ca73ebf392db51df" kindref="member">WorldstateFunctions::UseActorCollisionForPlacedObjects</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>useActorCollision)<sp/>noexcept</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.useActorCollisionForPlacedObjects<sp/>=<sp/>useActorCollision;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1ac4aba3f305022e4d95c024f004f983d5" kindref="member">WorldstateFunctions::AddEnforcedCollisionRefId</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*refId)<sp/>noexcept</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.enforcedCollisionRefIds.push_back(refId);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1ac5f54ffc21010886d36a21a0df94f4aa" kindref="member">WorldstateFunctions::ClearEnforcedCollisionRefIds</ref>()<sp/>noexcept</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.enforcedCollisionRefIds.clear();</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a2e0beee3f27b31b6d16decba2ea039fc" kindref="member">WorldstateFunctions::SaveMapTileImageFile</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filePath)<sp/>noexcept</highlight></codeline>
+<codeline lineno="167"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(index<sp/>&gt;=<sp/>readWorldstate-&gt;mapTiles.size())</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;char&gt;&amp;<sp/>imageData<sp/>=<sp/>readWorldstate-&gt;mapTiles.at(index).imageData;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ofstream<sp/>outputFile(filePath,<sp/>std::ios::binary);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ostream_iterator&lt;char&gt;<sp/>outputIterator(outputFile);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>std::copy(imageData.begin(),<sp/>imageData.end(),<sp/>outputIterator);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1adc3c4443ec14f897c91346d8f28b86f2" kindref="member">WorldstateFunctions::LoadMapTileImageFile</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cellX,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cellY,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filePath)<sp/>noexcept</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>mwmp::MapTile<sp/>mapTile;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>mapTile.x<sp/>=<sp/>cellX;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>mapTile.y<sp/>=<sp/>cellY;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>std::ifstream<sp/>inputFile(filePath,<sp/>std::ios::binary);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>mapTile.imageData<sp/>=<sp/>std::vector&lt;char&gt;(std::istreambuf_iterator&lt;char&gt;(inputFile),<sp/>std::istreambuf_iterator&lt;char&gt;());</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mapTile.imageData.size()<sp/>&gt;<sp/>mwmp::maxImageDataSize)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOG_MESSAGE_SIMPLE(Log::LOG_ERROR,<sp/></highlight><highlight class="stringliteral">&quot;Error<sp/>loading<sp/>image<sp/>file<sp/>for<sp/>map<sp/>tile:<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;%s<sp/>has<sp/>a<sp/>size<sp/>of<sp/>%i,<sp/>which<sp/>is<sp/>over<sp/>the<sp/>maximum<sp/>allowed<sp/>of<sp/>%i!&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>filePath,<sp/>mapTile.imageData.size(),<sp/>mwmp::maxImageDataSize);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>writeWorldstate.mapTiles.push_back(mapTile);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a779ad61d4b0dfd65812547f053844228" kindref="member">WorldstateFunctions::SendWorldMap</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sendToOtherPlayers,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>skipAttachedPlayer)<sp/>noexcept</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>Player<sp/>*player;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>GET_PLAYER(pid,<sp/>player,<sp/>);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.guid<sp/>=<sp/>player-&gt;guid;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>mwmp::WorldstatePacket<sp/>*packet<sp/>=<sp/>mwmp::Networking::get().getWorldstatePacketController()-&gt;GetPacket(ID_WORLD_MAP);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>packet-&gt;setWorldstate(&amp;writeWorldstate);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!skipAttachedPlayer)</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet-&gt;Send(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sendToOtherPlayers)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet-&gt;Send(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a1f0fccd942ffa7f70d335c3eb8d5e1f0" kindref="member">WorldstateFunctions::SendWorldTime</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sendToOtherPlayers,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>skipAttachedPlayer)<sp/>noexcept</highlight></codeline>
+<codeline lineno="216"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>Player<sp/>*player;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/>GET_PLAYER(pid,<sp/>player,<sp/>);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.guid<sp/>=<sp/>player-&gt;guid;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>mwmp::WorldstatePacket<sp/>*packet<sp/>=<sp/>mwmp::Networking::get().getWorldstatePacketController()-&gt;GetPacket(ID_WORLD_TIME);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>packet-&gt;setWorldstate(&amp;writeWorldstate);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!skipAttachedPlayer)</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet-&gt;Send(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sendToOtherPlayers)</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet-&gt;Send(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1ac6af488f9f395750965f3ebaa83ffd28" kindref="member">WorldstateFunctions::SendWorldWeather</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sendToOtherPlayers,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>skipAttachedPlayer)<sp/>noexcept</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>Player<sp/>*player;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>GET_PLAYER(pid,<sp/>player,<sp/>);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.guid<sp/>=<sp/>player-&gt;guid;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>mwmp::WorldstatePacket<sp/>*packet<sp/>=<sp/>mwmp::Networking::get().getWorldstatePacketController()-&gt;GetPacket(ID_WORLD_WEATHER);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>packet-&gt;setWorldstate(&amp;writeWorldstate);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!skipAttachedPlayer)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet-&gt;Send(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sendToOtherPlayers)</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet-&gt;Send(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1ab93dab76631096fcd585bed57c769645" kindref="member">WorldstateFunctions::SendWorldCollisionOverride</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>sendToOtherPlayers,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>skipAttachedPlayer)<sp/>noexcept</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>Player<sp/>*player;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>GET_PLAYER(pid,<sp/>player,<sp/>);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.guid<sp/>=<sp/>player-&gt;guid;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/>mwmp::WorldstatePacket<sp/>*packet<sp/>=<sp/>mwmp::Networking::get().getWorldstatePacketController()-&gt;GetPacket(ID_WORLD_COLLISION_OVERRIDE);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>packet-&gt;setWorldstate(&amp;writeWorldstate);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!skipAttachedPlayer)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet-&gt;Send(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sendToOtherPlayers)</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet-&gt;Send(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_worldstate_functions_1a4a3ec9d178c6baf985ed246ac6bf894a" kindref="member">WorldstateFunctions::SendWorldRegionAuthority</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/>pid)<sp/>noexcept</highlight></codeline>
+<codeline lineno="264"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>Player<sp/>*player;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>GET_PLAYER(pid,<sp/>player,<sp/>);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>writeWorldstate.guid<sp/>=<sp/>player-&gt;guid;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/>mwmp::WorldstatePacket<sp/>*packet<sp/>=<sp/>mwmp::Networking::get().getWorldstatePacketController()-&gt;GetPacket(ID_WORLD_REGION_AUTHORITY);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>packet-&gt;setWorldstate(&amp;writeWorldstate);</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>packet-&gt;Send(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>packet<sp/>should<sp/>always<sp/>be<sp/>sent<sp/>to<sp/>all<sp/>other<sp/>players</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>packet-&gt;Send(</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>methods<sp/>below<sp/>are<sp/>deprecated<sp/>versions<sp/>of<sp/>methods<sp/>from<sp/>above</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WorldstateFunctions::ReadLastWorldstate()<sp/>noexcept</highlight></codeline>
+<codeline lineno="283"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/>ReadReceivedWorldstate();</highlight></codeline>
+<codeline lineno="285"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>WorldstateFunctions::CopyLastWorldstateToStore()<sp/>noexcept</highlight></codeline>
+<codeline lineno="288"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>CopyReceivedWorldstateToStore();</highlight></codeline>
+<codeline lineno="290"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp"/>
+  </compounddef>
+</doxygen>

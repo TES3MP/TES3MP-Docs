@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_28f5479277138f52f8f382568d06454f" kind="dir">
+    <compoundname>Functions</compoundname>
+    <innerfile refid="_actors_8cpp">Actors.cpp</innerfile>
+    <innerfile refid="_actors_8hpp">Actors.hpp</innerfile>
+    <innerfile refid="_books_8cpp">Books.cpp</innerfile>
+    <innerfile refid="_books_8hpp">Books.hpp</innerfile>
+    <innerfile refid="_cells_8cpp">Cells.cpp</innerfile>
+    <innerfile refid="_cells_8hpp">Cells.hpp</innerfile>
+    <innerfile refid="_char_class_8cpp">CharClass.cpp</innerfile>
+    <innerfile refid="_char_class_8hpp">CharClass.hpp</innerfile>
+    <innerfile refid="_chat_8cpp">Chat.cpp</innerfile>
+    <innerfile refid="_chat_8hpp">Chat.hpp</innerfile>
+    <innerfile refid="_dialogue_8cpp">Dialogue.cpp</innerfile>
+    <innerfile refid="_dialogue_8hpp">Dialogue.hpp</innerfile>
+    <innerfile refid="_factions_8cpp">Factions.cpp</innerfile>
+    <innerfile refid="_factions_8hpp">Factions.hpp</innerfile>
+    <innerfile refid="_g_u_i_8cpp">GUI.cpp</innerfile>
+    <innerfile refid="_g_u_i_8hpp">GUI.hpp</innerfile>
+    <innerfile refid="_items_8cpp">Items.cpp</innerfile>
+    <innerfile refid="_items_8hpp">Items.hpp</innerfile>
+    <innerfile refid="_mechanics_8cpp">Mechanics.cpp</innerfile>
+    <innerfile refid="_mechanics_8hpp">Mechanics.hpp</innerfile>
+    <innerfile refid="_miscellaneous_8cpp">Miscellaneous.cpp</innerfile>
+    <innerfile refid="_miscellaneous_8hpp">Miscellaneous.hpp</innerfile>
+    <innerfile refid="_objects_8cpp">Objects.cpp</innerfile>
+    <innerfile refid="_objects_8hpp">Objects.hpp</innerfile>
+    <innerfile refid="_positions_8cpp">Positions.cpp</innerfile>
+    <innerfile refid="_positions_8hpp">Positions.hpp</innerfile>
+    <innerfile refid="_quests_8cpp">Quests.cpp</innerfile>
+    <innerfile refid="_quests_8hpp">Quests.hpp</innerfile>
+    <innerfile refid="_records_dynamic_8cpp">RecordsDynamic.cpp</innerfile>
+    <innerfile refid="_records_dynamic_8hpp">RecordsDynamic.hpp</innerfile>
+    <innerfile refid="_server_8cpp">Server.cpp</innerfile>
+    <innerfile refid="_server_8hpp">Server.hpp</innerfile>
+    <innerfile refid="_settings_8cpp">Settings.cpp</innerfile>
+    <innerfile refid="_settings_8hpp">Settings.hpp</innerfile>
+    <innerfile refid="_shapeshift_8cpp">Shapeshift.cpp</innerfile>
+    <innerfile refid="_shapeshift_8hpp">Shapeshift.hpp</innerfile>
+    <innerfile refid="_spells_8cpp">Spells.cpp</innerfile>
+    <innerfile refid="_spells_8hpp">Spells.hpp</innerfile>
+    <innerfile refid="_stats_8cpp">Stats.cpp</innerfile>
+    <innerfile refid="_stats_8hpp">Stats.hpp</innerfile>
+    <innerfile refid="_timer_8cpp">Timer.cpp</innerfile>
+    <innerfile refid="_worldstate_8cpp">Worldstate.cpp</innerfile>
+    <innerfile refid="_worldstate_8hpp">Worldstate.hpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/"/>
+  </compounddef>
+</doxygen>

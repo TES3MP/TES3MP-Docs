@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_book_functions" kind="class" language="C++" prot="public">
+    <compoundname>BookFunctions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_book_functions_1a071d8718bcd540afbece45f1cf2ee95a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BookFunctions::ClearBookChanges</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>ClearBookChanges</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Clear the last recorded book changes for a player. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used to initialize the sending of new PlayerBook packets.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose book changes should be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Books.hpp" line="29" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Books.cpp" bodystart="10" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_book_functions_1ae3bf24add9a64aed0bcd57d0eae9ce40" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int BookFunctions::GetBookChangesSize</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>GetBookChangesSize</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of indexes in a player&apos;s latest book changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose book changes should be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of indexes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Books.hpp" line="37" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Books.cpp" bodystart="18" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_book_functions_1ac62bfbbe067bcf38abf89f93818f685c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BookFunctions::AddBook</definition>
+        <argsstring>(unsigned short pid, const char *bookId) noexcept</argsstring>
+        <name>AddBook</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>bookId</declname>
+        </param>
+        <briefdescription>
+<para>Add a new book to the book changes for a player. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose book changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bookId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The bookId of the book. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Books.hpp" line="46" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Books.cpp" bodystart="26" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_book_functions_1a02a79324e2113442e1fde3740465986e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * BookFunctions::GetBookId</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetBookId</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the bookId at a certain index in a player&apos;s latest book changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose book changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the book. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The bookId. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Books.hpp" line="55" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Books.cpp" bodystart="37" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_book_functions_1a21fbc6aec17c203183db226bd13eef1b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BookFunctions::SendBookChanges</definition>
+        <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendBookChanges</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send a PlayerBook packet with a player&apos;s recorded book changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose book changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Books.hpp" line="67" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Books.cpp" bodystart="48" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_book_functions_1a690495b9bda88b653b13520eff2dc7d6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BookFunctions::InitializeBookChanges</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>InitializeBookChanges</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Books.hpp" line="71" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Books.cpp" bodystart="65" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Books.hpp" line="18" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Books.hpp" bodystart="17" bodyend="73"/>
+    <listofallmembers>
+      <member refid="class_book_functions_1ac62bfbbe067bcf38abf89f93818f685c" prot="public" virt="non-virtual"><scope>BookFunctions</scope><name>AddBook</name></member>
+      <member refid="class_book_functions_1a071d8718bcd540afbece45f1cf2ee95a" prot="public" virt="non-virtual"><scope>BookFunctions</scope><name>ClearBookChanges</name></member>
+      <member refid="class_book_functions_1ae3bf24add9a64aed0bcd57d0eae9ce40" prot="public" virt="non-virtual"><scope>BookFunctions</scope><name>GetBookChangesSize</name></member>
+      <member refid="class_book_functions_1a02a79324e2113442e1fde3740465986e" prot="public" virt="non-virtual"><scope>BookFunctions</scope><name>GetBookId</name></member>
+      <member refid="class_book_functions_1a690495b9bda88b653b13520eff2dc7d6" prot="public" virt="non-virtual"><scope>BookFunctions</scope><name>InitializeBookChanges</name></member>
+      <member refid="class_book_functions_1a21fbc6aec17c203183db226bd13eef1b" prot="public" virt="non-virtual"><scope>BookFunctions</scope><name>SendBookChanges</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

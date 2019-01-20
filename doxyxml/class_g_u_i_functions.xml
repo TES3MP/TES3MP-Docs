@@ -1,0 +1,637 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_g_u_i_functions" kind="class" language="C++" prot="public">
+    <compoundname>GUIFunctions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_g_u_i_functions_1af835efa768bb84d22c73e704933d2a69" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GUIFunctions::_MessageBox</definition>
+        <argsstring>(unsigned short pid, int id, const char *label) noexcept</argsstring>
+        <name>_MessageBox</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+<para>Display a simple messagebox at the bottom of the screen that vanishes after a few seconds. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note for C++ programmers: do not rename into MessageBox so as to not conflict with WINAPI&apos;s MessageBox.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID for whom the messagebox should appear. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numerical ID of the messagebox. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text in the messagebox. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="44" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.cpp" bodystart="8" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_u_i_functions_1a54dd6b136005034d3fa6e7cf2dcbe3ee" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GUIFunctions::CustomMessageBox</definition>
+        <argsstring>(unsigned short pid, int id, const char *label, const char *buttons) noexcept</argsstring>
+        <name>CustomMessageBox</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>buttons</declname>
+        </param>
+        <briefdescription>
+<para>Display an interactive messagebox at the center of the screen that vanishes only when one of its buttons is clicked. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID for whom the messagebox should appear. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numerical ID of the messagebox. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text in the messagebox.  buttons The captions of the buttons, separated by semicolons (e.g. &quot;Yes;No;Maybe&quot;). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="56" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.cpp" bodystart="23" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_u_i_functions_1aa32e8e4960cdb46a60750ab6e89bb385" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GUIFunctions::InputDialog</definition>
+        <argsstring>(unsigned short pid, int id, const char *label, const char *note) noexcept</argsstring>
+        <name>InputDialog</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+<para>Display an input dialog at the center of the screen. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID for whom the input dialog should appear. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numerical ID of the input dialog. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text at the top of the input dialog.  note The text at the bottom of the input dialog. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="67" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.cpp" bodystart="39" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_u_i_functions_1ab497e3d158dd1824ae123bf8ed5e73ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GUIFunctions::PasswordDialog</definition>
+        <argsstring>(unsigned short pid, int id, const char *label, const char *note) noexcept</argsstring>
+        <name>PasswordDialog</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>note</declname>
+        </param>
+        <briefdescription>
+<para>Display a password dialog at the center of the screen. </para>        </briefdescription>
+        <detaileddescription>
+<para>Although similar to an input dialog, the password dialog replaces all input characters with asterisks.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID for whom the password dialog should appear. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numerical ID of the password dialog. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text at the top of the password dialog.  note The text at the bottom of the password dialog. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="81" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.cpp" bodystart="55" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_u_i_functions_1ab7aee62dc948a6999fa537a4dd4a28ef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GUIFunctions::ListBox</definition>
+        <argsstring>(unsigned short pid, int id, const char *label, const char *items)</argsstring>
+        <name>ListBox</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>items</declname>
+        </param>
+        <briefdescription>
+<para>Display a listbox at the center of the screen where each item takes up a row and is selectable, with the listbox only vanishing once the Ok button is pressed. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID for whom the listbox should appear. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The numerical ID of the listbox. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>label</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text at the top of the listbox.  items The items in the listbox, separated by newlines (e.g. &quot;Item 1\nItem 2&quot;). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="94" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.cpp" bodystart="71" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_u_i_functions_1a7a9657277d6fd3dcf404f7622c64a0b1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GUIFunctions::ClearQuickKeyChanges</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>ClearQuickKeyChanges</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Clear the last recorded quick key changes for a player. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used to initialize the sending of new PlayerQuickKeys packets.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose quick key changes should be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="104" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.cpp" bodystart="87" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_u_i_functions_1a7dcfccb0df34f752ff9c3ea94fef8837" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int GUIFunctions::GetQuickKeyChangesSize</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>GetQuickKeyChangesSize</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of indexes in a player&apos;s latest quick key changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose quick key changes should be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of indexes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="112" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.cpp" bodystart="95" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_u_i_functions_1ad72382d0345edfef03e9b2fad1ee2e2f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GUIFunctions::AddQuickKey</definition>
+        <argsstring>(unsigned short pid, unsigned short slot, int type, const char *itemId=&quot;&quot;) noexcept</argsstring>
+        <name>AddQuickKey</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>slot</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>itemId</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+<para>Add a new quick key to the quick key changes for a player. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose quick key changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slot to be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the quick key (0 for ITEM, 1 for ITEM_MAGIC, 2 for MAGIC, 3 for UNASSIGNED). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>itemId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The itemId of the item. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="123" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.cpp" bodystart="136" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_u_i_functions_1a69bf4f382fe698efe5c403622df71e6c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GUIFunctions::GetQuickKeySlot</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetQuickKeySlot</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the slot of the quick key at a certain index in a player&apos;s latest quick key changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose quick key changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the quick key in the quick key changes vector. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The slot. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="132" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.cpp" bodystart="103" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_u_i_functions_1a2c71c1c08cdad85224fd74e965a69ad7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GUIFunctions::GetQuickKeyType</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetQuickKeyType</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the type of the quick key at a certain index in a player&apos;s latest quick key changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose quick key changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the quick key in the quick key changes vector. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The quick key type. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="141" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.cpp" bodystart="114" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_u_i_functions_1a07f25730871fa11d395a2b6ee56e1e2b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * GUIFunctions::GetQuickKeyItemId</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetQuickKeyItemId</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the itemId at a certain index in a player&apos;s latest quick key changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose quick key changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the quick key in the quick key changes vector. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The itemId. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="150" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.cpp" bodystart="125" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_u_i_functions_1aa7b3afb18cd1795549128b97209b3518" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GUIFunctions::SendQuickKeyChanges</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>SendQuickKeyChanges</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Send a PlayerQuickKeys packet with a player&apos;s recorded quick key changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose quick key changes should be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="158" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.cpp" bodystart="149" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_u_i_functions_1a024258866693102c4c2d175db13e0d90" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GUIFunctions::SetMapVisibility</definition>
+        <argsstring>(unsigned short targetPid, unsigned short affectedPid, unsigned short state) noexcept</argsstring>
+        <name>SetMapVisibility</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>targetPid</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>affectedPid</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Determine whether a player can see the map marker of another player. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: This currently has no effect, and is just an unimplemented stub.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>targetPid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose map marker should be hidden or revealed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>affectedPid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID for whom the map marker will be hidden or revealed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The state of the map marker (false to hide, true to reveal). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="172" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.cpp" bodystart="158" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_u_i_functions_1a2f375a29f00889d131ed11be609fc51e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GUIFunctions::SetMapVisibilityAll</definition>
+        <argsstring>(unsigned short targetPid, unsigned short state) noexcept</argsstring>
+        <name>SetMapVisibilityAll</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>targetPid</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Determine whether a player&apos;s map marker can be seen by all other players. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: This currently has no effect, and is just an unimplemented stub.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>targetPid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose map marker should be hidden or revealed. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The state of the map marker (false to hide, true to reveal). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="183" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.cpp" bodystart="163" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="class_g_u_i_functions_1a6782b3cc2bbf4a756ec2b1b7f814de3f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GUIFunctions::InitializeQuickKeyChanges</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>InitializeQuickKeyChanges</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="187" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.cpp" bodystart="170" bodyend="173"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" line="29" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/GUI.hpp" bodystart="28" bodyend="189"/>
+    <listofallmembers>
+      <member refid="class_g_u_i_functions_1af835efa768bb84d22c73e704933d2a69" prot="public" virt="non-virtual"><scope>GUIFunctions</scope><name>_MessageBox</name></member>
+      <member refid="class_g_u_i_functions_1ad72382d0345edfef03e9b2fad1ee2e2f" prot="public" virt="non-virtual"><scope>GUIFunctions</scope><name>AddQuickKey</name></member>
+      <member refid="class_g_u_i_functions_1a7a9657277d6fd3dcf404f7622c64a0b1" prot="public" virt="non-virtual"><scope>GUIFunctions</scope><name>ClearQuickKeyChanges</name></member>
+      <member refid="class_g_u_i_functions_1a54dd6b136005034d3fa6e7cf2dcbe3ee" prot="public" virt="non-virtual"><scope>GUIFunctions</scope><name>CustomMessageBox</name></member>
+      <member refid="class_g_u_i_functions_1a7dcfccb0df34f752ff9c3ea94fef8837" prot="public" virt="non-virtual"><scope>GUIFunctions</scope><name>GetQuickKeyChangesSize</name></member>
+      <member refid="class_g_u_i_functions_1a07f25730871fa11d395a2b6ee56e1e2b" prot="public" virt="non-virtual"><scope>GUIFunctions</scope><name>GetQuickKeyItemId</name></member>
+      <member refid="class_g_u_i_functions_1a69bf4f382fe698efe5c403622df71e6c" prot="public" virt="non-virtual"><scope>GUIFunctions</scope><name>GetQuickKeySlot</name></member>
+      <member refid="class_g_u_i_functions_1a2c71c1c08cdad85224fd74e965a69ad7" prot="public" virt="non-virtual"><scope>GUIFunctions</scope><name>GetQuickKeyType</name></member>
+      <member refid="class_g_u_i_functions_1a6782b3cc2bbf4a756ec2b1b7f814de3f" prot="public" virt="non-virtual"><scope>GUIFunctions</scope><name>InitializeQuickKeyChanges</name></member>
+      <member refid="class_g_u_i_functions_1aa32e8e4960cdb46a60750ab6e89bb385" prot="public" virt="non-virtual"><scope>GUIFunctions</scope><name>InputDialog</name></member>
+      <member refid="class_g_u_i_functions_1ab7aee62dc948a6999fa537a4dd4a28ef" prot="public" virt="non-virtual"><scope>GUIFunctions</scope><name>ListBox</name></member>
+      <member refid="class_g_u_i_functions_1ab497e3d158dd1824ae123bf8ed5e73ed" prot="public" virt="non-virtual"><scope>GUIFunctions</scope><name>PasswordDialog</name></member>
+      <member refid="class_g_u_i_functions_1aa7b3afb18cd1795549128b97209b3518" prot="public" virt="non-virtual"><scope>GUIFunctions</scope><name>SendQuickKeyChanges</name></member>
+      <member refid="class_g_u_i_functions_1a024258866693102c4c2d175db13e0d90" prot="public" virt="non-virtual"><scope>GUIFunctions</scope><name>SetMapVisibility</name></member>
+      <member refid="class_g_u_i_functions_1a2f375a29f00889d131ed11be609fc51e" prot="public" virt="non-virtual"><scope>GUIFunctions</scope><name>SetMapVisibilityAll</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

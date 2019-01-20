@@ -1,0 +1,2249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_actor_functions" kind="class" language="C++" prot="public">
+    <compoundname>ActorFunctions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_actor_functions_1a00028c7774b0517485dc1b97b84e5f2a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::ReadReceivedActorList</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ReadReceivedActorList</name>
+        <briefdescription>
+<para>Use the last actor list received by the server as the one being read. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="114" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="23" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a48dcba7ee0bd36e449b0f849e623485d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::ReadCellActorList</definition>
+        <argsstring>(const char *cellDescription) noexcept</argsstring>
+        <name>ReadCellActorList</name>
+        <param>
+          <type>const char *</type>
+          <declname>cellDescription</declname>
+        </param>
+        <briefdescription>
+<para>Use the temporary actor list stored for a cell as the one being read. </para>        </briefdescription>
+        <detaileddescription>
+<para>This type of actor list is used to store actor positions and dynamic stats and is deleted when the cell is unloaded.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cellDescription</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The description of the cell whose actor list should be read. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="125" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="28" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a5183f07b08b2293440abf55df33ea5eb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::ClearActorList</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ClearActorList</name>
+        <briefdescription>
+<para>Clear the data from the actor list stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="132" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="35" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1aab5588e100338fbfe3433b7336520317" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorListPid</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>SetActorListPid</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Set the pid attached to the ActorList. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID to whom the actor list should be attached. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="140" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="41" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a86ab8e7c879000379315d0d988f6f54c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::CopyReceivedActorListToStore</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>CopyReceivedActorListToStore</name>
+        <briefdescription>
+<para>Take the contents of the read-only actor list last received by the server from a player and move its contents to the stored object list that can be sent by the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="149" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1aa7c681f1756c17c35be4b612c5aad3d1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ActorFunctions::GetActorListSize</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetActorListSize</name>
+        <briefdescription>
+<para>Get the number of indexes in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of indexes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="156" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a8a2f1ea7c777f44d0a5ddd9e8e35ae1d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char ActorFunctions::GetActorListAction</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetActorListAction</name>
+        <briefdescription>
+<para>Get the action type used in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The action type (0 for SET, 1 for ADD, 2 for REMOVE, 3 for REQUEST). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="163" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="59" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a35098cfd190882887670d3e622143c2d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ActorFunctions::GetActorCell</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorCell</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the cell description of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The cell description. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="171" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="64" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a1fd9d2a7b385225cc696f34b8db60c57" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ActorFunctions::GetActorRefId</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorRefId</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the refId of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The refId. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="179" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a3bf86ca07dd2aa12a0762562fd494211" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ActorFunctions::GetActorRefNum</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorRefNum</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the refNum of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The refNum. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="187" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="75" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1aa608a1be9dbb84573abc51f21e416296" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ActorFunctions::GetActorMpNum</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorMpNum</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the mpNum of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The mpNum. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="195" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="80" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ad1c670bfeb76cbb43ea65a812100e3a8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorPosX</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorPosX</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the X position of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The X position. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="203" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="85" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a9fed70eb8bb6d8b51fbaaa5e67b071b6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorPosY</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorPosY</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the Y position of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Y position. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="211" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a35396540235173c1c046b61f8586380f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorPosZ</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorPosZ</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the Z position of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Z position. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="219" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a9f746024df5a25ec60d2d42be09392a7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorRotX</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorRotX</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the X rotation of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The X rotation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="227" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1aa7c663e9fff0b197085ce262bc1db41f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorRotY</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorRotY</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the Y rotation of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Y rotation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="235" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a8e9cdf9ac405ae6b70b0e7eb95b72949" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorRotZ</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorRotZ</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the Z rotation of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Z rotation. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="243" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ad5fc0beac4ed24944d06c6894cdf5dc5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorHealthBase</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorHealthBase</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the base health of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The base health. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="251" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a428f0d1b72ea040040f288c006827c78" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorHealthCurrent</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorHealthCurrent</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the current health of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current health. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="259" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="120" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1af6988c34f73e5815b6b2bbf8995e4037" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorHealthModified</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorHealthModified</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the modified health of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The modified health. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="267" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a979e56e23da4bd93cef00dda25d46243" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorMagickaBase</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorMagickaBase</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the base magicka of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The base magicka. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="275" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a9417a1ec1cd234f9b663c4385fbe14f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorMagickaCurrent</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorMagickaCurrent</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the current magicka of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current magicka. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="283" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ae958ddf5fbe051e822e2821b53352c4a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorMagickaModified</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorMagickaModified</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the modified magicka of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The modified magicka. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="291" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ad46cb4af8bc7124b49f9598898dc0f00" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorFatigueBase</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorFatigueBase</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the base fatigue of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The base fatigue. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="299" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a63214d669d5d3e36b2ffdc33f7560448" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorFatigueCurrent</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorFatigueCurrent</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the current fatigue of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The current fatigue. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="307" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a92a8e0180fd353abbed4f36e8ad5c3d9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorFatigueModified</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorFatigueModified</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the modified fatigue of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The modified fatigue. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="315" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ae57564b8cc53b2b9d21d9246834b9232" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ActorFunctions::GetActorEquipmentItemRefId</definition>
+        <argsstring>(unsigned int index, unsigned short slot) noexcept</argsstring>
+        <name>GetActorEquipmentItemRefId</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Get the refId of the item in a certain slot of the equipment of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slot of the equipment item. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The refId. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="325" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="160" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ad902ffea43fdc23d781c5a8271d38a2f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ActorFunctions::GetActorEquipmentItemCount</definition>
+        <argsstring>(unsigned int index, unsigned short slot) noexcept</argsstring>
+        <name>GetActorEquipmentItemCount</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Get the count of the item in a certain slot of the equipment of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slot of the equipment item. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The item count. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="335" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a01c726a78df90871e15413d9596c91aa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ActorFunctions::GetActorEquipmentItemCharge</definition>
+        <argsstring>(unsigned int index, unsigned short slot) noexcept</argsstring>
+        <name>GetActorEquipmentItemCharge</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Get the charge of the item in a certain slot of the equipment of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slot of the equipment item. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The charge. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="345" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a692a856b03f1b23f3f29392978df1d1e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double ActorFunctions::GetActorEquipmentItemEnchantmentCharge</definition>
+        <argsstring>(unsigned int index, unsigned short slot) noexcept</argsstring>
+        <name>GetActorEquipmentItemEnchantmentCharge</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Get the enchantment charge of the item in a certain slot of the equipment of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The slot of the equipment item. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The enchantment charge. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="355" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="175" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a13efdece02432ef55a705e1c619a8437" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ActorFunctions::DoesActorHavePlayerKiller</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>DoesActorHavePlayerKiller</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the killer of the actor at a certain index in the read actor list is a player. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the actor was killed by a player. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="363" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="180" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a2b96df935c5076c53770ebd75a862481" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ActorFunctions::GetActorKillerPid</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorKillerPid</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the player ID of the killer of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The player ID of the killer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="371" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="185" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1add106b61e3217ac1714ee08146edad41" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ActorFunctions::GetActorKillerRefId</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorKillerRefId</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the refId of the actor killer of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The refId of the killer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="379" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="195" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a5cd346bdb9565b0b37373dc100309927" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ActorFunctions::GetActorKillerRefNum</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorKillerRefNum</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the refNum of the actor killer of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The refNum of the killer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="387" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="200" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a8426ef0013b0b1414a758b974076e392" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ActorFunctions::GetActorKillerMpNum</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorKillerMpNum</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the mpNum of the actor killer of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The mpNum of the killer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="395" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="205" bodyend="208"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ac6ea366af0650045fdc12e8bfb752276" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ActorFunctions::GetActorKillerName</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorKillerName</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the name of the actor killer of the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The name of the killer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="403" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="210" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a01b3593b9d35f8029c6814db335ffc9b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ActorFunctions::DoesActorHavePosition</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>DoesActorHavePosition</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Check whether there is any positional data for the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is only useful when reading the actor list data recorded for a particular cell.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the read actor list contains positional data. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="414" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="215" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a943254ebc543b693e93fbc0a03dca922" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ActorFunctions::DoesActorHaveStatsDynamic</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>DoesActorHaveStatsDynamic</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Check whether there is any dynamic stats data for the actor at a certain index in the read actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is only useful when reading the actor list data recorded for a particular cell.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the actor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the read actor list contains dynamic stats data. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="425" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="220" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ae489634857ab65f8ee328eb513f75b83" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorListCell</definition>
+        <argsstring>(const char *cellDescription) noexcept</argsstring>
+        <name>SetActorListCell</name>
+        <param>
+          <type>const char *</type>
+          <declname>cellDescription</declname>
+        </param>
+        <briefdescription>
+<para>Set the cell of the temporary actor list stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>The cell is determined to be an exterior cell if it fits the pattern of a number followed by a comma followed by another number.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cellDescription</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The description of the cell. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="436" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="225" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a20a2d5600f2122f10e0f0a0d19f24b96" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorListAction</definition>
+        <argsstring>(unsigned char action) noexcept</argsstring>
+        <name>SetActorListAction</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Set the action type of the temporary actor list stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action type (0 for SET, 1 for ADD, 2 for REMOVE, 3 for REQUEST). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="444" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a077fada2c7cc2e0090a0ac324a8d5e8d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorCell</definition>
+        <argsstring>(const char *cellDescription) noexcept</argsstring>
+        <name>SetActorCell</name>
+        <param>
+          <type>const char *</type>
+          <declname>cellDescription</declname>
+        </param>
+        <briefdescription>
+<para>Set the cell of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>Used for ActorCellChange packets, where a specific actor&apos;s cell now differs from that of the actor list.</para><para>The cell is determined to be an exterior cell if it fits the pattern of a number followed by a comma followed by another number.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cellDescription</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The description of the cell. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="458" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="235" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ac5bfe48631894bae0f6240f139f35587" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorRefId</definition>
+        <argsstring>(const char *refId) noexcept</argsstring>
+        <name>SetActorRefId</name>
+        <param>
+          <type>const char *</type>
+          <declname>refId</declname>
+        </param>
+        <briefdescription>
+<para>Set the refId of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The refId. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="466" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="240" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ae09dc47f9a37341a50ff8515df9f1114" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorRefNum</definition>
+        <argsstring>(int refNum) noexcept</argsstring>
+        <name>SetActorRefNum</name>
+        <param>
+          <type>int</type>
+          <declname>refNum</declname>
+        </param>
+        <briefdescription>
+<para>Set the refNum of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The refNum. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="474" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1adcf658fd068031ce880a00cc5751fcc6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorMpNum</definition>
+        <argsstring>(int mpNum) noexcept</argsstring>
+        <name>SetActorMpNum</name>
+        <param>
+          <type>int</type>
+          <declname>mpNum</declname>
+        </param>
+        <briefdescription>
+<para>Set the mpNum of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mpNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mpNum. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="482" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="250" bodyend="253"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a0e3603266f330bb0836492eb6270ec94" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorPosition</definition>
+        <argsstring>(double x, double y, double z) noexcept</argsstring>
+        <name>SetActorPosition</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Set the position of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The X position. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Y position. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Z position. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="492" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="255" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a731727c3a7f8a5dd9975357fc959b63c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorRotation</definition>
+        <argsstring>(double x, double y, double z) noexcept</argsstring>
+        <name>SetActorRotation</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Set the rotation of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The X rotation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Y rotation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Z rotation. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="502" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="262" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a2a738b6139cf86809df5975f030b7ed9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorHealthBase</definition>
+        <argsstring>(double value) noexcept</argsstring>
+        <name>SetActorHealthBase</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the base health of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="510" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="269" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ac8e31b0ab7d96e31ebef63090c77cd80" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorHealthCurrent</definition>
+        <argsstring>(double value) noexcept</argsstring>
+        <name>SetActorHealthCurrent</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the current health of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="518" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="274" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a290f37b9dfbd293c49ea6dc4b7e4842c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorHealthModified</definition>
+        <argsstring>(double value) noexcept</argsstring>
+        <name>SetActorHealthModified</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the modified health of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="526" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="279" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a8b0ae56ad796c58a28c7a459a8e98fbd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorMagickaBase</definition>
+        <argsstring>(double value) noexcept</argsstring>
+        <name>SetActorMagickaBase</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the base magicka of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="534" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="284" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a233b066ee815d91c708f84055bb5937e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorMagickaCurrent</definition>
+        <argsstring>(double value) noexcept</argsstring>
+        <name>SetActorMagickaCurrent</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the current magicka of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="542" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="289" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ae173d516669655519476d14489b6b942" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorMagickaModified</definition>
+        <argsstring>(double value) noexcept</argsstring>
+        <name>SetActorMagickaModified</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the modified magicka of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="550" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="294" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ad9a7c0351bc57929de28b83ed640c8b3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorFatigueBase</definition>
+        <argsstring>(double value) noexcept</argsstring>
+        <name>SetActorFatigueBase</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the base fatigue of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="558" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="299" bodyend="302"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a44ce9ec02ed6bdc209092a839053b915" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorFatigueCurrent</definition>
+        <argsstring>(double value) noexcept</argsstring>
+        <name>SetActorFatigueCurrent</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the current fatigue of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="566" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="304" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a24923e0279a769bc3b0937e33142d690" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorFatigueModified</definition>
+        <argsstring>(double value) noexcept</argsstring>
+        <name>SetActorFatigueModified</name>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the modified fatigue of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="574" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="309" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a3ac1ed5a1a0e0ec778b4c522d3730bb0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorSound</definition>
+        <argsstring>(const char *sound) noexcept</argsstring>
+        <name>SetActorSound</name>
+        <param>
+          <type>const char *</type>
+          <declname>sound</declname>
+        </param>
+        <briefdescription>
+<para>Set the sound of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sound. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="582" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="314" bodyend="317"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1afa729ba978256b5747b51165cfa94b4e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorAIAction</definition>
+        <argsstring>(unsigned int action) noexcept</argsstring>
+        <name>SetActorAIAction</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Set the AI action of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new action. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="590" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="319" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a4636fd46a003ada9367df1c46876e8dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorAITargetToPlayer</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>SetActorAITargetToPlayer</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Set a player as the AI target of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="598" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="324" bodyend="333"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1acb938a24541f4d30b042dba63cccc588" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorAITargetToObject</definition>
+        <argsstring>(int refNum, int mpNum) noexcept</argsstring>
+        <name>SetActorAITargetToObject</name>
+        <param>
+          <type>int</type>
+          <declname>refNum</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mpNum</declname>
+        </param>
+        <briefdescription>
+<para>Set another object as the AI target of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The refNum of the target object. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mpNum</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mpNum of the target object. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="607" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="335" bodyend="342"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a7d3e4bad9429c2a00998462f9617c2be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorAICoordinates</definition>
+        <argsstring>(double x, double y, double z) noexcept</argsstring>
+        <name>SetActorAICoordinates</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+<para>Set the coordinates for the AI package associated with the current AI action. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The X coordinate. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Y coordinate. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Z coordinate. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="617" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="344" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a9dc59fec9de13c6d8f4394a7a536363b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorAIDistance</definition>
+        <argsstring>(unsigned int distance) noexcept</argsstring>
+        <name>SetActorAIDistance</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>distance</declname>
+        </param>
+        <briefdescription>
+<para>Set the distance of the AI package associated with the current AI action. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The distance of the package. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="625" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="351" bodyend="354"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a3c5ea140303ba4c9f6693ef8aae9a680" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorAIDuration</definition>
+        <argsstring>(unsigned int duration) noexcept</argsstring>
+        <name>SetActorAIDuration</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Set the duration of the AI package associated with the current AI action. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The duration of the package. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="633" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="356" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1acc830c799a5ed3058a0f6a76e50c6295" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorAIRepetition</definition>
+        <argsstring>(bool shouldRepeat) noexcept</argsstring>
+        <name>SetActorAIRepetition</name>
+        <param>
+          <type>bool</type>
+          <declname>shouldRepeat</declname>
+        </param>
+        <briefdescription>
+<para>Set whether the current AI package should be repeated. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: This only has an effect on the WANDER package.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shouldRepeat</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the package should be repeated. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="643" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="361" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ac0083aa92211105a7a4d135f53f96064" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::EquipActorItem</definition>
+        <argsstring>(unsigned short slot, const char *refId, unsigned int count, int charge, double enchantmentCharge=-1) noexcept</argsstring>
+        <name>EquipActorItem</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>slot</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>refId</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>charge</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>enchantmentCharge</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Equip an item in a certain slot of the equipment of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The equipment slot. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>refId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The refId of the item. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The count of the item. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>charge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The charge of the item. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enchantmentCharge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The enchantment charge of the item. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="656" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="366" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1aec0f477a154ff16d6260f52df1487ae6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::UnequipActorItem</definition>
+        <argsstring>(unsigned short slot) noexcept</argsstring>
+        <name>UnequipActorItem</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>slot</declname>
+        </param>
+        <briefdescription>
+<para>Unequip the item in a certain slot of the equipment of the temporary actor stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>slot</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The equipment slot. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="665" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="374" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ab235025f55e101d3ab69ae706873d693" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::AddActor</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>AddActor</name>
+        <briefdescription>
+<para>Add a copy of the server&apos;s temporary actor to the server&apos;s temporary actor list. </para>        </briefdescription>
+        <detaileddescription>
+<para>In the process, the server&apos;s temporary actor will automatically be cleared so a new one can be set up.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="675" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="379" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a11eafb908544e03e2d54d5a86f5e3fd5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SendActorList</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>SendActorList</name>
+        <briefdescription>
+<para>Send an ActorList packet. </para>        </briefdescription>
+        <detaileddescription>
+<para>It is sent only to the player for whom the current actor list was initialized.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="684" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="386" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ad0288773f0c416058d724003708a8c46" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SendActorAuthority</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>SendActorAuthority</name>
+        <briefdescription>
+<para>Send an ActorAuthority packet. </para>        </briefdescription>
+        <detaileddescription>
+<para>The player for whom the current actor list was initialized is recorded in the server memory as the new actor authority for the actor list&apos;s cell.</para><para>The packet is sent to that player as well as all other players who have the cell loaded.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="696" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="393" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a587105bd8f915c3ff9c36d60498f322b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SendActorPosition</definition>
+        <argsstring>(bool sendToOtherVisitors, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendActorPosition</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherVisitors</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send an ActorPosition packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherVisitors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to cell visitors other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="708" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="410" bodyend="427"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ac22683512d6ec3a315f6ce3e161a05b2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SendActorStatsDynamic</definition>
+        <argsstring>(bool sendToOtherVisitors, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendActorStatsDynamic</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherVisitors</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send an ActorStatsDynamic packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherVisitors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to cell visitors other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="720" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="429" bodyend="446"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ac947bad400682fe4a4b9e22fa0a766d1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SendActorEquipment</definition>
+        <argsstring>(bool sendToOtherVisitors, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendActorEquipment</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherVisitors</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send an ActorEquipment packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherVisitors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to cell visitors other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="732" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="448" bodyend="465"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1aca7cad289a57fbc24631329e90387fe9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SendActorSpeech</definition>
+        <argsstring>(bool sendToOtherVisitors, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendActorSpeech</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherVisitors</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send an ActorSpeech packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherVisitors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to cell visitors other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="743" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="467" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a27b1ee6489ff95e812d41e9e7ae8ea43" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SendActorAI</definition>
+        <argsstring>(bool sendToOtherVisitors, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendActorAI</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherVisitors</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send an ActorAI packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherVisitors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to cell visitors other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="754" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="486" bodyend="503"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a05f34c3f738550b3cad29fc44ae01781" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SendActorCellChange</definition>
+        <argsstring>(bool sendToOtherVisitors, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendActorCellChange</name>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherVisitors</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send an ActorCellChange packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sendToOtherVisitors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to cell visitors other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default).</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="766" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="505" bodyend="522"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a2efbee9b37fef03d07b9e2f21a50e9f9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::ReadLastActorList</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ReadLastActorList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="771" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="527" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1ad67f41fe709b25aa7de3d3237a82cf00" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::InitializeActorList</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>InitializeActorList</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="772" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="532" bodyend="536"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a583a7493fc7fd4ae6854dd62a62735e0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::CopyLastActorListToStore</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>CopyLastActorListToStore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="773" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="538" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a9d3597c97b0fe0f825c5866015dd0d29" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ActorFunctions::GetActorRefNumIndex</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorRefNumIndex</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="774" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="543" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a5e6ae49d21dea95d5480be9b8da29c6b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ActorFunctions::GetActorKillerRefNumIndex</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetActorKillerRefNumIndex</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="775" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="548" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="class_actor_functions_1a2e32274dd5e41c09bb3e6da238287233" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ActorFunctions::SetActorRefNumIndex</definition>
+        <argsstring>(int refNum) noexcept</argsstring>
+        <name>SetActorRefNumIndex</name>
+        <param>
+          <type>int</type>
+          <declname>refNum</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="776" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.cpp" bodystart="553" bodyend="556"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" line="106" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Actors.hpp" bodystart="105" bodyend="777"/>
+    <listofallmembers>
+      <member refid="class_actor_functions_1ab235025f55e101d3ab69ae706873d693" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>AddActor</name></member>
+      <member refid="class_actor_functions_1a5183f07b08b2293440abf55df33ea5eb" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>ClearActorList</name></member>
+      <member refid="class_actor_functions_1a583a7493fc7fd4ae6854dd62a62735e0" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>CopyLastActorListToStore</name></member>
+      <member refid="class_actor_functions_1a86ab8e7c879000379315d0d988f6f54c" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>CopyReceivedActorListToStore</name></member>
+      <member refid="class_actor_functions_1a13efdece02432ef55a705e1c619a8437" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>DoesActorHavePlayerKiller</name></member>
+      <member refid="class_actor_functions_1a01b3593b9d35f8029c6814db335ffc9b" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>DoesActorHavePosition</name></member>
+      <member refid="class_actor_functions_1a943254ebc543b693e93fbc0a03dca922" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>DoesActorHaveStatsDynamic</name></member>
+      <member refid="class_actor_functions_1ac0083aa92211105a7a4d135f53f96064" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>EquipActorItem</name></member>
+      <member refid="class_actor_functions_1a35098cfd190882887670d3e622143c2d" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorCell</name></member>
+      <member refid="class_actor_functions_1a01c726a78df90871e15413d9596c91aa" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorEquipmentItemCharge</name></member>
+      <member refid="class_actor_functions_1ad902ffea43fdc23d781c5a8271d38a2f" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorEquipmentItemCount</name></member>
+      <member refid="class_actor_functions_1a692a856b03f1b23f3f29392978df1d1e" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorEquipmentItemEnchantmentCharge</name></member>
+      <member refid="class_actor_functions_1ae57564b8cc53b2b9d21d9246834b9232" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorEquipmentItemRefId</name></member>
+      <member refid="class_actor_functions_1ad46cb4af8bc7124b49f9598898dc0f00" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorFatigueBase</name></member>
+      <member refid="class_actor_functions_1a63214d669d5d3e36b2ffdc33f7560448" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorFatigueCurrent</name></member>
+      <member refid="class_actor_functions_1a92a8e0180fd353abbed4f36e8ad5c3d9" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorFatigueModified</name></member>
+      <member refid="class_actor_functions_1ad5fc0beac4ed24944d06c6894cdf5dc5" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorHealthBase</name></member>
+      <member refid="class_actor_functions_1a428f0d1b72ea040040f288c006827c78" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorHealthCurrent</name></member>
+      <member refid="class_actor_functions_1af6988c34f73e5815b6b2bbf8995e4037" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorHealthModified</name></member>
+      <member refid="class_actor_functions_1a8426ef0013b0b1414a758b974076e392" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorKillerMpNum</name></member>
+      <member refid="class_actor_functions_1ac6ea366af0650045fdc12e8bfb752276" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorKillerName</name></member>
+      <member refid="class_actor_functions_1a2b96df935c5076c53770ebd75a862481" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorKillerPid</name></member>
+      <member refid="class_actor_functions_1add106b61e3217ac1714ee08146edad41" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorKillerRefId</name></member>
+      <member refid="class_actor_functions_1a5cd346bdb9565b0b37373dc100309927" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorKillerRefNum</name></member>
+      <member refid="class_actor_functions_1a5e6ae49d21dea95d5480be9b8da29c6b" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorKillerRefNumIndex</name></member>
+      <member refid="class_actor_functions_1a8a2f1ea7c777f44d0a5ddd9e8e35ae1d" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorListAction</name></member>
+      <member refid="class_actor_functions_1aa7c681f1756c17c35be4b612c5aad3d1" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorListSize</name></member>
+      <member refid="class_actor_functions_1a979e56e23da4bd93cef00dda25d46243" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorMagickaBase</name></member>
+      <member refid="class_actor_functions_1a9417a1ec1cd234f9b663c4385fbe14f1" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorMagickaCurrent</name></member>
+      <member refid="class_actor_functions_1ae958ddf5fbe051e822e2821b53352c4a" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorMagickaModified</name></member>
+      <member refid="class_actor_functions_1aa608a1be9dbb84573abc51f21e416296" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorMpNum</name></member>
+      <member refid="class_actor_functions_1ad1c670bfeb76cbb43ea65a812100e3a8" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorPosX</name></member>
+      <member refid="class_actor_functions_1a9fed70eb8bb6d8b51fbaaa5e67b071b6" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorPosY</name></member>
+      <member refid="class_actor_functions_1a35396540235173c1c046b61f8586380f" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorPosZ</name></member>
+      <member refid="class_actor_functions_1a1fd9d2a7b385225cc696f34b8db60c57" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorRefId</name></member>
+      <member refid="class_actor_functions_1a3bf86ca07dd2aa12a0762562fd494211" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorRefNum</name></member>
+      <member refid="class_actor_functions_1a9d3597c97b0fe0f825c5866015dd0d29" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorRefNumIndex</name></member>
+      <member refid="class_actor_functions_1a9f746024df5a25ec60d2d42be09392a7" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorRotX</name></member>
+      <member refid="class_actor_functions_1aa7c663e9fff0b197085ce262bc1db41f" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorRotY</name></member>
+      <member refid="class_actor_functions_1a8e9cdf9ac405ae6b70b0e7eb95b72949" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>GetActorRotZ</name></member>
+      <member refid="class_actor_functions_1ad67f41fe709b25aa7de3d3237a82cf00" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>InitializeActorList</name></member>
+      <member refid="class_actor_functions_1a48dcba7ee0bd36e449b0f849e623485d" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>ReadCellActorList</name></member>
+      <member refid="class_actor_functions_1a2efbee9b37fef03d07b9e2f21a50e9f9" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>ReadLastActorList</name></member>
+      <member refid="class_actor_functions_1a00028c7774b0517485dc1b97b84e5f2a" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>ReadReceivedActorList</name></member>
+      <member refid="class_actor_functions_1a27b1ee6489ff95e812d41e9e7ae8ea43" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SendActorAI</name></member>
+      <member refid="class_actor_functions_1ad0288773f0c416058d724003708a8c46" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SendActorAuthority</name></member>
+      <member refid="class_actor_functions_1a05f34c3f738550b3cad29fc44ae01781" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SendActorCellChange</name></member>
+      <member refid="class_actor_functions_1ac947bad400682fe4a4b9e22fa0a766d1" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SendActorEquipment</name></member>
+      <member refid="class_actor_functions_1a11eafb908544e03e2d54d5a86f5e3fd5" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SendActorList</name></member>
+      <member refid="class_actor_functions_1a587105bd8f915c3ff9c36d60498f322b" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SendActorPosition</name></member>
+      <member refid="class_actor_functions_1aca7cad289a57fbc24631329e90387fe9" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SendActorSpeech</name></member>
+      <member refid="class_actor_functions_1ac22683512d6ec3a315f6ce3e161a05b2" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SendActorStatsDynamic</name></member>
+      <member refid="class_actor_functions_1afa729ba978256b5747b51165cfa94b4e" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorAIAction</name></member>
+      <member refid="class_actor_functions_1a7d3e4bad9429c2a00998462f9617c2be" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorAICoordinates</name></member>
+      <member refid="class_actor_functions_1a9dc59fec9de13c6d8f4394a7a536363b" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorAIDistance</name></member>
+      <member refid="class_actor_functions_1a3c5ea140303ba4c9f6693ef8aae9a680" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorAIDuration</name></member>
+      <member refid="class_actor_functions_1acc830c799a5ed3058a0f6a76e50c6295" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorAIRepetition</name></member>
+      <member refid="class_actor_functions_1acb938a24541f4d30b042dba63cccc588" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorAITargetToObject</name></member>
+      <member refid="class_actor_functions_1a4636fd46a003ada9367df1c46876e8dd" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorAITargetToPlayer</name></member>
+      <member refid="class_actor_functions_1a077fada2c7cc2e0090a0ac324a8d5e8d" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorCell</name></member>
+      <member refid="class_actor_functions_1ad9a7c0351bc57929de28b83ed640c8b3" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorFatigueBase</name></member>
+      <member refid="class_actor_functions_1a44ce9ec02ed6bdc209092a839053b915" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorFatigueCurrent</name></member>
+      <member refid="class_actor_functions_1a24923e0279a769bc3b0937e33142d690" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorFatigueModified</name></member>
+      <member refid="class_actor_functions_1a2a738b6139cf86809df5975f030b7ed9" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorHealthBase</name></member>
+      <member refid="class_actor_functions_1ac8e31b0ab7d96e31ebef63090c77cd80" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorHealthCurrent</name></member>
+      <member refid="class_actor_functions_1a290f37b9dfbd293c49ea6dc4b7e4842c" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorHealthModified</name></member>
+      <member refid="class_actor_functions_1a20a2d5600f2122f10e0f0a0d19f24b96" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorListAction</name></member>
+      <member refid="class_actor_functions_1ae489634857ab65f8ee328eb513f75b83" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorListCell</name></member>
+      <member refid="class_actor_functions_1aab5588e100338fbfe3433b7336520317" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorListPid</name></member>
+      <member refid="class_actor_functions_1a8b0ae56ad796c58a28c7a459a8e98fbd" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorMagickaBase</name></member>
+      <member refid="class_actor_functions_1a233b066ee815d91c708f84055bb5937e" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorMagickaCurrent</name></member>
+      <member refid="class_actor_functions_1ae173d516669655519476d14489b6b942" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorMagickaModified</name></member>
+      <member refid="class_actor_functions_1adcf658fd068031ce880a00cc5751fcc6" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorMpNum</name></member>
+      <member refid="class_actor_functions_1a0e3603266f330bb0836492eb6270ec94" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorPosition</name></member>
+      <member refid="class_actor_functions_1ac5bfe48631894bae0f6240f139f35587" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorRefId</name></member>
+      <member refid="class_actor_functions_1ae09dc47f9a37341a50ff8515df9f1114" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorRefNum</name></member>
+      <member refid="class_actor_functions_1a2e32274dd5e41c09bb3e6da238287233" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorRefNumIndex</name></member>
+      <member refid="class_actor_functions_1a731727c3a7f8a5dd9975357fc959b63c" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorRotation</name></member>
+      <member refid="class_actor_functions_1a3ac1ed5a1a0e0ec778b4c522d3730bb0" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>SetActorSound</name></member>
+      <member refid="class_actor_functions_1aec0f477a154ff16d6260f52df1487ae6" prot="public" virt="non-virtual"><scope>ActorFunctions</scope><name>UnequipActorItem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

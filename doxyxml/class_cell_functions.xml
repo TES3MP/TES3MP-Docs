@@ -1,0 +1,394 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_cell_functions" kind="class" language="C++" prot="public">
+    <compoundname>CellFunctions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_cell_functions_1a5d50b6d9921977ebef7d4adcfc68e4d7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int CellFunctions::GetCellStateChangesSize</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>GetCellStateChangesSize</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of indexes in a player&apos;s latest cell state changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose cell state changes should be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of indexes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.hpp" line="36" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.cpp" bodystart="15" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cell_functions_1add1ec9366fa791b7e8b88ded72c2a890" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int CellFunctions::GetCellStateType</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetCellStateType</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the cell state type at a certain index in a player&apos;s latest cell state changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose cell state changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the cell state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The cell state type (0 for LOAD, 1 for UNLOAD). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.hpp" line="45" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.cpp" bodystart="23" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cell_functions_1ac64965a54754387e9e76478835f52493" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * CellFunctions::GetCellStateDescription</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetCellStateDescription</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the cell description at a certain index in a player&apos;s latest cell state changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose cell state changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the cell state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The cell description. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.hpp" line="54" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.cpp" bodystart="31" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cell_functions_1a2a816a8eb16b9bff3e4d1b1753d8a96d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * CellFunctions::GetCell</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>GetCell</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Get the cell description of a player&apos;s cell. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The cell description. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.hpp" line="62" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.cpp" bodystart="43" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cell_functions_1a3e6e4f3eb12347b35a64d16843eb358d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CellFunctions::GetExteriorX</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>GetExteriorX</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Get the X coordinate of the player&apos;s exterior cell. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The X coordinate of the cell. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.hpp" line="70" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.cpp" bodystart="52" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cell_functions_1acf168e2e7c0bd200cb80ecaa5abd509a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int CellFunctions::GetExteriorY</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>GetExteriorY</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Get the Y coordinate of the player&apos;s exterior cell. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Y coordinate of the cell. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.hpp" line="78" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.cpp" bodystart="59" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cell_functions_1a93253bb64ea5de360a278fb0aa303489" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CellFunctions::IsInExterior</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>IsInExterior</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the player is in an exterior cell or not. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the player is in an exterior cell. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.hpp" line="86" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.cpp" bodystart="66" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cell_functions_1a538c4db988085e9dca5d0852d2081ce7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * CellFunctions::GetRegion</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>GetRegion</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Get the region of the player&apos;s exterior cell. </para>        </briefdescription>
+        <detaileddescription>
+<para>A blank value will be returned if the player is in an interior.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The region. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.hpp" line="96" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.cpp" bodystart="74" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cell_functions_1a20db168688814883fb20fb3d6649c1bf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool CellFunctions::IsChangingRegion</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>IsChangingRegion</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the player&apos;s last cell change has involved a region change. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether the player has changed their region. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.hpp" line="104" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.cpp" bodystart="82" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cell_functions_1a11672e719cb62b6fcd47b73cb40a769a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CellFunctions::SetCell</definition>
+        <argsstring>(unsigned short pid, const char *cellDescription) noexcept</argsstring>
+        <name>SetCell</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>cellDescription</declname>
+        </param>
+        <briefdescription>
+<para>Set the cell of a player. </para>        </briefdescription>
+        <detaileddescription>
+<para>This changes the cell recorded for that player in the server memory, but does not by itself send a packet.</para><para>The cell is determined to be an exterior cell if it fits the pattern of a number followed by a comma followed by another number.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cellDescription</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cell description. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.hpp" line="119" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.cpp" bodystart="90" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cell_functions_1a31f2abe28e54cfbc06942ea85c8c37a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CellFunctions::SetExteriorCell</definition>
+        <argsstring>(unsigned short pid, int x, int y) noexcept</argsstring>
+        <name>SetExteriorCell</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>Set the cell of a player to an exterior cell. </para>        </briefdescription>
+        <detaileddescription>
+<para>This changes the cell recorded for that player in the server memory, but does not by itself send a packet.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The X coordinate of the cell. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Y coordinate of the cell. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.hpp" line="132" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.cpp" bodystart="101" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="class_cell_functions_1a05a34cd9e756d8f1b6d9c84411e25b94" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void CellFunctions::SendCell</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>SendCell</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Send a PlayerCellChange packet about a player. </para>        </briefdescription>
+        <detaileddescription>
+<para>It is only sent to the affected player.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.hpp" line="142" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.cpp" bodystart="118" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.hpp" line="27" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Cells.hpp" bodystart="26" bodyend="144"/>
+    <listofallmembers>
+      <member refid="class_cell_functions_1a2a816a8eb16b9bff3e4d1b1753d8a96d" prot="public" virt="non-virtual"><scope>CellFunctions</scope><name>GetCell</name></member>
+      <member refid="class_cell_functions_1a5d50b6d9921977ebef7d4adcfc68e4d7" prot="public" virt="non-virtual"><scope>CellFunctions</scope><name>GetCellStateChangesSize</name></member>
+      <member refid="class_cell_functions_1ac64965a54754387e9e76478835f52493" prot="public" virt="non-virtual"><scope>CellFunctions</scope><name>GetCellStateDescription</name></member>
+      <member refid="class_cell_functions_1add1ec9366fa791b7e8b88ded72c2a890" prot="public" virt="non-virtual"><scope>CellFunctions</scope><name>GetCellStateType</name></member>
+      <member refid="class_cell_functions_1a3e6e4f3eb12347b35a64d16843eb358d" prot="public" virt="non-virtual"><scope>CellFunctions</scope><name>GetExteriorX</name></member>
+      <member refid="class_cell_functions_1acf168e2e7c0bd200cb80ecaa5abd509a" prot="public" virt="non-virtual"><scope>CellFunctions</scope><name>GetExteriorY</name></member>
+      <member refid="class_cell_functions_1a538c4db988085e9dca5d0852d2081ce7" prot="public" virt="non-virtual"><scope>CellFunctions</scope><name>GetRegion</name></member>
+      <member refid="class_cell_functions_1a20db168688814883fb20fb3d6649c1bf" prot="public" virt="non-virtual"><scope>CellFunctions</scope><name>IsChangingRegion</name></member>
+      <member refid="class_cell_functions_1a93253bb64ea5de360a278fb0aa303489" prot="public" virt="non-virtual"><scope>CellFunctions</scope><name>IsInExterior</name></member>
+      <member refid="class_cell_functions_1a05a34cd9e756d8f1b6d9c84411e25b94" prot="public" virt="non-virtual"><scope>CellFunctions</scope><name>SendCell</name></member>
+      <member refid="class_cell_functions_1a11672e719cb62b6fcd47b73cb40a769a" prot="public" virt="non-virtual"><scope>CellFunctions</scope><name>SetCell</name></member>
+      <member refid="class_cell_functions_1a31f2abe28e54cfbc06942ea85c8c37a5" prot="public" virt="non-virtual"><scope>CellFunctions</scope><name>SetExteriorCell</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

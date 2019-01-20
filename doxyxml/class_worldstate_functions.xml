@@ -1,0 +1,1073 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_worldstate_functions" kind="class" language="C++" prot="public">
+    <compoundname>WorldstateFunctions</compoundname>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_worldstate_functions_1a5b3d0968f10cc786f3b2a0b081330b24" prot="public" static="yes" mutable="no">
+        <type>mwmp::BaseWorldstate *</type>
+        <definition>BaseWorldstate * WorldstateFunctions::readWorldstate</definition>
+        <argsstring></argsstring>
+        <name>readWorldstate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="65" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_worldstate_functions_1abf06c0aced02df99f2fb428d2269476b" prot="public" static="yes" mutable="no">
+        <type>mwmp::BaseWorldstate</type>
+        <definition>BaseWorldstate WorldstateFunctions::writeWorldstate</definition>
+        <argsstring></argsstring>
+        <name>writeWorldstate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="66" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_worldstate_functions_1a7e5a0df3612c661885e94eed683660dc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::ReadReceivedWorldstate</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ReadReceivedWorldstate</name>
+        <briefdescription>
+<para>Use the last worldstate received by the server as the one being read. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="73" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a2d5ad8c53d0a49510e997489d0660e08" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::CopyReceivedWorldstateToStore</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>CopyReceivedWorldstateToStore</name>
+        <briefdescription>
+<para>Take the contents of the read-only worldstate last received by the server from a player and move its contents to the stored worldstate that can be sent by the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="82" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1ac919fb4136dcb4d10eb1cfe205947e5b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::ClearMapChanges</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ClearMapChanges</name>
+        <briefdescription>
+<para>Clear the map changes for the write-only worldstate. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used to initialize the sending of new WorldMap packets.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="91" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a57a7e8faec98d1e7b1f21c54b80fac2a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int WorldstateFunctions::GetMapChangesSize</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetMapChangesSize</name>
+        <briefdescription>
+<para>Get the number of indexes in the read worldstate&apos;s map changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of indexes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="98" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="31" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a56441d7c4e46c66a6f2dc89f4f00c9de" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * WorldstateFunctions::GetWeatherRegion</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetWeatherRegion</name>
+        <briefdescription>
+<para>Get the weather region in the read worldstate. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The weather region. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="105" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="36" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a34430b8fe7eae5ab1903b8b6e127793e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WorldstateFunctions::GetWeatherCurrent</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetWeatherCurrent</name>
+        <briefdescription>
+<para>Get the current weather in the read worldstate. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The current weather. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="112" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="41" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1ad0bbe55028226884ea9ad5dc0cb2846e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WorldstateFunctions::GetWeatherNext</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetWeatherNext</name>
+        <briefdescription>
+<para>Get the next weather in the read worldstate. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The next weather. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="119" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="46" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1aad9294eb314c43bbd0c34d79a941cda2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WorldstateFunctions::GetWeatherQueued</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetWeatherQueued</name>
+        <briefdescription>
+<para>Get the queued weather in the read worldstate. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The queued weather. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="126" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a162fe6bec3e16e0629f211cc3443202b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double WorldstateFunctions::GetWeatherTransitionFactor</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetWeatherTransitionFactor</name>
+        <briefdescription>
+<para>Get the transition factor of the weather in the read worldstate. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The transition factor of the weather. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="133" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a3e6e962533cc721e12b46acc2083b70d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WorldstateFunctions::GetMapTileCellX</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetMapTileCellX</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the X coordinate of the cell corresponding to the map tile at a certain index in the read worldstate&apos;s map tiles. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the map tile. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The X coordinate of the cell. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="142" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="61" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a998b096d78f82e8ee7425b1f0cb31961" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int WorldstateFunctions::GetMapTileCellY</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetMapTileCellY</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the Y coordinate of the cell corresponding to the map tile at a certain index in the read worldstate&apos;s map tiles. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the map tile. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Y coordinate of the cell. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="151" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1ae489186dbc6036b0da9e53a12be178d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetAuthorityRegion</definition>
+        <argsstring>(const char *authorityRegion) noexcept</argsstring>
+        <name>SetAuthorityRegion</name>
+        <param>
+          <type>const char *</type>
+          <declname>authorityRegion</declname>
+        </param>
+        <briefdescription>
+<para>Set the region affected by the next WorldRegionAuthority packet sent. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>region</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The region. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="159" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a956384ebdb8d76b7cd8f94c50a4a5366" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetWeatherRegion</definition>
+        <argsstring>(const char *region) noexcept</argsstring>
+        <name>SetWeatherRegion</name>
+        <param>
+          <type>const char *</type>
+          <declname>region</declname>
+        </param>
+        <briefdescription>
+<para>Set the weather region in the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>region</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The region. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="167" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a8ff1be1afe4d9e05f5435d733f01e041" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetWeatherForceState</definition>
+        <argsstring>(bool forceState) noexcept</argsstring>
+        <name>SetWeatherForceState</name>
+        <param>
+          <type>bool</type>
+          <declname>forceState</declname>
+        </param>
+        <briefdescription>
+<para>Set the weather forcing state in the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>Players who receive a packet with forced weather will switch to that weather immediately.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>forceState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The weather forcing state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="177" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1af4c2c3460ac0585925f943dae1e688f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetWeatherCurrent</definition>
+        <argsstring>(int currentWeather) noexcept</argsstring>
+        <name>SetWeatherCurrent</name>
+        <param>
+          <type>int</type>
+          <declname>currentWeather</declname>
+        </param>
+        <briefdescription>
+<para>Set the current weather in the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>currentWeather</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current weather. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="185" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a4fa7518e8e8fc5c4cbf10b780b89d392" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetWeatherNext</definition>
+        <argsstring>(int nextWeather) noexcept</argsstring>
+        <name>SetWeatherNext</name>
+        <param>
+          <type>int</type>
+          <declname>nextWeather</declname>
+        </param>
+        <briefdescription>
+<para>Set the next weather in the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nextWeather</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The next weather. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="193" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1abb2f1a0b78622ad555347d716d4cd856" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetWeatherQueued</definition>
+        <argsstring>(int queuedWeather) noexcept</argsstring>
+        <name>SetWeatherQueued</name>
+        <param>
+          <type>int</type>
+          <declname>queuedWeather</declname>
+        </param>
+        <briefdescription>
+<para>Set the queued weather in the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>queuedWeather</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The queued weather. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="201" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1aad5cdc35940eca4afba9349b965958fd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetWeatherTransitionFactor</definition>
+        <argsstring>(double transitionFactor) noexcept</argsstring>
+        <name>SetWeatherTransitionFactor</name>
+        <param>
+          <type>double</type>
+          <declname>transitionFactor</declname>
+        </param>
+        <briefdescription>
+<para>Set the transition factor for the weather in the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transitionFactor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The transition factor. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="209" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1af5ed1a814aada4e610fad4bc2ac44fd5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetHour</definition>
+        <argsstring>(double hour) noexcept</argsstring>
+        <name>SetHour</name>
+        <param>
+          <type>double</type>
+          <declname>hour</declname>
+        </param>
+        <briefdescription>
+<para>Set the world&apos;s hour in the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hour</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The hour. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="217" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a3d0868e17a5f6c84d00d6bee2437c7af" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetDay</definition>
+        <argsstring>(int day) noexcept</argsstring>
+        <name>SetDay</name>
+        <param>
+          <type>int</type>
+          <declname>day</declname>
+        </param>
+        <briefdescription>
+<para>Set the world&apos;s day in the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>day</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The day. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="225" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="111" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a4cf9900a2eafa51a853b1bebafadfcc3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetMonth</definition>
+        <argsstring>(int month) noexcept</argsstring>
+        <name>SetMonth</name>
+        <param>
+          <type>int</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+<para>Set the world&apos;s month in the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>month</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The month. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="233" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1ae2484134b7f9294a482353c939237bf1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetYear</definition>
+        <argsstring>(int year) noexcept</argsstring>
+        <name>SetYear</name>
+        <param>
+          <type>int</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+<para>Set the world&apos;s year in the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>year</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The year. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="241" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="121" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a2ae699c08aa67710ddb9f18b7f4e0a9c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetDaysPassed</definition>
+        <argsstring>(int daysPassed) noexcept</argsstring>
+        <name>SetDaysPassed</name>
+        <param>
+          <type>int</type>
+          <declname>daysPassed</declname>
+        </param>
+        <briefdescription>
+<para>Set the world&apos;s days passed in the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>daysPassed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The days passed. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="249" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a3ef5a926db7004e95645cdb3169ac46b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetTimeScale</definition>
+        <argsstring>(double timeScale) noexcept</argsstring>
+        <name>SetTimeScale</name>
+        <param>
+          <type>double</type>
+          <declname>timeScale</declname>
+        </param>
+        <briefdescription>
+<para>Set the world&apos;s time scale in the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeScale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The time scale. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="258" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="131" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a301027a755587408da3c6db427ae99cf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetPlayerCollisionState</definition>
+        <argsstring>(bool state) noexcept</argsstring>
+        <name>SetPlayerCollisionState</name>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Set the collision state for other players in the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The collision state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="267" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a662e411bb519d790b5ca96e4f1d6eebc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetActorCollisionState</definition>
+        <argsstring>(bool state) noexcept</argsstring>
+        <name>SetActorCollisionState</name>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Set the collision state for actors in the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The collision state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="276" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1ae57bba26811f8eb41bead31fdabca1ca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SetPlacedObjectCollisionState</definition>
+        <argsstring>(bool state) noexcept</argsstring>
+        <name>SetPlacedObjectCollisionState</name>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+<para>Set the collision state for placed objects in the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The collision state. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="285" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a4d8dcbbfd67079a5ca73ebf392db51df" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::UseActorCollisionForPlacedObjects</definition>
+        <argsstring>(bool useActorCollision) noexcept</argsstring>
+        <name>UseActorCollisionForPlacedObjects</name>
+        <param>
+          <type>bool</type>
+          <declname>useActorCollision</declname>
+        </param>
+        <briefdescription>
+<para>Whether placed objects with collision turned on should use actor collision, i.e. whether they should be slippery and prevent players from standing on them. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>useActorCollision</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether to use actor collision. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="294" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="151" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1ac4aba3f305022e4d95c024f004f983d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::AddEnforcedCollisionRefId</definition>
+        <argsstring>(const char *refId) noexcept</argsstring>
+        <name>AddEnforcedCollisionRefId</name>
+        <param>
+          <type>const char *</type>
+          <declname>refId</declname>
+        </param>
+        <briefdescription>
+<para>Add a refId to the list of refIds for which collision should be enforced irrespective of other settings. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>refId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The refId. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="303" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="156" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1ac5f54ffc21010886d36a21a0df94f4aa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::ClearEnforcedCollisionRefIds</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ClearEnforcedCollisionRefIds</name>
+        <briefdescription>
+<para>Clear the list of refIdsd for which collision should be enforced irrespective of other settings. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="311" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="161" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a2e0beee3f27b31b6d16decba2ea039fc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SaveMapTileImageFile</definition>
+        <argsstring>(unsigned int index, const char *filePath) noexcept</argsstring>
+        <name>SaveMapTileImageFile</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Save the .png image data of the map tile at a certain index in the read worldstate&apos;s map changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the map tile. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file path of the resulting file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="321" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="166" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1adc3c4443ec14f897c91346d8f28b86f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::LoadMapTileImageFile</definition>
+        <argsstring>(int cellX, int cellY, const char *filePath) noexcept</argsstring>
+        <name>LoadMapTileImageFile</name>
+        <param>
+          <type>int</type>
+          <declname>cellX</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>cellY</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Load a .png file as the image data for a map tile and add it to the write-only worldstate stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cellX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The X coordinate of the cell corresponding to the map tile. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cellY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Y coordinate of the cell corresponding to the map tile. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The file path of the loaded file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="332" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="178" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a4a3ec9d178c6baf985ed246ac6bf894a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SendWorldRegionAuthority</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>SendWorldRegionAuthority</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Send a WorldRegionAuthority packet establishing a certain player as the only one who should process certain region-specific events (such as weather changes). </para>        </briefdescription>
+        <detaileddescription>
+<para>It is always sent to all players.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID attached to the packet. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="343" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="263" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a779ad61d4b0dfd65812547f053844228" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SendWorldMap</definition>
+        <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendWorldMap</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send a WorldMap packet with the current set of map changes in the write-only worldstate. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID attached to the packet. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>broadcast</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent only to the attached player or to all players on the server. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="354" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="199" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a1f0fccd942ffa7f70d335c3eb8d5e1f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SendWorldTime</definition>
+        <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendWorldTime</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send a WorldTime packet with the current time and time scale in the write-only worldstate. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID attached to the packet. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="367" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="215" bodyend="229"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1ac6af488f9f395750965f3ebaa83ffd28" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SendWorldWeather</definition>
+        <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendWorldWeather</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send a WorldWeather packet with the current weather in the write-only worldstate. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID attached to the packet. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="379" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="231" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1ab93dab76631096fcd585bed57c769645" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::SendWorldCollisionOverride</definition>
+        <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendWorldCollisionOverride</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send a WorldCollisionOverride packet with the current collision overrides in the write-only worldstate. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID attached to the packet. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="392" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="247" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a96dfec6f7869b66d7e033bce5ac6eea3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::ReadLastWorldstate</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ReadLastWorldstate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="397" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="282" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="class_worldstate_functions_1a5adb6c8907d354500f79b0bb76bb564e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void WorldstateFunctions::CopyLastWorldstateToStore</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>CopyLastWorldstateToStore</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="398" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.cpp" bodystart="287" bodyend="290"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" line="62" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Worldstate.hpp" bodystart="61" bodyend="400"/>
+    <listofallmembers>
+      <member refid="class_worldstate_functions_1ac4aba3f305022e4d95c024f004f983d5" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>AddEnforcedCollisionRefId</name></member>
+      <member refid="class_worldstate_functions_1ac5f54ffc21010886d36a21a0df94f4aa" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>ClearEnforcedCollisionRefIds</name></member>
+      <member refid="class_worldstate_functions_1ac919fb4136dcb4d10eb1cfe205947e5b" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>ClearMapChanges</name></member>
+      <member refid="class_worldstate_functions_1a5adb6c8907d354500f79b0bb76bb564e" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>CopyLastWorldstateToStore</name></member>
+      <member refid="class_worldstate_functions_1a2d5ad8c53d0a49510e997489d0660e08" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>CopyReceivedWorldstateToStore</name></member>
+      <member refid="class_worldstate_functions_1a57a7e8faec98d1e7b1f21c54b80fac2a" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>GetMapChangesSize</name></member>
+      <member refid="class_worldstate_functions_1a3e6e962533cc721e12b46acc2083b70d" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>GetMapTileCellX</name></member>
+      <member refid="class_worldstate_functions_1a998b096d78f82e8ee7425b1f0cb31961" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>GetMapTileCellY</name></member>
+      <member refid="class_worldstate_functions_1a34430b8fe7eae5ab1903b8b6e127793e" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>GetWeatherCurrent</name></member>
+      <member refid="class_worldstate_functions_1ad0bbe55028226884ea9ad5dc0cb2846e" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>GetWeatherNext</name></member>
+      <member refid="class_worldstate_functions_1aad9294eb314c43bbd0c34d79a941cda2" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>GetWeatherQueued</name></member>
+      <member refid="class_worldstate_functions_1a56441d7c4e46c66a6f2dc89f4f00c9de" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>GetWeatherRegion</name></member>
+      <member refid="class_worldstate_functions_1a162fe6bec3e16e0629f211cc3443202b" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>GetWeatherTransitionFactor</name></member>
+      <member refid="class_worldstate_functions_1adc3c4443ec14f897c91346d8f28b86f2" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>LoadMapTileImageFile</name></member>
+      <member refid="class_worldstate_functions_1a96dfec6f7869b66d7e033bce5ac6eea3" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>ReadLastWorldstate</name></member>
+      <member refid="class_worldstate_functions_1a7e5a0df3612c661885e94eed683660dc" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>ReadReceivedWorldstate</name></member>
+      <member refid="class_worldstate_functions_1a5b3d0968f10cc786f3b2a0b081330b24" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>readWorldstate</name></member>
+      <member refid="class_worldstate_functions_1a2e0beee3f27b31b6d16decba2ea039fc" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SaveMapTileImageFile</name></member>
+      <member refid="class_worldstate_functions_1ab93dab76631096fcd585bed57c769645" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SendWorldCollisionOverride</name></member>
+      <member refid="class_worldstate_functions_1a779ad61d4b0dfd65812547f053844228" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SendWorldMap</name></member>
+      <member refid="class_worldstate_functions_1a4a3ec9d178c6baf985ed246ac6bf894a" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SendWorldRegionAuthority</name></member>
+      <member refid="class_worldstate_functions_1a1f0fccd942ffa7f70d335c3eb8d5e1f0" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SendWorldTime</name></member>
+      <member refid="class_worldstate_functions_1ac6af488f9f395750965f3ebaa83ffd28" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SendWorldWeather</name></member>
+      <member refid="class_worldstate_functions_1a662e411bb519d790b5ca96e4f1d6eebc" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetActorCollisionState</name></member>
+      <member refid="class_worldstate_functions_1ae489186dbc6036b0da9e53a12be178d4" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetAuthorityRegion</name></member>
+      <member refid="class_worldstate_functions_1a3d0868e17a5f6c84d00d6bee2437c7af" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetDay</name></member>
+      <member refid="class_worldstate_functions_1a2ae699c08aa67710ddb9f18b7f4e0a9c" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetDaysPassed</name></member>
+      <member refid="class_worldstate_functions_1af5ed1a814aada4e610fad4bc2ac44fd5" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetHour</name></member>
+      <member refid="class_worldstate_functions_1a4cf9900a2eafa51a853b1bebafadfcc3" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetMonth</name></member>
+      <member refid="class_worldstate_functions_1ae57bba26811f8eb41bead31fdabca1ca" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetPlacedObjectCollisionState</name></member>
+      <member refid="class_worldstate_functions_1a301027a755587408da3c6db427ae99cf" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetPlayerCollisionState</name></member>
+      <member refid="class_worldstate_functions_1a3ef5a926db7004e95645cdb3169ac46b" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetTimeScale</name></member>
+      <member refid="class_worldstate_functions_1af4c2c3460ac0585925f943dae1e688f1" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetWeatherCurrent</name></member>
+      <member refid="class_worldstate_functions_1a8ff1be1afe4d9e05f5435d733f01e041" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetWeatherForceState</name></member>
+      <member refid="class_worldstate_functions_1a4fa7518e8e8fc5c4cbf10b780b89d392" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetWeatherNext</name></member>
+      <member refid="class_worldstate_functions_1abb2f1a0b78622ad555347d716d4cd856" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetWeatherQueued</name></member>
+      <member refid="class_worldstate_functions_1a956384ebdb8d76b7cd8f94c50a4a5366" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetWeatherRegion</name></member>
+      <member refid="class_worldstate_functions_1aad5cdc35940eca4afba9349b965958fd" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetWeatherTransitionFactor</name></member>
+      <member refid="class_worldstate_functions_1ae2484134b7f9294a482353c939237bf1" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>SetYear</name></member>
+      <member refid="class_worldstate_functions_1a4d8dcbbfd67079a5ca73ebf392db51df" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>UseActorCollisionForPlacedObjects</name></member>
+      <member refid="class_worldstate_functions_1abf06c0aced02df99f2fb428d2269476b" prot="public" virt="non-virtual"><scope>WorldstateFunctions</scope><name>writeWorldstate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_f8c7842ae88a1005d8e6113798ab7066" kind="dir">
+    <compoundname>home</compoundname>
+    <innerdir refid="dir_237c6dea95f2733e4626432478dbb4c7">ICE</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/msys64/home/"/>
+  </compounddef>
+</doxygen>

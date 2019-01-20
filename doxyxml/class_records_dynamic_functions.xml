@@ -1,0 +1,2391 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_records_dynamic_functions" kind="class" language="C++" prot="public">
+    <compoundname>RecordsDynamicFunctions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_records_dynamic_functions_1a55f675eaac2b1de74aa34cee11575824" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::ClearRecords</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>ClearRecords</name>
+        <briefdescription>
+<para>Clear the data from the records stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="122" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="48" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1ae9e8035a077cd616d12af24181bc34a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned short</type>
+        <definition>unsigned short RecordsDynamicFunctions::GetRecordType</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetRecordType</name>
+        <briefdescription>
+<para>Get the type of records in the read worldstate&apos;s dynamic records. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The type of records (0 for SPELL, 1 for POTION, 2 for ENCHANTMENT, 3 for NPC). </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="130" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a33d0ebbd8e634d3736005a3c98df77de" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int RecordsDynamicFunctions::GetRecordCount</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetRecordCount</name>
+        <briefdescription>
+<para>Get the number of records in the read worldstate&apos;s dynamic records. </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The number of records. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="137" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a3eb8ad54707bd4e153d6fe3e231bc024" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int RecordsDynamicFunctions::GetRecordEffectCount</definition>
+        <argsstring>(unsigned int recordIndex) noexcept</argsstring>
+        <name>GetRecordEffectCount</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>recordIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of effects for the record at a certain index in the read worldstate&apos;s current records. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recordIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of effects. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="146" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1adac3701d0a85aa62f4551b192fce78fa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * RecordsDynamicFunctions::GetRecordId</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetRecordId</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the id of the record at a certain index in the read worldstate&apos;s dynamic records of the current type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The id of the record. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="155" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="89" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a940aee2753fa4f05f3562f196b384517" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * RecordsDynamicFunctions::GetRecordBaseId</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetRecordBaseId</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the base id (i.e. the id this record should inherit default values from) of the record at a certain index in the read worldstate&apos;s dynamic records of the current type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The base id of the record. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="165" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="103" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a6f60bf66bebda36ab7f9efa4baac5f22" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RecordsDynamicFunctions::GetRecordSubtype</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetRecordSubtype</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the subtype of the record at a certain index in the read worldstate&apos;s dynamic records of the current type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The type of the record. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="174" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="77" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1af37d21a08ddc03977383dd0344b97b92" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * RecordsDynamicFunctions::GetRecordName</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetRecordName</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the name of the record at a certain index in the read worldstate&apos;s dynamic records of the current type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The name of the record. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="183" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="125" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a45e86cd6855162583b32992b0a296451" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * RecordsDynamicFunctions::GetRecordModel</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetRecordModel</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the model of the record at a certain index in the read worldstate&apos;s dynamic records of the current type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The model of the record. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="192" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="145" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a7d41119123fc6f912a443ba646fe6778" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * RecordsDynamicFunctions::GetRecordIcon</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetRecordIcon</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the icon of the record at a certain index in the read worldstate&apos;s dynamic records of the current type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The icon of the record. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="201" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="155" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a2e037adfa890e4f09c4ae5bfbdc531cf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * RecordsDynamicFunctions::GetRecordScript</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetRecordScript</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the script of the record at a certain index in the read worldstate&apos;s dynamic records of the current type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The script of the record. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="210" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="165" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a1fc720583293c03f5f2c2977b567ef47" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * RecordsDynamicFunctions::GetRecordEnchantmentId</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetRecordEnchantmentId</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the enchantment id of the record at a certain index in the read worldstate&apos;s dynamic records of the current type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The enchantment id of the record. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="219" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="175" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a2762225f4d1998d8d0e0baae25a85c9e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RecordsDynamicFunctions::GetRecordEnchantmentCharge</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetRecordEnchantmentCharge</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the enchantment charge of the record at a certain index in the read worldstate&apos;s dynamic records of the current type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The enchantment charge of the record. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="228" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="191" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1ad2e52af30a89ee2c317375b468562336" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RecordsDynamicFunctions::GetRecordAutoCalc</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetRecordAutoCalc</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the auto-calculation flag value of the record at a certain index in the read worldstate&apos;s dynamic records of the current type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The auto-calculation flag value of the record. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="237" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="207" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a72aa5ddab64a44f4f6fbb7c86dff4ad6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RecordsDynamicFunctions::GetRecordCharge</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetRecordCharge</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the charge of the record at a certain index in the read worldstate&apos;s dynamic records of the current type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The charge of the record. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="246" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="219" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1afa7e21244b6d4cc7e96a53f66c977018" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RecordsDynamicFunctions::GetRecordCost</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetRecordCost</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the cost of the record at a certain index in the read worldstate&apos;s dynamic records of the current type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The cost of the record. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="255" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="229" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a19e9638a7a585556b3137d067aa72858" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RecordsDynamicFunctions::GetRecordFlags</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetRecordFlags</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the flags of the record at a certain index in the read worldstate&apos;s dynamic records of the current type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The flags of the spell as an integer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="264" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="241" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a6c8391a548217ed36557d2748db0a606" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RecordsDynamicFunctions::GetRecordValue</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetRecordValue</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the value of the record at a certain index in the read worldstate&apos;s dynamic records of the current type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value of the record. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="273" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="251" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a9ef313fe4d0507801e423b69e1dc567b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double RecordsDynamicFunctions::GetRecordWeight</definition>
+        <argsstring>(unsigned int index) noexcept</argsstring>
+        <name>GetRecordWeight</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the weight of the record at a certain index in the read worldstate&apos;s dynamic records of the current type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The weight of the record. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="282" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="261" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a6b265a6597a04628bfc27315c4126490" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int RecordsDynamicFunctions::GetRecordEffectId</definition>
+        <argsstring>(unsigned int recordIndex, unsigned int effectIndex) noexcept</argsstring>
+        <name>GetRecordEffectId</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>recordIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>effectIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the ID of the effect at a certain index in the read worldstate&apos;s current records. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recordIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the effect. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The ID of the effect. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="292" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="271" bodyend="274"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a859ce33dc90e7c94d3a76191102b23b9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RecordsDynamicFunctions::GetRecordEffectAttribute</definition>
+        <argsstring>(unsigned int recordIndex, unsigned int effectIndex) noexcept</argsstring>
+        <name>GetRecordEffectAttribute</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>recordIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>effectIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the ID of the attribute modified by the effect at a certain index in the read worldstate&apos;s current records. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recordIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the effect. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The attribute ID for the effect. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="302" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="276" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a4e470e4e127380e8ff5236aac4736b6d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RecordsDynamicFunctions::GetRecordEffectSkill</definition>
+        <argsstring>(unsigned int recordIndex, unsigned int effectIndex) noexcept</argsstring>
+        <name>GetRecordEffectSkill</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>recordIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>effectIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the ID of the skill modified by the effect at a certain index in the read worldstate&apos;s current records. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recordIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the effect. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The skill ID for the effect. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="312" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="281" bodyend="284"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1ab99501eac7cf206f19afea0dde821077" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int RecordsDynamicFunctions::GetRecordEffectRangeType</definition>
+        <argsstring>(unsigned int recordIndex, unsigned int effectIndex) noexcept</argsstring>
+        <name>GetRecordEffectRangeType</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>recordIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>effectIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the range type of the effect at a certain index in the read worldstate&apos;s current records (0 for self, 1 for touch, 2 for target). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recordIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the effect. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The range of the effect. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="322" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="286" bodyend="289"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1acbd660bd430bd3cd8fa5bac0be32e4f0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RecordsDynamicFunctions::GetRecordEffectArea</definition>
+        <argsstring>(unsigned int recordIndex, unsigned int effectIndex) noexcept</argsstring>
+        <name>GetRecordEffectArea</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>recordIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>effectIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the area of the effect at a certain index in the read worldstate&apos;s current records. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recordIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the effect. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The area of the effect. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="332" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="291" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a7b1e9ba17b20ec841a748e836e72c65e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RecordsDynamicFunctions::GetRecordEffectDuration</definition>
+        <argsstring>(unsigned int recordIndex, unsigned int effectIndex) noexcept</argsstring>
+        <name>GetRecordEffectDuration</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>recordIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>effectIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the duration of the effect at a certain index in the read worldstate&apos;s current records. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recordIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the effect. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The duration of the effect. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="342" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="296" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1adbb4e2dde82b908b776f966b749ec1c8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RecordsDynamicFunctions::GetRecordEffectMagnitudeMax</definition>
+        <argsstring>(unsigned int recordIndex, unsigned int effectIndex) noexcept</argsstring>
+        <name>GetRecordEffectMagnitudeMax</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>recordIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>effectIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the maximum magnitude of the effect at a certain index in the read worldstate&apos;s current records. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recordIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the effect. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The maximum magnitude of the effect. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="352" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="301" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a1e12ba58233b4d4f11556d3ac2157868" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int RecordsDynamicFunctions::GetRecordEffectMagnitudeMin</definition>
+        <argsstring>(unsigned int recordIndex, unsigned int effectIndex) noexcept</argsstring>
+        <name>GetRecordEffectMagnitudeMin</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>recordIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>effectIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the minimum magnitude of the effect at a certain index in the read worldstate&apos;s current records. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>recordIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the effect. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The minimum magnitude of the effect. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="362" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="306" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a188d0a0fb4e0af73dcc74ab40bc7018d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordType</definition>
+        <argsstring>(unsigned int type) noexcept</argsstring>
+        <name>SetRecordType</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+<para>Set which type of temporary records stored on the server should have their data changed via setter functions. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of records. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="371" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="311" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1aa27a0ccd062643a8b866cc3f429d8e0c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordId</definition>
+        <argsstring>(const char *id) noexcept</argsstring>
+        <name>SetRecordId</name>
+        <param>
+          <type>const char *</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Set the id of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The id of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="380" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="316" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a97c48214579d21427452bdd515776bd8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordBaseId</definition>
+        <argsstring>(const char *baseId) noexcept</argsstring>
+        <name>SetRecordBaseId</name>
+        <param>
+          <type>const char *</type>
+          <declname>baseId</declname>
+        </param>
+        <briefdescription>
+<para>Set the base id (i.e. the id this record should inherit default values from) of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>baseId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The baseId of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="390" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="345" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1afd4bb55a4371bc35f003f1e9aff4fb68" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordInventoryBaseId</definition>
+        <argsstring>(const char *inventoryBaseId) noexcept</argsstring>
+        <name>SetRecordInventoryBaseId</name>
+        <param>
+          <type>const char *</type>
+          <declname>inventoryBaseId</declname>
+        </param>
+        <briefdescription>
+<para>Set the inventory base id (i.e. the id this record should inherit its inventory contents from) of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inventoryBaseId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The inventoryBaseId of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="400" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="373" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a171323e896490838adf5b476ca8a5307" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordSubtype</definition>
+        <argsstring>(unsigned int subtype) noexcept</argsstring>
+        <name>SetRecordSubtype</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>subtype</declname>
+        </param>
+        <briefdescription>
+<para>Set the subtype of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spell type. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="409" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="385" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a409f1096718620b4d70cbce65c6ce5d2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordName</definition>
+        <argsstring>(const char *name) noexcept</argsstring>
+        <name>SetRecordName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+<para>Set the name of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="418" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="410" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1aa4b66cbd10689122eb7dde723c31dc89" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordModel</definition>
+        <argsstring>(const char *model) noexcept</argsstring>
+        <name>SetRecordModel</name>
+        <param>
+          <type>const char *</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Set the model of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The model of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="427" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="441" bodyend="468"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1aef20414580516fcd12240aaec0cdec00" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordIcon</definition>
+        <argsstring>(const char *icon) noexcept</argsstring>
+        <name>SetRecordIcon</name>
+        <param>
+          <type>const char *</type>
+          <declname>icon</declname>
+        </param>
+        <briefdescription>
+<para>Set the icon of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>icon</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The icon of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="436" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="470" bodyend="493"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a120642cb42a4ed4254e13d39c8f9be8b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordScript</definition>
+        <argsstring>(const char *script) noexcept</argsstring>
+        <name>SetRecordScript</name>
+        <param>
+          <type>const char *</type>
+          <declname>script</declname>
+        </param>
+        <briefdescription>
+<para>Set the script of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>script</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The script of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="445" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="495" bodyend="522"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1aa4ff09994ca90d7ac31ad28048b6943f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordEnchantmentId</definition>
+        <argsstring>(const char *enchantmentId) noexcept</argsstring>
+        <name>SetRecordEnchantmentId</name>
+        <param>
+          <type>const char *</type>
+          <declname>enchantmentId</declname>
+        </param>
+        <briefdescription>
+<para>Set the enchantment id of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enchantmentId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The enchantment id of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="454" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="524" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1af4755706ce8a3809dfbc94fb0f5dec3a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordEnchantmentCharge</definition>
+        <argsstring>(int enchantmentCharge) noexcept</argsstring>
+        <name>SetRecordEnchantmentCharge</name>
+        <param>
+          <type>int</type>
+          <declname>enchantmentCharge</declname>
+        </param>
+        <briefdescription>
+<para>Set the enchantment charge of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enchantmentCharge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The enchantmentCharge of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="463" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="545" bodyend="564"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a1602ed9a7638e408f0651d4670f1d799" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordAutoCalc</definition>
+        <argsstring>(int autoCalc) noexcept</argsstring>
+        <name>SetRecordAutoCalc</name>
+        <param>
+          <type>int</type>
+          <declname>autoCalc</declname>
+        </param>
+        <briefdescription>
+<para>Set the auto-calculation flag value of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>autoCalc</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The auto-calculation flag value of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="472" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="566" bodyend="594"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a6bde9d1d6ec67c54299298eb958f45ec" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordCharge</definition>
+        <argsstring>(int charge) noexcept</argsstring>
+        <name>SetRecordCharge</name>
+        <param>
+          <type>int</type>
+          <declname>charge</declname>
+        </param>
+        <briefdescription>
+<para>Set the charge of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>charge</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The charge of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="481" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="596" bodyend="609"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1aa32bd40b1a851b47f5d723e42f3bfb0a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordCost</definition>
+        <argsstring>(int cost) noexcept</argsstring>
+        <name>SetRecordCost</name>
+        <param>
+          <type>int</type>
+          <declname>cost</declname>
+        </param>
+        <briefdescription>
+<para>Set the cost of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>cost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The cost of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="490" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="611" bodyend="626"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a929e0e63ad523189b59789174be1d969" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordFlags</definition>
+        <argsstring>(int flags) noexcept</argsstring>
+        <name>SetRecordFlags</name>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+<para>Set the flags of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>flags</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The flags of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="499" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="628" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a5431a07ca410a81e2ebfb20748e48ec2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordValue</definition>
+        <argsstring>(int value) noexcept</argsstring>
+        <name>SetRecordValue</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the value of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="508" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="649" bodyend="672"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a41c45282b5f246b5170aace38cf06f8e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordWeight</definition>
+        <argsstring>(double weight) noexcept</argsstring>
+        <name>SetRecordWeight</name>
+        <param>
+          <type>double</type>
+          <declname>weight</declname>
+        </param>
+        <briefdescription>
+<para>Set the weight of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>weight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The weight of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="517" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="674" bodyend="697"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1aaa54aebf2e59c23822dfc2078c6efc6e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordArmorRating</definition>
+        <argsstring>(int armorRating) noexcept</argsstring>
+        <name>SetRecordArmorRating</name>
+        <param>
+          <type>int</type>
+          <declname>armorRating</declname>
+        </param>
+        <briefdescription>
+<para>Set the armor rating of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>armorRating</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The armor rating of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="526" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="699" bodyend="712"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a63bcea217ee8486818fec2ca06adf91c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordHealth</definition>
+        <argsstring>(int health) noexcept</argsstring>
+        <name>SetRecordHealth</name>
+        <param>
+          <type>int</type>
+          <declname>health</declname>
+        </param>
+        <briefdescription>
+<para>Set the health of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>health</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The health of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="535" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="714" bodyend="733"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a477d85abd9abdc96fe1097bfec3d7677" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordDamageChop</definition>
+        <argsstring>(unsigned int minDamage, unsigned int maxDamage) noexcept</argsstring>
+        <name>SetRecordDamageChop</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>minDamage</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>maxDamage</declname>
+        </param>
+        <briefdescription>
+<para>Set the chop damage of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minDamage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum damage of the record. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxDamage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum damage of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="545" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="735" bodyend="751"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a91bee124525272ae91d09dc01a10d18a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordDamageSlash</definition>
+        <argsstring>(unsigned int minDamage, unsigned int maxDamage) noexcept</argsstring>
+        <name>SetRecordDamageSlash</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>minDamage</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>maxDamage</declname>
+        </param>
+        <briefdescription>
+<para>Set the slash damage of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minDamage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum damage of the record. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxDamage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum damage of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="555" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="753" bodyend="769"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a2d506e1511dbd5948cf819a85bb03c36" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordDamageThrust</definition>
+        <argsstring>(unsigned int minDamage, unsigned int maxDamage) noexcept</argsstring>
+        <name>SetRecordDamageThrust</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>minDamage</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>maxDamage</declname>
+        </param>
+        <briefdescription>
+<para>Set the thrust damage of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>minDamage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum damage of the record. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxDamage</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum damage of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="565" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="771" bodyend="787"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a2735e1bbc3c68a3bdfb13a7007dda94d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordReach</definition>
+        <argsstring>(double reach) noexcept</argsstring>
+        <name>SetRecordReach</name>
+        <param>
+          <type>double</type>
+          <declname>reach</declname>
+        </param>
+        <briefdescription>
+<para>Set the reach of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>reach</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The reach of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="574" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="789" bodyend="802"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a1c22e5d5e81bf66d3457d50778d5fcb0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordSpeed</definition>
+        <argsstring>(double speed) noexcept</argsstring>
+        <name>SetRecordSpeed</name>
+        <param>
+          <type>double</type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+<para>Set the speed of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The speed of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="583" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="804" bodyend="817"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a33c7ba8b0bb863dd07e9ae2538633eb7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordKeyState</definition>
+        <argsstring>(bool keyState) noexcept</argsstring>
+        <name>SetRecordKeyState</name>
+        <param>
+          <type>bool</type>
+          <declname>keyState</declname>
+        </param>
+        <briefdescription>
+<para>Set whether the temporary record stored on the server for the currently specified record type is a key. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: This is only applicable to Miscellaneous records.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>keyState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the record is a key. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="594" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="819" bodyend="832"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a70ea6f3782ef7a0f80ee9c7a801956cb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordScrollState</definition>
+        <argsstring>(bool scrollState) noexcept</argsstring>
+        <name>SetRecordScrollState</name>
+        <param>
+          <type>bool</type>
+          <declname>scrollState</declname>
+        </param>
+        <briefdescription>
+<para>Set whether the temporary record stored on the server for the currently specified record type is a scroll. </para>        </briefdescription>
+        <detaileddescription>
+<para>Note: This is only applicable to Book records.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scrollState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the record is a scroll. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="605" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="834" bodyend="847"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1aec2d2b092b5161d127cf2a63d8f84bb9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordSkillId</definition>
+        <argsstring>(int skillId) noexcept</argsstring>
+        <name>SetRecordSkillId</name>
+        <param>
+          <type>int</type>
+          <declname>skillId</declname>
+        </param>
+        <briefdescription>
+<para>Set the skill ID of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>skillId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The skill ID of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="614" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="849" bodyend="862"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1aa86a4ca966f920c3dbe92cc8931e8943" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordText</definition>
+        <argsstring>(const char *text) noexcept</argsstring>
+        <name>SetRecordText</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Set the text of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The text of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="623" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="864" bodyend="877"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a275cbc77cacedf826821e2cc941dd6fe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordHair</definition>
+        <argsstring>(const char *hair) noexcept</argsstring>
+        <name>SetRecordHair</name>
+        <param>
+          <type>const char *</type>
+          <declname>hair</declname>
+        </param>
+        <briefdescription>
+<para>Set the hair of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hair</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The hair of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="632" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="879" bodyend="892"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a6d154670bfa5b826fdae81fccbd843d9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordHead</definition>
+        <argsstring>(const char *head) noexcept</argsstring>
+        <name>SetRecordHead</name>
+        <param>
+          <type>const char *</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+<para>Set the head of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hair</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The head of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="641" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="894" bodyend="907"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1aab3d3757e7ee5374ce2dc0c678412989" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordGender</definition>
+        <argsstring>(unsigned int gender) noexcept</argsstring>
+        <name>SetRecordGender</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>gender</declname>
+        </param>
+        <briefdescription>
+<para>Set the gender of the temporary record stored on the server for the currently specified record type (0 for female, 1 for male). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hair</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The race of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="650" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="909" bodyend="924"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a40bf70d5b486642ed9baa33019bfdc63" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordRace</definition>
+        <argsstring>(const char *race) noexcept</argsstring>
+        <name>SetRecordRace</name>
+        <param>
+          <type>const char *</type>
+          <declname>race</declname>
+        </param>
+        <briefdescription>
+<para>Set the race of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hair</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The race of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="659" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="926" bodyend="934"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a45d9dd24515a2688a751de5f439f86aa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordClass</definition>
+        <argsstring>(const char *charClass) noexcept</argsstring>
+        <name>SetRecordClass</name>
+        <param>
+          <type>const char *</type>
+          <declname>charClass</declname>
+        </param>
+        <briefdescription>
+<para>Set the character class of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>hair</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The character class of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="668" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="936" bodyend="944"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a559d817672e12f2f118dcf44d71358a7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordFaction</definition>
+        <argsstring>(const char *faction) noexcept</argsstring>
+        <name>SetRecordFaction</name>
+        <param>
+          <type>const char *</type>
+          <declname>faction</declname>
+        </param>
+        <briefdescription>
+<para>Set the faction of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>faction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The faction of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="677" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="946" bodyend="959"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1aa792f6436dc2a6011dc2a17a55804f12" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordLevel</definition>
+        <argsstring>(int level) noexcept</argsstring>
+        <name>SetRecordLevel</name>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Set the level of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The level of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="686" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="961" bodyend="976"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a2c733fd3c12a15d77ebcff7bfe7142e4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordMagicka</definition>
+        <argsstring>(int magicka) noexcept</argsstring>
+        <name>SetRecordMagicka</name>
+        <param>
+          <type>int</type>
+          <declname>magicka</declname>
+        </param>
+        <briefdescription>
+<para>Set the magicka of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>magicka</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The magicka of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="695" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="978" bodyend="993"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a2d7a6ffb0df1222eaa380fcfe6554a4f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordFatigue</definition>
+        <argsstring>(int fatigue) noexcept</argsstring>
+        <name>SetRecordFatigue</name>
+        <param>
+          <type>int</type>
+          <declname>fatigue</declname>
+        </param>
+        <briefdescription>
+<para>Set the fatigue of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fatigue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The fatigue of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="704" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="995" bodyend="1010"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a9237ec006a1291aea740dae04d618803" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordAIFight</definition>
+        <argsstring>(int aiFight) noexcept</argsstring>
+        <name>SetRecordAIFight</name>
+        <param>
+          <type>int</type>
+          <declname>aiFight</declname>
+        </param>
+        <briefdescription>
+<para>Set the AI fight value of the temporary record stored on the server for the currently specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>aiFight</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The AI fight value of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="713" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1012" bodyend="1027"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1ae733cbc1fc3aceb5c481bc92a8fd28a9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordIdByIndex</definition>
+        <argsstring>(unsigned int index, const char *id) noexcept</argsstring>
+        <name>SetRecordIdByIndex</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+<para>Set the id of the record at a certain index in the records stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>When resending a received RecordsDynamic packet, this allows you to set the server-generated id of a record without having to clear and recreate the packet.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The id of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="725" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1029" bodyend="1049"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a5cee064dfe62fe7589a1b3591f741ca2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordEnchantmentIdByIndex</definition>
+        <argsstring>(unsigned int index, const char *enchantmentId) noexcept</argsstring>
+        <name>SetRecordEnchantmentIdByIndex</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>enchantmentId</declname>
+        </param>
+        <briefdescription>
+<para>Set the enchantment id of the record at a certain index in the records stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para>When resending a received RecordsDynamic packet, this allows you to set the server-generated enchantment id of a record without having to clear and recreate the packet.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the record. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>enchantmentId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The enchantment id of the record. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="738" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1051" bodyend="1065"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a28db9ebd0b310be21c535b58006b89e3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordEffectId</definition>
+        <argsstring>(unsigned int effectId) noexcept</argsstring>
+        <name>SetRecordEffectId</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>effectId</declname>
+        </param>
+        <briefdescription>
+<para>Set the ID of the temporary effect stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>effectId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the effect. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="746" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1067" bodyend="1070"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a831617cd46683c2afcdf8c86763033a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordEffectAttribute</definition>
+        <argsstring>(int attributeId) noexcept</argsstring>
+        <name>SetRecordEffectAttribute</name>
+        <param>
+          <type>int</type>
+          <declname>attributeId</declname>
+        </param>
+        <briefdescription>
+<para>Set the ID of the attribute modified by the temporary effect stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attributeId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the attribute. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="755" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1072" bodyend="1075"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a47d3606a47cd243a4d6f77d0be74eff0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordEffectSkill</definition>
+        <argsstring>(int skillId) noexcept</argsstring>
+        <name>SetRecordEffectSkill</name>
+        <param>
+          <type>int</type>
+          <declname>skillId</declname>
+        </param>
+        <briefdescription>
+<para>Set the ID of the skill modified by the temporary effect stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>skillId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the skill. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="764" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1077" bodyend="1080"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a8fe3586687a1757b2d0cccf8e2ed7580" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordEffectRangeType</definition>
+        <argsstring>(unsigned int rangeType) noexcept</argsstring>
+        <name>SetRecordEffectRangeType</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>rangeType</declname>
+        </param>
+        <briefdescription>
+<para>Set the range type of the temporary effect stored on the server (0 for self, 1 for touch, 2 for target). </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rangeType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The range type of the effect. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="773" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1082" bodyend="1085"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1aed05d168cd1caef4fc0afbf34ae687de" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordEffectArea</definition>
+        <argsstring>(int area) noexcept</argsstring>
+        <name>SetRecordEffectArea</name>
+        <param>
+          <type>int</type>
+          <declname>area</declname>
+        </param>
+        <briefdescription>
+<para>Set the area of the temporary effect stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>area</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The area of the effect. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="781" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1087" bodyend="1090"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1ac27346c5778cf3cd30ab31e0d0e82fc5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordEffectDuration</definition>
+        <argsstring>(int duration) noexcept</argsstring>
+        <name>SetRecordEffectDuration</name>
+        <param>
+          <type>int</type>
+          <declname>duration</declname>
+        </param>
+        <briefdescription>
+<para>Set the duration of the temporary effect stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The duration of the effect. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="789" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1092" bodyend="1095"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1aff82080fa7c7027e6d0e9d9258e63880" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordEffectMagnitudeMax</definition>
+        <argsstring>(int magnitudeMax) noexcept</argsstring>
+        <name>SetRecordEffectMagnitudeMax</name>
+        <param>
+          <type>int</type>
+          <declname>magnitudeMax</declname>
+        </param>
+        <briefdescription>
+<para>Set the maximum magnitude of the temporary effect stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>magnitudeMax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The maximum magnitude of the effect. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="797" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1097" bodyend="1100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1af946c691cccccdeab194f53b2c4f5d30" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordEffectMagnitudeMin</definition>
+        <argsstring>(int magnitudeMin) noexcept</argsstring>
+        <name>SetRecordEffectMagnitudeMin</name>
+        <param>
+          <type>int</type>
+          <declname>magnitudeMin</declname>
+        </param>
+        <briefdescription>
+<para>Set the minimum magnitude of the temporary effect stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>magnitudeMin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minimum magnitude of the effect. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="805" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1102" bodyend="1105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1ad3ff5d7550420d40d2d6d34195a8dbe9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordBodyPartType</definition>
+        <argsstring>(unsigned int partType) noexcept</argsstring>
+        <name>SetRecordBodyPartType</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>partType</declname>
+        </param>
+        <briefdescription>
+<para>Set the type of the temporary body part stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>partType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the body part. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="813" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1107" bodyend="1110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a6a7a602592d1db434bf635c7d4e6cb6f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordBodyPartIdForMale</definition>
+        <argsstring>(const char *partId) noexcept</argsstring>
+        <name>SetRecordBodyPartIdForMale</name>
+        <param>
+          <type>const char *</type>
+          <declname>partId</declname>
+        </param>
+        <briefdescription>
+<para>Set the id of the male version of the temporary body part stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>partId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The id of the body part. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="822" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1112" bodyend="1115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a52053a1d340684a377a720cf08ba05b4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordBodyPartIdForFemale</definition>
+        <argsstring>(const char *partId) noexcept</argsstring>
+        <name>SetRecordBodyPartIdForFemale</name>
+        <param>
+          <type>const char *</type>
+          <declname>partId</declname>
+        </param>
+        <briefdescription>
+<para>Set the id of the female version of the temporary body part stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>partId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The id of the body part. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="831" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1117" bodyend="1120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a000d029cc1812c2fb1685106cbab9225" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordInventoryItemId</definition>
+        <argsstring>(const char *itemId) noexcept</argsstring>
+        <name>SetRecordInventoryItemId</name>
+        <param>
+          <type>const char *</type>
+          <declname>itemId</declname>
+        </param>
+        <briefdescription>
+<para>Set the id of the of the temporary inventory item stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>partId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The id of the inventory item. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="839" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1122" bodyend="1125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a3e05fc0ec74209403b6ef4e6ef857e63" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SetRecordInventoryItemCount</definition>
+        <argsstring>(unsigned int count) noexcept</argsstring>
+        <name>SetRecordInventoryItemCount</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+<para>Set the count of the of the temporary inventory item stored on the server. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The count of the inventory item. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="847" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1127" bodyend="1130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a80421e6914fb0356cd5858dc109b958f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::AddRecord</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>AddRecord</name>
+        <briefdescription>
+<para>Add a copy of the server&apos;s temporary record of the current specified type to the stored records. </para>        </briefdescription>
+        <detaileddescription>
+<para>In the process, the server&apos;s temporary record will automatically be cleared so a new one can be set up.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="858" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1132" bodyend="1198"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a691d020cfafac53f0bd3c4e57fddfe56" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::AddRecordEffect</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>AddRecordEffect</name>
+        <briefdescription>
+<para>Add a copy of the server&apos;s temporary effect to the temporary record of the current specified type. </para>        </briefdescription>
+        <detaileddescription>
+<para>In the process, the server&apos;s temporary effect will automatically be cleared so a new one can be set up.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="869" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1200" bodyend="1213"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1ae918bed831abbd828e1def940120d8b0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::AddRecordBodyPart</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>AddRecordBodyPart</name>
+        <briefdescription>
+<para>Add a copy of the server&apos;s temporary body part to the temporary record of the current specified type. </para>        </briefdescription>
+        <detaileddescription>
+<para>In the process, the server&apos;s temporary body part will automatically be cleared so a new one can be set up.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="880" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1215" bodyend="1226"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a875d9a7313d1c790d3908d2b21449951" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::AddRecordInventoryItem</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>AddRecordInventoryItem</name>
+        <briefdescription>
+<para>Add a copy of the server&apos;s temporary inventory item to the temporary record of the current specified type. </para>        </briefdescription>
+        <detaileddescription>
+<para>In the process, the server&apos;s temporary inventory item will automatically be cleared so a new one can be set up.</para><para>Note: Any items added this way will be ignored if the record already has a valid inventoryBaseId.</para><para><simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="894" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1228" bodyend="1239"/>
+      </memberdef>
+      <memberdef kind="function" id="class_records_dynamic_functions_1a32555e12670f1a924121695c5e7e1334" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RecordsDynamicFunctions::SendRecordDynamic</definition>
+        <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendRecordDynamic</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send a RecordDynamic packet with the current specified record type. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID attached to the packet. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="906" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.cpp" bodystart="1241" bodyend="1255"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" line="114" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/RecordsDynamic.hpp" bodystart="113" bodyend="908"/>
+    <listofallmembers>
+      <member refid="class_records_dynamic_functions_1a80421e6914fb0356cd5858dc109b958f" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>AddRecord</name></member>
+      <member refid="class_records_dynamic_functions_1ae918bed831abbd828e1def940120d8b0" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>AddRecordBodyPart</name></member>
+      <member refid="class_records_dynamic_functions_1a691d020cfafac53f0bd3c4e57fddfe56" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>AddRecordEffect</name></member>
+      <member refid="class_records_dynamic_functions_1a875d9a7313d1c790d3908d2b21449951" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>AddRecordInventoryItem</name></member>
+      <member refid="class_records_dynamic_functions_1a55f675eaac2b1de74aa34cee11575824" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>ClearRecords</name></member>
+      <member refid="class_records_dynamic_functions_1ad2e52af30a89ee2c317375b468562336" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordAutoCalc</name></member>
+      <member refid="class_records_dynamic_functions_1a940aee2753fa4f05f3562f196b384517" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordBaseId</name></member>
+      <member refid="class_records_dynamic_functions_1a72aa5ddab64a44f4f6fbb7c86dff4ad6" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordCharge</name></member>
+      <member refid="class_records_dynamic_functions_1afa7e21244b6d4cc7e96a53f66c977018" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordCost</name></member>
+      <member refid="class_records_dynamic_functions_1a33d0ebbd8e634d3736005a3c98df77de" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordCount</name></member>
+      <member refid="class_records_dynamic_functions_1acbd660bd430bd3cd8fa5bac0be32e4f0" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordEffectArea</name></member>
+      <member refid="class_records_dynamic_functions_1a859ce33dc90e7c94d3a76191102b23b9" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordEffectAttribute</name></member>
+      <member refid="class_records_dynamic_functions_1a3eb8ad54707bd4e153d6fe3e231bc024" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordEffectCount</name></member>
+      <member refid="class_records_dynamic_functions_1a7b1e9ba17b20ec841a748e836e72c65e" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordEffectDuration</name></member>
+      <member refid="class_records_dynamic_functions_1a6b265a6597a04628bfc27315c4126490" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordEffectId</name></member>
+      <member refid="class_records_dynamic_functions_1adbb4e2dde82b908b776f966b749ec1c8" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordEffectMagnitudeMax</name></member>
+      <member refid="class_records_dynamic_functions_1a1e12ba58233b4d4f11556d3ac2157868" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordEffectMagnitudeMin</name></member>
+      <member refid="class_records_dynamic_functions_1ab99501eac7cf206f19afea0dde821077" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordEffectRangeType</name></member>
+      <member refid="class_records_dynamic_functions_1a4e470e4e127380e8ff5236aac4736b6d" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordEffectSkill</name></member>
+      <member refid="class_records_dynamic_functions_1a2762225f4d1998d8d0e0baae25a85c9e" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordEnchantmentCharge</name></member>
+      <member refid="class_records_dynamic_functions_1a1fc720583293c03f5f2c2977b567ef47" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordEnchantmentId</name></member>
+      <member refid="class_records_dynamic_functions_1a19e9638a7a585556b3137d067aa72858" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordFlags</name></member>
+      <member refid="class_records_dynamic_functions_1a7d41119123fc6f912a443ba646fe6778" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordIcon</name></member>
+      <member refid="class_records_dynamic_functions_1adac3701d0a85aa62f4551b192fce78fa" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordId</name></member>
+      <member refid="class_records_dynamic_functions_1a45e86cd6855162583b32992b0a296451" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordModel</name></member>
+      <member refid="class_records_dynamic_functions_1af37d21a08ddc03977383dd0344b97b92" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordName</name></member>
+      <member refid="class_records_dynamic_functions_1a2e037adfa890e4f09c4ae5bfbdc531cf" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordScript</name></member>
+      <member refid="class_records_dynamic_functions_1a6f60bf66bebda36ab7f9efa4baac5f22" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordSubtype</name></member>
+      <member refid="class_records_dynamic_functions_1ae9e8035a077cd616d12af24181bc34a1" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordType</name></member>
+      <member refid="class_records_dynamic_functions_1a6c8391a548217ed36557d2748db0a606" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordValue</name></member>
+      <member refid="class_records_dynamic_functions_1a9ef313fe4d0507801e423b69e1dc567b" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>GetRecordWeight</name></member>
+      <member refid="class_records_dynamic_functions_1a32555e12670f1a924121695c5e7e1334" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SendRecordDynamic</name></member>
+      <member refid="class_records_dynamic_functions_1a9237ec006a1291aea740dae04d618803" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordAIFight</name></member>
+      <member refid="class_records_dynamic_functions_1aaa54aebf2e59c23822dfc2078c6efc6e" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordArmorRating</name></member>
+      <member refid="class_records_dynamic_functions_1a1602ed9a7638e408f0651d4670f1d799" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordAutoCalc</name></member>
+      <member refid="class_records_dynamic_functions_1a97c48214579d21427452bdd515776bd8" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordBaseId</name></member>
+      <member refid="class_records_dynamic_functions_1a52053a1d340684a377a720cf08ba05b4" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordBodyPartIdForFemale</name></member>
+      <member refid="class_records_dynamic_functions_1a6a7a602592d1db434bf635c7d4e6cb6f" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordBodyPartIdForMale</name></member>
+      <member refid="class_records_dynamic_functions_1ad3ff5d7550420d40d2d6d34195a8dbe9" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordBodyPartType</name></member>
+      <member refid="class_records_dynamic_functions_1a6bde9d1d6ec67c54299298eb958f45ec" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordCharge</name></member>
+      <member refid="class_records_dynamic_functions_1a45d9dd24515a2688a751de5f439f86aa" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordClass</name></member>
+      <member refid="class_records_dynamic_functions_1aa32bd40b1a851b47f5d723e42f3bfb0a" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordCost</name></member>
+      <member refid="class_records_dynamic_functions_1a477d85abd9abdc96fe1097bfec3d7677" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordDamageChop</name></member>
+      <member refid="class_records_dynamic_functions_1a91bee124525272ae91d09dc01a10d18a" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordDamageSlash</name></member>
+      <member refid="class_records_dynamic_functions_1a2d506e1511dbd5948cf819a85bb03c36" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordDamageThrust</name></member>
+      <member refid="class_records_dynamic_functions_1aed05d168cd1caef4fc0afbf34ae687de" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordEffectArea</name></member>
+      <member refid="class_records_dynamic_functions_1a831617cd46683c2afcdf8c86763033a1" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordEffectAttribute</name></member>
+      <member refid="class_records_dynamic_functions_1ac27346c5778cf3cd30ab31e0d0e82fc5" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordEffectDuration</name></member>
+      <member refid="class_records_dynamic_functions_1a28db9ebd0b310be21c535b58006b89e3" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordEffectId</name></member>
+      <member refid="class_records_dynamic_functions_1aff82080fa7c7027e6d0e9d9258e63880" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordEffectMagnitudeMax</name></member>
+      <member refid="class_records_dynamic_functions_1af946c691cccccdeab194f53b2c4f5d30" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordEffectMagnitudeMin</name></member>
+      <member refid="class_records_dynamic_functions_1a8fe3586687a1757b2d0cccf8e2ed7580" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordEffectRangeType</name></member>
+      <member refid="class_records_dynamic_functions_1a47d3606a47cd243a4d6f77d0be74eff0" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordEffectSkill</name></member>
+      <member refid="class_records_dynamic_functions_1af4755706ce8a3809dfbc94fb0f5dec3a" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordEnchantmentCharge</name></member>
+      <member refid="class_records_dynamic_functions_1aa4ff09994ca90d7ac31ad28048b6943f" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordEnchantmentId</name></member>
+      <member refid="class_records_dynamic_functions_1a5cee064dfe62fe7589a1b3591f741ca2" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordEnchantmentIdByIndex</name></member>
+      <member refid="class_records_dynamic_functions_1a559d817672e12f2f118dcf44d71358a7" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordFaction</name></member>
+      <member refid="class_records_dynamic_functions_1a2d7a6ffb0df1222eaa380fcfe6554a4f" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordFatigue</name></member>
+      <member refid="class_records_dynamic_functions_1a929e0e63ad523189b59789174be1d969" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordFlags</name></member>
+      <member refid="class_records_dynamic_functions_1aab3d3757e7ee5374ce2dc0c678412989" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordGender</name></member>
+      <member refid="class_records_dynamic_functions_1a275cbc77cacedf826821e2cc941dd6fe" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordHair</name></member>
+      <member refid="class_records_dynamic_functions_1a6d154670bfa5b826fdae81fccbd843d9" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordHead</name></member>
+      <member refid="class_records_dynamic_functions_1a63bcea217ee8486818fec2ca06adf91c" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordHealth</name></member>
+      <member refid="class_records_dynamic_functions_1aef20414580516fcd12240aaec0cdec00" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordIcon</name></member>
+      <member refid="class_records_dynamic_functions_1aa27a0ccd062643a8b866cc3f429d8e0c" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordId</name></member>
+      <member refid="class_records_dynamic_functions_1ae733cbc1fc3aceb5c481bc92a8fd28a9" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordIdByIndex</name></member>
+      <member refid="class_records_dynamic_functions_1afd4bb55a4371bc35f003f1e9aff4fb68" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordInventoryBaseId</name></member>
+      <member refid="class_records_dynamic_functions_1a3e05fc0ec74209403b6ef4e6ef857e63" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordInventoryItemCount</name></member>
+      <member refid="class_records_dynamic_functions_1a000d029cc1812c2fb1685106cbab9225" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordInventoryItemId</name></member>
+      <member refid="class_records_dynamic_functions_1a33c7ba8b0bb863dd07e9ae2538633eb7" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordKeyState</name></member>
+      <member refid="class_records_dynamic_functions_1aa792f6436dc2a6011dc2a17a55804f12" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordLevel</name></member>
+      <member refid="class_records_dynamic_functions_1a2c733fd3c12a15d77ebcff7bfe7142e4" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordMagicka</name></member>
+      <member refid="class_records_dynamic_functions_1aa4b66cbd10689122eb7dde723c31dc89" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordModel</name></member>
+      <member refid="class_records_dynamic_functions_1a409f1096718620b4d70cbce65c6ce5d2" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordName</name></member>
+      <member refid="class_records_dynamic_functions_1a40bf70d5b486642ed9baa33019bfdc63" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordRace</name></member>
+      <member refid="class_records_dynamic_functions_1a2735e1bbc3c68a3bdfb13a7007dda94d" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordReach</name></member>
+      <member refid="class_records_dynamic_functions_1a120642cb42a4ed4254e13d39c8f9be8b" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordScript</name></member>
+      <member refid="class_records_dynamic_functions_1a70ea6f3782ef7a0f80ee9c7a801956cb" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordScrollState</name></member>
+      <member refid="class_records_dynamic_functions_1aec2d2b092b5161d127cf2a63d8f84bb9" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordSkillId</name></member>
+      <member refid="class_records_dynamic_functions_1a1c22e5d5e81bf66d3457d50778d5fcb0" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordSpeed</name></member>
+      <member refid="class_records_dynamic_functions_1a171323e896490838adf5b476ca8a5307" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordSubtype</name></member>
+      <member refid="class_records_dynamic_functions_1aa86a4ca966f920c3dbe92cc8931e8943" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordText</name></member>
+      <member refid="class_records_dynamic_functions_1a188d0a0fb4e0af73dcc74ab40bc7018d" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordType</name></member>
+      <member refid="class_records_dynamic_functions_1a5431a07ca410a81e2ebfb20748e48ec2" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordValue</name></member>
+      <member refid="class_records_dynamic_functions_1a41c45282b5f246b5170aace38cf06f8e" prot="public" virt="non-virtual"><scope>RecordsDynamicFunctions</scope><name>SetRecordWeight</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

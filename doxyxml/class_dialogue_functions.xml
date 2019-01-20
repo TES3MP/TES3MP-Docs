@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="class_dialogue_functions" kind="class" language="C++" prot="public">
+    <compoundname>DialogueFunctions</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_dialogue_functions_1a83854346455aac72f55a776620e9d393" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DialogueFunctions::ClearTopicChanges</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>ClearTopicChanges</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Clear the last recorded topic changes for a player. </para>        </briefdescription>
+        <detaileddescription>
+<para>This is used to initialize the sending of new PlayerTopic packets.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose topic changes should be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.hpp" line="32" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.cpp" bodystart="10" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialogue_functions_1a3e8c55ac9f2b1abe84876dfc7a9e0a73" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int DialogueFunctions::GetTopicChangesSize</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>GetTopicChangesSize</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of indexes in a player&apos;s latest topic changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose topic changes should be used. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of indexes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.hpp" line="40" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.cpp" bodystart="18" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialogue_functions_1ac8b2a58d5e8db660ab752895b5dc310d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DialogueFunctions::AddTopic</definition>
+        <argsstring>(unsigned short pid, const char *topicId) noexcept</argsstring>
+        <name>AddTopic</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>topicId</declname>
+        </param>
+        <briefdescription>
+<para>Add a new topic to the topic changes for a player. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose topic changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>topicId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The topicId of the topic. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.hpp" line="49" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.cpp" bodystart="26" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialogue_functions_1ad3b537feeffe6b1a5ebf0c635d5ba13e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * DialogueFunctions::GetTopicId</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetTopicId</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the topicId at a certain index in a player&apos;s latest topic changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose topic changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the topic. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The topicId. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.hpp" line="58" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.cpp" bodystart="37" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialogue_functions_1aa18b8ae4c0dc9ddb2a5e724778ecc92e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DialogueFunctions::SendTopicChanges</definition>
+        <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendTopicChanges</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send a PlayerTopic packet with a player&apos;s recorded topic changes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose topic changes should be used. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.hpp" line="70" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.cpp" bodystart="48" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialogue_functions_1a31738dc7cc2826b74244cb3c507822d5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DialogueFunctions::PlayAnimation</definition>
+        <argsstring>(unsigned short pid, const char *groupname, int mode, int count, bool persist) noexcept</argsstring>
+        <name>PlayAnimation</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>groupname</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>persist</declname>
+        </param>
+        <briefdescription>
+<para>Play a certain animation on a player&apos;s character by sending a PlayerAnimation packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID of the character playing the animation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>groupname</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The groupname of the animation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The mode of the animation. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of times the animation should be played. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bool</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the animation should persist or not. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.hpp" line="83" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.cpp" bodystart="62" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialogue_functions_1a11c02ec4d6f4ab085ba8a4338d66476b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DialogueFunctions::PlaySpeech</definition>
+        <argsstring>(unsigned short pid, const char *sound) noexcept</argsstring>
+        <name>PlaySpeech</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>sound</declname>
+        </param>
+        <briefdescription>
+<para>Play a certain sound for a player as spoken by their character by sending a PlayerSpeech packet. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID of the character playing the sound. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sound</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The path of the sound file. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.hpp" line="93" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.cpp" bodystart="79" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dialogue_functions_1ac45da64ef22009bf8864bdcbfb18075c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DialogueFunctions::InitializeTopicChanges</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>InitializeTopicChanges</name>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.hpp" line="97" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.cpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.hpp" line="21" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Dialogue.hpp" bodystart="20" bodyend="99"/>
+    <listofallmembers>
+      <member refid="class_dialogue_functions_1ac8b2a58d5e8db660ab752895b5dc310d" prot="public" virt="non-virtual"><scope>DialogueFunctions</scope><name>AddTopic</name></member>
+      <member refid="class_dialogue_functions_1a83854346455aac72f55a776620e9d393" prot="public" virt="non-virtual"><scope>DialogueFunctions</scope><name>ClearTopicChanges</name></member>
+      <member refid="class_dialogue_functions_1a3e8c55ac9f2b1abe84876dfc7a9e0a73" prot="public" virt="non-virtual"><scope>DialogueFunctions</scope><name>GetTopicChangesSize</name></member>
+      <member refid="class_dialogue_functions_1ad3b537feeffe6b1a5ebf0c635d5ba13e" prot="public" virt="non-virtual"><scope>DialogueFunctions</scope><name>GetTopicId</name></member>
+      <member refid="class_dialogue_functions_1ac45da64ef22009bf8864bdcbfb18075c" prot="public" virt="non-virtual"><scope>DialogueFunctions</scope><name>InitializeTopicChanges</name></member>
+      <member refid="class_dialogue_functions_1a31738dc7cc2826b74244cb3c507822d5" prot="public" virt="non-virtual"><scope>DialogueFunctions</scope><name>PlayAnimation</name></member>
+      <member refid="class_dialogue_functions_1a11c02ec4d6f4ab085ba8a4338d66476b" prot="public" virt="non-virtual"><scope>DialogueFunctions</scope><name>PlaySpeech</name></member>
+      <member refid="class_dialogue_functions_1aa18b8ae4c0dc9ddb2a5e724778ecc92e" prot="public" virt="non-virtual"><scope>DialogueFunctions</scope><name>SendTopicChanges</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
