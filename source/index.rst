@@ -6,8 +6,6 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-   configuration/index
-   tutorials/index
    api/index
 
 .. Indices and tables
