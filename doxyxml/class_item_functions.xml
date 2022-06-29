@@ -1,105 +1,159 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
   <compounddef id="class_item_functions" kind="class" language="C++" prot="public">
     <compoundname>ItemFunctions</compoundname>
+    <includes refid="_items_8hpp" local="no">Items.hpp</includes>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_item_functions_1a7e128cc3bd14218f9fd47e71a12cb23a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1a7e128cc3bd14218f9fd47e71a12cb23a" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ItemFunctions::ClearInventoryChanges</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>ClearInventoryChanges</name>
+        <qualifiedname>ItemFunctions::ClearInventoryChanges</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Clear the last recorded inventory changes for a player. </para>        </briefdescription>
+<para>Clear the last recorded inventory changes for a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This is used to initialize the sending of new PlayerInventory packets.</para><para><parameterlist kind="param"><parameteritem>
+<para>This is used to initialize the sending of new PlayerInventory packets.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose inventory changes should be used. </para></parameterdescription>
+<para>The player ID whose inventory changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="56" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="12" bodyend="18"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="58" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="12" bodyend="18"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1a96109d3c5df27a0643b66b43351a6188" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1a96109d3c5df27a0643b66b43351a6188" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int ItemFunctions::GetEquipmentSize</definition>
         <argsstring>() noexcept</argsstring>
         <name>GetEquipmentSize</name>
+        <qualifiedname>ItemFunctions::GetEquipmentSize</qualifiedname>
         <briefdescription>
-<para>Get the number of slots used for equipment. </para>        </briefdescription>
+<para>Get the number of slots used for equipment. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The number is 19 before any dehardcoding is done in OpenMW.</para><para><simplesect kind="return"><para>The number of slots. </para></simplesect>
-</para>        </detaileddescription>
+<para>The number is 19 before any dehardcoding is done in OpenMW.</para>
+<para><simplesect kind="return"><para>The number of slots. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="65" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="20" bodyend="23"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="67" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="20" bodyend="23"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1a3fd0ff67f685c76e2b0648a0d7cd2bc9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1ae392f1a7eb6da0408868cab9356fd58f" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ItemFunctions::GetEquipmentChangesSize</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>GetEquipmentChangesSize</name>
+        <qualifiedname>ItemFunctions::GetEquipmentChangesSize</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of indexes in a player&apos;s latest equipment changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose equipment changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of indexes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="75" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="25" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_item_functions_1a3fd0ff67f685c76e2b0648a0d7cd2bc9" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int ItemFunctions::GetInventoryChangesSize</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetInventoryChangesSize</name>
+        <qualifiedname>ItemFunctions::GetInventoryChangesSize</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the number of indexes in a player&apos;s latest inventory changes. </para>        </briefdescription>
+<para>Get the number of indexes in a player&apos;s latest inventory changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose inventory changes should be used. </para></parameterdescription>
+<para>The player ID whose inventory changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The number of indexes. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The number of indexes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="73" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="25" bodyend="31"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="83" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="33" bodyend="39"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1ade3522ef05ce94f71d7aab2454d9516e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1ade3522ef05ce94f71d7aab2454d9516e" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int ItemFunctions::GetInventoryChangesAction</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetInventoryChangesAction</name>
+        <qualifiedname>ItemFunctions::GetInventoryChangesAction</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the action type used in a player&apos;s latest inventory changes. </para>        </briefdescription>
+<para>Get the action type used in a player&apos;s latest inventory changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose inventory changes should be used. </para></parameterdescription>
+<para>The player ID whose inventory changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The action type (0 for SET, 1 for ADD, 2 for REMOVE). </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The action type (0 for SET, 1 for ADD, 2 for REMOVE). </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="81" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="33" bodyend="39"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="91" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="41" bodyend="47"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1a8eca41fe43359f77546d5924fc67307c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1a8eca41fe43359f77546d5924fc67307c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ItemFunctions::SetInventoryChangesAction</definition>
         <argsstring>(unsigned short pid, unsigned char action) noexcept</argsstring>
         <name>SetInventoryChangesAction</name>
+        <qualifiedname>ItemFunctions::SetInventoryChangesAction</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -109,34 +163,40 @@
           <declname>action</declname>
         </param>
         <briefdescription>
-<para>Set the action type in a player&apos;s inventory changes. </para>        </briefdescription>
+<para>Set the action type in a player&apos;s inventory changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose inventory changes should be used. </para></parameterdescription>
+<para>The player ID whose inventory changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>action</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The action (0 for SET, 1 for ADD, 2 for REMOVE). </para></parameterdescription>
+<para>The action (0 for SET, 1 for ADD, 2 for REMOVE). </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="90" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="41" bodyend="47"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="100" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="49" bodyend="55"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1a9374d713eba737ba2bdd69e7ba7b057f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1a9374d713eba737ba2bdd69e7ba7b057f" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ItemFunctions::EquipItem</definition>
         <argsstring>(unsigned short pid, unsigned short slot, const char *refId, unsigned int count, int charge, double enchantmentCharge=-1) noexcept</argsstring>
         <name>EquipItem</name>
+        <qualifiedname>ItemFunctions::EquipItem</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -163,62 +223,72 @@
           <defval>-1</defval>
         </param>
         <briefdescription>
-<para>Equip an item in a certain slot of the equipment of a player. </para>        </briefdescription>
+<para>Equip an item in a certain slot of the equipment of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>slot</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The equipment slot. </para></parameterdescription>
+<para>The equipment slot. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>refId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The refId of the item. </para></parameterdescription>
+<para>The refId of the item. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>count</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The count of the item. </para></parameterdescription>
+<para>The count of the item. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>charge</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The charge of the item. </para></parameterdescription>
+<para>The charge of the item. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>enchantmentCharge</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The enchantment charge of the item. </para></parameterdescription>
+<para>The enchantment charge of the item. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="103" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="49" bodyend="62"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="113" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="57" bodyend="70"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1a9c3e7ff0622515163f3e794ae6410c0c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1a9c3e7ff0622515163f3e794ae6410c0c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ItemFunctions::UnequipItem</definition>
         <argsstring>(unsigned short pid, unsigned short slot) noexcept</argsstring>
         <name>UnequipItem</name>
+        <qualifiedname>ItemFunctions::UnequipItem</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -228,34 +298,40 @@
           <declname>slot</declname>
         </param>
         <briefdescription>
-<para>Unequip the item in a certain slot of the equipment of a player. </para>        </briefdescription>
+<para>Unequip the item in a certain slot of the equipment of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>slot</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The equipment slot. </para></parameterdescription>
+<para>The equipment slot. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="113" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="64" bodyend="70"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="123" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="72" bodyend="78"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1aa7f1955ef03ca8398c1f1ac7fd51e107" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1aa7f1955ef03ca8398c1f1ac7fd51e107" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ItemFunctions::AddItemChange</definition>
         <argsstring>(unsigned short pid, const char *refId, unsigned int count, int charge, double enchantmentCharge, const char *soul) noexcept</argsstring>
         <name>AddItemChange</name>
+        <qualifiedname>ItemFunctions::AddItemChange</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -281,62 +357,72 @@
           <declname>soul</declname>
         </param>
         <briefdescription>
-<para>Add an item change to a player&apos;s inventory changes. </para>        </briefdescription>
+<para>Add an item change to a player&apos;s inventory changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>refId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The refId of the item. </para></parameterdescription>
+<para>The refId of the item. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>count</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The count of the item. </para></parameterdescription>
+<para>The count of the item. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>charge</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The charge of the item. </para></parameterdescription>
+<para>The charge of the item. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>enchantmentCharge</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The enchantment charge of the item. </para></parameterdescription>
+<para>The enchantment charge of the item. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>soul</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The soul of the item. </para></parameterdescription>
+<para>The soul of the item. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="126" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="72" bodyend="86"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="136" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="80" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="class_item_functions_1ae341504147b3ab98eab760e47d2e5a09" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool ItemFunctions::HasItemEquipped</definition>
         <argsstring>(unsigned short pid, const char *refId)</argsstring>
         <name>HasItemEquipped</name>
+        <qualifiedname>ItemFunctions::HasItemEquipped</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -346,34 +432,83 @@
           <declname>refId</declname>
         </param>
         <briefdescription>
-<para>Check whether a player has equipped an item with a certain refId in any slot. </para>        </briefdescription>
+<para>Check whether a player has equipped an item with a certain refId in any slot. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>refId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The refId of the item. </para></parameterdescription>
+<para>The refId of the item. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Whether the player has the item equipped. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Whether the player has the item equipped. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="136" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="88" bodyend="97"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="146" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="96" bodyend="105"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1ad35da7725ac6c3cd5cdc416038e44a48" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1ab0912af72e42f26c28cbc3661ea02fee" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int ItemFunctions::GetEquipmentChangesSlot</definition>
+        <argsstring>(unsigned short pid, unsigned int changeIndex) noexcept</argsstring>
+        <name>GetEquipmentChangesSlot</name>
+        <qualifiedname>ItemFunctions::GetEquipmentChangesSlot</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>changeIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the slot used for the equipment item at a specific index in the most recent equipment changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>changeIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the equipment change. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The slot. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="156" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="107" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="class_item_functions_1ad35da7725ac6c3cd5cdc416038e44a48" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * ItemFunctions::GetEquipmentItemRefId</definition>
         <argsstring>(unsigned short pid, unsigned short slot) noexcept</argsstring>
         <name>GetEquipmentItemRefId</name>
+        <qualifiedname>ItemFunctions::GetEquipmentItemRefId</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -383,34 +518,40 @@
           <declname>slot</declname>
         </param>
         <briefdescription>
-<para>Get the refId of the item in a certain slot of the equipment of a player. </para>        </briefdescription>
+<para>Get the refId of the item in a certain slot of the equipment of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>slot</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The slot of the equipment item. </para></parameterdescription>
+<para>The slot of the equipment item. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The refId. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The refId. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="145" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="99" bodyend="105"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="165" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="116" bodyend="122"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1abda7acd99cb5e031b811d6b1a4aa0533" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1abda7acd99cb5e031b811d6b1a4aa0533" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int ItemFunctions::GetEquipmentItemCount</definition>
         <argsstring>(unsigned short pid, unsigned short slot) noexcept</argsstring>
         <name>GetEquipmentItemCount</name>
+        <qualifiedname>ItemFunctions::GetEquipmentItemCount</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -420,34 +561,40 @@
           <declname>slot</declname>
         </param>
         <briefdescription>
-<para>Get the count of the item in a certain slot of the equipment of a player. </para>        </briefdescription>
+<para>Get the count of the item in a certain slot of the equipment of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>slot</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The slot of the equipment item. </para></parameterdescription>
+<para>The slot of the equipment item. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The item count. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The item count. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="154" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="107" bodyend="113"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="174" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="124" bodyend="130"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1ac0e7e4fd9abb83d30333cf5e29b83690" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1ac0e7e4fd9abb83d30333cf5e29b83690" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int ItemFunctions::GetEquipmentItemCharge</definition>
         <argsstring>(unsigned short pid, unsigned short slot) noexcept</argsstring>
         <name>GetEquipmentItemCharge</name>
+        <qualifiedname>ItemFunctions::GetEquipmentItemCharge</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -457,34 +604,40 @@
           <declname>slot</declname>
         </param>
         <briefdescription>
-<para>Get the charge of the item in a certain slot of the equipment of a player. </para>        </briefdescription>
+<para>Get the charge of the item in a certain slot of the equipment of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>slot</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The slot of the equipment item. </para></parameterdescription>
+<para>The slot of the equipment item. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The charge. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The charge. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="163" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="115" bodyend="121"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="183" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="132" bodyend="138"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1a1bc85bda7cb2c2ed17b8ab090a683f9e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1a1bc85bda7cb2c2ed17b8ab090a683f9e" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double ItemFunctions::GetEquipmentItemEnchantmentCharge</definition>
         <argsstring>(unsigned short pid, unsigned short slot) noexcept</argsstring>
         <name>GetEquipmentItemEnchantmentCharge</name>
+        <qualifiedname>ItemFunctions::GetEquipmentItemEnchantmentCharge</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -494,34 +647,40 @@
           <declname>slot</declname>
         </param>
         <briefdescription>
-<para>Get the enchantment charge of the item in a certain slot of the equipment of a player. </para>        </briefdescription>
+<para>Get the enchantment charge of the item in a certain slot of the equipment of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>slot</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The slot of the equipment item. </para></parameterdescription>
+<para>The slot of the equipment item. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The enchantment charge. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The enchantment charge. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="173" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="123" bodyend="129"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="193" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="140" bodyend="146"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1a84533c9da53fddd719a4bd2d2d07941c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1a84533c9da53fddd719a4bd2d2d07941c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * ItemFunctions::GetInventoryItemRefId</definition>
         <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
         <name>GetInventoryItemRefId</name>
+        <qualifiedname>ItemFunctions::GetInventoryItemRefId</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -531,34 +690,40 @@
           <declname>index</declname>
         </param>
         <briefdescription>
-<para>Get the refId of the item at a certain index in a player&apos;s latest inventory changes. </para>        </briefdescription>
+<para>Get the refId of the item at a certain index in a player&apos;s latest inventory changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose inventory changes should be used. </para></parameterdescription>
+<para>The player ID whose inventory changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The index of the inventory item. </para></parameterdescription>
+<para>The index of the inventory item. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The refId. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The refId. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="183" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="131" bodyend="140"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="203" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="148" bodyend="157"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1a78364307c8e7f0c4f1ab57515a3d97a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1a78364307c8e7f0c4f1ab57515a3d97a1" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int ItemFunctions::GetInventoryItemCount</definition>
         <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
         <name>GetInventoryItemCount</name>
+        <qualifiedname>ItemFunctions::GetInventoryItemCount</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -568,34 +733,40 @@
           <declname>index</declname>
         </param>
         <briefdescription>
-<para>Get the count of the item at a certain index in a player&apos;s latest inventory changes. </para>        </briefdescription>
+<para>Get the count of the item at a certain index in a player&apos;s latest inventory changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose inventory changes should be used. </para></parameterdescription>
+<para>The player ID whose inventory changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The index of the inventory item. </para></parameterdescription>
+<para>The index of the inventory item. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The item count. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The item count. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="193" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="142" bodyend="148"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="213" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="159" bodyend="165"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1a36b1b1f7a3304056de8335be08e184fe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1a36b1b1f7a3304056de8335be08e184fe" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int ItemFunctions::GetInventoryItemCharge</definition>
         <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
         <name>GetInventoryItemCharge</name>
+        <qualifiedname>ItemFunctions::GetInventoryItemCharge</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -605,34 +776,40 @@
           <declname>index</declname>
         </param>
         <briefdescription>
-<para>Get the charge of the item at a certain index in a player&apos;s latest inventory changes. </para>        </briefdescription>
+<para>Get the charge of the item at a certain index in a player&apos;s latest inventory changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose inventory changes should be used. </para></parameterdescription>
+<para>The player ID whose inventory changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The index of the inventory item. </para></parameterdescription>
+<para>The index of the inventory item. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The charge. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The charge. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="203" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="150" bodyend="156"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="223" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="167" bodyend="173"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1ab5e086733168e460c65ed6ae1869a69f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1ab5e086733168e460c65ed6ae1869a69f" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double ItemFunctions::GetInventoryItemEnchantmentCharge</definition>
         <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
         <name>GetInventoryItemEnchantmentCharge</name>
+        <qualifiedname>ItemFunctions::GetInventoryItemEnchantmentCharge</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -642,34 +819,40 @@
           <declname>index</declname>
         </param>
         <briefdescription>
-<para>Get the enchantment charge of the item at a certain index in a player&apos;s latest inventory changes. </para>        </briefdescription>
+<para>Get the enchantment charge of the item at a certain index in a player&apos;s latest inventory changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose inventory changes should be used. </para></parameterdescription>
+<para>The player ID whose inventory changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The index of the inventory item. </para></parameterdescription>
+<para>The index of the inventory item. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The enchantment charge. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The enchantment charge. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="213" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="158" bodyend="164"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="233" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="175" bodyend="181"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1a1b0e441da4c66c124d171381e7530927" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1a1b0e441da4c66c124d171381e7530927" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * ItemFunctions::GetInventoryItemSoul</definition>
         <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
         <name>GetInventoryItemSoul</name>
+        <qualifiedname>ItemFunctions::GetInventoryItemSoul</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -679,190 +862,227 @@
           <declname>index</declname>
         </param>
         <briefdescription>
-<para>Get the soul of the item at a certain index in a player&apos;s latest inventory changes. </para>        </briefdescription>
+<para>Get the soul of the item at a certain index in a player&apos;s latest inventory changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose inventory changes should be used. </para></parameterdescription>
+<para>The player ID whose inventory changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The index of the inventory item. </para></parameterdescription>
+<para>The index of the inventory item. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The soul. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The soul. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="223" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="166" bodyend="175"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="243" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="183" bodyend="192"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1a5fcd79574c4faa847d2a21bbc43fb549" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1a5fcd79574c4faa847d2a21bbc43fb549" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * ItemFunctions::GetUsedItemRefId</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetUsedItemRefId</name>
+        <qualifiedname>ItemFunctions::GetUsedItemRefId</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the refId of the item last used by a player. </para>        </briefdescription>
+<para>Get the refId of the item last used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The refId. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The refId. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="231" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="177" bodyend="183"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="251" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="194" bodyend="200"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1aef32fcfd3c76f042c6ff7e7fa82f76aa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1aef32fcfd3c76f042c6ff7e7fa82f76aa" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int ItemFunctions::GetUsedItemCount</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetUsedItemCount</name>
+        <qualifiedname>ItemFunctions::GetUsedItemCount</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the count of the item last used by a player. </para>        </briefdescription>
+<para>Get the count of the item last used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The item count. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The item count. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="239" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="185" bodyend="191"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="259" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="202" bodyend="208"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1aef5c3f46991dbd5cd75757d46c5cfbe2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1aef5c3f46991dbd5cd75757d46c5cfbe2" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int ItemFunctions::GetUsedItemCharge</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetUsedItemCharge</name>
+        <qualifiedname>ItemFunctions::GetUsedItemCharge</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the charge of the item last used by a player. </para>        </briefdescription>
+<para>Get the charge of the item last used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The charge. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The charge. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="247" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="193" bodyend="199"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="267" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="210" bodyend="216"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1a2c88045e210f8aa0029188cb6764e9e6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1a2c88045e210f8aa0029188cb6764e9e6" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double ItemFunctions::GetUsedItemEnchantmentCharge</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetUsedItemEnchantmentCharge</name>
+        <qualifiedname>ItemFunctions::GetUsedItemEnchantmentCharge</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the enchantment charge of the item last used by a player. </para>        </briefdescription>
+<para>Get the enchantment charge of the item last used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The enchantment charge. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The enchantment charge. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="255" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="201" bodyend="207"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="275" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="218" bodyend="224"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1a71e0aa9320d3672259b576b60d71da7e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1a71e0aa9320d3672259b576b60d71da7e" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * ItemFunctions::GetUsedItemSoul</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetUsedItemSoul</name>
+        <qualifiedname>ItemFunctions::GetUsedItemSoul</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the soul of the item last used by a player. </para>        </briefdescription>
+<para>Get the soul of the item last used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The soul. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The soul. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="263" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="209" bodyend="215"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="283" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="226" bodyend="232"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1af94fe4ff0931f44acdeb160ff677dadf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1af94fe4ff0931f44acdeb160ff677dadf" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ItemFunctions::SendEquipment</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>SendEquipment</name>
+        <qualifiedname>ItemFunctions::SendEquipment</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerEquipment packet with a player&apos;s equipment. </para>        </briefdescription>
+<para>Send a PlayerEquipment packet with a player&apos;s equipment. </para>
+        </briefdescription>
         <detaileddescription>
-<para>It is always sent to all players.</para><para><parameterlist kind="param"><parameteritem>
+<para>It is always sent to all players.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose equipment should be sent. </para></parameterdescription>
+<para>The player ID whose equipment should be sent. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="273" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="217" bodyend="229"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="293" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="234" bodyend="246"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1a00d7ee67de36e3ba576bc99a2e8000fb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1a00d7ee67de36e3ba576bc99a2e8000fb" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ItemFunctions::SendInventoryChanges</definition>
         <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
         <name>SendInventoryChanges</name>
+        <qualifiedname>ItemFunctions::SendInventoryChanges</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -876,67 +1096,79 @@
           <declname>skipAttachedPlayer</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerInventory packet with a player&apos;s recorded inventory changes. </para>        </briefdescription>
+<para>Send a PlayerInventory packet with a player&apos;s recorded inventory changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose inventory changes should be used. </para></parameterdescription>
+<para>The player ID whose inventory changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>sendToOtherPlayers</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>skipAttachedPlayer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="285" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="231" bodyend="243"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="305" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="248" bodyend="260"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1af19c8fe3fb0e97bb8f4c19f60309f237" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1af19c8fe3fb0e97bb8f4c19f60309f237" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ItemFunctions::SendItemUse</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>SendItemUse</name>
+        <qualifiedname>ItemFunctions::SendItemUse</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerItemUse causing a player to use their recorded usedItem. </para>        </briefdescription>
+<para>Send a PlayerItemUse causing a player to use their recorded usedItem. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID affected. </para></parameterdescription>
+<para>The player ID affected. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="293" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="245" bodyend="254"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="313" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="262" bodyend="271"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1aea7473da646373e392cecb47160c9a8e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1aea7473da646373e392cecb47160c9a8e" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ItemFunctions::InitializeInventoryChanges</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>InitializeInventoryChanges</name>
+        <qualifiedname>ItemFunctions::InitializeInventoryChanges</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -947,13 +1179,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="297" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="258" bodyend="261"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="317" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="275" bodyend="278"/>
       </memberdef>
-      <memberdef kind="function" id="class_item_functions_1aabfdfe0f8aa31e0f3195b54866388e89" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_item_functions_1aabfdfe0f8aa31e0f3195b54866388e89" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ItemFunctions::AddItem</definition>
         <argsstring>(unsigned short pid, const char *refId, unsigned int count, int charge, double enchantmentCharge, const char *soul) noexcept</argsstring>
         <name>AddItem</name>
+        <qualifiedname>ItemFunctions::AddItem</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -984,19 +1217,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="299" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="263" bodyend="267"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="319" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Items.cpp" bodystart="280" bodyend="284"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" line="45" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Items.hpp" bodystart="44" bodyend="304"/>
+    <location file="src/apps/openmw-mp/Script/Functions/Items.hpp" line="46" column="1" bodyfile="src/apps/openmw-mp/Script/Functions/Items.hpp" bodystart="47" bodyend="324"/>
     <listofallmembers>
       <member refid="class_item_functions_1aabfdfe0f8aa31e0f3195b54866388e89" prot="public" virt="non-virtual"><scope>ItemFunctions</scope><name>AddItem</name></member>
       <member refid="class_item_functions_1aa7f1955ef03ca8398c1f1ac7fd51e107" prot="public" virt="non-virtual"><scope>ItemFunctions</scope><name>AddItemChange</name></member>
       <member refid="class_item_functions_1a7e128cc3bd14218f9fd47e71a12cb23a" prot="public" virt="non-virtual"><scope>ItemFunctions</scope><name>ClearInventoryChanges</name></member>
       <member refid="class_item_functions_1a9374d713eba737ba2bdd69e7ba7b057f" prot="public" virt="non-virtual"><scope>ItemFunctions</scope><name>EquipItem</name></member>
+      <member refid="class_item_functions_1ae392f1a7eb6da0408868cab9356fd58f" prot="public" virt="non-virtual"><scope>ItemFunctions</scope><name>GetEquipmentChangesSize</name></member>
+      <member refid="class_item_functions_1ab0912af72e42f26c28cbc3661ea02fee" prot="public" virt="non-virtual"><scope>ItemFunctions</scope><name>GetEquipmentChangesSlot</name></member>
       <member refid="class_item_functions_1ac0e7e4fd9abb83d30333cf5e29b83690" prot="public" virt="non-virtual"><scope>ItemFunctions</scope><name>GetEquipmentItemCharge</name></member>
       <member refid="class_item_functions_1abda7acd99cb5e031b811d6b1a4aa0533" prot="public" virt="non-virtual"><scope>ItemFunctions</scope><name>GetEquipmentItemCount</name></member>
       <member refid="class_item_functions_1a1bc85bda7cb2c2ed17b8ab090a683f9e" prot="public" virt="non-virtual"><scope>ItemFunctions</scope><name>GetEquipmentItemEnchantmentCharge</name></member>

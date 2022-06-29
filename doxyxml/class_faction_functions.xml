@@ -1,91 +1,109 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
   <compounddef id="class_faction_functions" kind="class" language="C++" prot="public">
     <compoundname>FactionFunctions</compoundname>
+    <includes refid="_factions_8hpp" local="no">Factions.hpp</includes>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_faction_functions_1a5c935465921c8d4b2f77d2d3f5e32962" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_faction_functions_1a5c935465921c8d4b2f77d2d3f5e32962" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void FactionFunctions::ClearFactionChanges</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>ClearFactionChanges</name>
+        <qualifiedname>FactionFunctions::ClearFactionChanges</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Clear the last recorded faction changes for a player. </para>        </briefdescription>
+<para>Clear the last recorded faction changes for a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This is used to initialize the sending of new PlayerFaction packets.</para><para><parameterlist kind="param"><parameteritem>
+<para>This is used to initialize the sending of new PlayerFaction packets.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose faction changes should be used. </para></parameterdescription>
+<para>The player ID whose faction changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="39" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="14" bodyend="20"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="39" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="14" bodyend="20"/>
       </memberdef>
-      <memberdef kind="function" id="class_faction_functions_1ab45683063511854fc7226155bce142d2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_faction_functions_1ab45683063511854fc7226155bce142d2" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int FactionFunctions::GetFactionChangesSize</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetFactionChangesSize</name>
+        <qualifiedname>FactionFunctions::GetFactionChangesSize</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the number of indexes in a player&apos;s latest faction changes. </para>        </briefdescription>
+<para>Get the number of indexes in a player&apos;s latest faction changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose faction changes should be used. </para></parameterdescription>
+<para>The player ID whose faction changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The number of indexes. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The number of indexes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="47" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="22" bodyend="28"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="47" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="22" bodyend="28"/>
       </memberdef>
-      <memberdef kind="function" id="class_faction_functions_1a1b2c727612efad7cc65057972edb0b5d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_faction_functions_1a1b2c727612efad7cc65057972edb0b5d" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>unsigned char</type>
         <definition>unsigned char FactionFunctions::GetFactionChangesAction</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetFactionChangesAction</name>
+        <qualifiedname>FactionFunctions::GetFactionChangesAction</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the action type used in a player&apos;s latest faction changes. </para>        </briefdescription>
+<para>Get the action type used in a player&apos;s latest faction changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose faction changes should be used. </para></parameterdescription>
+<para>The player ID whose faction changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The action type (0 for RANK, 1 for EXPULSION, 2 for REPUTATION). </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The action type (0 for RANK, 1 for EXPULSION, 2 for REPUTATION). </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="55" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="30" bodyend="36"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="55" column="26" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="30" bodyend="36"/>
       </memberdef>
-      <memberdef kind="function" id="class_faction_functions_1aee870aada72d7781cad44ce93da5f1ce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_faction_functions_1aee870aada72d7781cad44ce93da5f1ce" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * FactionFunctions::GetFactionId</definition>
         <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
         <name>GetFactionId</name>
+        <qualifiedname>FactionFunctions::GetFactionId</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -95,34 +113,40 @@
           <declname>index</declname>
         </param>
         <briefdescription>
-<para>Get the factionId at a certain index in a player&apos;s latest faction changes. </para>        </briefdescription>
+<para>Get the factionId at a certain index in a player&apos;s latest faction changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose faction changes should be used. </para></parameterdescription>
+<para>The player ID whose faction changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The index of the faction. </para></parameterdescription>
+<para>The index of the faction. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The factionId. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The factionId. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="64" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="38" bodyend="47"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="64" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="38" bodyend="47"/>
       </memberdef>
-      <memberdef kind="function" id="class_faction_functions_1a6841992752636f5c71d15ed98e5b23be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_faction_functions_1a6841992752636f5c71d15ed98e5b23be" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int FactionFunctions::GetFactionRank</definition>
         <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
         <name>GetFactionRank</name>
+        <qualifiedname>FactionFunctions::GetFactionRank</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -132,34 +156,40 @@
           <declname>index</declname>
         </param>
         <briefdescription>
-<para>Get the rank at a certain index in a player&apos;s latest faction changes. </para>        </briefdescription>
+<para>Get the rank at a certain index in a player&apos;s latest faction changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose faction changes should be used. </para></parameterdescription>
+<para>The player ID whose faction changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The index of the faction. </para></parameterdescription>
+<para>The index of the faction. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The rank. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The rank. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="73" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="49" bodyend="55"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="73" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="49" bodyend="55"/>
       </memberdef>
-      <memberdef kind="function" id="class_faction_functions_1aa39443f42fb8aa6086946d710670995e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_faction_functions_1aa39443f42fb8aa6086946d710670995e" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool FactionFunctions::GetFactionExpulsionState</definition>
         <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
         <name>GetFactionExpulsionState</name>
+        <qualifiedname>FactionFunctions::GetFactionExpulsionState</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -169,34 +199,40 @@
           <declname>index</declname>
         </param>
         <briefdescription>
-<para>Get the expulsion state at a certain index in a player&apos;s latest faction changes. </para>        </briefdescription>
+<para>Get the expulsion state at a certain index in a player&apos;s latest faction changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose faction changes should be used. </para></parameterdescription>
+<para>The player ID whose faction changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The index of the faction. </para></parameterdescription>
+<para>The index of the faction. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The expulsion state. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The expulsion state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="82" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="57" bodyend="63"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="82" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="57" bodyend="63"/>
       </memberdef>
-      <memberdef kind="function" id="class_faction_functions_1abb26150f1fdb8d5daf373ebf59bb9a39" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_faction_functions_1abb26150f1fdb8d5daf373ebf59bb9a39" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int FactionFunctions::GetFactionReputation</definition>
         <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
         <name>GetFactionReputation</name>
+        <qualifiedname>FactionFunctions::GetFactionReputation</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -206,34 +242,40 @@
           <declname>index</declname>
         </param>
         <briefdescription>
-<para>Get the reputation at a certain index in a player&apos;s latest faction changes. </para>        </briefdescription>
+<para>Get the reputation at a certain index in a player&apos;s latest faction changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose faction changes should be used. </para></parameterdescription>
+<para>The player ID whose faction changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The index of the faction. </para></parameterdescription>
+<para>The index of the faction. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The reputation. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The reputation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="91" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="65" bodyend="71"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="91" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="65" bodyend="71"/>
       </memberdef>
-      <memberdef kind="function" id="class_faction_functions_1ac3a3cc3bf280ca85091383fabb3aa29b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_faction_functions_1ac3a3cc3bf280ca85091383fabb3aa29b" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void FactionFunctions::SetFactionChangesAction</definition>
         <argsstring>(unsigned short pid, unsigned char action) noexcept</argsstring>
         <name>SetFactionChangesAction</name>
+        <qualifiedname>FactionFunctions::SetFactionChangesAction</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -243,164 +285,196 @@
           <declname>action</declname>
         </param>
         <briefdescription>
-<para>Set the action type in a player&apos;s faction changes. </para>        </briefdescription>
+<para>Set the action type in a player&apos;s faction changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose faction changes should be used. </para></parameterdescription>
+<para>The player ID whose faction changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>action</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The action (0 for RANK, 1 for EXPULSION, 2 for REPUTATION). </para></parameterdescription>
+<para>The action (0 for RANK, 1 for EXPULSION, 2 for REPUTATION). </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="100" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="73" bodyend="79"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="100" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="73" bodyend="79"/>
       </memberdef>
-      <memberdef kind="function" id="class_faction_functions_1a5ad91906fdffd325bdb62f4f79287c3a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_faction_functions_1a5ad91906fdffd325bdb62f4f79287c3a" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void FactionFunctions::SetFactionId</definition>
         <argsstring>(const char *factionId) noexcept</argsstring>
         <name>SetFactionId</name>
+        <qualifiedname>FactionFunctions::SetFactionId</qualifiedname>
         <param>
           <type>const char *</type>
           <declname>factionId</declname>
         </param>
         <briefdescription>
-<para>Set the factionId of the temporary faction stored on the server. </para>        </briefdescription>
+<para>Set the factionId of the temporary faction stored on the server. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>factionId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The factionId. </para></parameterdescription>
+<para>The factionId. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="108" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="81" bodyend="84"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="108" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="81" bodyend="84"/>
       </memberdef>
-      <memberdef kind="function" id="class_faction_functions_1aff548526171954ec7d976615b9a821fa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_faction_functions_1aff548526171954ec7d976615b9a821fa" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void FactionFunctions::SetFactionRank</definition>
         <argsstring>(unsigned int rank) noexcept</argsstring>
         <name>SetFactionRank</name>
+        <qualifiedname>FactionFunctions::SetFactionRank</qualifiedname>
         <param>
           <type>unsigned int</type>
           <declname>rank</declname>
         </param>
         <briefdescription>
-<para>Set the rank of the temporary faction stored on the server. </para>        </briefdescription>
+<para>Set the rank of the temporary faction stored on the server. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>rank</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The rank. </para></parameterdescription>
+<para>The rank. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="116" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="86" bodyend="89"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="116" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="86" bodyend="89"/>
       </memberdef>
-      <memberdef kind="function" id="class_faction_functions_1a3a41d19fc124057bcda10935f3dd1f46" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_faction_functions_1a3a41d19fc124057bcda10935f3dd1f46" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void FactionFunctions::SetFactionExpulsionState</definition>
         <argsstring>(bool expulsionState) noexcept</argsstring>
         <name>SetFactionExpulsionState</name>
+        <qualifiedname>FactionFunctions::SetFactionExpulsionState</qualifiedname>
         <param>
           <type>bool</type>
           <declname>expulsionState</declname>
         </param>
         <briefdescription>
-<para>Set the expulsion state of the temporary faction stored on the server. </para>        </briefdescription>
+<para>Set the expulsion state of the temporary faction stored on the server. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>expulsionState</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The expulsion state. </para></parameterdescription>
+<para>The expulsion state. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="124" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="91" bodyend="94"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="124" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="91" bodyend="94"/>
       </memberdef>
-      <memberdef kind="function" id="class_faction_functions_1a55fd0d804bc185611d70deb10fb2a7f2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_faction_functions_1a55fd0d804bc185611d70deb10fb2a7f2" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void FactionFunctions::SetFactionReputation</definition>
         <argsstring>(int reputation) noexcept</argsstring>
         <name>SetFactionReputation</name>
+        <qualifiedname>FactionFunctions::SetFactionReputation</qualifiedname>
         <param>
           <type>int</type>
           <declname>reputation</declname>
         </param>
         <briefdescription>
-<para>Set the reputation of the temporary faction stored on the server. </para>        </briefdescription>
+<para>Set the reputation of the temporary faction stored on the server. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>reputation</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The reputation. </para></parameterdescription>
+<para>The reputation. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="132" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="96" bodyend="99"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="132" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="96" bodyend="99"/>
       </memberdef>
-      <memberdef kind="function" id="class_faction_functions_1abaaaa68dc868f8ccfd72da41f2c892bc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_faction_functions_1abaaaa68dc868f8ccfd72da41f2c892bc" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void FactionFunctions::AddFaction</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>AddFaction</name>
+        <qualifiedname>FactionFunctions::AddFaction</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Add the server&apos;s temporary faction to the faction changes for a player. </para>        </briefdescription>
+<para>Add the server&apos;s temporary faction to the faction changes for a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>In the process, the server&apos;s temporary faction will automatically be cleared so a new one can be set up.</para><para><parameterlist kind="param"><parameteritem>
+<para>In the process, the server&apos;s temporary faction will automatically be cleared so a new one can be set up.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose faction changes should be used. </para></parameterdescription>
+<para>The player ID whose faction changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="143" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="101" bodyend="109"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="143" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="101" bodyend="109"/>
       </memberdef>
-      <memberdef kind="function" id="class_faction_functions_1a0b97ae33963eb14612f59926ebb7ae8e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_faction_functions_1a0b97ae33963eb14612f59926ebb7ae8e" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void FactionFunctions::SendFactionChanges</definition>
         <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
         <name>SendFactionChanges</name>
+        <qualifiedname>FactionFunctions::SendFactionChanges</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -414,41 +488,48 @@
           <declname>skipAttachedPlayer</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerFaction packet with a player&apos;s recorded faction changes. </para>        </briefdescription>
+<para>Send a PlayerFaction packet with a player&apos;s recorded faction changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose faction changes should be used. </para></parameterdescription>
+<para>The player ID whose faction changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>sendToOtherPlayers</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>skipAttachedPlayer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="155" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="111" bodyend="123"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="155" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="111" bodyend="123"/>
       </memberdef>
-      <memberdef kind="function" id="class_faction_functions_1abf253e07cb2ed203de6f0cff70240860" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_faction_functions_1abf253e07cb2ed203de6f0cff70240860" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void FactionFunctions::InitializeFactionChanges</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>InitializeFactionChanges</name>
+        <qualifiedname>FactionFunctions::InitializeFactionChanges</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -459,14 +540,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="159" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="127" bodyend="130"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="159" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.cpp" bodystart="127" bodyend="130"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" line="28" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Factions.hpp" bodystart="27" bodyend="161"/>
+    <location file="src/apps/openmw-mp/Script/Functions/Factions.hpp" line="27" column="1" bodyfile="src/apps/openmw-mp/Script/Functions/Factions.hpp" bodystart="28" bodyend="161"/>
     <listofallmembers>
       <member refid="class_faction_functions_1abaaaa68dc868f8ccfd72da41f2c892bc" prot="public" virt="non-virtual"><scope>FactionFunctions</scope><name>AddFaction</name></member>
       <member refid="class_faction_functions_1a5c935465921c8d4b2f77d2d3f5e32962" prot="public" virt="non-virtual"><scope>FactionFunctions</scope><name>ClearFactionChanges</name></member>

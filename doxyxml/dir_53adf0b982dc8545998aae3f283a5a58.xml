@@ -1,11 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
-  <compounddef id="namespacemwmp" kind="namespace" language="C++">
-    <compoundname>mwmp</compoundname>
+  <compounddef id="dir_53adf0b982dc8545998aae3f283a5a58" kind="dir">
+    <compoundname>src/apps</compoundname>
+    <innerdir refid="dir_4283dc31862abb78c9c129da7231f30f">src/apps/openmw-mp</innerdir>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="src/apps/openmw-mp/Script/Functions/Actors.cpp" line="13" column="1"/>
+    <location file="src/apps/"/>
   </compounddef>
 </doxygen>

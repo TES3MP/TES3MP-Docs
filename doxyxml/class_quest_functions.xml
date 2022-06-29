@@ -1,117 +1,78 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
   <compounddef id="class_quest_functions" kind="class" language="C++" prot="public">
     <compoundname>QuestFunctions</compoundname>
+    <includes refid="_quests_8hpp" local="no">Quests.hpp</includes>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_quest_functions_1a32044c1c6af54481056f2907f7ff36e4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_quest_functions_1a32044c1c6af54481056f2907f7ff36e4" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void QuestFunctions::ClearJournalChanges</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>ClearJournalChanges</name>
+        <qualifiedname>QuestFunctions::ClearJournalChanges</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Clear the last recorded journal changes for a player. </para>        </briefdescription>
+<para>Clear the last recorded journal changes for a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This is used to initialize the sending of new PlayerJournal packets.</para><para><parameterlist kind="param"><parameteritem>
+<para>This is used to initialize the sending of new PlayerJournal packets.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose journal changes should be used. </para></parameterdescription>
+<para>The player ID whose journal changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="46" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="11" bodyend="17"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Quests.hpp" line="39" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="11" bodyend="17"/>
       </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a5ce0cd00ac091f4327a926c539f2b02d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void QuestFunctions::ClearKillChanges</definition>
-        <argsstring>(unsigned short pid) noexcept</argsstring>
-        <name>ClearKillChanges</name>
-        <param>
-          <type>unsigned short</type>
-          <declname>pid</declname>
-        </param>
-        <briefdescription>
-<para>Clear the last recorded kill count changes for a player. </para>        </briefdescription>
-        <detaileddescription>
-<para>This is used to initialize the sending of new WorldKillCount packets.</para><para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>pid</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The player ID whose kill count changes should be used. </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="56" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="19" bodyend="25"/>
-      </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1ab725ebf19e14628fafcfbc31cc832c99" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_quest_functions_1ab725ebf19e14628fafcfbc31cc832c99" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int QuestFunctions::GetJournalChangesSize</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetJournalChangesSize</name>
+        <qualifiedname>QuestFunctions::GetJournalChangesSize</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the number of indexes in a player&apos;s latest journal changes. </para>        </briefdescription>
+<para>Get the number of indexes in a player&apos;s latest journal changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose journal changes should be used. </para></parameterdescription>
+<para>The player ID whose journal changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The number of indexes. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The number of indexes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="64" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="27" bodyend="33"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Quests.hpp" line="47" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="19" bodyend="25"/>
       </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a9d436404db76ef566c05df73ba8aa10c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>unsigned int</type>
-        <definition>unsigned int QuestFunctions::GetKillChangesSize</definition>
-        <argsstring>(unsigned short pid) noexcept</argsstring>
-        <name>GetKillChangesSize</name>
-        <param>
-          <type>unsigned short</type>
-          <declname>pid</declname>
-        </param>
-        <briefdescription>
-<para>Get the number of indexes in a player&apos;s latest kill count changes. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>pid</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The player ID whose kill count changes should be used. </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>The number of indexes. </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="72" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="35" bodyend="41"/>
-      </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a7f677d58e6ee71cbe5c22b0a56548c54" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_quest_functions_1a7f677d58e6ee71cbe5c22b0a56548c54" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void QuestFunctions::AddJournalEntry</definition>
         <argsstring>(unsigned short pid, const char *quest, unsigned int index, const char *actorRefId) noexcept</argsstring>
         <name>AddJournalEntry</name>
+        <qualifiedname>QuestFunctions::AddJournalEntry</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -129,48 +90,56 @@
           <declname>actorRefId</declname>
         </param>
         <briefdescription>
-<para>Add a new journal item of type ENTRY to the journal changes for a player, with a specific timestamp. </para>        </briefdescription>
+<para>Add a new journal item of type ENTRY to the journal changes for a player, with a specific timestamp. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose journal changes should be used. </para></parameterdescription>
+<para>The player ID whose journal changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>quest</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The quest of the journal item. </para></parameterdescription>
+<para>The quest of the journal item. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The quest index of the journal item. </para></parameterdescription>
+<para>The quest index of the journal item. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>actorRefId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The actor refId of the journal item. </para></parameterdescription>
+<para>The actor refId of the journal item. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="84" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="43" bodyend="56"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Quests.hpp" line="59" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="27" bodyend="40"/>
       </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1ab0754ac51d61c1878e60a32b0a393dea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_quest_functions_1ab0754ac51d61c1878e60a32b0a393dea" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void QuestFunctions::AddJournalEntryWithTimestamp</definition>
         <argsstring>(unsigned short pid, const char *quest, unsigned int index, const char *actorRefId, unsigned int daysPassed, unsigned int month, unsigned int day) noexcept</argsstring>
         <name>AddJournalEntryWithTimestamp</name>
+        <qualifiedname>QuestFunctions::AddJournalEntryWithTimestamp</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -200,69 +169,80 @@
           <declname>day</declname>
         </param>
         <briefdescription>
-<para>Add a new journal item of type ENTRY to the journal changes for a player, with a specific timestamp. </para>        </briefdescription>
+<para>Add a new journal item of type ENTRY to the journal changes for a player, with a specific timestamp. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose journal changes should be used. </para></parameterdescription>
+<para>The player ID whose journal changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>quest</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The quest of the journal item. </para></parameterdescription>
+<para>The quest of the journal item. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The quest index of the journal item. </para></parameterdescription>
+<para>The quest index of the journal item. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>actorRefId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The actor refId of the journal item. </para></parameterdescription>
+<para>The actor refId of the journal item. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>The</parametername>
+<parametername>daysPassed</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>daysPassed for the journal item. </para></parameterdescription>
+<para>The daysPassed for the journal item. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>The</parametername>
+<parametername>month</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>month for the journal item. </para></parameterdescription>
+<para>The month for the journal item. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>The</parametername>
+<parametername>day</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>day of the month for the journal item. </para></parameterdescription>
+<para>The day of the month for the journal item. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="99" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="58" bodyend="76"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Quests.hpp" line="74" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="42" bodyend="60"/>
       </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a40b7c11350a900d9810677d0ecbcbcda" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_quest_functions_1a40b7c11350a900d9810677d0ecbcbcda" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void QuestFunctions::AddJournalIndex</definition>
         <argsstring>(unsigned short pid, const char *quest, unsigned int index) noexcept</argsstring>
         <name>AddJournalIndex</name>
+        <qualifiedname>QuestFunctions::AddJournalIndex</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -276,89 +256,48 @@
           <declname>index</declname>
         </param>
         <briefdescription>
-<para>Add a new journal item of type INDEX to the journal changes for a player. </para>        </briefdescription>
+<para>Add a new journal item of type INDEX to the journal changes for a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose journal changes should be used. </para></parameterdescription>
+<para>The player ID whose journal changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>quest</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The quest of the journal item. </para></parameterdescription>
+<para>The quest of the journal item. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The quest index of the journal item. </para></parameterdescription>
+<para>The quest index of the journal item. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="110" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="78" bodyend="89"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Quests.hpp" line="85" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="62" bodyend="73"/>
       </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1ae5986dcbf6766c24292c0ca9c5f79658" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void QuestFunctions::AddKill</definition>
-        <argsstring>(unsigned short pid, const char *refId, int number) noexcept</argsstring>
-        <name>AddKill</name>
-        <param>
-          <type>unsigned short</type>
-          <declname>pid</declname>
-        </param>
-        <param>
-          <type>const char *</type>
-          <declname>refId</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>number</declname>
-        </param>
-        <briefdescription>
-<para>Add a new kill count to the kill count changes for a player. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>pid</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The player ID whose kill count changes should be used. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>refId</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The refId of the kill count. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>number</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The number of kills in the kill count. </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="120" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="91" bodyend="101"/>
-      </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a02f5111cf9351db9b68168bbf8f5c73a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_quest_functions_1a02f5111cf9351db9b68168bbf8f5c73a" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void QuestFunctions::SetReputation</definition>
         <argsstring>(unsigned short pid, int value) noexcept</argsstring>
         <name>SetReputation</name>
+        <qualifiedname>QuestFunctions::SetReputation</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -368,34 +307,40 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set the reputation of a certain player. </para>        </briefdescription>
+<para>Set the reputation of a certain player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The reputation. </para></parameterdescription>
+<para>The reputation. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="129" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="103" bodyend="109"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Quests.hpp" line="94" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="75" bodyend="81"/>
       </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a489466b71b0007e2c82d956eda236c59" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_quest_functions_1a489466b71b0007e2c82d956eda236c59" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * QuestFunctions::GetJournalItemQuest</definition>
         <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
         <name>GetJournalItemQuest</name>
+        <qualifiedname>QuestFunctions::GetJournalItemQuest</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -405,34 +350,40 @@
           <declname>index</declname>
         </param>
         <briefdescription>
-<para>Get the quest at a certain index in a player&apos;s latest journal changes. </para>        </briefdescription>
+<para>Get the quest at a certain index in a player&apos;s latest journal changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose journal changes should be used. </para></parameterdescription>
+<para>The player ID whose journal changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The index of the journalItem. </para></parameterdescription>
+<para>The index of the journalItem. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The quest. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The quest. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="138" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="111" bodyend="120"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Quests.hpp" line="103" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="83" bodyend="92"/>
       </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a1101a3aace4ef0ff65742c4e1f1ed215" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_quest_functions_1a1101a3aace4ef0ff65742c4e1f1ed215" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int QuestFunctions::GetJournalItemIndex</definition>
         <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
         <name>GetJournalItemIndex</name>
+        <qualifiedname>QuestFunctions::GetJournalItemIndex</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -442,34 +393,40 @@
           <declname>index</declname>
         </param>
         <briefdescription>
-<para>Get the quest index at a certain index in a player&apos;s latest journal changes. </para>        </briefdescription>
+<para>Get the quest index at a certain index in a player&apos;s latest journal changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose journal changes should be used. </para></parameterdescription>
+<para>The player ID whose journal changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The index of the journalItem. </para></parameterdescription>
+<para>The index of the journalItem. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The quest index. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The quest index. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="147" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="122" bodyend="128"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Quests.hpp" line="112" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="94" bodyend="100"/>
       </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a7ebacac61c822efb4d6e53497ff8573c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_quest_functions_1a7ebacac61c822efb4d6e53497ff8573c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int QuestFunctions::GetJournalItemType</definition>
         <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
         <name>GetJournalItemType</name>
+        <qualifiedname>QuestFunctions::GetJournalItemType</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -479,34 +436,40 @@
           <declname>index</declname>
         </param>
         <briefdescription>
-<para>Get the journal item type at a certain index in a player&apos;s latest journal changes. </para>        </briefdescription>
+<para>Get the journal item type at a certain index in a player&apos;s latest journal changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose journal changes should be used. </para></parameterdescription>
+<para>The player ID whose journal changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The index of the journalItem. </para></parameterdescription>
+<para>The index of the journalItem. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The type (0 for ENTRY, 1 for INDEX). </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The type (0 for ENTRY, 1 for INDEX). </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="156" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="130" bodyend="136"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Quests.hpp" line="121" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="102" bodyend="108"/>
       </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a000008c1f8ff02459c566cd84a6a4c82" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_quest_functions_1a000008c1f8ff02459c566cd84a6a4c82" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * QuestFunctions::GetJournalItemActorRefId</definition>
         <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
         <name>GetJournalItemActorRefId</name>
+        <qualifiedname>QuestFunctions::GetJournalItemActorRefId</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -516,134 +479,72 @@
           <declname>index</declname>
         </param>
         <briefdescription>
-<para>Get the actor refId at a certain index in a player&apos;s latest journal changes. </para>        </briefdescription>
+<para>Get the actor refId at a certain index in a player&apos;s latest journal changes. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Every journal change has an associated actor, which is usually the quest giver.</para><para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>pid</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The player ID whose journal changes should be used. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>index</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The index of the journalItem. </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>The actor refId. </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="167" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="138" bodyend="144"/>
-      </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a2735f454b547a570483b9b75da929bb1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>const char *</type>
-        <definition>const char * QuestFunctions::GetKillRefId</definition>
-        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
-        <name>GetKillRefId</name>
-        <param>
-          <type>unsigned short</type>
-          <declname>pid</declname>
-        </param>
-        <param>
-          <type>unsigned int</type>
-          <declname>index</declname>
-        </param>
-        <briefdescription>
-<para>Get the refId at a certain index in a player&apos;s latest kill count changes. </para>        </briefdescription>
-        <detaileddescription>
+<para>Every journal change has an associated actor, which is usually the quest giver.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose kill count changes should be used. </para></parameterdescription>
+<para>The player ID whose journal changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The index of the kill count. </para></parameterdescription>
+<para>The index of the journalItem. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The refId. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The actor refId. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="176" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="146" bodyend="155"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Quests.hpp" line="132" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="110" bodyend="116"/>
       </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a15c4b963850b0130b76c155596155076" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>int</type>
-        <definition>int QuestFunctions::GetKillNumber</definition>
-        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
-        <name>GetKillNumber</name>
-        <param>
-          <type>unsigned short</type>
-          <declname>pid</declname>
-        </param>
-        <param>
-          <type>unsigned int</type>
-          <declname>index</declname>
-        </param>
-        <briefdescription>
-<para>Get the number of kills at a certain index in a player&apos;s latest kill count changes. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>pid</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The player ID whose kill count changes should be used. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>index</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The index of the kill count. </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>The number of kills. </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="185" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="157" bodyend="163"/>
-      </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a6a9c7ad4b503842df1e55b640acec7e4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_quest_functions_1a6a9c7ad4b503842df1e55b640acec7e4" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int QuestFunctions::GetReputation</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetReputation</name>
+        <qualifiedname>QuestFunctions::GetReputation</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the a certain player&apos;s reputation. </para>        </briefdescription>
+<para>Get the a certain player&apos;s reputation. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The reputation. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The reputation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="193" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="165" bodyend="171"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Quests.hpp" line="140" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="118" bodyend="124"/>
       </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a5d992a1d1666b3df71944b30df316174" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_quest_functions_1a5d992a1d1666b3df71944b30df316174" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void QuestFunctions::SendJournalChanges</definition>
         <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
         <name>SendJournalChanges</name>
+        <qualifiedname>QuestFunctions::SendJournalChanges</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -657,89 +558,48 @@
           <declname>skipAttachedPlayer</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerJournal packet with a player&apos;s recorded journal changes. </para>        </briefdescription>
+<para>Send a PlayerJournal packet with a player&apos;s recorded journal changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose journal changes should be used. </para></parameterdescription>
+<para>The player ID whose journal changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>sendToOtherPlayers</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>skipAttachedPlayer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="205" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="173" bodyend="185"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Quests.hpp" line="152" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="126" bodyend="138"/>
       </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a9ac95f19900224e2dc8ba9726e93321e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void QuestFunctions::SendKillChanges</definition>
-        <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
-        <name>SendKillChanges</name>
-        <param>
-          <type>unsigned short</type>
-          <declname>pid</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>sendToOtherPlayers</declname>
-        </param>
-        <param>
-          <type>bool</type>
-          <declname>skipAttachedPlayer</declname>
-        </param>
-        <briefdescription>
-<para>Send a WorldKillCount packet with a player&apos;s recorded kill count changes. </para>        </briefdescription>
-        <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>pid</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>The player ID whose kill count changes should be used. </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>sendToOtherPlayers</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
-</parameteritem>
-<parameteritem>
-<parameternamelist>
-<parametername>skipAttachedPlayer</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
-</parameteritem>
-</parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="217" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="187" bodyend="199"/>
-      </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1ab9bf0568831e14ba17cce8f87e0a7402" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_quest_functions_1ab9bf0568831e14ba17cce8f87e0a7402" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void QuestFunctions::SendReputation</definition>
         <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
         <name>SendReputation</name>
+        <qualifiedname>QuestFunctions::SendReputation</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -753,41 +613,48 @@
           <declname>skipAttachedPlayer</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerReputation packet with a player&apos;s recorded reputation. </para>        </briefdescription>
+<para>Send a PlayerReputation packet with a player&apos;s recorded reputation. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose reputation should be used. </para></parameterdescription>
+<para>The player ID whose reputation should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>sendToOtherPlayers</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>skipAttachedPlayer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="229" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="201" bodyend="213"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Quests.hpp" line="164" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="140" bodyend="152"/>
       </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a982511d83e93b3853602d9fc7543a9f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_quest_functions_1a982511d83e93b3853602d9fc7543a9f7" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void QuestFunctions::InitializeJournalChanges</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>InitializeJournalChanges</name>
+        <qualifiedname>QuestFunctions::InitializeJournalChanges</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -798,51 +665,27 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="233" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="217" bodyend="220"/>
-      </memberdef>
-      <memberdef kind="function" id="class_quest_functions_1a30adbf13c48ff833243589d5d962844c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void QuestFunctions::InitializeKillChanges</definition>
-        <argsstring>(unsigned short pid) noexcept</argsstring>
-        <name>InitializeKillChanges</name>
-        <param>
-          <type>unsigned short</type>
-          <declname>pid</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="234" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="222" bodyend="225"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Quests.hpp" line="168" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Quests.cpp" bodystart="156" bodyend="159"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" line="35" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Quests.hpp" bodystart="34" bodyend="238"/>
+    <location file="src/apps/openmw-mp/Script/Functions/Quests.hpp" line="27" column="1" bodyfile="src/apps/openmw-mp/Script/Functions/Quests.hpp" bodystart="28" bodyend="172"/>
     <listofallmembers>
       <member refid="class_quest_functions_1a7f677d58e6ee71cbe5c22b0a56548c54" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>AddJournalEntry</name></member>
       <member refid="class_quest_functions_1ab0754ac51d61c1878e60a32b0a393dea" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>AddJournalEntryWithTimestamp</name></member>
       <member refid="class_quest_functions_1a40b7c11350a900d9810677d0ecbcbcda" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>AddJournalIndex</name></member>
-      <member refid="class_quest_functions_1ae5986dcbf6766c24292c0ca9c5f79658" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>AddKill</name></member>
       <member refid="class_quest_functions_1a32044c1c6af54481056f2907f7ff36e4" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>ClearJournalChanges</name></member>
-      <member refid="class_quest_functions_1a5ce0cd00ac091f4327a926c539f2b02d" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>ClearKillChanges</name></member>
       <member refid="class_quest_functions_1ab725ebf19e14628fafcfbc31cc832c99" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>GetJournalChangesSize</name></member>
       <member refid="class_quest_functions_1a000008c1f8ff02459c566cd84a6a4c82" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>GetJournalItemActorRefId</name></member>
       <member refid="class_quest_functions_1a1101a3aace4ef0ff65742c4e1f1ed215" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>GetJournalItemIndex</name></member>
       <member refid="class_quest_functions_1a489466b71b0007e2c82d956eda236c59" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>GetJournalItemQuest</name></member>
       <member refid="class_quest_functions_1a7ebacac61c822efb4d6e53497ff8573c" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>GetJournalItemType</name></member>
-      <member refid="class_quest_functions_1a9d436404db76ef566c05df73ba8aa10c" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>GetKillChangesSize</name></member>
-      <member refid="class_quest_functions_1a15c4b963850b0130b76c155596155076" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>GetKillNumber</name></member>
-      <member refid="class_quest_functions_1a2735f454b547a570483b9b75da929bb1" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>GetKillRefId</name></member>
       <member refid="class_quest_functions_1a6a9c7ad4b503842df1e55b640acec7e4" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>GetReputation</name></member>
       <member refid="class_quest_functions_1a982511d83e93b3853602d9fc7543a9f7" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>InitializeJournalChanges</name></member>
-      <member refid="class_quest_functions_1a30adbf13c48ff833243589d5d962844c" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>InitializeKillChanges</name></member>
       <member refid="class_quest_functions_1a5d992a1d1666b3df71944b30df316174" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>SendJournalChanges</name></member>
-      <member refid="class_quest_functions_1a9ac95f19900224e2dc8ba9726e93321e" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>SendKillChanges</name></member>
       <member refid="class_quest_functions_1ab9bf0568831e14ba17cce8f87e0a7402" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>SendReputation</name></member>
       <member refid="class_quest_functions_1a02f5111cf9351db9b68168bbf8f5c73a" prot="public" virt="non-virtual"><scope>QuestFunctions</scope><name>SetReputation</name></member>
     </listofallmembers>

@@ -1,221 +1,263 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
   <compounddef id="class_position_functions" kind="class" language="C++" prot="public">
     <compoundname>PositionFunctions</compoundname>
+    <includes refid="_positions_8hpp" local="no">Positions.hpp</includes>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_position_functions_1a0f3294537ad2db8360c7c180dbfa6873" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_position_functions_1a0f3294537ad2db8360c7c180dbfa6873" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double PositionFunctions::GetPosX</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetPosX</name>
+        <qualifiedname>PositionFunctions::GetPosX</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the X position of a player. </para>        </briefdescription>
+<para>Get the X position of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The X position. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The X position. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.hpp" line="36" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="10" bodyend="16"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Positions.hpp" line="36" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="9" bodyend="15"/>
       </memberdef>
-      <memberdef kind="function" id="class_position_functions_1a67ed2cdbd2fcc1a1b6520acec409fc60" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_position_functions_1a67ed2cdbd2fcc1a1b6520acec409fc60" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double PositionFunctions::GetPosY</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetPosY</name>
+        <qualifiedname>PositionFunctions::GetPosY</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the Y position of a player. </para>        </briefdescription>
+<para>Get the Y position of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The Y position. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The Y position. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.hpp" line="44" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="18" bodyend="24"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Positions.hpp" line="44" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="17" bodyend="23"/>
       </memberdef>
-      <memberdef kind="function" id="class_position_functions_1aafbab4b77d8c7cbf24358b82b58373dc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_position_functions_1aafbab4b77d8c7cbf24358b82b58373dc" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double PositionFunctions::GetPosZ</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetPosZ</name>
+        <qualifiedname>PositionFunctions::GetPosZ</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the Z position of a player. </para>        </briefdescription>
+<para>Get the Z position of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The Z position. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The Z position. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.hpp" line="52" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="26" bodyend="32"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Positions.hpp" line="52" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="25" bodyend="31"/>
       </memberdef>
-      <memberdef kind="function" id="class_position_functions_1acd630abb7fffd0d63998c2c1d796538e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_position_functions_1acd630abb7fffd0d63998c2c1d796538e" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double PositionFunctions::GetPreviousCellPosX</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetPreviousCellPosX</name>
+        <qualifiedname>PositionFunctions::GetPreviousCellPosX</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the X position of a player from before their latest cell change. </para>        </briefdescription>
+<para>Get the X position of a player from before their latest cell change. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The X position. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The X position. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.hpp" line="60" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="34" bodyend="40"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Positions.hpp" line="60" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="33" bodyend="39"/>
       </memberdef>
-      <memberdef kind="function" id="class_position_functions_1aeba3f010485fe11b2025fedd82ebf290" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_position_functions_1aeba3f010485fe11b2025fedd82ebf290" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double PositionFunctions::GetPreviousCellPosY</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetPreviousCellPosY</name>
+        <qualifiedname>PositionFunctions::GetPreviousCellPosY</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the Y position of a player from before their latest cell change. </para>        </briefdescription>
+<para>Get the Y position of a player from before their latest cell change. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The Y position. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The Y position. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.hpp" line="68" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="42" bodyend="48"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Positions.hpp" line="68" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="41" bodyend="47"/>
       </memberdef>
-      <memberdef kind="function" id="class_position_functions_1a1886689c1c1583f0fc6b6e237fc3fce9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_position_functions_1a1886689c1c1583f0fc6b6e237fc3fce9" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double PositionFunctions::GetPreviousCellPosZ</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetPreviousCellPosZ</name>
+        <qualifiedname>PositionFunctions::GetPreviousCellPosZ</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the Z position of a player from before their latest cell change. </para>        </briefdescription>
+<para>Get the Z position of a player from before their latest cell change. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The Z position. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The Z position. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.hpp" line="76" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="50" bodyend="56"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Positions.hpp" line="76" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="49" bodyend="55"/>
       </memberdef>
-      <memberdef kind="function" id="class_position_functions_1af231b9fe908e1dd843299736a2254166" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_position_functions_1af231b9fe908e1dd843299736a2254166" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double PositionFunctions::GetRotX</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetRotX</name>
+        <qualifiedname>PositionFunctions::GetRotX</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the X rotation of a player. </para>        </briefdescription>
+<para>Get the X rotation of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The X rotation. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The X rotation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.hpp" line="84" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="58" bodyend="64"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Positions.hpp" line="84" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="57" bodyend="63"/>
       </memberdef>
-      <memberdef kind="function" id="class_position_functions_1ad1ad28ea0a8ff07c3ac558ff9bf15bea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_position_functions_1ad1ad28ea0a8ff07c3ac558ff9bf15bea" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double PositionFunctions::GetRotZ</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetRotZ</name>
+        <qualifiedname>PositionFunctions::GetRotZ</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the Z rotation of a player. </para>        </briefdescription>
+<para>Get the Z rotation of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The Z rotation. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The Z rotation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.hpp" line="92" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="66" bodyend="72"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Positions.hpp" line="92" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="65" bodyend="71"/>
       </memberdef>
-      <memberdef kind="function" id="class_position_functions_1a5d3cbb935468dcde4e142094346c480a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_position_functions_1a5d3cbb935468dcde4e142094346c480a" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void PositionFunctions::SetPos</definition>
         <argsstring>(unsigned short pid, double x, double y, double z) noexcept</argsstring>
         <name>SetPos</name>
+        <qualifiedname>PositionFunctions::SetPos</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -233,48 +275,57 @@
           <declname>z</declname>
         </param>
         <briefdescription>
-<para>Set the position of a player. </para>        </briefdescription>
+<para>Set the position of a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This changes the positional coordinates recorded for that player in the server memory, but does not by itself send a packet.</para><para><parameterlist kind="param"><parameteritem>
+<para>This changes the positional coordinates recorded for that player in the server memory, but does not by itself send a packet.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>x</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The X position. </para></parameterdescription>
+<para>The X position. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>y</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The Y position. </para></parameterdescription>
+<para>The Y position. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>z</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The Z position. </para></parameterdescription>
+<para>The Z position. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.hpp" line="106" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="74" bodyend="82"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Positions.hpp" line="106" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="73" bodyend="81"/>
       </memberdef>
-      <memberdef kind="function" id="class_position_functions_1adb6e61a7fd9b94ea217238d5957007bc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_position_functions_1adb6e61a7fd9b94ea217238d5957007bc" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void PositionFunctions::SetRot</definition>
         <argsstring>(unsigned short pid, double x, double z) noexcept</argsstring>
         <name>SetRot</name>
+        <qualifiedname>PositionFunctions::SetRot</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -288,41 +339,50 @@
           <declname>z</declname>
         </param>
         <briefdescription>
-<para>Set the rotation of a player. </para>        </briefdescription>
+<para>Set the rotation of a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This changes the rotational coordinates recorded for that player in the server memory, but does not by itself send a packet.</para><para>A player&apos;s Y rotation is always 0, which is why there is no Y rotation parameter.</para><para><parameterlist kind="param"><parameteritem>
+<para>This changes the rotational coordinates recorded for that player in the server memory, but does not by itself send a packet.</para>
+<para>A player&apos;s Y rotation is always 0, which is why there is no Y rotation parameter.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>x</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The X position. </para></parameterdescription>
+<para>The X position. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>z</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The Z position. </para></parameterdescription>
+<para>The Z position. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.hpp" line="121" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="84" bodyend="91"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Positions.hpp" line="121" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="83" bodyend="90"/>
       </memberdef>
-      <memberdef kind="function" id="class_position_functions_1ad33326e650a8e2005705ac070d59f1d1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_position_functions_1ad33326e650a8e2005705ac070d59f1d1" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void PositionFunctions::SetMomentum</definition>
         <argsstring>(unsigned short pid, double x, double y, double z) noexcept</argsstring>
         <name>SetMomentum</name>
+        <qualifiedname>PositionFunctions::SetMomentum</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -340,101 +400,121 @@
           <declname>z</declname>
         </param>
         <briefdescription>
-<para>Set the momentum of a player. </para>        </briefdescription>
+<para>Set the momentum of a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This changes the coordinates recorded for that player&apos;s momentum in the server memory, but does not by itself send a packet.</para><para><parameterlist kind="param"><parameteritem>
+<para>This changes the coordinates recorded for that player&apos;s momentum in the server memory, but does not by itself send a packet.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>x</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The X momentum. </para></parameterdescription>
+<para>The X momentum. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>y</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The Y momentum. </para></parameterdescription>
+<para>The Y momentum. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>z</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The Z momentum. </para></parameterdescription>
+<para>The Z momentum. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.hpp" line="135" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="93" bodyend="101"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Positions.hpp" line="135" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="92" bodyend="100"/>
       </memberdef>
-      <memberdef kind="function" id="class_position_functions_1a2d78053c17f2acd70d372ca6da0041f9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_position_functions_1a2d78053c17f2acd70d372ca6da0041f9" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void PositionFunctions::SendPos</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>SendPos</name>
+        <qualifiedname>PositionFunctions::SendPos</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerPosition packet about a player. </para>        </briefdescription>
+<para>Send a PlayerPosition packet about a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>It is only sent to the affected player.</para><para><parameterlist kind="param"><parameteritem>
+<para>It is only sent to the affected player.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.hpp" line="145" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="103" bodyend="112"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Positions.hpp" line="145" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="102" bodyend="111"/>
       </memberdef>
-      <memberdef kind="function" id="class_position_functions_1a67bc4a87f3fd8de2c403c5996562b226" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_position_functions_1a67bc4a87f3fd8de2c403c5996562b226" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void PositionFunctions::SendMomentum</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>SendMomentum</name>
+        <qualifiedname>PositionFunctions::SendMomentum</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerMomentum packet about a player. </para>        </briefdescription>
+<para>Send a PlayerMomentum packet about a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>It is only sent to the affected player.</para><para><parameterlist kind="param"><parameteritem>
+<para>It is only sent to the affected player.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.hpp" line="155" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="114" bodyend="123"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Positions.hpp" line="155" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Positions.cpp" bodystart="113" bodyend="122"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.hpp" line="27" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Positions.hpp" bodystart="26" bodyend="156"/>
+    <location file="src/apps/openmw-mp/Script/Functions/Positions.hpp" line="26" column="1" bodyfile="src/apps/openmw-mp/Script/Functions/Positions.hpp" bodystart="27" bodyend="156"/>
     <listofallmembers>
       <member refid="class_position_functions_1a0f3294537ad2db8360c7c180dbfa6873" prot="public" virt="non-virtual"><scope>PositionFunctions</scope><name>GetPosX</name></member>
       <member refid="class_position_functions_1a67ed2cdbd2fcc1a1b6520acec409fc60" prot="public" virt="non-virtual"><scope>PositionFunctions</scope><name>GetPosY</name></member>

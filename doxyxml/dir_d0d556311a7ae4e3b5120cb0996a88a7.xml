@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
-  <compounddef id="dir_28f5479277138f52f8f382568d06454f" kind="dir">
-    <compoundname>Functions</compoundname>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
+  <compounddef id="dir_d0d556311a7ae4e3b5120cb0996a88a7" kind="dir">
+    <compoundname>src/apps/openmw-mp/Script/Functions</compoundname>
     <innerfile refid="_actors_8cpp">Actors.cpp</innerfile>
     <innerfile refid="_actors_8hpp">Actors.hpp</innerfile>
     <innerfile refid="_books_8cpp">Books.cpp</innerfile>
@@ -49,6 +49,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/"/>
+    <location file="src/apps/openmw-mp/Script/Functions/"/>
   </compounddef>
 </doxygen>

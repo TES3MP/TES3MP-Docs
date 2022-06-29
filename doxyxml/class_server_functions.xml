@@ -1,425 +1,699 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
   <compounddef id="class_server_functions" kind="class" language="C++" prot="public">
     <compoundname>ServerFunctions</compoundname>
+    <includes refid="_server_8hpp" local="no">Server.hpp</includes>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_server_functions_1a976832ca2c949d9bbae725f84b251a5a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1a0c8407a2c45a7eca6e19807747bca08a" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ServerFunctions::LogMessage</definition>
+        <argsstring>(unsigned short level, const char *message) noexcept</argsstring>
+        <name>LogMessage</name>
+        <qualifiedname>ServerFunctions::LogMessage</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Write a log message with its own timestamp. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It will have &quot;[Script]:&quot; prepended to it so as to mark it as a script-generated log message.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The logging level used (0 for LOG_VERBOSE, 1 for LOG_INFO, 2 for LOG_WARN, 3 for LOG_ERROR, 4 for LOG_FATAL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message logged. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="62" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_functions_1aa251d948ea0a16d2499e266f845561c2" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ServerFunctions::LogAppend</definition>
+        <argsstring>(unsigned short level, const char *message) noexcept</argsstring>
+        <name>LogAppend</name>
+        <qualifiedname>ServerFunctions::LogAppend</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+<para>Write a log message without its own timestamp. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>It will have &quot;[Script]:&quot; prepended to it so as to mark it as a script-generated log message.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The logging level used (0 for LOG_VERBOSE, 1 for LOG_INFO, 2 for LOG_WARN, 3 for LOG_ERROR, 4 for LOG_FATAL). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The message logged. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="74" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="21" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_functions_1a976832ca2c949d9bbae725f84b251a5a" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ServerFunctions::StopServer</definition>
         <argsstring>(int code) noexcept</argsstring>
         <name>StopServer</name>
+        <qualifiedname>ServerFunctions::StopServer</qualifiedname>
         <param>
           <type>int</type>
           <declname>code</declname>
         </param>
         <briefdescription>
-<para>Shut down the server. </para>        </briefdescription>
+<para>Shut down the server. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>code</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The shutdown code. </para></parameterdescription>
+<para>The shutdown code. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="45" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="13" bodyend="16"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="82" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="26" bodyend="29"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1a7c59b3430f2d8c273c5b96de6d79a220" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1a7c59b3430f2d8c273c5b96de6d79a220" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ServerFunctions::Kick</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>Kick</name>
+        <qualifiedname>ServerFunctions::Kick</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Kick a certain player from the server. </para>        </briefdescription>
+<para>Kick a certain player from the server. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="53" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="18" bodyend="26"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="90" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="31" bodyend="39"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1aaa9fc54a8bc3b86b79ef7acae5447b39" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1aaa9fc54a8bc3b86b79ef7acae5447b39" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ServerFunctions::BanAddress</definition>
         <argsstring>(const char *ipAddress) noexcept</argsstring>
         <name>BanAddress</name>
+        <qualifiedname>ServerFunctions::BanAddress</qualifiedname>
         <param>
           <type>const char *</type>
           <declname>ipAddress</declname>
         </param>
         <briefdescription>
-<para>Ban a certain IP address from the server. </para>        </briefdescription>
+<para>Ban a certain IP address from the server. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>ipAddress</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The IP address. </para></parameterdescription>
+<para>The IP address. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="61" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="28" bodyend="31"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="98" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="41" bodyend="44"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1af3ac7120ab323b839b8058d60a1bd699" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1af3ac7120ab323b839b8058d60a1bd699" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ServerFunctions::UnbanAddress</definition>
         <argsstring>(const char *ipAddress) noexcept</argsstring>
         <name>UnbanAddress</name>
+        <qualifiedname>ServerFunctions::UnbanAddress</qualifiedname>
         <param>
           <type>const char *</type>
           <declname>ipAddress</declname>
         </param>
         <briefdescription>
-<para>Unban a certain IP address from the server. </para>        </briefdescription>
+<para>Unban a certain IP address from the server. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>ipAddress</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The IP address. </para></parameterdescription>
+<para>The IP address. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="69" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="33" bodyend="36"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="106" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="46" bodyend="49"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1a97ba98dbccb01728da4b97637bd2e120" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1a23fb54a161164e6739665a4c7d039520" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ServerFunctions::DoesFilePathExist</definition>
+        <argsstring>(const char *filePath) noexcept</argsstring>
+        <name>DoesFilePathExist</name>
+        <qualifiedname>ServerFunctions::DoesFilePathExist</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>Check whether a certain file path exists. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This will be a case sensitive check on case sensitive filesystems.</para>
+<para>Whenever you want to enforce case insensitivity, use <ref refid="class_server_functions_1af0eb0a8102bda9474dd0f55492f80170" kindref="member">GetCaseInsensitiveFilename()</ref> instead.</para>
+<para><simplesect kind="return"><para>Whether the file exists or not. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="117" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_functions_1af0eb0a8102bda9474dd0f55492f80170" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ServerFunctions::GetCaseInsensitiveFilename</definition>
+        <argsstring>(const char *folderPath, const char *filename) noexcept</argsstring>
+        <name>GetCaseInsensitiveFilename</name>
+        <qualifiedname>ServerFunctions::GetCaseInsensitiveFilename</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>folderPath</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Get the first filename in a folder that has a case insensitive match with the filename argument. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used to retain case insensitivity when opening data files on Linux.</para>
+<para><simplesect kind="return"><para>The filename that matches. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="127" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="56" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_functions_1a6759ddcddae2979805dc97b7ecbcee9c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ServerFunctions::GetDataPath</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetDataPath</name>
+        <qualifiedname>ServerFunctions::GetDataPath</qualifiedname>
+        <briefdescription>
+<para>Get the path of the server&apos;s data folder. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The data path. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="134" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_functions_1ac5524d656ca3a4369d530d299a0fded8" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int ServerFunctions::GetMillisecondsSinceServerStart</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetMillisecondsSinceServerStart</name>
+        <qualifiedname>ServerFunctions::GetMillisecondsSinceServerStart</qualifiedname>
+        <briefdescription>
+<para>Get the milliseconds elapsed since the server was started. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>The time since the server&apos;s startup in milliseconds. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="141" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="78" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_functions_1a97ba98dbccb01728da4b97637bd2e120" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * ServerFunctions::GetOperatingSystemType</definition>
         <argsstring>() noexcept</argsstring>
         <name>GetOperatingSystemType</name>
+        <qualifiedname>ServerFunctions::GetOperatingSystemType</qualifiedname>
         <briefdescription>
-<para>Get the type of the operating system used by the server. </para>        </briefdescription>
+<para>Get the type of the operating system used by the server. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Note: Currently, the type can be &quot;Windows&quot;, &quot;Linux&quot;, &quot;OS X&quot; or &quot;Unknown OS&quot;.</para><para><simplesect kind="return"><para>The type of the operating system. </para></simplesect>
-</para>        </detaileddescription>
+<para>Note: Currently, the type can be &quot;Windows&quot;, &quot;Linux&quot;, &quot;OS X&quot; or &quot;Unknown OS&quot;.</para>
+<para><simplesect kind="return"><para>The type of the operating system. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="78" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="38" bodyend="41"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="150" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="85" bodyend="89"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1aeafdc2cd31edb76b27f85f4101bb3b35" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1aeafdc2cd31edb76b27f85f4101bb3b35" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * ServerFunctions::GetArchitectureType</definition>
         <argsstring>() noexcept</argsstring>
         <name>GetArchitectureType</name>
+        <qualifiedname>ServerFunctions::GetArchitectureType</qualifiedname>
         <briefdescription>
-<para>Get the architecture type used by the server. </para>        </briefdescription>
+<para>Get the architecture type used by the server. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Note: Currently, the type can be &quot;64-bit&quot;, &quot;32-bit&quot;, &quot;ARMv#&quot; or &quot;Unknown architecture&quot;.</para><para><simplesect kind="return"><para>The architecture type. </para></simplesect>
-</para>        </detaileddescription>
+<para>Note: Currently, the type can be &quot;64-bit&quot;, &quot;32-bit&quot;, &quot;ARMv#&quot; or &quot;Unknown architecture&quot;.</para>
+<para><simplesect kind="return"><para>The architecture type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="87" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="43" bodyend="46"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="159" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="91" bodyend="95"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1a93a2ea525ef7f3ceb3ac9a1e2158da37" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1a93a2ea525ef7f3ceb3ac9a1e2158da37" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * ServerFunctions::GetServerVersion</definition>
         <argsstring>() noexcept</argsstring>
         <name>GetServerVersion</name>
+        <qualifiedname>ServerFunctions::GetServerVersion</qualifiedname>
         <briefdescription>
-<para>Get the TES3MP version of the server. </para>        </briefdescription>
+<para>Get the TES3MP version of the server. </para>
+        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>The server version. </para></simplesect>
-</para>        </detaileddescription>
+<para><simplesect kind="return"><para>The server version. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="94" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="48" bodyend="51"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="166" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="97" bodyend="100"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1a99168e42f7bc1155d157bc1abf381bf5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1a99168e42f7bc1155d157bc1abf381bf5" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * ServerFunctions::GetProtocolVersion</definition>
         <argsstring>() noexcept</argsstring>
         <name>GetProtocolVersion</name>
+        <qualifiedname>ServerFunctions::GetProtocolVersion</qualifiedname>
         <briefdescription>
-<para>Get the protocol version of the server. </para>        </briefdescription>
+<para>Get the protocol version of the server. </para>
+        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>The protocol version. </para></simplesect>
-</para>        </detaileddescription>
+<para><simplesect kind="return"><para>The protocol version. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="101" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="53" bodyend="57"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="173" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="102" bodyend="106"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1a83f0a643446849f762c0681d33292dd8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1a83f0a643446849f762c0681d33292dd8" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int ServerFunctions::GetAvgPing</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetAvgPing</name>
+        <qualifiedname>ServerFunctions::GetAvgPing</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the average ping of a certain player. </para>        </briefdescription>
+<para>Get the average ping of a certain player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The average ping. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The average ping. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="109" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="59" bodyend="64"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="181" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="108" bodyend="113"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1a9aac89581ef210b6f4af38e5d65d2d53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1a9aac89581ef210b6f4af38e5d65d2d53" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * ServerFunctions::GetIP</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetIP</name>
+        <qualifiedname>ServerFunctions::GetIP</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the IP address of a certain player. </para>        </briefdescription>
+<para>Get the IP address of a certain player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The IP address. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The IP address. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="117" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="66" bodyend="72"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="189" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="115" bodyend="121"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1a5a67c86325bf83fc308b5683ad66cc09" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1a5a67c86325bf83fc308b5683ad66cc09" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>unsigned short</type>
         <definition>unsigned short ServerFunctions::GetPort</definition>
         <argsstring>() noexcept</argsstring>
         <name>GetPort</name>
+        <qualifiedname>ServerFunctions::GetPort</qualifiedname>
         <briefdescription>
-<para>Get the port used by the server. </para>        </briefdescription>
+<para>Get the port used by the server. </para>
+        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>Port </para></simplesect>
-</para>        </detaileddescription>
+<para><simplesect kind="return"><para>The port. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="124" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="74" bodyend="77"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="196" column="27" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="123" bodyend="126"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1a39515a8917c81ac66702dee382eed595" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1a39515a8917c81ac66702dee382eed595" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int ServerFunctions::GetMaxPlayers</definition>
         <argsstring>() noexcept</argsstring>
         <name>GetMaxPlayers</name>
+        <qualifiedname>ServerFunctions::GetMaxPlayers</qualifiedname>
         <briefdescription>
-<para>Get the maximum number of players. </para>        </briefdescription>
+<para>Get the maximum number of players. </para>
+        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>Max players </para></simplesect>
-</para>        </detaileddescription>
+<para><simplesect kind="return"><para>Max players </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="131" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="79" bodyend="82"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="203" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="128" bodyend="131"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1a46f8f3f43b0c543819d8e5d1d383e14a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1a46f8f3f43b0c543819d8e5d1d383e14a" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool ServerFunctions::HasPassword</definition>
         <argsstring>() noexcept</argsstring>
         <name>HasPassword</name>
+        <qualifiedname>ServerFunctions::HasPassword</qualifiedname>
         <briefdescription>
-<para>Checking if the server requires a password to connect. </para>        </briefdescription>
+<para>Checking if the server requires a password to connect. </para>
+        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para></para></simplesect>
-</para>        </detaileddescription>
+<para><simplesect kind="return"><para>Whether the server requires a password </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="138" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="84" bodyend="87"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="210" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="133" bodyend="136"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1a9dd7df7bbdd5b3321a2762e8a9558b48" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1a27ca32fd1d9e99a13f82997d35527320" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
-        <definition>bool ServerFunctions::GetPluginEnforcementState</definition>
+        <definition>bool ServerFunctions::GetDataFileEnforcementState</definition>
         <argsstring>() noexcept</argsstring>
-        <name>GetPluginEnforcementState</name>
+        <name>GetDataFileEnforcementState</name>
+        <qualifiedname>ServerFunctions::GetDataFileEnforcementState</qualifiedname>
         <briefdescription>
-<para>Get the plugin enforcement state of the server. </para>        </briefdescription>
+<para>Get the data file enforcement state of the server. </para>
+        </briefdescription>
         <detaileddescription>
-<para>If true, clients are required to use the same plugins as set for the server.</para><para><simplesect kind="return"><para>The enforcement state. </para></simplesect>
-</para>        </detaileddescription>
+<para>If true, clients are required to use the same data files as set for the server.</para>
+<para><simplesect kind="return"><para>The enforcement state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="147" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="89" bodyend="92"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="219" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="138" bodyend="141"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1ae521276c30fae484fea8ef8690807b11" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1ae521276c30fae484fea8ef8690807b11" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool ServerFunctions::GetScriptErrorIgnoringState</definition>
         <argsstring>() noexcept</argsstring>
         <name>GetScriptErrorIgnoringState</name>
+        <qualifiedname>ServerFunctions::GetScriptErrorIgnoringState</qualifiedname>
         <briefdescription>
-<para>Get the script error ignoring state of the server. </para>        </briefdescription>
+<para>Get the script error ignoring state of the server. </para>
+        </briefdescription>
         <detaileddescription>
-<para>If true, script errors will not crash the server.</para><para><simplesect kind="return"><para>The script error ignoring state. </para></simplesect>
-</para>        </detaileddescription>
+<para>If true, script errors will not crash the server.</para>
+<para><simplesect kind="return"><para>The script error ignoring state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="156" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="94" bodyend="97"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="228" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="143" bodyend="146"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1ab00321ea65c6c6677c405f3dd156e255" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1ab00321ea65c6c6677c405f3dd156e255" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ServerFunctions::SetGameMode</definition>
         <argsstring>(const char *gameMode) noexcept</argsstring>
         <name>SetGameMode</name>
+        <qualifiedname>ServerFunctions::SetGameMode</qualifiedname>
         <param>
           <type>const char *</type>
           <declname>gameMode</declname>
         </param>
         <briefdescription>
-<para>Set the game mode of the server, as displayed in the server browser. </para>        </briefdescription>
+<para>Set the game mode of the server, as displayed in the server browser. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>name</parametername>
+<parametername>gameMode</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new game mode. </para></parameterdescription>
+<para>The new game mode. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="164" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="99" bodyend="103"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="236" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="148" bodyend="152"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1ab77f59baeaf2232d2ea31ec970b562ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1ab77f59baeaf2232d2ea31ec970b562ac" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ServerFunctions::SetHostname</definition>
         <argsstring>(const char *name) noexcept</argsstring>
         <name>SetHostname</name>
+        <qualifiedname>ServerFunctions::SetHostname</qualifiedname>
         <param>
           <type>const char *</type>
           <declname>name</declname>
         </param>
         <briefdescription>
-<para>Set the name of the server, as displayed in the server browser. </para>        </briefdescription>
+<para>Set the name of the server, as displayed in the server browser. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>name</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new name. </para></parameterdescription>
+<para>The new name. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="172" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="105" bodyend="109"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="244" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="154" bodyend="158"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1ad888704baf5994e0c69e15feafa0755c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1ad888704baf5994e0c69e15feafa0755c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ServerFunctions::SetServerPassword</definition>
         <argsstring>(const char *password) noexcept</argsstring>
         <name>SetServerPassword</name>
+        <qualifiedname>ServerFunctions::SetServerPassword</qualifiedname>
         <param>
           <type>const char *</type>
           <declname>password</declname>
         </param>
         <briefdescription>
-<para>Set the password required to join the server. </para>        </briefdescription>
+<para>Set the password required to join the server. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>password</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The password. </para></parameterdescription>
+<para>The password. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="180" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="111" bodyend="114"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="252" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="160" bodyend="163"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1a7f778d4e3a5bfacae521eb9f876f3457" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1a52aac3a186282cd143c04f3ab65f640c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void ServerFunctions::SetPluginEnforcementState</definition>
+        <definition>void ServerFunctions::SetDataFileEnforcementState</definition>
         <argsstring>(bool state) noexcept</argsstring>
-        <name>SetPluginEnforcementState</name>
+        <name>SetDataFileEnforcementState</name>
+        <qualifiedname>ServerFunctions::SetDataFileEnforcementState</qualifiedname>
         <param>
           <type>bool</type>
           <declname>state</declname>
         </param>
         <briefdescription>
-<para>Set the plugin enforcement state of the server. </para>        </briefdescription>
+<para>Set the data file enforcement state of the server. </para>
+        </briefdescription>
         <detaileddescription>
-<para>If true, clients are required to use the same plugins as set for the server.</para><para><parameterlist kind="param"><parameteritem>
+<para>If true, clients are required to use the same data files as set for the server.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>state</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new enforcement state. </para></parameterdescription>
+<para>The new enforcement state. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="190" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="116" bodyend="119"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="262" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="165" bodyend="168"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1a73a3967d4ba9a086f23631c562269b8c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1a73a3967d4ba9a086f23631c562269b8c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ServerFunctions::SetScriptErrorIgnoringState</definition>
         <argsstring>(bool state) noexcept</argsstring>
         <name>SetScriptErrorIgnoringState</name>
+        <qualifiedname>ServerFunctions::SetScriptErrorIgnoringState</qualifiedname>
         <param>
           <type>bool</type>
           <declname>state</declname>
         </param>
         <briefdescription>
-<para>Set whether script errors should be ignored or not. </para>        </briefdescription>
+<para>Set whether script errors should be ignored or not. </para>
+        </briefdescription>
         <detaileddescription>
-<para>If true, script errors will not crash the server, but could have any number of unforeseen consequences, which is why this is a highly experimental setting.</para><para><parameterlist kind="param"><parameteritem>
+<para>If true, script errors will not crash the server, but could have any number of unforeseen consequences, which is why this is a highly experimental setting.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>state</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new script error ignoring state. </para></parameterdescription>
+<para>The new script error ignoring state. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="202" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="121" bodyend="124"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="274" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="170" bodyend="173"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1a9642432439d5de130e669ebdd342deb3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1a9642432439d5de130e669ebdd342deb3" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ServerFunctions::SetRuleString</definition>
         <argsstring>(const char *key, const char *value) noexcept</argsstring>
         <name>SetRuleString</name>
+        <qualifiedname>ServerFunctions::SetRuleString</qualifiedname>
         <param>
           <type>const char *</type>
           <declname>key</declname>
@@ -429,34 +703,40 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set a rule string for the server details displayed in the server browser. </para>        </briefdescription>
+<para>Set a rule string for the server details displayed in the server browser. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>key</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The name of the rule. </para></parameterdescription>
+<para>The name of the rule. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The string value of the rule. </para></parameterdescription>
+<para>The string value of the rule. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="211" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="126" bodyend="131"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="283" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="175" bodyend="180"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1acca9427a5dd6ed37218fb655669e82a1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1acca9427a5dd6ed37218fb655669e82a1" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ServerFunctions::SetRuleValue</definition>
         <argsstring>(const char *key, double value) noexcept</argsstring>
         <name>SetRuleValue</name>
+        <qualifiedname>ServerFunctions::SetRuleValue</qualifiedname>
         <param>
           <type>const char *</type>
           <declname>key</declname>
@@ -466,91 +746,183 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set a rule value for the server details displayed in the server browser. </para>        </briefdescription>
+<para>Set a rule value for the server details displayed in the server browser. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>key</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The name of the rule. </para></parameterdescription>
+<para>The name of the rule. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The numerical value of the rule. </para></parameterdescription>
+<para>The numerical value of the rule. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="220" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="133" bodyend="138"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="292" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="182" bodyend="187"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1a022fb62f81106191fba399bf1ee4a73a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_server_functions_1a83d4b4cea5e2ba421b620bc258d9a5b1" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void ServerFunctions::AddPluginHash</definition>
-        <argsstring>(const char *pluginName, const char *hash) noexcept</argsstring>
-        <name>AddPluginHash</name>
+        <definition>void ServerFunctions::AddDataFileRequirement</definition>
+        <argsstring>(const char *dataFilename, const char *checksumString) noexcept</argsstring>
+        <name>AddDataFileRequirement</name>
+        <qualifiedname>ServerFunctions::AddDataFileRequirement</qualifiedname>
         <param>
           <type>const char *</type>
-          <declname>pluginName</declname>
+          <declname>dataFilename</declname>
         </param>
         <param>
           <type>const char *</type>
-          <declname>hash</declname>
+          <declname>checksumString</declname>
         </param>
         <briefdescription>
-<para>Adds plugins to the internal server structure to validate players. </para>        </briefdescription>
+<para>Add a data file and a corresponding CRC32 checksum to the data file loadout that connecting clients need to match. </para>
+        </briefdescription>
         <detaileddescription>
+<para>It can be used multiple times to set multiple checksums for the same data file.</para>
+<para>Note: If an empty string is provided for the checksum, a checksum will not be required for that data file.</para>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>pluginName</parametername>
+<parametername>dataFilename</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Name with extension of the plugin or master file. </para></parameterdescription>
+<para>The filename of the data file. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>hash</parametername>
+<parametername>checksumString</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Hash string </para></parameterdescription>
+<para>A string with the CRC32 checksum required. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-</para>        </detaileddescription>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="227" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="140" bodyend="165"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="306" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="189" bodyend="221"/>
       </memberdef>
-      <memberdef kind="function" id="class_server_functions_1a0f1b89ea31518ddda8fc208717fa41ed" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>const char *</type>
-        <definition>const char * ServerFunctions::GetModDir</definition>
-        <argsstring>() noexcept</argsstring>
-        <name>GetModDir</name>
+      <memberdef kind="function" id="class_server_functions_1a020382dd345e9dcb98798a979eabd723" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ServerFunctions::DoesFileExist</definition>
+        <argsstring>(const char *filePath) noexcept</argsstring>
+        <name>DoesFileExist</name>
+        <qualifiedname>ServerFunctions::DoesFileExist</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="229" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="167" bodyend="170"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="310" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="225" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_functions_1a0f1b89ea31518ddda8fc208717fa41ed" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * ServerFunctions::GetModDir</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetModDir</name>
+        <qualifiedname>ServerFunctions::GetModDir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="311" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_functions_1a9dd7df7bbdd5b3321a2762e8a9558b48" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ServerFunctions::GetPluginEnforcementState</definition>
+        <argsstring>() noexcept</argsstring>
+        <name>GetPluginEnforcementState</name>
+        <qualifiedname>ServerFunctions::GetPluginEnforcementState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="312" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="235" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_functions_1a7f778d4e3a5bfacae521eb9f876f3457" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ServerFunctions::SetPluginEnforcementState</definition>
+        <argsstring>(bool state) noexcept</argsstring>
+        <name>SetPluginEnforcementState</name>
+        <qualifiedname>ServerFunctions::SetPluginEnforcementState</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="313" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="240" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="class_server_functions_1a28f9b187b87823e27a694f20da55f0cd" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void ServerFunctions::AddPluginHash</definition>
+        <argsstring>(const char *pluginName, const char *checksumString) noexcept</argsstring>
+        <name>AddPluginHash</name>
+        <qualifiedname>ServerFunctions::AddPluginHash</qualifiedname>
+        <param>
+          <type>const char *</type>
+          <declname>pluginName</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>checksumString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="314" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Server.cpp" bodystart="245" bodyend="248"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" line="36" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Server.hpp" bodystart="35" bodyend="230"/>
+    <location file="src/apps/openmw-mp/Script/Functions/Server.hpp" line="48" column="1" bodyfile="src/apps/openmw-mp/Script/Functions/Server.hpp" bodystart="49" bodyend="315"/>
     <listofallmembers>
-      <member refid="class_server_functions_1a022fb62f81106191fba399bf1ee4a73a" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>AddPluginHash</name></member>
+      <member refid="class_server_functions_1a83d4b4cea5e2ba421b620bc258d9a5b1" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>AddDataFileRequirement</name></member>
+      <member refid="class_server_functions_1a28f9b187b87823e27a694f20da55f0cd" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>AddPluginHash</name></member>
       <member refid="class_server_functions_1aaa9fc54a8bc3b86b79ef7acae5447b39" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>BanAddress</name></member>
+      <member refid="class_server_functions_1a020382dd345e9dcb98798a979eabd723" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>DoesFileExist</name></member>
+      <member refid="class_server_functions_1a23fb54a161164e6739665a4c7d039520" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>DoesFilePathExist</name></member>
       <member refid="class_server_functions_1aeafdc2cd31edb76b27f85f4101bb3b35" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>GetArchitectureType</name></member>
       <member refid="class_server_functions_1a83f0a643446849f762c0681d33292dd8" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>GetAvgPing</name></member>
+      <member refid="class_server_functions_1af0eb0a8102bda9474dd0f55492f80170" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>GetCaseInsensitiveFilename</name></member>
+      <member refid="class_server_functions_1a27ca32fd1d9e99a13f82997d35527320" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>GetDataFileEnforcementState</name></member>
+      <member refid="class_server_functions_1a6759ddcddae2979805dc97b7ecbcee9c" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>GetDataPath</name></member>
       <member refid="class_server_functions_1a9aac89581ef210b6f4af38e5d65d2d53" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>GetIP</name></member>
       <member refid="class_server_functions_1a39515a8917c81ac66702dee382eed595" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>GetMaxPlayers</name></member>
+      <member refid="class_server_functions_1ac5524d656ca3a4369d530d299a0fded8" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>GetMillisecondsSinceServerStart</name></member>
       <member refid="class_server_functions_1a0f1b89ea31518ddda8fc208717fa41ed" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>GetModDir</name></member>
       <member refid="class_server_functions_1a97ba98dbccb01728da4b97637bd2e120" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>GetOperatingSystemType</name></member>
       <member refid="class_server_functions_1a9dd7df7bbdd5b3321a2762e8a9558b48" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>GetPluginEnforcementState</name></member>
@@ -560,6 +932,9 @@
       <member refid="class_server_functions_1a93a2ea525ef7f3ceb3ac9a1e2158da37" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>GetServerVersion</name></member>
       <member refid="class_server_functions_1a46f8f3f43b0c543819d8e5d1d383e14a" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>HasPassword</name></member>
       <member refid="class_server_functions_1a7c59b3430f2d8c273c5b96de6d79a220" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>Kick</name></member>
+      <member refid="class_server_functions_1aa251d948ea0a16d2499e266f845561c2" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>LogAppend</name></member>
+      <member refid="class_server_functions_1a0c8407a2c45a7eca6e19807747bca08a" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>LogMessage</name></member>
+      <member refid="class_server_functions_1a52aac3a186282cd143c04f3ab65f640c" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>SetDataFileEnforcementState</name></member>
       <member refid="class_server_functions_1ab00321ea65c6c6677c405f3dd156e255" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>SetGameMode</name></member>
       <member refid="class_server_functions_1ab77f59baeaf2232d2ea31ec970b562ac" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>SetHostname</name></member>
       <member refid="class_server_functions_1a7f778d4e3a5bfacae521eb9f876f3457" prot="public" virt="non-virtual"><scope>ServerFunctions</scope><name>SetPluginEnforcementState</name></member>

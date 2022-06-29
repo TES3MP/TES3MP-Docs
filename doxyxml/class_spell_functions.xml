@@ -1,91 +1,266 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
   <compounddef id="class_spell_functions" kind="class" language="C++" prot="public">
     <compoundname>SpellFunctions</compoundname>
+    <includes refid="_spells_8hpp" local="no">Spells.hpp</includes>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_spell_functions_1aeaff6cc07274642cd13bcd3e784412d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_spell_functions_1aeaff6cc07274642cd13bcd3e784412d4" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void SpellFunctions::ClearSpellbookChanges</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>ClearSpellbookChanges</name>
+        <qualifiedname>SpellFunctions::ClearSpellbookChanges</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Clear the last recorded spellbook changes for a player. </para>        </briefdescription>
+<para>Clear the last recorded spellbook changes for a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This is used to initialize the sending of new PlayerSpellbook packets.</para><para><parameterlist kind="param"><parameteritem>
+<para>This is used to initialize the sending of new PlayerSpellbook packets.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose spellbook changes should be used. </para></parameterdescription>
+<para>The player ID whose spellbook changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="31" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="11" bodyend="17"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="62" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="13" bodyend="19"/>
       </memberdef>
-      <memberdef kind="function" id="class_spell_functions_1a21ce13e01e0b2345e5f4fe5b6cf62bff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_spell_functions_1aa8af55de555e19f2410f11b37a97d76a" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpellFunctions::ClearSpellsActiveChanges</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>ClearSpellsActiveChanges</name>
+        <qualifiedname>SpellFunctions::ClearSpellsActiveChanges</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Clear the last recorded spells active changes for a player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used to initialize the sending of new PlayerSpellsActive packets.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="72" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="21" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1add13b5207b973a64e232ee3e9709c2f2" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpellFunctions::ClearCooldownChanges</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>ClearCooldownChanges</name>
+        <qualifiedname>SpellFunctions::ClearCooldownChanges</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Clear the last recorded cooldown changes for a player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This is used to initialize the sending of new PlayerCooldown packets.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose cooldown changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="82" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="29" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a21ce13e01e0b2345e5f4fe5b6cf62bff" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int SpellFunctions::GetSpellbookChangesSize</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetSpellbookChangesSize</name>
+        <qualifiedname>SpellFunctions::GetSpellbookChangesSize</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the number of indexes in a player&apos;s latest spellbook changes. </para>        </briefdescription>
+<para>Get the number of indexes in a player&apos;s latest spellbook changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose spellbook changes should be used. </para></parameterdescription>
+<para>The player ID whose spellbook changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The number of indexes. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The number of indexes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="39" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="19" bodyend="25"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="90" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="37" bodyend="43"/>
       </memberdef>
-      <memberdef kind="function" id="class_spell_functions_1aea5b60118621ce30b232dae9b50ef41b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_spell_functions_1aea5b60118621ce30b232dae9b50ef41b" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int SpellFunctions::GetSpellbookChangesAction</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetSpellbookChangesAction</name>
+        <qualifiedname>SpellFunctions::GetSpellbookChangesAction</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the action type used in a player&apos;s latest spellbook changes. </para>        </briefdescription>
+<para>Get the action type used in a player&apos;s latest spellbook changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose spellbook changes should be used. </para></parameterdescription>
+<para>The player ID whose spellbook changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The action type (0 for SET, 1 for ADD, 2 for REMOVE). </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The action type (0 for SET, 1 for ADD, 2 for REMOVE). </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="47" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="27" bodyend="33"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="98" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="45" bodyend="51"/>
       </memberdef>
-      <memberdef kind="function" id="class_spell_functions_1a19d6f5d6b424ba72e2c299293043fcbd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_spell_functions_1a291caeb90462efcf15465dd09e4ce3f1" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int SpellFunctions::GetSpellsActiveChangesSize</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>GetSpellsActiveChangesSize</name>
+        <qualifiedname>SpellFunctions::GetSpellsActiveChangesSize</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of indexes in a player&apos;s latest spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of indexes for spells active changes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="106" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="53" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a0977954a8206a792ffa8ff8efc00cedc" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int SpellFunctions::GetSpellsActiveChangesAction</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>GetSpellsActiveChangesAction</name>
+        <qualifiedname>SpellFunctions::GetSpellsActiveChangesAction</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Get the action type used in a player&apos;s latest spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The action type (0 for SET, 1 for ADD, 2 for REMOVE). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="114" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="61" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a694cfe5e4a05cedb15bad95f7bd223bf" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int SpellFunctions::GetCooldownChangesSize</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>GetCooldownChangesSize</name>
+        <qualifiedname>SpellFunctions::GetCooldownChangesSize</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of indexes in a player&apos;s latest cooldown changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose cooldown changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of indexes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="122" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="69" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a19d6f5d6b424ba72e2c299293043fcbd" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void SpellFunctions::SetSpellbookChangesAction</definition>
         <argsstring>(unsigned short pid, unsigned char action) noexcept</argsstring>
         <name>SetSpellbookChangesAction</name>
+        <qualifiedname>SpellFunctions::SetSpellbookChangesAction</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -95,34 +270,83 @@
           <declname>action</declname>
         </param>
         <briefdescription>
-<para>Set the action type in a player&apos;s spellbook changes. </para>        </briefdescription>
+<para>Set the action type in a player&apos;s spellbook changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose spellbook changes should be used. </para></parameterdescription>
+<para>The player ID whose spellbook changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>action</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The action (0 for SET, 1 for ADD, 2 for REMOVE). </para></parameterdescription>
+<para>The action (0 for SET, 1 for ADD, 2 for REMOVE). </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="56" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="35" bodyend="41"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="131" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="77" bodyend="83"/>
       </memberdef>
-      <memberdef kind="function" id="class_spell_functions_1a8cc797e293c6add4de26215c9d0dca75" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_spell_functions_1a5bb3a308f4c86a08de96e6b1faab4884" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpellFunctions::SetSpellsActiveChangesAction</definition>
+        <argsstring>(unsigned short pid, unsigned char action) noexcept</argsstring>
+        <name>SetSpellsActiveChangesAction</name>
+        <qualifiedname>SpellFunctions::SetSpellsActiveChangesAction</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>Set the action type in a player&apos;s spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The action (0 for SET, 1 for ADD, 2 for REMOVE). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="140" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="85" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a8cc797e293c6add4de26215c9d0dca75" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void SpellFunctions::AddSpell</definition>
         <argsstring>(unsigned short pid, const char *spellId) noexcept</argsstring>
         <name>AddSpell</name>
+        <qualifiedname>SpellFunctions::AddSpell</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -132,34 +356,265 @@
           <declname>spellId</declname>
         </param>
         <briefdescription>
-<para>Add a new spell to the spellbook changes for a player. </para>        </briefdescription>
+<para>Add a new spell to the spellbook changes for a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose spellbook changes should be used. </para></parameterdescription>
+<para>The player ID whose spellbook changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>spellId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The spellId of the spell. </para></parameterdescription>
+<para>The spellId of the spell. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="65" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="43" bodyend="52"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="149" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="93" bodyend="102"/>
       </memberdef>
-      <memberdef kind="function" id="class_spell_functions_1a006d4f2a3bfa2a92bbc76e5a397b9805" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_spell_functions_1ae12eef06fc536f5712e0497c2c3c368e" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpellFunctions::AddSpellActive</definition>
+        <argsstring>(unsigned short pid, const char *spellId, const char *displayName, bool stackingState) noexcept</argsstring>
+        <name>AddSpellActive</name>
+        <qualifiedname>SpellFunctions::AddSpellActive</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>spellId</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>displayName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>stackingState</declname>
+        </param>
+        <briefdescription>
+<para>Add a new active spell to the spells active changes for a player, using the temporary effect values stored so far. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spellId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spellId of the spell. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>displayName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The displayName of the spell. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stackingState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the spell should stack with other instances of itself. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="161" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="104" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a8a5cc01f6b9403c04ec23941819935b1" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpellFunctions::AddSpellActiveEffect</definition>
+        <argsstring>(unsigned short pid, int effectId, double magnitude, double duration, double timeLeft, int arg) noexcept</argsstring>
+        <name>AddSpellActiveEffect</name>
+        <qualifiedname>SpellFunctions::AddSpellActiveEffect</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>effectId</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>magnitude</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>timeLeft</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+<para>Add a new effect to the next active spell that will be added to a player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effectId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The id of the effect. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>magnitude</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The magnitude of the effect. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>duration</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The duration of the effect. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>timeLeft</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The timeLeft for the effect. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The arg of the effect when applicable, e.g. the skill used for Fortify Skill or the attribute used for Fortify Attribute. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="175" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="120" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a49eb5649a7e013a2118c5510233ea34b" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpellFunctions::AddCooldownSpell</definition>
+        <argsstring>(unsigned short pid, const char *spellId, unsigned int startDay, double startHour) noexcept</argsstring>
+        <name>AddCooldownSpell</name>
+        <qualifiedname>SpellFunctions::AddCooldownSpell</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>spellId</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>startDay</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>startHour</declname>
+        </param>
+        <briefdescription>
+<para>Add a new cooldown spell to the cooldown changes for a player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose cooldown changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spellId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The spellId of the spell. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>startDay</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The day on which the cooldown starts. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>startHour</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The hour at which the cooldown starts. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="186" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="135" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a006d4f2a3bfa2a92bbc76e5a397b9805" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * SpellFunctions::GetSpellId</definition>
         <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
         <name>GetSpellId</name>
+        <qualifiedname>SpellFunctions::GetSpellId</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -169,34 +624,831 @@
           <declname>index</declname>
         </param>
         <briefdescription>
-<para>Get the spellId at a certain index in a player&apos;s latest spellbook changes. </para>        </briefdescription>
+<para>Get the spell id at a certain index in a player&apos;s latest spellbook changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose spellbook changes should be used. </para></parameterdescription>
+<para>The player ID whose spellbook changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>index</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The index of the spell. </para></parameterdescription>
+<para>The index of the spell. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The spellId. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The spell id. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="74" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="54" bodyend="63"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="195" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="148" bodyend="157"/>
       </memberdef>
-      <memberdef kind="function" id="class_spell_functions_1ac8e9610afb5f4002bc71f66ada7321b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_spell_functions_1ad6cdb478c82f14d3a5d87535325279b2" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * SpellFunctions::GetSpellsActiveId</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetSpellsActiveId</name>
+        <qualifiedname>SpellFunctions::GetSpellsActiveId</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the spell id at a certain index in a player&apos;s latest spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the spell. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The spell id. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="204" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="159" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a77f9ab9787c0d765a2aced32db942007" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * SpellFunctions::GetSpellsActiveDisplayName</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetSpellsActiveDisplayName</name>
+        <qualifiedname>SpellFunctions::GetSpellsActiveDisplayName</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the spell display name at a certain index in a player&apos;s latest spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the spell. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The spell display name. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="213" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="170" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1aee8115715ec6e7c29c194a93098dc29b" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SpellFunctions::GetSpellsActiveStackingState</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetSpellsActiveStackingState</name>
+        <qualifiedname>SpellFunctions::GetSpellsActiveStackingState</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the spell stacking state at a certain index in a player&apos;s latest spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the spell. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The spell stacking state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="222" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="181" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a5265c56158b6ec4ccb1725df1209a4a4" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int SpellFunctions::GetSpellsActiveEffectCount</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetSpellsActiveEffectCount</name>
+        <qualifiedname>SpellFunctions::GetSpellsActiveEffectCount</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the number of effects at an index in a player&apos;s latest spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the spell. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The number of effects. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="231" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="192" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1acd2661d876be3fc68ac62f1c6c713c9d" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int SpellFunctions::GetSpellsActiveEffectId</definition>
+        <argsstring>(unsigned short pid, unsigned int spellIndex, unsigned int effectIndex) noexcept</argsstring>
+        <name>GetSpellsActiveEffectId</name>
+        <qualifiedname>SpellFunctions::GetSpellsActiveEffectId</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>spellIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>effectIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the id for an effect index at a spell index in a player&apos;s latest spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spellIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the spell. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the effect. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The id of the effect. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="241" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="203" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a446bb7d8e5373b96ae7e3f2a67b98944" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SpellFunctions::GetSpellsActiveEffectArg</definition>
+        <argsstring>(unsigned short pid, unsigned int spellIndex, unsigned int effectIndex) noexcept</argsstring>
+        <name>GetSpellsActiveEffectArg</name>
+        <qualifiedname>SpellFunctions::GetSpellsActiveEffectArg</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>spellIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>effectIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the arg for an effect index at a spell index in a player&apos;s latest spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spellIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the spell. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the effect. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The arg of the effect. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="251" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="214" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a2e735fb48a0b53bbb36fba2b72ec064a" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double SpellFunctions::GetSpellsActiveEffectMagnitude</definition>
+        <argsstring>(unsigned short pid, unsigned int spellIndex, unsigned int effectIndex) noexcept</argsstring>
+        <name>GetSpellsActiveEffectMagnitude</name>
+        <qualifiedname>SpellFunctions::GetSpellsActiveEffectMagnitude</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>spellIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>effectIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the magnitude for an effect index at a spell index in a player&apos;s latest spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spellIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the spell. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the effect. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The magnitude of the effect. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="261" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="225" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a5eed22307f62e9a7c85e1b9ea8e91871" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double SpellFunctions::GetSpellsActiveEffectDuration</definition>
+        <argsstring>(unsigned short pid, unsigned int spellIndex, unsigned int effectIndex) noexcept</argsstring>
+        <name>GetSpellsActiveEffectDuration</name>
+        <qualifiedname>SpellFunctions::GetSpellsActiveEffectDuration</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>spellIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>effectIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the duration for an effect index at a spell index in a player&apos;s latest spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spellIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the spell. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the effect. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The duration of the effect. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="271" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="236" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1ae7d3196d8c047aa60c70c4750c9e81b0" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double SpellFunctions::GetSpellsActiveEffectTimeLeft</definition>
+        <argsstring>(unsigned short pid, unsigned int spellIndex, unsigned int effectIndex) noexcept</argsstring>
+        <name>GetSpellsActiveEffectTimeLeft</name>
+        <qualifiedname>SpellFunctions::GetSpellsActiveEffectTimeLeft</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>spellIndex</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>effectIndex</declname>
+        </param>
+        <briefdescription>
+<para>Get the time left for an effect index at a spell index in a player&apos;s latest spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>spellIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the spell. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>effectIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the effect. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The time left for the effect. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="281" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="247" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a2ba8ec94dd7bfd2db628ea77194cff6e" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SpellFunctions::DoesSpellsActiveHavePlayerCaster</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>DoesSpellsActiveHavePlayerCaster</name>
+        <qualifiedname>SpellFunctions::DoesSpellsActiveHavePlayerCaster</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Check whether the spell at a certain index in a player&apos;s latest spells active changes has a player as its caster. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the spell. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Whether a player is the caster of the spell. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="291" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="258" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1ad1502645b56cc493881eeacad23e9a61" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int SpellFunctions::GetSpellsActiveCasterPid</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetSpellsActiveCasterPid</name>
+        <qualifiedname>SpellFunctions::GetSpellsActiveCasterPid</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the player ID of the caster of the spell at a certain index in a player&apos;s latest spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the spell. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The player ID of the caster. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="300" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="269" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1af03c999450b555e3c703414cd2f58041" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * SpellFunctions::GetSpellsActiveCasterRefId</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetSpellsActiveCasterRefId</name>
+        <qualifiedname>SpellFunctions::GetSpellsActiveCasterRefId</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the refId of the actor caster of the spell at a certain index in a player&apos;s latest spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the spell. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The refId of the caster. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="309" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="285" bodyend="294"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a9b9cc38d733ab2b47eef4220ac97d6ad" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int SpellFunctions::GetSpellsActiveCasterRefNum</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetSpellsActiveCasterRefNum</name>
+        <qualifiedname>SpellFunctions::GetSpellsActiveCasterRefNum</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the refNum of the actor caster of the spell at a certain index in a player&apos;s latest spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the spell. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The refNum of the caster. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="318" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="296" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1adfc3cd19dc9f999b9460f79c6eeb543f" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int SpellFunctions::GetSpellsActiveCasterMpNum</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetSpellsActiveCasterMpNum</name>
+        <qualifiedname>SpellFunctions::GetSpellsActiveCasterMpNum</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the mpNum of the actor caster of the spell at a certain index in a player&apos;s latest spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the spell. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The mpNum of the caster. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="327" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="307" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1aef55617231d2c20a92ea6abc440957af" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * SpellFunctions::GetCooldownSpellId</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetCooldownSpellId</name>
+        <qualifiedname>SpellFunctions::GetCooldownSpellId</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the spell id at a certain index in a player&apos;s latest cooldown changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose cooldown changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the cooldown spell. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The spell id. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="336" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="318" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a00d7d782175c1b857226e902a052d9b0" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int SpellFunctions::GetCooldownStartDay</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetCooldownStartDay</name>
+        <qualifiedname>SpellFunctions::GetCooldownStartDay</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the starting day of the cooldown at a certain index in a player&apos;s latest cooldown changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose cooldown changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the cooldown spell. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The starting day of the cooldown. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="345" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="329" bodyend="338"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1addceef3c66ac62aee3dfa5e1a5c47fb8" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double SpellFunctions::GetCooldownStartHour</definition>
+        <argsstring>(unsigned short pid, unsigned int index) noexcept</argsstring>
+        <name>GetCooldownStartHour</name>
+        <qualifiedname>SpellFunctions::GetCooldownStartHour</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+<para>Get the starting hour of the cooldown at a certain index in a player&apos;s latest cooldown changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose cooldown changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the cooldown spell. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The starting hour of the cooldown. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="354" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="340" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1ac8e9610afb5f4002bc71f66ada7321b5" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void SpellFunctions::SendSpellbookChanges</definition>
         <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
         <name>SendSpellbookChanges</name>
+        <qualifiedname>SpellFunctions::SendSpellbookChanges</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -210,41 +1462,134 @@
           <declname>skipAttachedPlayer</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerSpellbook packet with a player&apos;s recorded spellbook changes. </para>        </briefdescription>
+<para>Send a PlayerSpellbook packet with a player&apos;s recorded spellbook changes. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID whose spellbook changes should be used. </para></parameterdescription>
+<para>The player ID whose spellbook changes should be used. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>sendToOtherPlayers</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>skipAttachedPlayer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="86" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="65" bodyend="77"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="366" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="351" bodyend="363"/>
       </memberdef>
-      <memberdef kind="function" id="class_spell_functions_1a93cfe2e01c15c7eb961afe3d46756b52" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_spell_functions_1ad73f9235f44d32393d3d39a4f1c6d39b" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpellFunctions::SendSpellsActiveChanges</definition>
+        <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendSpellsActiveChanges</name>
+        <qualifiedname>SpellFunctions::SendSpellsActiveChanges</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send a PlayerSpellsActive packet with a player&apos;s recorded spells active changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose spells active changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skipAttachedPlayer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="378" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="365" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a7fc39089574eeff4f1ab5b2a27cd7a8e" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SpellFunctions::SendCooldownChanges</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>SendCooldownChanges</name>
+        <qualifiedname>SpellFunctions::SendCooldownChanges</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Send a PlayerCooldowns packet with a player&apos;s recorded cooldown changes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID whose cooldown changes should be used. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="386" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="379" bodyend="387"/>
+      </memberdef>
+      <memberdef kind="function" id="class_spell_functions_1a93cfe2e01c15c7eb961afe3d46756b52" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void SpellFunctions::InitializeSpellbookChanges</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>InitializeSpellbookChanges</name>
+        <qualifiedname>SpellFunctions::InitializeSpellbookChanges</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -255,23 +1600,51 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="90" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="81" bodyend="84"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="390" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.cpp" bodystart="391" bodyend="394"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" line="20" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Spells.hpp" bodystart="19" bodyend="94"/>
+    <location file="src/apps/openmw-mp/Script/Functions/Spells.hpp" line="50" column="1" bodyfile="src/apps/openmw-mp/Script/Functions/Spells.hpp" bodystart="51" bodyend="394"/>
     <listofallmembers>
+      <member refid="class_spell_functions_1a49eb5649a7e013a2118c5510233ea34b" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>AddCooldownSpell</name></member>
       <member refid="class_spell_functions_1a8cc797e293c6add4de26215c9d0dca75" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>AddSpell</name></member>
+      <member refid="class_spell_functions_1ae12eef06fc536f5712e0497c2c3c368e" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>AddSpellActive</name></member>
+      <member refid="class_spell_functions_1a8a5cc01f6b9403c04ec23941819935b1" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>AddSpellActiveEffect</name></member>
+      <member refid="class_spell_functions_1add13b5207b973a64e232ee3e9709c2f2" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>ClearCooldownChanges</name></member>
       <member refid="class_spell_functions_1aeaff6cc07274642cd13bcd3e784412d4" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>ClearSpellbookChanges</name></member>
+      <member refid="class_spell_functions_1aa8af55de555e19f2410f11b37a97d76a" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>ClearSpellsActiveChanges</name></member>
+      <member refid="class_spell_functions_1a2ba8ec94dd7bfd2db628ea77194cff6e" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>DoesSpellsActiveHavePlayerCaster</name></member>
+      <member refid="class_spell_functions_1a694cfe5e4a05cedb15bad95f7bd223bf" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetCooldownChangesSize</name></member>
+      <member refid="class_spell_functions_1aef55617231d2c20a92ea6abc440957af" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetCooldownSpellId</name></member>
+      <member refid="class_spell_functions_1a00d7d782175c1b857226e902a052d9b0" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetCooldownStartDay</name></member>
+      <member refid="class_spell_functions_1addceef3c66ac62aee3dfa5e1a5c47fb8" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetCooldownStartHour</name></member>
       <member refid="class_spell_functions_1aea5b60118621ce30b232dae9b50ef41b" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellbookChangesAction</name></member>
       <member refid="class_spell_functions_1a21ce13e01e0b2345e5f4fe5b6cf62bff" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellbookChangesSize</name></member>
       <member refid="class_spell_functions_1a006d4f2a3bfa2a92bbc76e5a397b9805" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellId</name></member>
+      <member refid="class_spell_functions_1adfc3cd19dc9f999b9460f79c6eeb543f" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellsActiveCasterMpNum</name></member>
+      <member refid="class_spell_functions_1ad1502645b56cc493881eeacad23e9a61" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellsActiveCasterPid</name></member>
+      <member refid="class_spell_functions_1af03c999450b555e3c703414cd2f58041" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellsActiveCasterRefId</name></member>
+      <member refid="class_spell_functions_1a9b9cc38d733ab2b47eef4220ac97d6ad" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellsActiveCasterRefNum</name></member>
+      <member refid="class_spell_functions_1a0977954a8206a792ffa8ff8efc00cedc" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellsActiveChangesAction</name></member>
+      <member refid="class_spell_functions_1a291caeb90462efcf15465dd09e4ce3f1" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellsActiveChangesSize</name></member>
+      <member refid="class_spell_functions_1a77f9ab9787c0d765a2aced32db942007" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellsActiveDisplayName</name></member>
+      <member refid="class_spell_functions_1a446bb7d8e5373b96ae7e3f2a67b98944" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellsActiveEffectArg</name></member>
+      <member refid="class_spell_functions_1a5265c56158b6ec4ccb1725df1209a4a4" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellsActiveEffectCount</name></member>
+      <member refid="class_spell_functions_1a5eed22307f62e9a7c85e1b9ea8e91871" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellsActiveEffectDuration</name></member>
+      <member refid="class_spell_functions_1acd2661d876be3fc68ac62f1c6c713c9d" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellsActiveEffectId</name></member>
+      <member refid="class_spell_functions_1a2e735fb48a0b53bbb36fba2b72ec064a" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellsActiveEffectMagnitude</name></member>
+      <member refid="class_spell_functions_1ae7d3196d8c047aa60c70c4750c9e81b0" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellsActiveEffectTimeLeft</name></member>
+      <member refid="class_spell_functions_1ad6cdb478c82f14d3a5d87535325279b2" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellsActiveId</name></member>
+      <member refid="class_spell_functions_1aee8115715ec6e7c29c194a93098dc29b" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>GetSpellsActiveStackingState</name></member>
       <member refid="class_spell_functions_1a93cfe2e01c15c7eb961afe3d46756b52" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>InitializeSpellbookChanges</name></member>
+      <member refid="class_spell_functions_1a7fc39089574eeff4f1ab5b2a27cd7a8e" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>SendCooldownChanges</name></member>
       <member refid="class_spell_functions_1ac8e9610afb5f4002bc71f66ada7321b5" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>SendSpellbookChanges</name></member>
+      <member refid="class_spell_functions_1ad73f9235f44d32393d3d39a4f1c6d39b" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>SendSpellsActiveChanges</name></member>
       <member refid="class_spell_functions_1a19d6f5d6b424ba72e2c299293043fcbd" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>SetSpellbookChangesAction</name></member>
+      <member refid="class_spell_functions_1a5bb3a308f4c86a08de96e6b1faab4884" prot="public" virt="non-virtual"><scope>SpellFunctions</scope><name>SetSpellsActiveChangesAction</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

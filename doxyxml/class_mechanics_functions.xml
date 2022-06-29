@@ -1,429 +1,542 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
   <compounddef id="class_mechanics_functions" kind="class" language="C++" prot="public">
     <compoundname>MechanicsFunctions</compoundname>
+    <includes refid="_mechanics_8hpp" local="no">Mechanics.hpp</includes>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_mechanics_functions_1a86a52f7f93a4378f7d495bfbf6188d0c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1af1e6dbcc0f8d13d2500642bca4495860" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MechanicsFunctions::ClearAlliedPlayersForPlayer</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>ClearAlliedPlayersForPlayer</name>
+        <qualifiedname>MechanicsFunctions::ClearAlliedPlayersForPlayer</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Clear the list of players who will be regarded as being player&apos;s allies. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="56" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="13" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mechanics_functions_1a86a52f7f93a4378f7d495bfbf6188d0c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>unsigned char</type>
         <definition>unsigned char MechanicsFunctions::GetMiscellaneousChangeType</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetMiscellaneousChangeType</name>
+        <qualifiedname>MechanicsFunctions::GetMiscellaneousChangeType</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the type of a PlayerMiscellaneous packet. </para>        </briefdescription>
+<para>Get the type of a PlayerMiscellaneous packet. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The type. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The type. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="51" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="14" bodyend="20"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="64" column="26" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="21" bodyend="27"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1a51f6984d39045b9f8cdae9f1073ce622" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1a51f6984d39045b9f8cdae9f1073ce622" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * MechanicsFunctions::GetMarkCell</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetMarkCell</name>
+        <qualifiedname>MechanicsFunctions::GetMarkCell</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the cell description of a player&apos;s Mark cell. </para>        </briefdescription>
+<para>Get the cell description of a player&apos;s Mark cell. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The cell description. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The cell description. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="59" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="22" bodyend="29"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="72" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="29" bodyend="36"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1a6842455ffebd2f722c887edbe7017b10" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1a6842455ffebd2f722c887edbe7017b10" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double MechanicsFunctions::GetMarkPosX</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetMarkPosX</name>
+        <qualifiedname>MechanicsFunctions::GetMarkPosX</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the X position of a player&apos;s Mark. </para>        </briefdescription>
+<para>Get the X position of a player&apos;s Mark. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The X position. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The X position. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="67" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="31" bodyend="37"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="80" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="38" bodyend="44"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1abcccd63516625bd85e7f4b0e622c95ce" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1abcccd63516625bd85e7f4b0e622c95ce" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double MechanicsFunctions::GetMarkPosY</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetMarkPosY</name>
+        <qualifiedname>MechanicsFunctions::GetMarkPosY</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the Y position of a player&apos;s Mark. </para>        </briefdescription>
+<para>Get the Y position of a player&apos;s Mark. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The Y position. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The Y position. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="75" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="39" bodyend="45"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="88" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="46" bodyend="52"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1a8a54f741b57f7009bbb384bdd524022f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1a8a54f741b57f7009bbb384bdd524022f" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double MechanicsFunctions::GetMarkPosZ</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetMarkPosZ</name>
+        <qualifiedname>MechanicsFunctions::GetMarkPosZ</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the Z position of a player&apos;s Mark. </para>        </briefdescription>
+<para>Get the Z position of a player&apos;s Mark. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The Z position. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The Z position. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="83" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="47" bodyend="53"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="96" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="54" bodyend="60"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1aa2701638b84abd8c9420456045228e54" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1aa2701638b84abd8c9420456045228e54" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double MechanicsFunctions::GetMarkRotX</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetMarkRotX</name>
+        <qualifiedname>MechanicsFunctions::GetMarkRotX</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the X rotation of a player&apos;s Mark. </para>        </briefdescription>
+<para>Get the X rotation of a player&apos;s Mark. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The X rotation. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The X rotation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="91" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="55" bodyend="61"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="104" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="62" bodyend="68"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1a1d6960ac4633faf355c84901ba9e77ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1a1d6960ac4633faf355c84901ba9e77ab" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double MechanicsFunctions::GetMarkRotZ</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetMarkRotZ</name>
+        <qualifiedname>MechanicsFunctions::GetMarkRotZ</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the Z rotation of a player&apos;s Mark. </para>        </briefdescription>
+<para>Get the Z rotation of a player&apos;s Mark. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The X rotation. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The X rotation. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="99" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="63" bodyend="69"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="112" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="70" bodyend="76"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1a5bcbe896e974b23be0cd00c1b67dfde0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1a5bcbe896e974b23be0cd00c1b67dfde0" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * MechanicsFunctions::GetSelectedSpellId</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetSelectedSpellId</name>
+        <qualifiedname>MechanicsFunctions::GetSelectedSpellId</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the ID of a player&apos;s selected spell. </para>        </briefdescription>
+<para>Get the ID of a player&apos;s selected spell. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The spell ID. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The spell ID. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="107" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="124" bodyend="130"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="120" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="131" bodyend="137"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1addb374b1a6d0921f2b4f024329a2eb25" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1addb374b1a6d0921f2b4f024329a2eb25" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool MechanicsFunctions::DoesPlayerHavePlayerKiller</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>DoesPlayerHavePlayerKiller</name>
+        <qualifiedname>MechanicsFunctions::DoesPlayerHavePlayerKiller</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Check whether the killer of a certain player is also a player. </para>        </briefdescription>
+<para>Check whether the killer of a certain player is also a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID of the killed player. </para></parameterdescription>
+<para>The player ID of the killed player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Whether the player was killed by another player. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Whether the player was killed by another player. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="115" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="71" bodyend="77"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="128" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="78" bodyend="84"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1a132750ff9093ff16e479553de2c05106" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1a132750ff9093ff16e479553de2c05106" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int MechanicsFunctions::GetPlayerKillerPid</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetPlayerKillerPid</name>
+        <qualifiedname>MechanicsFunctions::GetPlayerKillerPid</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the player ID of the killer of a certain player. </para>        </briefdescription>
+<para>Get the player ID of the killer of a certain player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID of the killed player. </para></parameterdescription>
+<para>The player ID of the killed player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The player ID of the killer. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The player ID of the killer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="123" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="79" bodyend="90"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="136" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="86" bodyend="97"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1a7b5a176e3d6635db56ce1ba6e5a4866c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1a7b5a176e3d6635db56ce1ba6e5a4866c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * MechanicsFunctions::GetPlayerKillerRefId</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetPlayerKillerRefId</name>
+        <qualifiedname>MechanicsFunctions::GetPlayerKillerRefId</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the refId of the actor killer of a certain player. </para>        </briefdescription>
+<para>Get the refId of the actor killer of a certain player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID of the killed player. </para></parameterdescription>
+<para>The player ID of the killed player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The refId of the killer. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The refId of the killer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="131" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="92" bodyend="98"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="144" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="99" bodyend="105"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1a5ffe14fe956d0754bd2135216b560712" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1a5ffe14fe956d0754bd2135216b560712" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int MechanicsFunctions::GetPlayerKillerRefNum</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetPlayerKillerRefNum</name>
+        <qualifiedname>MechanicsFunctions::GetPlayerKillerRefNum</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the refNum of the actor killer of a certain player. </para>        </briefdescription>
+<para>Get the refNum of the actor killer of a certain player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID of the killed player. </para></parameterdescription>
+<para>The player ID of the killed player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The refNum of the killer. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The refNum of the killer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="139" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="100" bodyend="106"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="152" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="107" bodyend="113"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1a886b0cb373a1d5b42f80c0982a6c261d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1a886b0cb373a1d5b42f80c0982a6c261d" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int MechanicsFunctions::GetPlayerKillerMpNum</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetPlayerKillerMpNum</name>
+        <qualifiedname>MechanicsFunctions::GetPlayerKillerMpNum</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the mpNum of the actor killer of a certain player. </para>        </briefdescription>
+<para>Get the mpNum of the actor killer of a certain player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID of the killed player. </para></parameterdescription>
+<para>The player ID of the killed player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The mpNum of the killer. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The mpNum of the killer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="147" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="108" bodyend="114"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="160" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="115" bodyend="121"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1accd2091e2a0fe269f5fc0278cab501c1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1accd2091e2a0fe269f5fc0278cab501c1" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * MechanicsFunctions::GetPlayerKillerName</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetPlayerKillerName</name>
+        <qualifiedname>MechanicsFunctions::GetPlayerKillerName</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the name of the actor killer of a certain player. </para>        </briefdescription>
+<para>Get the name of the actor killer of a certain player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID of the killed player. </para></parameterdescription>
+<para>The player ID of the killed player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The name of the killer. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The name of the killer. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="155" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="116" bodyend="122"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="168" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="123" bodyend="129"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1ae0762c484e97454fc2de479938ab9bfd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1ae0762c484e97454fc2de479938ab9bfd" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int MechanicsFunctions::GetDrawState</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetDrawState</name>
+        <qualifiedname>MechanicsFunctions::GetDrawState</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the draw state of a player (0 for nothing, 1 for drawn weapon, 2 for drawn spell). </para>        </briefdescription>
+<para>Get the draw state of a player (0 for nothing, 1 for drawn weapon, 2 for drawn spell). </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The draw state. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The draw state. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="164" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="132" bodyend="138"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="177" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="139" bodyend="145"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1ae7205a0aab3fde19231073dd9ea0af89" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1ae7205a0aab3fde19231073dd9ea0af89" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool MechanicsFunctions::GetSneakState</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetSneakState</name>
+        <qualifiedname>MechanicsFunctions::GetSneakState</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the sneak state of a player. </para>        </briefdescription>
+<para>Get the sneak state of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Whether the player is sneaking. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Whether the player is sneaking. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="172" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="140" bodyend="147"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="185" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="147" bodyend="154"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1ab463c676e7ea9e11b3b1fde59c3293b5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1ab463c676e7ea9e11b3b1fde59c3293b5" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void MechanicsFunctions::SetMarkCell</definition>
         <argsstring>(unsigned short pid, const char *cellDescription) noexcept</argsstring>
         <name>SetMarkCell</name>
+        <qualifiedname>MechanicsFunctions::SetMarkCell</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -433,34 +546,42 @@
           <declname>cellDescription</declname>
         </param>
         <briefdescription>
-<para>Set the Mark cell of a player. </para>        </briefdescription>
+<para>Set the Mark cell of a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This changes the Mark cell recorded for that player in the server memory, but does not by itself send a packet.</para><para>The cell is determined to be an exterior cell if it fits the pattern of a number followed by a comma followed by another number.</para><para><parameterlist kind="param"><parameteritem>
+<para>This changes the Mark cell recorded for that player in the server memory, but does not by itself send a packet.</para>
+<para>The cell is determined to be an exterior cell if it fits the pattern of a number followed by a comma followed by another number.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>cellDescription</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The cell description. </para></parameterdescription>
+<para>The cell description. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="187" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="149" bodyend="155"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="200" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="156" bodyend="162"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1a82cf070e996e48ba46e1eb35e3ec9a18" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1a82cf070e996e48ba46e1eb35e3ec9a18" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void MechanicsFunctions::SetMarkPos</definition>
         <argsstring>(unsigned short pid, double x, double y, double z) noexcept</argsstring>
         <name>SetMarkPos</name>
+        <qualifiedname>MechanicsFunctions::SetMarkPos</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -478,48 +599,57 @@
           <declname>z</declname>
         </param>
         <briefdescription>
-<para>Set the Mark position of a player. </para>        </briefdescription>
+<para>Set the Mark position of a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This changes the Mark positional coordinates recorded for that player in the server memory, but does not by itself send a packet.</para><para><parameterlist kind="param"><parameteritem>
+<para>This changes the Mark positional coordinates recorded for that player in the server memory, but does not by itself send a packet.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>x</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The X position. </para></parameterdescription>
+<para>The X position. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>y</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The Y position. </para></parameterdescription>
+<para>The Y position. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>z</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The Z position. </para></parameterdescription>
+<para>The Z position. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="201" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="157" bodyend="165"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="214" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="164" bodyend="172"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1a7845977c6e6c3901bd7845e002813c95" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1a7845977c6e6c3901bd7845e002813c95" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void MechanicsFunctions::SetMarkRot</definition>
         <argsstring>(unsigned short pid, double x, double z) noexcept</argsstring>
         <name>SetMarkRot</name>
+        <qualifiedname>MechanicsFunctions::SetMarkRot</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -533,41 +663,49 @@
           <declname>z</declname>
         </param>
         <briefdescription>
-<para>Set the Mark rotation of a player. </para>        </briefdescription>
+<para>Set the Mark rotation of a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This changes the Mark positional coordinates recorded for that player in the server memory, but does not by itself send a packet.</para><para><parameterlist kind="param"><parameteritem>
+<para>This changes the Mark positional coordinates recorded for that player in the server memory, but does not by itself send a packet.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>x</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The X rotation. </para></parameterdescription>
+<para>The X rotation. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>z</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The Z rotation. </para></parameterdescription>
+<para>The Z rotation. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="214" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="167" bodyend="174"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="227" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="174" bodyend="181"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1a9f06a2904977b8d03db03ee03b0fa89e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1a9f06a2904977b8d03db03ee03b0fa89e" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void MechanicsFunctions::SetSelectedSpellId</definition>
         <argsstring>(unsigned short pid, const char *spellId) noexcept</argsstring>
         <name>SetSelectedSpellId</name>
+        <qualifiedname>MechanicsFunctions::SetSelectedSpellId</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -577,86 +715,189 @@
           <declname>spellId</declname>
         </param>
         <briefdescription>
-<para>Set the ID of a player&apos;s selected spell. </para>        </briefdescription>
+<para>Set the ID of a player&apos;s selected spell. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This changes the spell ID recorded for that player in the server memory, but does not by itself send a packet.</para><para><parameterlist kind="param"><parameteritem>
+<para>This changes the spell ID recorded for that player in the server memory, but does not by itself send a packet.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>spellId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The spell ID. </para></parameterdescription>
+<para>The spell ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="226" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="176" bodyend="182"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="239" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="183" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mechanics_functions_1a88137250fe68c84592511b5420f8cd9d" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MechanicsFunctions::AddAlliedPlayerForPlayer</definition>
+        <argsstring>(unsigned short pid, unsigned short alliedPlayerPid) noexcept</argsstring>
+        <name>AddAlliedPlayerForPlayer</name>
+        <qualifiedname>MechanicsFunctions::AddAlliedPlayerForPlayer</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>alliedPlayerPid</declname>
+        </param>
+        <briefdescription>
+<para>Add an ally to a player&apos;s list of allied players. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alliedPlayerPid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ally&apos;s player ID. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="248" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="191" bodyend="200"/>
       </memberdef>
       <memberdef kind="function" id="class_mechanics_functions_1a41a5d967843e79e10970b6c90e328a88" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void MechanicsFunctions::SendMarkLocation</definition>
         <argsstring>(unsigned short pid)</argsstring>
         <name>SendMarkLocation</name>
+        <qualifiedname>MechanicsFunctions::SendMarkLocation</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerMiscellaneous packet with a Mark location to a player. </para>        </briefdescription>
+<para>Send a PlayerMiscellaneous packet with a Mark location to a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="234" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="184" bodyend="195"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="256" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="202" bodyend="213"/>
       </memberdef>
       <memberdef kind="function" id="class_mechanics_functions_1a1f934fff6a3849bb8bd01d995b6b4e89" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void MechanicsFunctions::SendSelectedSpell</definition>
         <argsstring>(unsigned short pid)</argsstring>
         <name>SendSelectedSpell</name>
+        <qualifiedname>MechanicsFunctions::SendSelectedSpell</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerMiscellaneous packet with a selected spell ID to a player. </para>        </briefdescription>
+<para>Send a PlayerMiscellaneous packet with a selected spell ID to a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="242" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="197" bodyend="208"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="264" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="215" bodyend="226"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1a5e2ec06678542754979febaa23adecc8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1afbf0e11238bb28d4c290bd1842fe6289" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void MechanicsFunctions::SendAlliedPlayers</definition>
+        <argsstring>(unsigned short pid, bool sendToOtherPlayers)</argsstring>
+        <name>SendAlliedPlayers</name>
+        <qualifiedname>MechanicsFunctions::SendAlliedPlayers</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <briefdescription>
+<para>Send a PlayerAlly packet with a list of team member IDs to a player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sendToOtherPlayers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="274" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="228" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="class_mechanics_functions_1a5e2ec06678542754979febaa23adecc8" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void MechanicsFunctions::Jail</definition>
         <argsstring>(unsigned short pid, int jailDays, bool ignoreJailTeleportation, bool ignoreJailSkillIncreases, const char *jailProgressText, const char *jailEndText) noexcept</argsstring>
         <name>Jail</name>
+        <qualifiedname>MechanicsFunctions::Jail</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -682,62 +923,74 @@
           <declname>jailEndText</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerJail packet about a player. </para>        </briefdescription>
+<para>Send a PlayerJail packet about a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This is similar to the player being jailed by a guard, but provides extra parameters for increased flexibility.</para><para>It is only sent to the player being jailed, as the other players will be informed of the jailing&apos;s actual consequences via other packets sent by the affected client.</para><para><parameterlist kind="param"><parameteritem>
+<para>This is similar to the player being jailed by a guard, but provides extra parameters for increased flexibility.</para>
+<para>It is only sent to the player being jailed, as the other players will be informed of the jailing&apos;s actual consequences via other packets sent by the affected client.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>jailDays</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The number of days to spend jailed, where each day affects one skill point. </para></parameterdescription>
+<para>The number of days to spend jailed, where each day affects one skill point. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>ignoreJailTeleportation</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Whether the player being teleported to the nearest jail marker should be overridden. </para></parameterdescription>
+<para>Whether the player being teleported to the nearest jail marker should be overridden. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>ignoreJailSkillIncrease</parametername>
+<parametername>ignoreJailSkillIncreases</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Whether the player&apos;s Sneak and Security skills should be prevented from increasing as a result of the jailing, overriding default behavior. </para></parameterdescription>
+<para>Whether the player&apos;s Sneak and Security skills should be prevented from increasing as a result of the jailing, overriding default behavior. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>jailProgressText</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The text that should be displayed while jailed. </para></parameterdescription>
+<para>The text that should be displayed while jailed. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>jailEndText</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The text that should be displayed once the jailing period is over. </para></parameterdescription>
+<para>The text that should be displayed once the jailing period is over. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="264" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="210" bodyend="226"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="296" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="241" bodyend="257"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1a60333bc7e4bcf1270f3c1377de3f106b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1a60333bc7e4bcf1270f3c1377de3f106b" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void MechanicsFunctions::Resurrect</definition>
         <argsstring>(unsigned short pid, unsigned int type) noexcept</argsstring>
         <name>Resurrect</name>
+        <qualifiedname>MechanicsFunctions::Resurrect</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -747,34 +1000,41 @@
           <declname>type</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerResurrect packet about a player. </para>        </briefdescription>
+<para>Send a PlayerResurrect packet about a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This sends the packet to all players connected to the server.</para><para><parameterlist kind="param"><parameteritem>
+<para>This sends the packet to all players connected to the server.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>type</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The type of resurrection (0 for REGULAR, 1 for IMPERIAL_SHRINE, 2 for TRIBUNAL_TEMPLE). </para></parameterdescription>
+<para>The type of resurrection (0 for REGULAR, 1 for IMPERIAL_SHRINE, 2 for TRIBUNAL_TEMPLE). </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="277" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="228" bodyend="240"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="309" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="259" bodyend="271"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1aa78200b0aee31c39c3c126e94804845c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1aa78200b0aee31c39c3c126e94804845c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * MechanicsFunctions::GetDeathReason</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetDeathReason</name>
+        <qualifiedname>MechanicsFunctions::GetDeathReason</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -785,13 +1045,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="281" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="244" bodyend="260"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="313" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="275" bodyend="291"/>
       </memberdef>
-      <memberdef kind="function" id="class_mechanics_functions_1ae63d942d6538c2de865db1a72d6d4e8c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_mechanics_functions_1ae63d942d6538c2de865db1a72d6d4e8c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>unsigned int</type>
         <definition>unsigned int MechanicsFunctions::GetPlayerKillerRefNumIndex</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetPlayerKillerRefNumIndex</name>
+        <qualifiedname>MechanicsFunctions::GetPlayerKillerRefNumIndex</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -802,15 +1063,17 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="282" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="262" bodyend="265"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="314" column="25" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.cpp" bodystart="293" bodyend="296"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="42" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Mechanics.hpp" bodystart="41" bodyend="284"/>
+    <location file="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" line="46" column="1" bodyfile="src/apps/openmw-mp/Script/Functions/Mechanics.hpp" bodystart="47" bodyend="316"/>
     <listofallmembers>
+      <member refid="class_mechanics_functions_1a88137250fe68c84592511b5420f8cd9d" prot="public" virt="non-virtual"><scope>MechanicsFunctions</scope><name>AddAlliedPlayerForPlayer</name></member>
+      <member refid="class_mechanics_functions_1af1e6dbcc0f8d13d2500642bca4495860" prot="public" virt="non-virtual"><scope>MechanicsFunctions</scope><name>ClearAlliedPlayersForPlayer</name></member>
       <member refid="class_mechanics_functions_1addb374b1a6d0921f2b4f024329a2eb25" prot="public" virt="non-virtual"><scope>MechanicsFunctions</scope><name>DoesPlayerHavePlayerKiller</name></member>
       <member refid="class_mechanics_functions_1aa78200b0aee31c39c3c126e94804845c" prot="public" virt="non-virtual"><scope>MechanicsFunctions</scope><name>GetDeathReason</name></member>
       <member refid="class_mechanics_functions_1ae0762c484e97454fc2de479938ab9bfd" prot="public" virt="non-virtual"><scope>MechanicsFunctions</scope><name>GetDrawState</name></member>
@@ -831,6 +1094,7 @@
       <member refid="class_mechanics_functions_1ae7205a0aab3fde19231073dd9ea0af89" prot="public" virt="non-virtual"><scope>MechanicsFunctions</scope><name>GetSneakState</name></member>
       <member refid="class_mechanics_functions_1a5e2ec06678542754979febaa23adecc8" prot="public" virt="non-virtual"><scope>MechanicsFunctions</scope><name>Jail</name></member>
       <member refid="class_mechanics_functions_1a60333bc7e4bcf1270f3c1377de3f106b" prot="public" virt="non-virtual"><scope>MechanicsFunctions</scope><name>Resurrect</name></member>
+      <member refid="class_mechanics_functions_1afbf0e11238bb28d4c290bd1842fe6289" prot="public" virt="non-virtual"><scope>MechanicsFunctions</scope><name>SendAlliedPlayers</name></member>
       <member refid="class_mechanics_functions_1a41a5d967843e79e10970b6c90e328a88" prot="public" virt="non-virtual"><scope>MechanicsFunctions</scope><name>SendMarkLocation</name></member>
       <member refid="class_mechanics_functions_1a1f934fff6a3849bb8bd01d995b6b4e89" prot="public" virt="non-virtual"><scope>MechanicsFunctions</scope><name>SendSelectedSpell</name></member>
       <member refid="class_mechanics_functions_1ab463c676e7ea9e11b3b1fde59c3293b5" prot="public" virt="non-virtual"><scope>MechanicsFunctions</scope><name>SetMarkCell</name></member>

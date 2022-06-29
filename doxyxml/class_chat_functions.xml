@@ -1,13 +1,15 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
   <compounddef id="class_chat_functions" kind="class" language="C++" prot="public">
     <compoundname>ChatFunctions</compoundname>
+    <includes refid="_chat_8hpp" local="no">Chat.hpp</includes>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_chat_functions_1a00e8bb9fe2d1e79a0447af300134e319" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_chat_functions_1a00e8bb9fe2d1e79a0447af300134e319" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void ChatFunctions::SendMessage</definition>
         <argsstring>(unsigned short pid, const char *message, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
         <name>SendMessage</name>
+        <qualifiedname>ChatFunctions::SendMessage</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -25,89 +27,105 @@
           <declname>skipAttachedPlayer</declname>
         </param>
         <briefdescription>
-<para>Send a message to a certain player. </para>        </briefdescription>
+<para>Send a message to a certain player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>message</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The contents of the message. </para></parameterdescription>
+<para>The contents of the message. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>sendToOtherPlayers</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para></parameterdescription>
+<para>Whether this packet should be sent to players other than the player attached to the packet (false by default). </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>skipAttachedPlayer</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para></parameterdescription>
+<para>Whether the packet should skip being sent to the player attached to the packet (false by default). </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Chat.hpp" line="26" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Chat.cpp" bodystart="9" bodyend="25"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Chat.hpp" line="26" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Chat.cpp" bodystart="9" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="class_chat_functions_1a3dd07f127d7c88d46087bba9c7d69924" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void ChatFunctions::CleanChatForPid</definition>
         <argsstring>(unsigned short pid)</argsstring>
         <name>CleanChatForPid</name>
+        <qualifiedname>ChatFunctions::CleanChatForPid</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Remove all messages from chat for a certain player. </para>        </briefdescription>
+<para>Remove all messages from chat for a certain player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Chat.hpp" line="34" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Chat.cpp" bodystart="27" bodyend="38"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Chat.hpp" line="34" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Chat.cpp" bodystart="27" bodyend="38"/>
       </memberdef>
       <memberdef kind="function" id="class_chat_functions_1a3b42616dc92325be3f8d0117c7081cef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void ChatFunctions::CleanChat</definition>
         <argsstring>()</argsstring>
         <name>CleanChat</name>
+        <qualifiedname>ChatFunctions::CleanChat</qualifiedname>
         <briefdescription>
-<para>Remove all messages from chat for everyone on the server. </para>        </briefdescription>
+<para>Remove all messages from chat for everyone on the server. </para>
+        </briefdescription>
         <detaileddescription>
-<para><simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<para><simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Chat.hpp" line="41" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Chat.cpp" bodystart="40" bodyend="51"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Chat.hpp" line="41" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Chat.cpp" bodystart="40" bodyend="51"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Chat.hpp" line="12" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Chat.hpp" bodystart="11" bodyend="42"/>
+    <location file="src/apps/openmw-mp/Script/Functions/Chat.hpp" line="11" column="1" bodyfile="src/apps/openmw-mp/Script/Functions/Chat.hpp" bodystart="12" bodyend="42"/>
     <listofallmembers>
       <member refid="class_chat_functions_1a3b42616dc92325be3f8d0117c7081cef" prot="public" virt="non-virtual"><scope>ChatFunctions</scope><name>CleanChat</name></member>
       <member refid="class_chat_functions_1a3dd07f127d7c88d46087bba9c7d69924" prot="public" virt="non-virtual"><scope>ChatFunctions</scope><name>CleanChatForPid</name></member>

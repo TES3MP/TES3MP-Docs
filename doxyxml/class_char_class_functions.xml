@@ -1,91 +1,108 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
   <compounddef id="class_char_class_functions" kind="class" language="C++" prot="public">
     <compoundname>CharClassFunctions</compoundname>
+    <includes refid="_char_class_8hpp" local="no">CharClass.hpp</includes>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_char_class_functions_1a1cf671b36adfc32b46fa95ae91bae605" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1a1cf671b36adfc32b46fa95ae91bae605" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * CharClassFunctions::GetDefaultClass</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetDefaultClass</name>
+        <qualifiedname>CharClassFunctions::GetDefaultClass</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the default class used by a player. </para>        </briefdescription>
+<para>Get the default class used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The ID of the default class. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The ID of the default class. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="41" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="15" bodyend="21"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="37" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="8" bodyend="14"/>
       </memberdef>
-      <memberdef kind="function" id="class_char_class_functions_1a53372a1c5c4e0f76e6f759b5fecfe2b8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1a53372a1c5c4e0f76e6f759b5fecfe2b8" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * CharClassFunctions::GetClassName</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetClassName</name>
+        <qualifiedname>CharClassFunctions::GetClassName</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the name of the custom class used by a player. </para>        </briefdescription>
+<para>Get the name of the custom class used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The name of the custom class. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The name of the custom class. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="49" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="23" bodyend="29"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="45" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="16" bodyend="22"/>
       </memberdef>
-      <memberdef kind="function" id="class_char_class_functions_1a49cf0daac01e1651f7d2c2bcf15be659" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1a49cf0daac01e1651f7d2c2bcf15be659" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * CharClassFunctions::GetClassDesc</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetClassDesc</name>
+        <qualifiedname>CharClassFunctions::GetClassDesc</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the description of the custom class used by a player. </para>        </briefdescription>
+<para>Get the description of the custom class used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The description of the custom class. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The description of the custom class. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="57" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="31" bodyend="37"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="53" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="24" bodyend="30"/>
       </memberdef>
-      <memberdef kind="function" id="class_char_class_functions_1aca58fdbd3cea4f7642321c137888a312" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1a3959adc02bc6bda839ee5241147083a7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int CharClassFunctions::GetClassMajorAttribute</definition>
-        <argsstring>(unsigned short pid, unsigned char slot) noexcept</argsstring>
+        <argsstring>(unsigned short pid, unsigned char slot)</argsstring>
         <name>GetClassMajorAttribute</name>
+        <qualifiedname>CharClassFunctions::GetClassMajorAttribute</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -95,60 +112,71 @@
           <declname>slot</declname>
         </param>
         <briefdescription>
-<para>Get the ID of one of the two major attributes of a custom class used by a player. </para>        </briefdescription>
+<para>Get the ID of one of the two major attributes of a custom class used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>slot</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The slot of the major attribute (0 or 1). </para></parameterdescription>
+<para>The slot of the major attribute (0 or 1). </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The ID of the major attribute. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The ID of the major attribute. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="66" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="39" bodyend="48"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="62" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="32" bodyend="41"/>
       </memberdef>
-      <memberdef kind="function" id="class_char_class_functions_1a8003941595faafd0eda7e547a1a30f72" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1a8003941595faafd0eda7e547a1a30f72" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int CharClassFunctions::GetClassSpecialization</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetClassSpecialization</name>
+        <qualifiedname>CharClassFunctions::GetClassSpecialization</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the specialization ID of the custom class used by a player. </para>        </briefdescription>
+<para>Get the specialization ID of the custom class used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The specialization ID of the custom class (0 for Combat, 1 for Magic, 2 for Stealth). </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The specialization ID of the custom class (0 for Combat, 1 for Magic, 2 for Stealth). </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="74" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="50" bodyend="56"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="70" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="43" bodyend="49"/>
       </memberdef>
-      <memberdef kind="function" id="class_char_class_functions_1a97a793c21f2a7cc0c974ae36e0f1ff99" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1a0de53666a4f1fc18ac65ce2195c3e5cc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int CharClassFunctions::GetClassMajorSkill</definition>
-        <argsstring>(unsigned short pid, unsigned char slot) noexcept</argsstring>
+        <argsstring>(unsigned short pid, unsigned char slot)</argsstring>
         <name>GetClassMajorSkill</name>
+        <qualifiedname>CharClassFunctions::GetClassMajorSkill</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -158,34 +186,40 @@
           <declname>slot</declname>
         </param>
         <briefdescription>
-<para>Get the ID of one of the five major skills of a custom class used by a player. </para>        </briefdescription>
+<para>Get the ID of one of the five major skills of a custom class used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>slot</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The slot of the major skill (0 to 4). </para></parameterdescription>
+<para>The slot of the major skill (0 to 4). </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The ID of the major skill. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The ID of the major skill. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="83" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="58" bodyend="67"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="79" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="51" bodyend="60"/>
       </memberdef>
-      <memberdef kind="function" id="class_char_class_functions_1acf5ebc8330aa384ae7494356954e3af1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1a1e64cbf633b2d34103e7ad2128213064" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int CharClassFunctions::GetClassMinorSkill</definition>
-        <argsstring>(unsigned short pid, unsigned char slot) noexcept</argsstring>
+        <argsstring>(unsigned short pid, unsigned char slot)</argsstring>
         <name>GetClassMinorSkill</name>
+        <qualifiedname>CharClassFunctions::GetClassMinorSkill</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -195,60 +229,71 @@
           <declname>slot</declname>
         </param>
         <briefdescription>
-<para>Get the ID of one of the five minor skills of a custom class used by a player. </para>        </briefdescription>
+<para>Get the ID of one of the five minor skills of a custom class used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>slot</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The slot of the minor skill (0 to 4). </para></parameterdescription>
+<para>The slot of the minor skill (0 to 4). </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The ID of the minor skill. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The ID of the minor skill. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="92" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="69" bodyend="78"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="88" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="62" bodyend="71"/>
       </memberdef>
-      <memberdef kind="function" id="class_char_class_functions_1a90b3a403624d3b76a67bee769d2f5e25" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1a90b3a403624d3b76a67bee769d2f5e25" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int CharClassFunctions::IsClassDefault</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>IsClassDefault</name>
+        <qualifiedname>CharClassFunctions::IsClassDefault</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Check whether the player is using a default class instead of a custom one. </para>        </briefdescription>
+<para>Check whether the player is using a default class instead of a custom one. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Whether the player is using a default class. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Whether the player is using a default class. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="100" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="80" bodyend="86"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="96" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="73" bodyend="79"/>
       </memberdef>
-      <memberdef kind="function" id="class_char_class_functions_1ac71519137822443be4614908eba475bb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1ac71519137822443be4614908eba475bb" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void CharClassFunctions::SetDefaultClass</definition>
         <argsstring>(unsigned short pid, const char *id) noexcept</argsstring>
         <name>SetDefaultClass</name>
+        <qualifiedname>CharClassFunctions::SetDefaultClass</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -258,34 +303,41 @@
           <declname>id</declname>
         </param>
         <briefdescription>
-<para>Set the default class used by a player. </para>        </briefdescription>
+<para>Set the default class used by a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>If this is left blank, the custom class data set for the player will be used instead.</para><para><parameterlist kind="param"><parameteritem>
+<para>If this is left blank, the custom class data set for the player will be used instead.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>id</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The ID of the default class. </para></parameterdescription>
+<para>The ID of the default class. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="111" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="88" bodyend="94"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="107" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="81" bodyend="87"/>
       </memberdef>
-      <memberdef kind="function" id="class_char_class_functions_1a2cfb76164741a6a89dced5ed9c1f3a03" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1a2cfb76164741a6a89dced5ed9c1f3a03" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void CharClassFunctions::SetClassName</definition>
         <argsstring>(unsigned short pid, const char *name) noexcept</argsstring>
         <name>SetClassName</name>
+        <qualifiedname>CharClassFunctions::SetClassName</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -295,34 +347,40 @@
           <declname>name</declname>
         </param>
         <briefdescription>
-<para>Set the name of the custom class used by a player. </para>        </briefdescription>
+<para>Set the name of the custom class used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>name</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The name of the custom class. </para></parameterdescription>
+<para>The name of the custom class. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="120" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="95" bodyend="102"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="116" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="88" bodyend="95"/>
       </memberdef>
-      <memberdef kind="function" id="class_char_class_functions_1a88c6e5fd9f8fb3b9694076ef518e2b30" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1a88c6e5fd9f8fb3b9694076ef518e2b30" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void CharClassFunctions::SetClassDesc</definition>
         <argsstring>(unsigned short pid, const char *desc) noexcept</argsstring>
         <name>SetClassDesc</name>
+        <qualifiedname>CharClassFunctions::SetClassDesc</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -332,34 +390,40 @@
           <declname>desc</declname>
         </param>
         <briefdescription>
-<para>Set the description of the custom class used by a player. </para>        </briefdescription>
+<para>Set the description of the custom class used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>desc</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The description of the custom class. </para></parameterdescription>
+<para>The description of the custom class. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="129" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="103" bodyend="109"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="125" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="96" bodyend="102"/>
       </memberdef>
-      <memberdef kind="function" id="class_char_class_functions_1a848b711bb626d432dfba1f2eb61908b8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1a3c431a0d85dd50a49d8af37bc469832c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void CharClassFunctions::SetClassMajorAttribute</definition>
-        <argsstring>(unsigned short pid, unsigned char slot, int attrId) noexcept</argsstring>
+        <argsstring>(unsigned short pid, unsigned char slot, int attrId)</argsstring>
         <name>SetClassMajorAttribute</name>
+        <qualifiedname>CharClassFunctions::SetClassMajorAttribute</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -373,41 +437,48 @@
           <declname>attrId</declname>
         </param>
         <briefdescription>
-<para>Set the ID of one of the two major attributes of the custom class used by a player. </para>        </briefdescription>
+<para>Set the ID of one of the two major attributes of the custom class used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>slot</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The slot of the major attribute (0 or 1). </para></parameterdescription>
+<para>The slot of the major attribute (0 or 1). </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>attrId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The ID to use for the attribute. </para></parameterdescription>
+<para>The ID to use for the attribute. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="139" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="110" bodyend="120"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="135" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="103" bodyend="113"/>
       </memberdef>
-      <memberdef kind="function" id="class_char_class_functions_1a41e3a961e8794f62db3aeb0afffc302c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1a41e3a961e8794f62db3aeb0afffc302c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void CharClassFunctions::SetClassSpecialization</definition>
         <argsstring>(unsigned short pid, int spec) noexcept</argsstring>
         <name>SetClassSpecialization</name>
+        <qualifiedname>CharClassFunctions::SetClassSpecialization</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -417,34 +488,40 @@
           <declname>spec</declname>
         </param>
         <briefdescription>
-<para>Set the specialization of the custom class used by a player. </para>        </briefdescription>
+<para>Set the specialization of the custom class used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>spec</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The specialization ID to use (0 for Combat, 1 for Magic, 2 for Stealth). </para></parameterdescription>
+<para>The specialization ID to use (0 for Combat, 1 for Magic, 2 for Stealth). </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="148" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="121" bodyend="127"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="144" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="114" bodyend="120"/>
       </memberdef>
-      <memberdef kind="function" id="class_char_class_functions_1a0834bb7f0cfd5a02d684fe6bad5a4ffc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1ae73c0ca435c8516e891b8d9b55795b3e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void CharClassFunctions::SetClassMajorSkill</definition>
-        <argsstring>(unsigned short pid, unsigned char slot, int skillId) noexcept</argsstring>
+        <argsstring>(unsigned short pid, unsigned char slot, int skillId)</argsstring>
         <name>SetClassMajorSkill</name>
+        <qualifiedname>CharClassFunctions::SetClassMajorSkill</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -458,41 +535,48 @@
           <declname>skillId</declname>
         </param>
         <briefdescription>
-<para>Set the ID of one of the five major skills of the custom class used by a player. </para>        </briefdescription>
+<para>Set the ID of one of the five major skills of the custom class used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>slot</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The slot of the major skill (0 to 4). </para></parameterdescription>
+<para>The slot of the major skill (0 to 4). </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>skillId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The ID to use for the skill. </para></parameterdescription>
+<para>The ID to use for the skill. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="158" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="128" bodyend="137"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="154" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="121" bodyend="130"/>
       </memberdef>
-      <memberdef kind="function" id="class_char_class_functions_1a01450fb7da1aef0e8527d5175ffeac83" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1ac152230d84edc12cc5cc66aac56c11f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void CharClassFunctions::SetClassMinorSkill</definition>
-        <argsstring>(unsigned short pid, unsigned char slot, int skillId) noexcept</argsstring>
+        <argsstring>(unsigned short pid, unsigned char slot, int skillId)</argsstring>
         <name>SetClassMinorSkill</name>
+        <qualifiedname>CharClassFunctions::SetClassMinorSkill</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -506,82 +590,94 @@
           <declname>skillId</declname>
         </param>
         <briefdescription>
-<para>Set the ID of one of the five minor skills of the custom class used by a player. </para>        </briefdescription>
+<para>Set the ID of one of the five minor skills of the custom class used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>slot</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The slot of the minor skill (0 to 4). </para></parameterdescription>
+<para>The slot of the minor skill (0 to 4). </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>skillId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The ID to use for the skill. </para></parameterdescription>
+<para>The ID to use for the skill. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="168" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="138" bodyend="147"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="164" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="131" bodyend="140"/>
       </memberdef>
-      <memberdef kind="function" id="class_char_class_functions_1afa46d3ec1aed38a6bc9c12d164301be1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_char_class_functions_1afa46d3ec1aed38a6bc9c12d164301be1" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void CharClassFunctions::SendClass</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>SendClass</name>
+        <qualifiedname>CharClassFunctions::SendClass</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerCharClass packet about a player. </para>        </briefdescription>
+<para>Send a PlayerCharClass packet about a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>It is only sent to the affected player.</para><para><parameterlist kind="param"><parameteritem>
+<para>It is only sent to the affected player.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="178" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="149" bodyend="158"/>
+        <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="174" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.cpp" bodystart="142" bodyend="151"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" line="32" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/CharClass.hpp" bodystart="31" bodyend="179"/>
+    <location file="src/apps/openmw-mp/Script/Functions/CharClass.hpp" line="27" column="1" bodyfile="src/apps/openmw-mp/Script/Functions/CharClass.hpp" bodystart="28" bodyend="175"/>
     <listofallmembers>
       <member refid="class_char_class_functions_1a49cf0daac01e1651f7d2c2bcf15be659" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>GetClassDesc</name></member>
-      <member refid="class_char_class_functions_1aca58fdbd3cea4f7642321c137888a312" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>GetClassMajorAttribute</name></member>
-      <member refid="class_char_class_functions_1a97a793c21f2a7cc0c974ae36e0f1ff99" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>GetClassMajorSkill</name></member>
-      <member refid="class_char_class_functions_1acf5ebc8330aa384ae7494356954e3af1" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>GetClassMinorSkill</name></member>
+      <member refid="class_char_class_functions_1a3959adc02bc6bda839ee5241147083a7" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>GetClassMajorAttribute</name></member>
+      <member refid="class_char_class_functions_1a0de53666a4f1fc18ac65ce2195c3e5cc" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>GetClassMajorSkill</name></member>
+      <member refid="class_char_class_functions_1a1e64cbf633b2d34103e7ad2128213064" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>GetClassMinorSkill</name></member>
       <member refid="class_char_class_functions_1a53372a1c5c4e0f76e6f759b5fecfe2b8" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>GetClassName</name></member>
       <member refid="class_char_class_functions_1a8003941595faafd0eda7e547a1a30f72" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>GetClassSpecialization</name></member>
       <member refid="class_char_class_functions_1a1cf671b36adfc32b46fa95ae91bae605" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>GetDefaultClass</name></member>
       <member refid="class_char_class_functions_1a90b3a403624d3b76a67bee769d2f5e25" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>IsClassDefault</name></member>
       <member refid="class_char_class_functions_1afa46d3ec1aed38a6bc9c12d164301be1" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>SendClass</name></member>
       <member refid="class_char_class_functions_1a88c6e5fd9f8fb3b9694076ef518e2b30" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>SetClassDesc</name></member>
-      <member refid="class_char_class_functions_1a848b711bb626d432dfba1f2eb61908b8" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>SetClassMajorAttribute</name></member>
-      <member refid="class_char_class_functions_1a0834bb7f0cfd5a02d684fe6bad5a4ffc" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>SetClassMajorSkill</name></member>
-      <member refid="class_char_class_functions_1a01450fb7da1aef0e8527d5175ffeac83" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>SetClassMinorSkill</name></member>
+      <member refid="class_char_class_functions_1a3c431a0d85dd50a49d8af37bc469832c" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>SetClassMajorAttribute</name></member>
+      <member refid="class_char_class_functions_1ae73c0ca435c8516e891b8d9b55795b3e" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>SetClassMajorSkill</name></member>
+      <member refid="class_char_class_functions_1ac152230d84edc12cc5cc66aac56c11f1" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>SetClassMinorSkill</name></member>
       <member refid="class_char_class_functions_1a2cfb76164741a6a89dced5ed9c1f3a03" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>SetClassName</name></member>
       <member refid="class_char_class_functions_1a41e3a961e8794f62db3aeb0afffc302c" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>SetClassSpecialization</name></member>
       <member refid="class_char_class_functions_1ac71519137822443be4614908eba475bb" prot="public" virt="non-virtual"><scope>CharClassFunctions</scope><name>SetDefaultClass</name></member>

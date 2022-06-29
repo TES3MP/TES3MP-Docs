@@ -1,509 +1,646 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
   <compounddef id="class_stats_functions" kind="class" language="C++" prot="public">
     <compoundname>StatsFunctions</compoundname>
+    <includes refid="_stats_8hpp" local="no">Stats.hpp</includes>
       <sectiondef kind="public-static-func">
-      <memberdef kind="function" id="class_stats_functions_1a62f228e465ac26a4463cc8288508a75d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a62f228e465ac26a4463cc8288508a75d" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int StatsFunctions::GetAttributeCount</definition>
         <argsstring>() noexcept</argsstring>
         <name>GetAttributeCount</name>
+        <qualifiedname>StatsFunctions::GetAttributeCount</qualifiedname>
         <briefdescription>
-<para>Get the number of attributes. </para>        </briefdescription>
+<para>Get the number of attributes. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The number is 8 before any dehardcoding is done in OpenMW.</para><para><simplesect kind="return"><para>The number of attributes. </para></simplesect>
-</para>        </detaileddescription>
+<para>The number is 8 before any dehardcoding is done in OpenMW.</para>
+<para><simplesect kind="return"><para>The number of attributes. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="89" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="17" bodyend="20"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="95" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="14" bodyend="17"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a022b1b58ff7b28ede2baa6fd2b02995c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a022b1b58ff7b28ede2baa6fd2b02995c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int StatsFunctions::GetSkillCount</definition>
         <argsstring>() noexcept</argsstring>
         <name>GetSkillCount</name>
+        <qualifiedname>StatsFunctions::GetSkillCount</qualifiedname>
         <briefdescription>
-<para>Get the number of skills. </para>        </briefdescription>
+<para>Get the number of skills. </para>
+        </briefdescription>
         <detaileddescription>
-<para>The number is 27 before any dehardcoding is done in OpenMW.</para><para><simplesect kind="return"><para>The number of skills. </para></simplesect>
-</para>        </detaileddescription>
+<para>The number is 27 before any dehardcoding is done in OpenMW.</para>
+<para><simplesect kind="return"><para>The number of skills. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="98" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="22" bodyend="25"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="104" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="19" bodyend="22"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a29c580ee3264278db74588775c14aa86" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a29c580ee3264278db74588775c14aa86" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int StatsFunctions::GetAttributeId</definition>
         <argsstring>(const char *name) noexcept</argsstring>
         <name>GetAttributeId</name>
+        <qualifiedname>StatsFunctions::GetAttributeId</qualifiedname>
         <param>
           <type>const char *</type>
           <declname>name</declname>
         </param>
         <briefdescription>
-<para>Get the numerical ID of an attribute with a certain name. </para>        </briefdescription>
+<para>Get the numerical ID of an attribute with a certain name. </para>
+        </briefdescription>
         <detaileddescription>
-<para>If an invalid name is used, the ID returned is -1</para><para><parameterlist kind="param"><parameteritem>
+<para>If an invalid name is used, the ID returned is -1</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>name</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The name of the attribute. </para></parameterdescription>
+<para>The name of the attribute. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The ID of the attribute. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The ID of the attribute. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="108" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="27" bodyend="38"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="114" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="24" bodyend="35"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1ae90a8f8df6b781d7af0cdd0c21d58476" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1ae90a8f8df6b781d7af0cdd0c21d58476" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int StatsFunctions::GetSkillId</definition>
         <argsstring>(const char *name) noexcept</argsstring>
         <name>GetSkillId</name>
+        <qualifiedname>StatsFunctions::GetSkillId</qualifiedname>
         <param>
           <type>const char *</type>
           <declname>name</declname>
         </param>
         <briefdescription>
-<para>Get the numerical ID of a skill with a certain name. </para>        </briefdescription>
+<para>Get the numerical ID of a skill with a certain name. </para>
+        </briefdescription>
         <detaileddescription>
-<para>If an invalid name is used, the ID returned is -1</para><para><parameterlist kind="param"><parameteritem>
+<para>If an invalid name is used, the ID returned is -1</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>name</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The name of the skill. </para></parameterdescription>
+<para>The name of the skill. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The ID of the skill. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The ID of the skill. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="118" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="40" bodyend="51"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="124" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="37" bodyend="48"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a8ac299461b4cf16f78de87eb19fb2ad8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a8ac299461b4cf16f78de87eb19fb2ad8" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * StatsFunctions::GetAttributeName</definition>
         <argsstring>(unsigned short attributeId) noexcept</argsstring>
         <name>GetAttributeName</name>
+        <qualifiedname>StatsFunctions::GetAttributeName</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>attributeId</declname>
         </param>
         <briefdescription>
-<para>Get the name of the attribute with a certain numerical ID. </para>        </briefdescription>
+<para>Get the name of the attribute with a certain numerical ID. </para>
+        </briefdescription>
         <detaileddescription>
-<para>If an invalid ID is used, &quot;invalid&quot; is returned.</para><para><parameterlist kind="param"><parameteritem>
+<para>If an invalid ID is used, &quot;invalid&quot; is returned.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>attributeId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The ID of the attribute. </para></parameterdescription>
+<para>The ID of the attribute. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The name of the attribute. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The name of the attribute. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="128" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="53" bodyend="59"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="134" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="50" bodyend="56"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a8b3ce329d4f4b93ebfe43eba29962a2c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a8b3ce329d4f4b93ebfe43eba29962a2c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * StatsFunctions::GetSkillName</definition>
         <argsstring>(unsigned short skillId) noexcept</argsstring>
         <name>GetSkillName</name>
+        <qualifiedname>StatsFunctions::GetSkillName</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>skillId</declname>
         </param>
         <briefdescription>
-<para>Get the name of the skill with a certain numerical ID. </para>        </briefdescription>
+<para>Get the name of the skill with a certain numerical ID. </para>
+        </briefdescription>
         <detaileddescription>
-<para>If an invalid ID is used, &quot;invalid&quot; is returned.</para><para><parameterlist kind="param"><parameteritem>
+<para>If an invalid ID is used, &quot;invalid&quot; is returned.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>skillId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The ID of the skill. </para></parameterdescription>
+<para>The ID of the skill. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The name of the skill. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The name of the skill. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="138" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="61" bodyend="67"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="144" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="58" bodyend="64"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1aee528c77628887c497d4468ce0b33e7a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1aee528c77628887c497d4468ce0b33e7a" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * StatsFunctions::GetName</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetName</name>
+        <qualifiedname>StatsFunctions::GetName</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the name of a player. </para>        </briefdescription>
+<para>Get the name of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The name of the player. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The name of the player. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="146" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="69" bodyend="76"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="152" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="66" bodyend="73"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a2484ea3ff1d1a4deaa935905be4fe85f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a2484ea3ff1d1a4deaa935905be4fe85f" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * StatsFunctions::GetRace</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetRace</name>
+        <qualifiedname>StatsFunctions::GetRace</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the race of a player. </para>        </briefdescription>
+<para>Get the race of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The race of the player. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The race of the player. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="154" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="78" bodyend="84"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="160" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="75" bodyend="81"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1ae0f68a7c5da28d41673a589ae56a6b28" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1ae0f68a7c5da28d41673a589ae56a6b28" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * StatsFunctions::GetHead</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetHead</name>
+        <qualifiedname>StatsFunctions::GetHead</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the head mesh used by a player. </para>        </briefdescription>
+<para>Get the head mesh used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The head mesh of the player. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The head mesh of the player. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="162" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="86" bodyend="92"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="168" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="83" bodyend="89"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a09422ce69e665ac564a46080fe3d30a8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a09422ce69e665ac564a46080fe3d30a8" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * StatsFunctions::GetHairstyle</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetHairstyle</name>
+        <qualifiedname>StatsFunctions::GetHairstyle</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the hairstyle mesh used by a player. </para>        </briefdescription>
+<para>Get the hairstyle mesh used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The hairstyle mesh of the player. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The hairstyle mesh of the player. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="170" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="94" bodyend="100"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="176" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="91" bodyend="97"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1abde48aab17e91200d14c2048215be492" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1abde48aab17e91200d14c2048215be492" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int StatsFunctions::GetIsMale</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetIsMale</name>
+        <qualifiedname>StatsFunctions::GetIsMale</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Check whether a player is male or not. </para>        </briefdescription>
+<para>Check whether a player is male or not. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>Whether the player is male. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>Whether the player is male. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="178" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="102" bodyend="108"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="184" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="99" bodyend="105"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1aee398fed167e7d6c6ccf58641cc573f5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a4b09be32e70601cbde51e113215011bb" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char * StatsFunctions::GetModel</definition>
+        <argsstring>(unsigned short pid) noexcept</argsstring>
+        <name>GetModel</name>
+        <qualifiedname>StatsFunctions::GetModel</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Get the model of a player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The model of the player. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="192" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="107" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_functions_1aee398fed167e7d6c6ccf58641cc573f5" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>const char *</type>
         <definition>const char * StatsFunctions::GetBirthsign</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetBirthsign</name>
+        <qualifiedname>StatsFunctions::GetBirthsign</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the birthsign of a player. </para>        </briefdescription>
+<para>Get the birthsign of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The birthsign of the player. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The birthsign of the player. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="186" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="110" bodyend="116"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="200" column="23" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="115" bodyend="121"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1ae3d9279980ff4fe7af7eb0e1bb2e8201" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1ae3d9279980ff4fe7af7eb0e1bb2e8201" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int StatsFunctions::GetLevel</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetLevel</name>
+        <qualifiedname>StatsFunctions::GetLevel</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the character level of a player. </para>        </briefdescription>
+<para>Get the character level of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The level of the player. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The level of the player. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="194" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="118" bodyend="124"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="208" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="123" bodyend="129"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a11ba48f3b04fdc901ebe4804b4b4e7dd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a11ba48f3b04fdc901ebe4804b4b4e7dd" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int StatsFunctions::GetLevelProgress</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetLevelProgress</name>
+        <qualifiedname>StatsFunctions::GetLevelProgress</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the player&apos;s progress to their next character level. </para>        </briefdescription>
+<para>Get the player&apos;s progress to their next character level. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The level progress. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The level progress. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="202" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="126" bodyend="132"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="216" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="131" bodyend="137"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a9caebb19a4bf480e8db2ce3e7bb1990f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a9caebb19a4bf480e8db2ce3e7bb1990f" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double StatsFunctions::GetHealthBase</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetHealthBase</name>
+        <qualifiedname>StatsFunctions::GetHealthBase</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the base health of the player. </para>        </briefdescription>
+<para>Get the base health of the player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The base health. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The base health. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="210" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="134" bodyend="140"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="224" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="139" bodyend="145"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1ac7b7a48074d1a653f973fa119edb1112" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1ac7b7a48074d1a653f973fa119edb1112" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double StatsFunctions::GetHealthCurrent</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetHealthCurrent</name>
+        <qualifiedname>StatsFunctions::GetHealthCurrent</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the current health of the player. </para>        </briefdescription>
+<para>Get the current health of the player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The current health. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The current health. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="218" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="142" bodyend="148"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="232" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="147" bodyend="153"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a4d1c7c0f7bc9de38f3abf8349884b16c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a4d1c7c0f7bc9de38f3abf8349884b16c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double StatsFunctions::GetMagickaBase</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetMagickaBase</name>
+        <qualifiedname>StatsFunctions::GetMagickaBase</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the base magicka of the player. </para>        </briefdescription>
+<para>Get the base magicka of the player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The base magicka. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The base magicka. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="226" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="150" bodyend="156"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="240" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="155" bodyend="161"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1aba2cfc305e53c4cb365717c836682a41" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1aba2cfc305e53c4cb365717c836682a41" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double StatsFunctions::GetMagickaCurrent</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetMagickaCurrent</name>
+        <qualifiedname>StatsFunctions::GetMagickaCurrent</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the current magicka of the player. </para>        </briefdescription>
+<para>Get the current magicka of the player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The current magicka. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The current magicka. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="234" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="158" bodyend="164"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="248" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="163" bodyend="169"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a62d15c37346fcc97e5102b4b89c1fc9a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a62d15c37346fcc97e5102b4b89c1fc9a" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double StatsFunctions::GetFatigueBase</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetFatigueBase</name>
+        <qualifiedname>StatsFunctions::GetFatigueBase</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the base fatigue of the player. </para>        </briefdescription>
+<para>Get the base fatigue of the player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The base fatigue. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The base fatigue. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="242" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="166" bodyend="172"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="256" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="171" bodyend="177"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a6e7599c0f81dda5e840d00e32ef2e90a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a6e7599c0f81dda5e840d00e32ef2e90a" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double StatsFunctions::GetFatigueCurrent</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetFatigueCurrent</name>
+        <qualifiedname>StatsFunctions::GetFatigueCurrent</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the current fatigue of the player. </para>        </briefdescription>
+<para>Get the current fatigue of the player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The current fatigue. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The current fatigue. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="250" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="174" bodyend="180"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="264" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="179" bodyend="185"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1afb2176370953fbd72463098b66d7a3ca" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1afb2176370953fbd72463098b66d7a3ca" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int StatsFunctions::GetAttributeBase</definition>
         <argsstring>(unsigned short pid, unsigned short attributeId) noexcept</argsstring>
         <name>GetAttributeBase</name>
+        <qualifiedname>StatsFunctions::GetAttributeBase</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -513,34 +650,40 @@
           <declname>attributeId</declname>
         </param>
         <briefdescription>
-<para>Get the base value of a player&apos;s attribute. </para>        </briefdescription>
+<para>Get the base value of a player&apos;s attribute. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>attributeId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The attribute ID. </para></parameterdescription>
+<para>The attribute ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The base value of the attribute. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The base value of the attribute. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="259" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="182" bodyend="191"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="273" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="187" bodyend="196"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1ad436fe2b3d3d898a5e1b7af054a13509" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1ad436fe2b3d3d898a5e1b7af054a13509" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int StatsFunctions::GetAttributeModifier</definition>
         <argsstring>(unsigned short pid, unsigned short attributeId) noexcept</argsstring>
         <name>GetAttributeModifier</name>
+        <qualifiedname>StatsFunctions::GetAttributeModifier</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -550,34 +693,83 @@
           <declname>attributeId</declname>
         </param>
         <briefdescription>
-<para>Get the modifier value of a player&apos;s attribute. </para>        </briefdescription>
+<para>Get the modifier value of a player&apos;s attribute. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>attributeId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The attribute ID. </para></parameterdescription>
+<para>The attribute ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The modifier value of the attribute. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The modifier value of the attribute. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="268" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="193" bodyend="202"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="282" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="198" bodyend="207"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1aa1fa300c769c82831a7180c3efce9892" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a86e0eaa6b1fac1eab9c6e771bc65cce3" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double StatsFunctions::GetAttributeDamage</definition>
+        <argsstring>(unsigned short pid, unsigned short attributeId) noexcept</argsstring>
+        <name>GetAttributeDamage</name>
+        <qualifiedname>StatsFunctions::GetAttributeDamage</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>attributeId</declname>
+        </param>
+        <briefdescription>
+<para>Get the amount of damage (as caused through the Damage Attribute effect) to a player&apos;s attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attributeId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute ID. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of damage to the attribute. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="292" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="209" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_functions_1aa1fa300c769c82831a7180c3efce9892" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int StatsFunctions::GetSkillBase</definition>
         <argsstring>(unsigned short pid, unsigned short skillId) noexcept</argsstring>
         <name>GetSkillBase</name>
+        <qualifiedname>StatsFunctions::GetSkillBase</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -587,34 +779,40 @@
           <declname>skillId</declname>
         </param>
         <briefdescription>
-<para>Get the base value of a player&apos;s skill. </para>        </briefdescription>
+<para>Get the base value of a player&apos;s skill. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>skillId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The skill ID. </para></parameterdescription>
+<para>The skill ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The base value of the skill. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The base value of the skill. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="277" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="204" bodyend="213"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="301" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="220" bodyend="229"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a498efb06d77b1404f6174c8b181d7edc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a498efb06d77b1404f6174c8b181d7edc" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int StatsFunctions::GetSkillModifier</definition>
         <argsstring>(unsigned short pid, unsigned short skillId) noexcept</argsstring>
         <name>GetSkillModifier</name>
+        <qualifiedname>StatsFunctions::GetSkillModifier</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -624,34 +822,83 @@
           <declname>skillId</declname>
         </param>
         <briefdescription>
-<para>Get the modifier value of a player&apos;s skill. </para>        </briefdescription>
+<para>Get the modifier value of a player&apos;s skill. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>skillId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The skill ID. </para></parameterdescription>
+<para>The skill ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The modifier value of the skill. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The modifier value of the skill. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="286" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="215" bodyend="224"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="310" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="231" bodyend="240"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a8a114968742f59d040dcda4d92f38e11" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a8d2ae787aaf3641cefebefcb0fe7f447" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double StatsFunctions::GetSkillDamage</definition>
+        <argsstring>(unsigned short pid, unsigned short skillId) noexcept</argsstring>
+        <name>GetSkillDamage</name>
+        <qualifiedname>StatsFunctions::GetSkillDamage</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>skillId</declname>
+        </param>
+        <briefdescription>
+<para>Get the amount of damage (as caused through the Damage Skill effect) to a player&apos;s skill. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skillId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The skill ID. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The amount of damage to the skill. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="320" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="242" bodyend="251"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_functions_1a8a114968742f59d040dcda4d92f38e11" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>double</type>
         <definition>double StatsFunctions::GetSkillProgress</definition>
         <argsstring>(unsigned short pid, unsigned short skillId) noexcept</argsstring>
         <name>GetSkillProgress</name>
+        <qualifiedname>StatsFunctions::GetSkillProgress</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -661,34 +908,40 @@
           <declname>skillId</declname>
         </param>
         <briefdescription>
-<para>Get the progress the player has made towards increasing a certain skill by 1. </para>        </briefdescription>
+<para>Get the progress the player has made towards increasing a certain skill by 1. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>skillId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The skill ID. </para></parameterdescription>
+<para>The skill ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The skill progress. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The skill progress. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="295" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="226" bodyend="235"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="329" column="19" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="253" bodyend="262"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a928582d2cf13d8b259eef1d670b0917b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a928582d2cf13d8b259eef1d670b0917b" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int StatsFunctions::GetSkillIncrease</definition>
         <argsstring>(unsigned short pid, unsigned int attributeId) noexcept</argsstring>
         <name>GetSkillIncrease</name>
+        <qualifiedname>StatsFunctions::GetSkillIncrease</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -698,60 +951,72 @@
           <declname>attributeId</declname>
         </param>
         <briefdescription>
-<para>Get the bonus applied to a certain attribute at the next level up as a result of associated skill increases. </para>        </briefdescription>
+<para>Get the bonus applied to a certain attribute at the next level up as a result of associated skill increases. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Although confusing, the term &quot;skill increase&quot; for this is taken from OpenMW itself.</para><para><parameterlist kind="param"><parameteritem>
+<para>Although confusing, the term &quot;skill increase&quot; for this is taken from OpenMW itself.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>skillId</parametername>
+<parametername>attributeId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The attribute ID. </para></parameterdescription>
+<para>The attribute ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The increase in the attribute caused by skills. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The increase in the attribute caused by skills. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="307" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="237" bodyend="246"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="341" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="264" bodyend="273"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a0fc00cd92a5f341bfb908701b5ca752d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a0fc00cd92a5f341bfb908701b5ca752d" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>int</type>
         <definition>int StatsFunctions::GetBounty</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>GetBounty</name>
+        <qualifiedname>StatsFunctions::GetBounty</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Get the bounty of the player. </para>        </briefdescription>
+<para>Get the bounty of the player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>The bounty. </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>The bounty. </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="315" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="248" bodyend="254"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="349" column="16" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="275" bodyend="281"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a483e489cfe290e398f4f6decb48ef299" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a483e489cfe290e398f4f6decb48ef299" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetName</definition>
         <argsstring>(unsigned short pid, const char *name) noexcept</argsstring>
         <name>SetName</name>
+        <qualifiedname>StatsFunctions::SetName</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -761,34 +1026,40 @@
           <declname>name</declname>
         </param>
         <briefdescription>
-<para>Set the name of a player. </para>        </briefdescription>
+<para>Set the name of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>name</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new name of the player. </para></parameterdescription>
+<para>The new name of the player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="324" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="256" bodyend="265"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="358" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="283" bodyend="292"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a36c10c2ef35588555b3bd6a18b8b192f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a36c10c2ef35588555b3bd6a18b8b192f" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetRace</definition>
         <argsstring>(unsigned short pid, const char *race) noexcept</argsstring>
         <name>SetRace</name>
+        <qualifiedname>StatsFunctions::SetRace</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -798,34 +1069,40 @@
           <declname>race</declname>
         </param>
         <briefdescription>
-<para>Set the race of a player. </para>        </briefdescription>
+<para>Set the race of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>race</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new race of the player. </para></parameterdescription>
+<para>The new race of the player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="333" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="267" bodyend="279"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="367" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="294" bodyend="306"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a8f6539c1f049a33006e5cea4e04e0ac8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a8f6539c1f049a33006e5cea4e04e0ac8" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetHead</definition>
         <argsstring>(unsigned short pid, const char *head) noexcept</argsstring>
         <name>SetHead</name>
+        <qualifiedname>StatsFunctions::SetHead</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -835,34 +1112,40 @@
           <declname>head</declname>
         </param>
         <briefdescription>
-<para>Set the head mesh used by a player. </para>        </briefdescription>
+<para>Set the head mesh used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>head</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new head mesh of the player. </para></parameterdescription>
+<para>The new head mesh of the player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="342" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="281" bodyend="290"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="376" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="308" bodyend="317"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1aebb01eb500613c5849c5282503d0d923" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1aebb01eb500613c5849c5282503d0d923" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetHairstyle</definition>
         <argsstring>(unsigned short pid, const char *hairstyle) noexcept</argsstring>
         <name>SetHairstyle</name>
+        <qualifiedname>StatsFunctions::SetHairstyle</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -872,34 +1155,40 @@
           <declname>hairstyle</declname>
         </param>
         <briefdescription>
-<para>Set the hairstyle mesh used by a player. </para>        </briefdescription>
+<para>Set the hairstyle mesh used by a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>hairstyle</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new hairstyle mesh of the player. </para></parameterdescription>
+<para>The new hairstyle mesh of the player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="351" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="292" bodyend="301"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="385" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="319" bodyend="328"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a1882092394353c4262e820d493f132a4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a1882092394353c4262e820d493f132a4" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetIsMale</definition>
         <argsstring>(unsigned short pid, int state) noexcept</argsstring>
         <name>SetIsMale</name>
+        <qualifiedname>StatsFunctions::SetIsMale</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -909,34 +1198,83 @@
           <declname>state</declname>
         </param>
         <briefdescription>
-<para>Set whether a player is male or not. </para>        </briefdescription>
+<para>Set whether a player is male or not. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>state</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>Whether the player is male. </para></parameterdescription>
+<para>Whether the player is male. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="360" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="303" bodyend="309"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="394" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="330" bodyend="336"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1aad6481653eb4ae4d340da8e5909e0f3d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1adeebb2b035d527dcc224e165188a9065" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsFunctions::SetModel</definition>
+        <argsstring>(unsigned short pid, const char *model) noexcept</argsstring>
+        <name>SetModel</name>
+        <qualifiedname>StatsFunctions::SetModel</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+<para>Set the model of a player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>model</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new model of the player. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="403" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="338" bodyend="347"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_functions_1aad6481653eb4ae4d340da8e5909e0f3d" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetBirthsign</definition>
         <argsstring>(unsigned short pid, const char *name) noexcept</argsstring>
         <name>SetBirthsign</name>
+        <qualifiedname>StatsFunctions::SetBirthsign</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -946,34 +1284,40 @@
           <declname>name</declname>
         </param>
         <briefdescription>
-<para>Set the birthsign of a player. </para>        </briefdescription>
+<para>Set the birthsign of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>name</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new birthsign of the player. </para></parameterdescription>
+<para>The new birthsign of the player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="369" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="311" bodyend="320"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="412" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="349" bodyend="358"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1af1dc55570be703ba420d47eaf3ab5c51" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1af1dc55570be703ba420d47eaf3ab5c51" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetResetStats</definition>
         <argsstring>(unsigned short pid, bool resetStats) noexcept</argsstring>
         <name>SetResetStats</name>
+        <qualifiedname>StatsFunctions::SetResetStats</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -983,34 +1327,41 @@
           <declname>resetStats</declname>
         </param>
         <briefdescription>
-<para>Set whether the player&apos;s stats should be reset based on their current race as the result of a PlayerBaseInfo packet. </para>        </briefdescription>
+<para>Set whether the player&apos;s stats should be reset based on their current race as the result of a PlayerBaseInfo packet. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This changes the resetState for that player in the server memory, but does not by itself send a packet.</para><para><parameterlist kind="param"><parameteritem>
+<para>This changes the resetState for that player in the server memory, but does not by itself send a packet.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>resetStats</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The stat reset state. </para></parameterdescription>
+<para>The stat reset state. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="382" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="322" bodyend="328"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="425" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="360" bodyend="366"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a5b1701daf64da6a4327bc7e85c40fa50" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a5b1701daf64da6a4327bc7e85c40fa50" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetLevel</definition>
         <argsstring>(unsigned short pid, int value) noexcept</argsstring>
         <name>SetLevel</name>
+        <qualifiedname>StatsFunctions::SetLevel</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1020,34 +1371,40 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set the character level of a player. </para>        </briefdescription>
+<para>Set the character level of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new level of the player. </para></parameterdescription>
+<para>The new level of the player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="391" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="330" bodyend="336"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="434" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="368" bodyend="374"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a4e99c43f2a56b974ee2d5acc8a019a68" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a4e99c43f2a56b974ee2d5acc8a019a68" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetLevelProgress</definition>
         <argsstring>(unsigned short pid, int value) noexcept</argsstring>
         <name>SetLevelProgress</name>
+        <qualifiedname>StatsFunctions::SetLevelProgress</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1057,34 +1414,40 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set the player&apos;s progress to their next character level. </para>        </briefdescription>
+<para>Set the player&apos;s progress to their next character level. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new level progress of the player. </para></parameterdescription>
+<para>The new level progress of the player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="400" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="338" bodyend="344"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="443" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="376" bodyend="382"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a2b5a29dba8edd56f1f0a51ae3032bf9d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a2b5a29dba8edd56f1f0a51ae3032bf9d" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetHealthBase</definition>
         <argsstring>(unsigned short pid, double value) noexcept</argsstring>
         <name>SetHealthBase</name>
+        <qualifiedname>StatsFunctions::SetHealthBase</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1094,34 +1457,40 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set the base health of a player. </para>        </briefdescription>
+<para>Set the base health of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>name</parametername>
+<parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new base health of the player. </para></parameterdescription>
+<para>The new base health of the player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="409" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="346" bodyend="355"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="452" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="384" bodyend="393"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a29a1b3b8c23a01e516cab0a6422c3550" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a29a1b3b8c23a01e516cab0a6422c3550" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetHealthCurrent</definition>
         <argsstring>(unsigned short pid, double value) noexcept</argsstring>
         <name>SetHealthCurrent</name>
+        <qualifiedname>StatsFunctions::SetHealthCurrent</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1131,34 +1500,40 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set the current health of a player. </para>        </briefdescription>
+<para>Set the current health of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>name</parametername>
+<parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new current health of the player. </para></parameterdescription>
+<para>The new current health of the player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="418" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="357" bodyend="366"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="461" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="395" bodyend="404"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a81d26dcec70d68913ca1ece67604eb0f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a81d26dcec70d68913ca1ece67604eb0f" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetMagickaBase</definition>
         <argsstring>(unsigned short pid, double value) noexcept</argsstring>
         <name>SetMagickaBase</name>
+        <qualifiedname>StatsFunctions::SetMagickaBase</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1168,34 +1543,40 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set the base magicka of a player. </para>        </briefdescription>
+<para>Set the base magicka of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>name</parametername>
+<parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new base magicka of the player. </para></parameterdescription>
+<para>The new base magicka of the player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="427" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="368" bodyend="377"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="470" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="406" bodyend="415"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a5ae1b890f25b3080c96ff82d1b1ca43c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a5ae1b890f25b3080c96ff82d1b1ca43c" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetMagickaCurrent</definition>
         <argsstring>(unsigned short pid, double value) noexcept</argsstring>
         <name>SetMagickaCurrent</name>
+        <qualifiedname>StatsFunctions::SetMagickaCurrent</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1205,34 +1586,40 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set the current magicka of a player. </para>        </briefdescription>
+<para>Set the current magicka of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>name</parametername>
+<parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new current magicka of the player. </para></parameterdescription>
+<para>The new current magicka of the player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="436" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="379" bodyend="388"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="479" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="417" bodyend="426"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a6d431171e6770905e76309200accff93" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a6d431171e6770905e76309200accff93" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetFatigueBase</definition>
         <argsstring>(unsigned short pid, double value) noexcept</argsstring>
         <name>SetFatigueBase</name>
+        <qualifiedname>StatsFunctions::SetFatigueBase</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1242,34 +1629,40 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set the base fatigue of a player. </para>        </briefdescription>
+<para>Set the base fatigue of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>name</parametername>
+<parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new base fatigue of the player. </para></parameterdescription>
+<para>The new base fatigue of the player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="445" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="390" bodyend="399"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="488" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="428" bodyend="437"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1af5166ddb85bbad590775b67006adc7c0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1af5166ddb85bbad590775b67006adc7c0" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetFatigueCurrent</definition>
         <argsstring>(unsigned short pid, double value) noexcept</argsstring>
         <name>SetFatigueCurrent</name>
+        <qualifiedname>StatsFunctions::SetFatigueCurrent</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1279,34 +1672,40 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set the current fatigue of a player. </para>        </briefdescription>
+<para>Set the current fatigue of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>name</parametername>
+<parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new current fatigue of the player. </para></parameterdescription>
+<para>The new current fatigue of the player. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="454" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="401" bodyend="410"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="497" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="439" bodyend="448"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a509a70af9aa32c1fb84ca7e4a835de9d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a509a70af9aa32c1fb84ca7e4a835de9d" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetAttributeBase</definition>
         <argsstring>(unsigned short pid, unsigned short attributeId, int value) noexcept</argsstring>
         <name>SetAttributeBase</name>
+        <qualifiedname>StatsFunctions::SetAttributeBase</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1320,41 +1719,48 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set the base value of a player&apos;s attribute. </para>        </briefdescription>
+<para>Set the base value of a player&apos;s attribute. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>attributeId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The attribute ID. </para></parameterdescription>
+<para>The attribute ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new base value of the player&apos;s attribute. </para></parameterdescription>
+<para>The new base value of the player&apos;s attribute. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="464" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="412" bodyend="424"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="507" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="450" bodyend="462"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a488630104693d829dd5dd5bcd2d4a0d9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a488630104693d829dd5dd5bcd2d4a0d9" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::ClearAttributeModifier</definition>
         <argsstring>(unsigned short pid, unsigned short attributeId) noexcept</argsstring>
         <name>ClearAttributeModifier</name>
+        <qualifiedname>StatsFunctions::ClearAttributeModifier</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1364,34 +1770,96 @@
           <declname>attributeId</declname>
         </param>
         <briefdescription>
-<para>Clear the modifier value of a player&apos;s attribute. </para>        </briefdescription>
+<para>Clear the modifier value of a player&apos;s attribute. </para>
+        </briefdescription>
         <detaileddescription>
-<para>There&apos;s no way to set a modifier to a specific value because it can come from multiple different sources, but clearing it is a straightforward process that dispels associated effects on a client and, if necessary, unequips associated items.</para><para><parameterlist kind="param"><parameteritem>
+<para>There&apos;s no way to set a modifier to a specific value because it can come from multiple different sources, but clearing it is a straightforward process that dispels associated effects on a client and, if necessary, unequips associated items.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>attributeId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The attribute ID. </para></parameterdescription>
+<para>The attribute ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="478" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="426" bodyend="438"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="521" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="464" bodyend="476"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a4a028816e7fc16966bef50d0cdc273dc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a79aa333de0b93f9cea661efeba53fdef" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsFunctions::SetAttributeDamage</definition>
+        <argsstring>(unsigned short pid, unsigned short attributeId, double value) noexcept</argsstring>
+        <name>SetAttributeDamage</name>
+        <qualifiedname>StatsFunctions::SetAttributeDamage</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>attributeId</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the amount of damage (as caused through the Damage Attribute effect) to a player&apos;s attribute. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>attributeId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The attribute ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of damage to the player&apos;s attribute. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="532" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="478" bodyend="490"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_functions_1a4a028816e7fc16966bef50d0cdc273dc" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetSkillBase</definition>
         <argsstring>(unsigned short pid, unsigned short skillId, int value) noexcept</argsstring>
         <name>SetSkillBase</name>
+        <qualifiedname>StatsFunctions::SetSkillBase</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1405,41 +1873,48 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set the base value of a player&apos;s skill. </para>        </briefdescription>
+<para>Set the base value of a player&apos;s skill. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>skillId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The skill ID. </para></parameterdescription>
+<para>The skill ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new base value of the player&apos;s skill. </para></parameterdescription>
+<para>The new base value of the player&apos;s skill. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="488" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="440" bodyend="452"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="542" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="492" bodyend="504"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1aa5c7c7cf7d136f620c72984f6446aa58" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1aa5c7c7cf7d136f620c72984f6446aa58" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::ClearSkillModifier</definition>
         <argsstring>(unsigned short pid, unsigned short skillId) noexcept</argsstring>
         <name>ClearSkillModifier</name>
+        <qualifiedname>StatsFunctions::ClearSkillModifier</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1449,34 +1924,41 @@
           <declname>skillId</declname>
         </param>
         <briefdescription>
-<para>Clear the modifier value of a player&apos;s skill. </para>        </briefdescription>
+<para>Clear the modifier value of a player&apos;s skill. </para>
+        </briefdescription>
         <detaileddescription>
-<para>There&apos;s no way to set a modifier to a specific value because it can come from multiple different sources, but clearing it is a straightforward process that dispels associated effects on a client and, if necessary, unequips associated items.</para><para><parameterlist kind="param"><parameteritem>
+<para>There&apos;s no way to set a modifier to a specific value because it can come from multiple different sources, but clearing it is a straightforward process that dispels associated effects on a client and, if necessary, unequips associated items.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>skillId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The skill ID. </para></parameterdescription>
+<para>The skill ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="502" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="454" bodyend="466"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="556" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="506" bodyend="518"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a88e1fc217af3b2e6dffed5d31cb357ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a043174abd62af68bf389133be2f8a1ee" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
-        <definition>void StatsFunctions::SetSkillProgress</definition>
+        <definition>void StatsFunctions::SetSkillDamage</definition>
         <argsstring>(unsigned short pid, unsigned short skillId, double value) noexcept</argsstring>
-        <name>SetSkillProgress</name>
+        <name>SetSkillDamage</name>
+        <qualifiedname>StatsFunctions::SetSkillDamage</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1490,41 +1972,103 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set the progress the player has made towards increasing a certain skill by 1. </para>        </briefdescription>
+<para>Set the amount of damage (as caused through the Damage Skill effect) to a player&apos;s skill. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>skillId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The skill ID. </para></parameterdescription>
+<para>The skill ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The progress value. </para></parameterdescription>
+<para>The amount of damage to the player&apos;s skill. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="512" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="468" bodyend="480"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="567" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="520" bodyend="532"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1ad085f473168f1cce213b45b9b822e5f6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a88e1fc217af3b2e6dffed5d31cb357ab" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void StatsFunctions::SetSkillProgress</definition>
+        <argsstring>(unsigned short pid, unsigned short skillId, double value) noexcept</argsstring>
+        <name>SetSkillProgress</name>
+        <qualifiedname>StatsFunctions::SetSkillProgress</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>unsigned short</type>
+          <declname>skillId</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set the progress the player has made towards increasing a certain skill by 1. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>skillId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The skill ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The progress value. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="577" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="534" bodyend="546"/>
+      </memberdef>
+      <memberdef kind="function" id="class_stats_functions_1ad085f473168f1cce213b45b9b822e5f6" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetSkillIncrease</definition>
         <argsstring>(unsigned short pid, unsigned int attributeId, int value) noexcept</argsstring>
         <name>SetSkillIncrease</name>
+        <qualifiedname>StatsFunctions::SetSkillIncrease</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1538,41 +2082,49 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set the bonus applied to a certain attribute at the next level up as a result of associated skill increases. </para>        </briefdescription>
+<para>Set the bonus applied to a certain attribute at the next level up as a result of associated skill increases. </para>
+        </briefdescription>
         <detaileddescription>
-<para>Although confusing, the term &quot;skill increase&quot; for this is taken from OpenMW itself.</para><para><parameterlist kind="param"><parameteritem>
+<para>Although confusing, the term &quot;skill increase&quot; for this is taken from OpenMW itself.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
-<parametername>skillId</parametername>
+<parametername>attributeId</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The attribute ID. </para></parameterdescription>
+<para>The attribute ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The increase in the attribute caused by skills. </para></parameterdescription>
+<para>The increase in the attribute caused by skills. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="525" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="482" bodyend="494"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="590" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="548" bodyend="560"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1ab8017baacfc1fb10417a7532264a4499" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1ab8017baacfc1fb10417a7532264a4499" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetBounty</definition>
         <argsstring>(unsigned short pid, int value) noexcept</argsstring>
         <name>SetBounty</name>
+        <qualifiedname>StatsFunctions::SetBounty</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1582,34 +2134,40 @@
           <declname>value</declname>
         </param>
         <briefdescription>
-<para>Set the bounty of a player. </para>        </briefdescription>
+<para>Set the bounty of a player. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>value</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new bounty. </para></parameterdescription>
+<para>The new bounty. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="534" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="496" bodyend="502"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="599" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="562" bodyend="568"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1af1f6f14e55a9ddbbb360e73a73e66ec4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1af1f6f14e55a9ddbbb360e73a73e66ec4" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SetCharGenStage</definition>
         <argsstring>(unsigned short pid, int currentStage, int endStage) noexcept</argsstring>
         <name>SetCharGenStage</name>
+        <qualifiedname>StatsFunctions::SetCharGenStage</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -1623,203 +2181,247 @@
           <declname>endStage</declname>
         </param>
         <briefdescription>
-<para>Set the current and ending stages of character generation for a player. </para>        </briefdescription>
+<para>Set the current and ending stages of character generation for a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This is used to repeat part of character generation or to only go through part of it.</para><para><parameterlist kind="param"><parameteritem>
+<para>This is used to repeat part of character generation or to only go through part of it.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>currentStage</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new current stage. </para></parameterdescription>
+<para>The new current stage. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>endStage</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The new ending stage. </para></parameterdescription>
+<para>The new ending stage. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="546" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="504" bodyend="517"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="611" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="570" bodyend="583"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a9fa877e959c69807a6930af31bf51394" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a9fa877e959c69807a6930af31bf51394" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SendBaseInfo</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>SendBaseInfo</name>
+        <qualifiedname>StatsFunctions::SendBaseInfo</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerBaseInfo packet with a player&apos;s name, race, head mesh, hairstyle mesh, birthsign and stat reset state. </para>        </briefdescription>
+<para>Send a PlayerBaseInfo packet with a player&apos;s name, race, head mesh, hairstyle mesh, birthsign and stat reset state. </para>
+        </briefdescription>
         <detaileddescription>
-<para>It is always sent to all players.</para><para><parameterlist kind="param"><parameteritem>
+<para>It is always sent to all players.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="557" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="519" bodyend="529"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="622" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="585" bodyend="595"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1aad31c072c98191779b671867d7c3b86b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1aad31c072c98191779b671867d7c3b86b" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SendStatsDynamic</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>SendStatsDynamic</name>
+        <qualifiedname>StatsFunctions::SendStatsDynamic</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerStatsDynamic packet with a player&apos;s dynamic stats (health, magicka and fatigue). </para>        </briefdescription>
+<para>Send a PlayerStatsDynamic packet with a player&apos;s dynamic stats (health, magicka and fatigue). </para>
+        </briefdescription>
         <detaileddescription>
-<para>It is always sent to all players.</para><para><parameterlist kind="param"><parameteritem>
+<para>It is always sent to all players.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="568" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="531" bodyend="543"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="633" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="597" bodyend="609"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1af91e110d9848078526f7927658c2b5ac" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1af91e110d9848078526f7927658c2b5ac" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SendAttributes</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>SendAttributes</name>
+        <qualifiedname>StatsFunctions::SendAttributes</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerAttribute packet with a player&apos;s attributes and bonuses to those attributes at the next level up (the latter being called &quot;skill increases&quot; as in OpenMW). </para>        </briefdescription>
+<para>Send a PlayerAttribute packet with a player&apos;s attributes and bonuses to those attributes at the next level up (the latter being called &quot;skill increases&quot; as in OpenMW). </para>
+        </briefdescription>
         <detaileddescription>
-<para>It is always sent to all players.</para><para><parameterlist kind="param"><parameteritem>
+<para>It is always sent to all players.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="580" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="545" bodyend="557"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="645" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="611" bodyend="623"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1ab13d18dafa42d94cf8d27e3f203c0aef" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1ab13d18dafa42d94cf8d27e3f203c0aef" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SendSkills</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>SendSkills</name>
+        <qualifiedname>StatsFunctions::SendSkills</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerSkill packet with a player&apos;s skills. </para>        </briefdescription>
+<para>Send a PlayerSkill packet with a player&apos;s skills. </para>
+        </briefdescription>
         <detaileddescription>
-<para>It is always sent to all players.</para><para><parameterlist kind="param"><parameteritem>
+<para>It is always sent to all players.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="590" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="559" bodyend="571"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="655" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="625" bodyend="637"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1a763bae95958865752d1efb9c18a7981b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1a763bae95958865752d1efb9c18a7981b" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SendLevel</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>SendLevel</name>
+        <qualifiedname>StatsFunctions::SendLevel</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerLevel packet with a player&apos;s character level and progress towards the next level up. </para>        </briefdescription>
+<para>Send a PlayerLevel packet with a player&apos;s character level and progress towards the next level up. </para>
+        </briefdescription>
         <detaileddescription>
-<para>It is always sent to all players.</para><para><parameterlist kind="param"><parameteritem>
+<para>It is always sent to all players.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="601" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="573" bodyend="583"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="666" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="639" bodyend="649"/>
       </memberdef>
-      <memberdef kind="function" id="class_stats_functions_1aa84fc104c68c62a7bb94b4bfab278721" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_stats_functions_1aa84fc104c68c62a7bb94b4bfab278721" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
         <type>void</type>
         <definition>void StatsFunctions::SendBounty</definition>
         <argsstring>(unsigned short pid) noexcept</argsstring>
         <name>SendBounty</name>
+        <qualifiedname>StatsFunctions::SendBounty</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerBounty packet with a player&apos;s bounty. </para>        </briefdescription>
+<para>Send a PlayerBounty packet with a player&apos;s bounty. </para>
+        </briefdescription>
         <detaileddescription>
-<para>It is always sent to all players.</para><para><parameterlist kind="param"><parameteritem>
+<para>It is always sent to all players.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="611" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="585" bodyend="595"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="676" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.cpp" bodystart="651" bodyend="661"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" line="79" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Stats.hpp" bodystart="78" bodyend="612"/>
+    <location file="src/apps/openmw-mp/Script/Functions/Stats.hpp" line="84" column="1" bodyfile="src/apps/openmw-mp/Script/Functions/Stats.hpp" bodystart="85" bodyend="677"/>
     <listofallmembers>
       <member refid="class_stats_functions_1a488630104693d829dd5dd5bcd2d4a0d9" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>ClearAttributeModifier</name></member>
       <member refid="class_stats_functions_1aa5c7c7cf7d136f620c72984f6446aa58" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>ClearSkillModifier</name></member>
       <member refid="class_stats_functions_1afb2176370953fbd72463098b66d7a3ca" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetAttributeBase</name></member>
       <member refid="class_stats_functions_1a62f228e465ac26a4463cc8288508a75d" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetAttributeCount</name></member>
+      <member refid="class_stats_functions_1a86e0eaa6b1fac1eab9c6e771bc65cce3" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetAttributeDamage</name></member>
       <member refid="class_stats_functions_1a29c580ee3264278db74588775c14aa86" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetAttributeId</name></member>
       <member refid="class_stats_functions_1ad436fe2b3d3d898a5e1b7af054a13509" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetAttributeModifier</name></member>
       <member refid="class_stats_functions_1a8ac299461b4cf16f78de87eb19fb2ad8" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetAttributeName</name></member>
@@ -1836,10 +2438,12 @@
       <member refid="class_stats_functions_1a11ba48f3b04fdc901ebe4804b4b4e7dd" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetLevelProgress</name></member>
       <member refid="class_stats_functions_1a4d1c7c0f7bc9de38f3abf8349884b16c" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetMagickaBase</name></member>
       <member refid="class_stats_functions_1aba2cfc305e53c4cb365717c836682a41" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetMagickaCurrent</name></member>
+      <member refid="class_stats_functions_1a4b09be32e70601cbde51e113215011bb" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetModel</name></member>
       <member refid="class_stats_functions_1aee528c77628887c497d4468ce0b33e7a" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetName</name></member>
       <member refid="class_stats_functions_1a2484ea3ff1d1a4deaa935905be4fe85f" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetRace</name></member>
       <member refid="class_stats_functions_1aa1fa300c769c82831a7180c3efce9892" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetSkillBase</name></member>
       <member refid="class_stats_functions_1a022b1b58ff7b28ede2baa6fd2b02995c" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetSkillCount</name></member>
+      <member refid="class_stats_functions_1a8d2ae787aaf3641cefebefcb0fe7f447" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetSkillDamage</name></member>
       <member refid="class_stats_functions_1ae90a8f8df6b781d7af0cdd0c21d58476" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetSkillId</name></member>
       <member refid="class_stats_functions_1a928582d2cf13d8b259eef1d670b0917b" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetSkillIncrease</name></member>
       <member refid="class_stats_functions_1a498efb06d77b1404f6174c8b181d7edc" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>GetSkillModifier</name></member>
@@ -1852,6 +2456,7 @@
       <member refid="class_stats_functions_1ab13d18dafa42d94cf8d27e3f203c0aef" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SendSkills</name></member>
       <member refid="class_stats_functions_1aad31c072c98191779b671867d7c3b86b" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SendStatsDynamic</name></member>
       <member refid="class_stats_functions_1a509a70af9aa32c1fb84ca7e4a835de9d" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetAttributeBase</name></member>
+      <member refid="class_stats_functions_1a79aa333de0b93f9cea661efeba53fdef" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetAttributeDamage</name></member>
       <member refid="class_stats_functions_1aad6481653eb4ae4d340da8e5909e0f3d" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetBirthsign</name></member>
       <member refid="class_stats_functions_1ab8017baacfc1fb10417a7532264a4499" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetBounty</name></member>
       <member refid="class_stats_functions_1af1f6f14e55a9ddbbb360e73a73e66ec4" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetCharGenStage</name></member>
@@ -1866,10 +2471,12 @@
       <member refid="class_stats_functions_1a4e99c43f2a56b974ee2d5acc8a019a68" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetLevelProgress</name></member>
       <member refid="class_stats_functions_1a81d26dcec70d68913ca1ece67604eb0f" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetMagickaBase</name></member>
       <member refid="class_stats_functions_1a5ae1b890f25b3080c96ff82d1b1ca43c" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetMagickaCurrent</name></member>
+      <member refid="class_stats_functions_1adeebb2b035d527dcc224e165188a9065" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetModel</name></member>
       <member refid="class_stats_functions_1a483e489cfe290e398f4f6decb48ef299" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetName</name></member>
       <member refid="class_stats_functions_1a36c10c2ef35588555b3bd6a18b8b192f" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetRace</name></member>
       <member refid="class_stats_functions_1af1dc55570be703ba420d47eaf3ab5c51" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetResetStats</name></member>
       <member refid="class_stats_functions_1a4a028816e7fc16966bef50d0cdc273dc" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetSkillBase</name></member>
+      <member refid="class_stats_functions_1a043174abd62af68bf389133be2f8a1ee" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetSkillDamage</name></member>
       <member refid="class_stats_functions_1ad085f473168f1cce213b45b9b822e5f6" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetSkillIncrease</name></member>
       <member refid="class_stats_functions_1a88e1fc217af3b2e6dffed5d31cb357ab" prot="public" virt="non-virtual"><scope>StatsFunctions</scope><name>SetSkillProgress</name></member>
     </listofallmembers>

@@ -1,13 +1,15 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.5" xml:lang="en-US">
   <compounddef id="class_setting_functions" kind="class" language="C++" prot="public">
     <compoundname>SettingFunctions</compoundname>
+    <includes refid="_settings_8hpp" local="no">Settings.hpp</includes>
       <sectiondef kind="public-static-func">
       <memberdef kind="function" id="class_setting_functions_1a9c0c7df58b9025366929ba2abb35fa8b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void SettingFunctions::SetDifficulty</definition>
         <argsstring>(unsigned short pid, int difficulty)</argsstring>
         <name>SetDifficulty</name>
+        <qualifiedname>SettingFunctions::SetDifficulty</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -17,34 +19,41 @@
           <declname>difficulty</declname>
         </param>
         <briefdescription>
-<para>Set the difficulty for a player. </para>        </briefdescription>
+<para>Set the difficulty for a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This changes the difficulty for that player in the server memory, but does not by itself send a packet.</para><para><parameterlist kind="param"><parameteritem>
+<para>This changes the difficulty for that player in the server memory, but does not by itself send a packet.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>difficulty</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The difficulty. </para></parameterdescription>
+<para>The difficulty. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.hpp" line="32" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="12" bodyend="18"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Settings.hpp" line="38" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="11" bodyend="17"/>
       </memberdef>
       <memberdef kind="function" id="class_setting_functions_1ae5179269ca17e52fa0ad06a35e9c802a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void SettingFunctions::SetEnforcedLogLevel</definition>
         <argsstring>(unsigned short pid, int enforcedLogLevel)</argsstring>
         <name>SetEnforcedLogLevel</name>
+        <qualifiedname>SettingFunctions::SetEnforcedLogLevel</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -54,34 +63,43 @@
           <declname>enforcedLogLevel</declname>
         </param>
         <briefdescription>
-<para>Set the client log level enforced for a player. </para>        </briefdescription>
+<para>Set the client log level enforced for a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This changes the enforced log level for that player in the server memory, but does not by itself send a packet.</para><para>Enforcing a certain log level is necessary to prevent players from learning information from their console window that they are otherwise unable to obtain, such as the locations of other players.</para><para>If you do not wish to enforce a log level, simply set enforcedLogLevel to -1</para><para><parameterlist kind="param"><parameteritem>
+<para>This changes the enforced log level for that player in the server memory, but does not by itself send a packet.</para>
+<para>Enforcing a certain log level is necessary to prevent players from learning information from their console window that they are otherwise unable to obtain, such as the locations of other players.</para>
+<para>If you do not wish to enforce a log level, simply set enforcedLogLevel to -1</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>enforcedLogLevel</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The enforced log level. </para></parameterdescription>
+<para>The enforced log level. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.hpp" line="50" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="20" bodyend="26"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Settings.hpp" line="56" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="19" bodyend="25"/>
       </memberdef>
       <memberdef kind="function" id="class_setting_functions_1a30e26f77647526fd127fa0c66a9c1e10" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void SettingFunctions::SetPhysicsFramerate</definition>
         <argsstring>(unsigned short pid, double physicsFramerate)</argsstring>
         <name>SetPhysicsFramerate</name>
+        <qualifiedname>SettingFunctions::SetPhysicsFramerate</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -91,34 +109,41 @@
           <declname>physicsFramerate</declname>
         </param>
         <briefdescription>
-<para>Set the physics framerate for a player. </para>        </briefdescription>
+<para>Set the physics framerate for a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This changes the physics framerate for that player in the server memory, but does not by itself send a packet.</para><para><parameterlist kind="param"><parameteritem>
+<para>This changes the physics framerate for that player in the server memory, but does not by itself send a packet.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>physicsFramerate</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The physics framerate. </para></parameterdescription>
+<para>The physics framerate. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.hpp" line="62" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="28" bodyend="34"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Settings.hpp" line="68" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="27" bodyend="33"/>
       </memberdef>
       <memberdef kind="function" id="class_setting_functions_1ae8a34b765c308eb086b427748b4b2ecc" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void SettingFunctions::SetConsoleAllowed</definition>
         <argsstring>(unsigned short pid, bool state)</argsstring>
         <name>SetConsoleAllowed</name>
+        <qualifiedname>SettingFunctions::SetConsoleAllowed</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -128,34 +153,41 @@
           <declname>state</declname>
         </param>
         <briefdescription>
-<para>Set whether the console is allowed for a player. </para>        </briefdescription>
+<para>Set whether the console is allowed for a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This changes the console permission for that player in the server memory, but does not by itself send a packet.</para><para><parameterlist kind="param"><parameteritem>
+<para>This changes the console permission for that player in the server memory, but does not by itself send a packet.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>state</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The console permission state. </para></parameterdescription>
+<para>The console permission state. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.hpp" line="74" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="36" bodyend="42"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Settings.hpp" line="80" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="35" bodyend="41"/>
       </memberdef>
       <memberdef kind="function" id="class_setting_functions_1ac35d01dc98a2b2834989f115704b5fb2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void SettingFunctions::SetBedRestAllowed</definition>
         <argsstring>(unsigned short pid, bool state)</argsstring>
         <name>SetBedRestAllowed</name>
+        <qualifiedname>SettingFunctions::SetBedRestAllowed</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -165,34 +197,41 @@
           <declname>state</declname>
         </param>
         <briefdescription>
-<para>Set whether resting in beds is allowed for a player. </para>        </briefdescription>
+<para>Set whether resting in beds is allowed for a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This changes the resting permission for that player in the server memory, but does not by itself send a packet.</para><para><parameterlist kind="param"><parameteritem>
+<para>This changes the resting permission for that player in the server memory, but does not by itself send a packet.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>state</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The resting permission state. </para></parameterdescription>
+<para>The resting permission state. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.hpp" line="86" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="44" bodyend="50"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Settings.hpp" line="92" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="43" bodyend="49"/>
       </memberdef>
       <memberdef kind="function" id="class_setting_functions_1acfde0cce5e4d22baa3470c92a89b17f9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void SettingFunctions::SetWildernessRestAllowed</definition>
         <argsstring>(unsigned short pid, bool state)</argsstring>
         <name>SetWildernessRestAllowed</name>
+        <qualifiedname>SettingFunctions::SetWildernessRestAllowed</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -202,34 +241,41 @@
           <declname>state</declname>
         </param>
         <briefdescription>
-<para>Set whether resting in the wilderness is allowed for a player. </para>        </briefdescription>
+<para>Set whether resting in the wilderness is allowed for a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This changes the resting permission for that player in the server memory, but does not by itself send a packet.</para><para><parameterlist kind="param"><parameteritem>
+<para>This changes the resting permission for that player in the server memory, but does not by itself send a packet.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>state</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The resting permission state. </para></parameterdescription>
+<para>The resting permission state. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.hpp" line="98" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="52" bodyend="58"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Settings.hpp" line="104" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="51" bodyend="57"/>
       </memberdef>
       <memberdef kind="function" id="class_setting_functions_1a483f90b1751b2493d1f87e26c22772c7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void SettingFunctions::SetWaitAllowed</definition>
         <argsstring>(unsigned short pid, bool state)</argsstring>
         <name>SetWaitAllowed</name>
+        <qualifiedname>SettingFunctions::SetWaitAllowed</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
@@ -239,68 +285,267 @@
           <declname>state</declname>
         </param>
         <briefdescription>
-<para>Set whether waiting is allowed for a player. </para>        </briefdescription>
+<para>Set whether waiting is allowed for a player. </para>
+        </briefdescription>
         <detaileddescription>
-<para>This changes the waiting permission for that player in the server memory, but does not by itself send a packet.</para><para><parameterlist kind="param"><parameteritem>
+<para>This changes the waiting permission for that player in the server memory, but does not by itself send a packet.</para>
+<para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID. </para></parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
 </parameteritem>
 <parameteritem>
 <parameternamelist>
 <parametername>state</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The waiting permission state. </para></parameterdescription>
+<para>The waiting permission state. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.hpp" line="110" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="60" bodyend="66"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Settings.hpp" line="116" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="59" bodyend="65"/>
       </memberdef>
-      <memberdef kind="function" id="class_setting_functions_1a848ac620d2a24eede194391978bac032" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="class_setting_functions_1aaf6b40bf999cd9e284715503e4a893be" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void SettingFunctions::SendSettings</definition>
-        <argsstring>(unsigned short pid) noexcept</argsstring>
-        <name>SendSettings</name>
+        <definition>void SettingFunctions::SetGameSettingValue</definition>
+        <argsstring>(unsigned short pid, const char *setting, const char *value)</argsstring>
+        <name>SetGameSettingValue</name>
+        <qualifiedname>SettingFunctions::SetGameSettingValue</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>setting</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set value for a game setting. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This overrides the setting value set in OpenMW Launcher. Only applies to the Game category.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>setting</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of a setting in the Game category </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the setting (as a string) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Settings.hpp" line="128" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="67" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_setting_functions_1a966b679b4f52780f15ec11e9bdb0877f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SettingFunctions::ClearGameSettingValues</definition>
+        <argsstring>(unsigned short pid)</argsstring>
+        <name>ClearGameSettingValues</name>
+        <qualifiedname>SettingFunctions::ClearGameSettingValues</qualifiedname>
         <param>
           <type>unsigned short</type>
           <declname>pid</declname>
         </param>
         <briefdescription>
-<para>Send a PlayerSettings packet to the player affected by it. </para>        </briefdescription>
+<para>Clear the Game setting values stored for a player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear any changes done by <ref refid="class_setting_functions_1aaf6b40bf999cd9e284715503e4a893be" kindref="member">SetGameSettingValue()</ref></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Settings.hpp" line="138" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="74" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_setting_functions_1a2fc1b57c7e2948ecd44deaa4c1789dc7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SettingFunctions::SetVRSettingValue</definition>
+        <argsstring>(unsigned short pid, const char *setting, const char *value)</argsstring>
+        <name>SetVRSettingValue</name>
+        <qualifiedname>SettingFunctions::SetVRSettingValue</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>setting</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Set value for a VR setting. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This overrides the setting value set in OpenMW Launcher. Only applies to the VR category.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>setting</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of a setting in the VR category </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value of the setting (as a string) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Settings.hpp" line="150" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="81" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="class_setting_functions_1a627be08d9fd87bd02c4410cc0fd165f5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SettingFunctions::ClearVRSettingValues</definition>
+        <argsstring>(unsigned short pid)</argsstring>
+        <name>ClearVRSettingValues</name>
+        <qualifiedname>SettingFunctions::ClearVRSettingValues</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <briefdescription>
+<para>Clear the VR setting values stored for a player. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Clear any changes done by <ref refid="class_setting_functions_1a2fc1b57c7e2948ecd44deaa4c1789dc7" kindref="member">SetVRSettingValue()</ref></para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The player ID. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/apps/openmw-mp/Script/Functions/Settings.hpp" line="160" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="88" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_setting_functions_1aee7527416a76e519d23cc161142a12e2" prot="public" static="yes" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SettingFunctions::SendSettings</definition>
+        <argsstring>(unsigned short pid, bool sendToOtherPlayers, bool skipAttachedPlayer) noexcept</argsstring>
+        <name>SendSettings</name>
+        <qualifiedname>SettingFunctions::SendSettings</qualifiedname>
+        <param>
+          <type>unsigned short</type>
+          <declname>pid</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sendToOtherPlayers</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipAttachedPlayer</declname>
+        </param>
+        <briefdescription>
+<para>Send a PlayerSettings packet to the player affected by it. </para>
+        </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
 <parametername>pid</parametername>
 </parameternamelist>
 <parameterdescription>
-<para>The player ID to send it to. </para></parameterdescription>
+<para>The player ID to send it to. </para>
+</parameterdescription>
 </parameteritem>
 </parameterlist>
-<simplesect kind="return"><para>void </para></simplesect>
-</para>        </detaileddescription>
+<simplesect kind="return"><para>void </para>
+</simplesect>
+</para>
+        </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.hpp" line="118" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="68" bodyend="77"/>
+        <location file="src/apps/openmw-mp/Script/Functions/Settings.hpp" line="168" column="17" bodyfile="src/apps/openmw-mp/Script/Functions/Settings.cpp" bodystart="95" bodyend="107"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.hpp" line="19" column="1" bodyfile="C:/msys64/home/ICE/openmw-tes3mp-x64-0.7.0/apps/openmw-mp/Script/Functions/Settings.hpp" bodystart="18" bodyend="119"/>
+    <location file="src/apps/openmw-mp/Script/Functions/Settings.hpp" line="24" column="1" bodyfile="src/apps/openmw-mp/Script/Functions/Settings.hpp" bodystart="25" bodyend="169"/>
     <listofallmembers>
-      <member refid="class_setting_functions_1a848ac620d2a24eede194391978bac032" prot="public" virt="non-virtual"><scope>SettingFunctions</scope><name>SendSettings</name></member>
+      <member refid="class_setting_functions_1a966b679b4f52780f15ec11e9bdb0877f" prot="public" virt="non-virtual"><scope>SettingFunctions</scope><name>ClearGameSettingValues</name></member>
+      <member refid="class_setting_functions_1a627be08d9fd87bd02c4410cc0fd165f5" prot="public" virt="non-virtual"><scope>SettingFunctions</scope><name>ClearVRSettingValues</name></member>
+      <member refid="class_setting_functions_1aee7527416a76e519d23cc161142a12e2" prot="public" virt="non-virtual"><scope>SettingFunctions</scope><name>SendSettings</name></member>
       <member refid="class_setting_functions_1ac35d01dc98a2b2834989f115704b5fb2" prot="public" virt="non-virtual"><scope>SettingFunctions</scope><name>SetBedRestAllowed</name></member>
       <member refid="class_setting_functions_1ae8a34b765c308eb086b427748b4b2ecc" prot="public" virt="non-virtual"><scope>SettingFunctions</scope><name>SetConsoleAllowed</name></member>
       <member refid="class_setting_functions_1a9c0c7df58b9025366929ba2abb35fa8b" prot="public" virt="non-virtual"><scope>SettingFunctions</scope><name>SetDifficulty</name></member>
       <member refid="class_setting_functions_1ae5179269ca17e52fa0ad06a35e9c802a" prot="public" virt="non-virtual"><scope>SettingFunctions</scope><name>SetEnforcedLogLevel</name></member>
+      <member refid="class_setting_functions_1aaf6b40bf999cd9e284715503e4a893be" prot="public" virt="non-virtual"><scope>SettingFunctions</scope><name>SetGameSettingValue</name></member>
       <member refid="class_setting_functions_1a30e26f77647526fd127fa0c66a9c1e10" prot="public" virt="non-virtual"><scope>SettingFunctions</scope><name>SetPhysicsFramerate</name></member>
+      <member refid="class_setting_functions_1a2fc1b57c7e2948ecd44deaa4c1789dc7" prot="public" virt="non-virtual"><scope>SettingFunctions</scope><name>SetVRSettingValue</name></member>
       <member refid="class_setting_functions_1a483f90b1751b2493d1f87e26c22772c7" prot="public" virt="non-virtual"><scope>SettingFunctions</scope><name>SetWaitAllowed</name></member>
       <member refid="class_setting_functions_1acfde0cce5e4d22baa3470c92a89b17f9" prot="public" virt="non-virtual"><scope>SettingFunctions</scope><name>SetWildernessRestAllowed</name></member>
     </listofallmembers>
